@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Hyprland
 Comment=Compositor Wayland dinâmico e inteligente
-Exec=/usr/local/bin/start-hyprland
+Exec=/usr/local/bin/hyprland-session
 Type=Application
 DesktopNames=Hyprland
 Keywords=tiling;wayland;compositor;

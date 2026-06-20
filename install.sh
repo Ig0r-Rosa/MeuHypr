@@ -150,7 +150,7 @@ deploy_user_configs() {
     rsync -a "$CONFIG_SRC/$item/" "$TARGET_HOME/.config/$item/"
   done
 
-  rsync -a "$CONFIG_SRC/gtk-3.0/" "$TARGET_HOME/.config/gtk-3.0/"
+  rsync -a --exclude='bookmarks' "$CONFIG_SRC/gtk-3.0/" "$TARGET_HOME/.config/gtk-3.0/"
   rsync -a "$CONFIG_SRC/gtk-4.0/" "$TARGET_HOME/.config/gtk-4.0/"
   cp -a "$CONFIG_SRC/starship.toml" "$TARGET_HOME/.config/"
   cp -a "$CONFIG_SRC/mimeapps.list" "$TARGET_HOME/.config/"
@@ -158,17 +158,46 @@ deploy_user_configs() {
   chown -R "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config" "$TARGET_HOME/Pictures"
 
   # Ajusta caminhos absolutos do usuário original
-  sed -i "s|/home/igor|$TARGET_HOME|g" "$TARGET_HOME/.config/hypr/UserConfigs/ENVariables.conf" 2>/dev/null || true
+  grep -rl "/home/igor" "$TARGET_HOME/.config" 2>/dev/null | while read -r f; do
+    sed -i "s|/home/igor|$TARGET_HOME|g" "$f"
+  done
+
+  setup_gtk_bookmarks
 
   # Placeholder de wallpaper (sem incluir imagens no repositório)
   touch "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
   chown "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
 }
 
+setup_gtk_bookmarks() {
+  log "Gerando bookmarks GTK/Nautilus para $TARGET_USER..."
+  bash "$SCRIPT_DIR/system/scripts/setup-gtk-bookmarks.sh" "$TARGET_USER"
+}
+
+ensure_start_hyprland_binary() {
+  local bin="/usr/local/bin/start-hyprland"
+  if [[ -x "$bin" ]] && ! file -b "$bin" | grep -qi 'shell script'; then
+    return 0
+  fi
+
+  log "Restaurando binário oficial start-hyprland (watchdog Hyprland 0.53+)..."
+  local build_dir="/tmp/meuhypr-start-hyprland-build"
+  rm -rf "$build_dir"
+  git clone --depth 1 https://github.com/hyprwm/Hyprland.git "$build_dir"
+  cmake -S "$build_dir/start" -B "$build_dir/start/build" \
+    -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
+  cmake --build "$build_dir/start/build" -j"$(nproc)"
+  cmake --install "$build_dir/start/build"
+}
+
 deploy_system_files() {
-  log "Configurando SDDM, sessão Hyprland e wrapper..."
-  install -Dm755 "$SYSTEM_SRC/local-bin/start-hyprland.sh" /usr/local/bin/start-hyprland
+  log "Configurando sessão Hyprland e wrapper de ambiente..."
+  ensure_start_hyprland_binary
+  install -Dm755 "$SYSTEM_SRC/local-bin/hyprland-session.sh" /usr/local/bin/hyprland-session
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/share/wayland-sessions/hyprland.desktop
+  install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/local/share/wayland-sessions/hyprland.desktop
+
+  log "Configurando SDDM..."
   install -Dm644 "$SYSTEM_SRC/sddm.conf" /etc/sddm.conf
   install -Dm644 "$SYSTEM_SRC/sddm.conf.d/10-gnome-default.conf" /etc/sddm.conf.d/10-gnome-default.conf
   install -d /usr/share/sddm/themes/noc-sddm

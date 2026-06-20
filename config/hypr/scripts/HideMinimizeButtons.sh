@@ -47,6 +47,24 @@ headerbar windowcontrols button {
   margin: 0;
   border: none;
   -gtk-icon-source: none;
+}
+
+/* Diálogos GTK/libadwaita sem cantos arredondados */
+dialog,
+messagedialog,
+.adw-message-dialog,
+.adw-dialog,
+window.dialog,
+.alert-dialog {
+  border-radius: 0;
+}
+
+.adw-message-dialog .card,
+.adw-message-dialog box,
+.adw-alert-dialog,
+.adw-alert-dialog box,
+.dialog-vbox {
+  border-radius: 0;
 }'
 
   for gtk_dir in "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-4.0"; do

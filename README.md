@@ -19,7 +19,7 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 | `config/wallust/` | Geração de cores a partir do wallpaper |
 | `config/gtk-*`, `qt*ct`, `fuzzel/` | Temas GTK/Qt e alternador de janelas |
 | `config/starship.toml` | Prompt do Zsh |
-| `system/` | SDDM, sessão Wayland e wrapper `start-hyprland` |
+| `system/` | SDDM, sessão Wayland e wrapper `hyprland-session` |
 | `sddm/themes/noc-sddm/` | Tema SDDM minimalista personalizado |
 
 ---
