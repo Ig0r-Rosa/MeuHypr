@@ -1,0 +1,18 @@
+{
+    "label" : "logout",
+    "action" : "$HOME/.config/hypr/scripts/PowerLogout.sh",
+    "text" : "Logout",
+    "keybind" : "e"
+}
+{
+    "label" : "reboot",
+    "action" : "$HOME/.config/hypr/scripts/PowerReboot.sh",
+    "text" : "Reiniciar",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "$HOME/.config/hypr/scripts/PowerShutdown.sh",
+    "text" : "Desligar",
+    "keybind" : "s"
+}

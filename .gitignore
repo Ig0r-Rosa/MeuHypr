@@ -1,0 +1,9 @@
+# Arquivos locais / gerados
+*.swp
+*~
+.DS_Store
+
+# Wallpapers (não versionados de propósito)
+**/.wallpaper_current
+**/.wallpaper_modified
+**/Pictures/wallpapers/

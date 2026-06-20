@@ -1,0 +1,41 @@
+/**
+ * Super+Alt+E — emojis (altura limitada, scroll interno).
+ */
+
+@import "wallust/colors-rofi.rasi"
+@import "config-theme-base.rasi"
+
+configuration {
+    modi:            "dmenu";
+    font:            "JetBrains Mono 11";
+    location:        0;
+    anchor:          1;
+    width:           62;
+    lines:           12;
+    fixed-num-lines: true;
+    hide-scrollbar:  true;
+    scroll-method:   1;
+    sorting-method:  "normal";
+    click-to-exit:   true;
+    hover-select:    true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+}
+
+inputbar {
+    children: [ entry ];
+    padding:  20px 24px 12px;
+    spacing:  0px;
+}
+
+entry {
+    placeholder: "Emoji — Enter para copiar";
+    expand:      true;
+}
+
+listview {
+    lines:        12;
+    fixed-height: true;
+    dynamic:      false;
+    padding:      4px 20px 16px;
+}

@@ -1,0 +1,499 @@
+/* Painel de notificações — padrão visual KooLit (Rofi / Hyprland) */
+
+/* Janela de fundo — alpha mínimo para capturar clique (Hyprland ignora 100% transparente) */
+blankwindow,
+.blank-window {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+@define-color border-window   #6b1414;
+@define-color border-active   #9a2020;
+@define-color cc-bg           rgba(1, 1, 2, 0.58);
+@define-color noti-bg         rgba(1, 1, 2, 0.62);
+@define-color noti-bg-opaque  rgba(12, 12, 14, 0.92);
+@define-color noti-bg-alt     rgba(31, 4, 4, 0.45);
+@define-color noti-bg-hover   rgba(107, 20, 20, 0.35);
+@define-color noti-bg-hover-opaque rgba(40, 10, 10, 0.95);
+@define-color noti-bg-focus   rgba(107, 20, 20, 0.28);
+@define-color noti-border-color @border-window;
+@define-color noti-close-bg   rgba(107, 20, 20, 0.55);
+@define-color noti-close-bg-hover rgba(154, 32, 32, 0.85);
+@define-color text-color      #f3ecf5;
+@define-color text-color-dim  #bab0bd;
+@define-color text-color-disabled rgba(186, 176, 189, 0.55);
+@define-color mpris-overlay   rgba(1, 1, 2, 0.72);
+@define-color mpris-button-hover rgba(107, 20, 20, 0.45);
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", monospace;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: @text-color;
+}
+
+label {
+    color: @text-color;
+}
+
+/* GTK3/Adwaita — impede tema claro e cantos arredondados */
+.control-center button,
+.control-center scale,
+.control-center switch,
+.floating-notifications button {
+    background-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.control-center {
+    background-color: @cc-bg;
+    color: @text-color;
+    border-radius: 0;
+    border: 2px solid @border-window;
+}
+
+.notification-row {
+    outline: none;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+    background: @noti-bg-focus;
+}
+
+.notification-row .notification-background {
+    padding: 4px 10px;
+}
+
+.notification-row .notification-background .close-button {
+    background: @noti-close-bg;
+    color: @text-color;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 4px;
+    margin-right: 4px;
+    box-shadow: none;
+    border: 1px solid @border-window;
+    min-width: 20px;
+    min-height: 20px;
+    font-size: 0.7rem;
+}
+
+.notification-row .notification-background .close-button:hover {
+    background: @noti-close-bg-hover;
+    border-color: @border-active;
+    transition: background 0.15s ease-in-out;
+}
+
+.notification-row .notification-background .notification {
+    border-radius: 0;
+    border: 1px solid @noti-border-color;
+    padding: 0;
+    transition: background 0.15s ease-in-out;
+    background: @noti-bg;
+    box-shadow: none;
+}
+
+.notification-row .notification-background .notification .notification-action,
+.notification-row .notification-background .notification .notification-default-action {
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    color: @text-color;
+    transition: background 0.15s ease-in-out;
+    min-height: 0;
+}
+
+.notification-row .notification-background .notification .notification-action:hover,
+.notification-row .notification-background .notification .notification-default-action:hover {
+    -gtk-icon-effect: none;
+    background: @noti-bg-hover;
+}
+
+.notification-row .notification-background .notification .notification-default-action {
+    border-radius: 0;
+}
+
+.notification-row .notification-background .notification .notification-default-action:not(:only-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content {
+    background: transparent;
+    border-radius: 0;
+    padding: 6px 8px;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .image {
+    -gtk-icon-effect: none;
+    border-radius: 0;
+    margin: 4px;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .app-icon {
+    -gtk-icon-effect: none;
+    margin: 4px;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .text-box .summary {
+    font-size: 0.82rem;
+    font-weight: 700;
+    background: transparent;
+    color: @text-color;
+    text-shadow: none;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .text-box .time,
+.control-center .control-center-list .notification .time,
+.floating-notifications .notification .time,
+.time {
+    opacity: 0;
+    font-size: 0;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
+    font-size: 0.78rem;
+    font-weight: 500;
+    background: transparent;
+    color: @text-color-dim;
+    text-shadow: none;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .body-image {
+    margin-top: 4px;
+    background-color: transparent;
+    border-radius: 0;
+    -gtk-icon-effect: none;
+}
+
+.notification-row .notification-background .notification .notification-action {
+    border-top: 1px solid @noti-border-color;
+    border-radius: 0;
+    border-right: 1px solid @noti-border-color;
+    padding: 4px 8px;
+    font-size: 0.72rem;
+    min-height: 26px;
+}
+
+.notification-row .notification-background .notification .notification-action:first-child {
+    border-bottom-left-radius: 0;
+}
+
+.notification-row .notification-background .notification .notification-action:last-child {
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.notification-group.collapsed .notification-row .notification {
+    background-color: @noti-bg-opaque;
+}
+
+.notification-group.collapsed:hover .notification-row:not(:only-child) .notification {
+    background-color: @noti-bg-hover-opaque;
+}
+
+/* ---- Painel de controle ---- */
+
+.control-center .control-center-list-placeholder {
+    opacity: 0.45;
+    color: @text-color-dim;
+}
+
+.control-center .control-center-list {
+    background: transparent;
+}
+
+.control-center .control-center-list .notification {
+    box-shadow: none;
+}
+
+.control-center .control-center-list .notification .notification-default-action:hover,
+.control-center .control-center-list .notification .notification-action:hover {
+    background-color: @noti-bg-hover;
+}
+
+.blank-window {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.floating-notifications {
+    background: transparent;
+}
+
+.floating-notifications .notification {
+    box-shadow: none;
+}
+
+/* ---- Widgets ---- */
+
+.widget-title {
+    color: @text-color;
+    margin: 6px 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.widget-title > button {
+    font-size: 0.68rem;
+    color: @text-color;
+    text-shadow: none;
+    background: @noti-bg-alt;
+    border: 1px solid @border-window;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 3px 8px;
+    min-height: 22px;
+}
+
+.widget-title > button:hover {
+    background: @noti-bg-hover;
+    border-color: @border-active;
+}
+
+.widget-dnd {
+    color: @text-color;
+    margin: 6px 8px;
+    font-size: 0.78rem;
+}
+
+.widget-dnd > switch {
+    font-size: initial;
+    border-radius: 0;
+    background: @noti-bg-alt;
+    border: 1px solid @border-window;
+    box-shadow: none;
+}
+
+.widget-dnd > switch:checked {
+    background: @border-active;
+}
+
+.widget-dnd > switch slider {
+    background: @text-color;
+    border-radius: 0;
+}
+
+.widget-label {
+    margin: 6px 8px;
+}
+
+.widget-label > label {
+    font-size: 0.82rem;
+    color: @text-color-dim;
+}
+
+.widget-mpris .widget-mpris-player {
+    padding: 10px;
+    margin: 8px 10px;
+    background-color: @mpris-overlay;
+    border-radius: 0;
+    border: 1px solid @border-window;
+    box-shadow: none;
+}
+
+.widget-mpris .widget-mpris-player button:hover {
+    background: @mpris-button-hover;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-album-art {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-title {
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: @text-color;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-subtitle {
+    font-size: 0.72rem;
+    color: @text-color-dim;
+}
+
+.widget-mpris .widget-mpris-player > box > button {
+    border-radius: 0;
+}
+
+.widget-mpris .widget-mpris-player > box > button:hover {
+    background-color: @mpris-button-hover;
+}
+
+.widget-mpris > box > button {
+    border-radius: 0;
+}
+
+.widget-buttons-grid {
+    padding: 0;
+    margin: 6px 6px;
+    border-radius: 0;
+    background-color: @noti-bg-alt;
+    border: 1px solid @border-window;
+    color: @text-color;
+}
+
+.widget-buttons-grid > flowbox {
+    margin: 0;
+    padding: 0;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild {
+    margin: 0;
+    padding: 0;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    background-color: @noti-bg;
+    background-image: none;
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid @border-window;
+    color: @text-color;
+    font-family: "Noto Color Emoji", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    min-height: 44px;
+    min-width: 105px;
+    box-shadow: none;
+    text-shadow: none;
+    -gtklabel-align: 0.5;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild:last-child > button {
+    border-right: none;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background-color: @noti-bg-hover;
+}
+
+.widget-menubar > box > .menu-button-bar > button,
+.topbar-buttons > button {
+    border: none;
+    background: transparent;
+    border-radius: 0;
+}
+
+.widget-volume,
+.widget-backlight {
+    background-color: @noti-bg-alt;
+    padding: 6px 8px;
+    margin: 6px 8px;
+    border-radius: 0;
+    border: 1px solid @border-window;
+    font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", monospace;
+    font-size: 16px;
+    font-weight: 400;
+    color: @text-color;
+}
+
+.widget-volume > box > button,
+.widget-backlight > box > button {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.widget-volume scale trough,
+.widget-backlight scale trough {
+    background-color: rgba(255, 255, 255, 0.08);
+    background-image: none;
+    border-radius: 0;
+    min-height: 6px;
+}
+
+.widget-volume scale highlight,
+.widget-backlight scale highlight {
+    background-color: @border-active;
+    background-image: none;
+    border-radius: 0;
+}
+
+.widget-volume scale slider,
+.widget-backlight scale slider {
+    background-color: @text-color;
+    background-image: none;
+    border-radius: 0;
+    min-width: 12px;
+    min-height: 12px;
+}
+
+.per-app-volume {
+    background-color: @noti-bg;
+    padding: 4px 8px 6px;
+    margin: 0 8px 6px;
+    border-radius: 0;
+    border: 1px solid @border-window;
+    color: @text-color;
+}
+
+.widget-inhibitors {
+    margin: 6px 8px;
+    font-size: 0.95rem;
+}
+
+.widget-inhibitors > button {
+    font-size: 0.72rem;
+    color: @text-color;
+    background: @noti-bg-alt;
+    border: 1px solid @border-window;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 3px 8px;
+    min-height: 22px;
+}
+
+.widget-inhibitors > button:hover {
+    background: @noti-bg-hover;
+}
+
+.inline-reply-entry {
+    background: @noti-bg-alt;
+    color: @text-color;
+    caret-color: @text-color;
+    border: 1px solid @border-window;
+    border-radius: 0;
+}
+
+.inline-reply-button {
+    font-size: 0.68rem;
+    margin-left: 4px;
+    background: @noti-bg-alt;
+    border: 1px solid @border-window;
+    border-radius: 0;
+    color: @text-color;
+    padding: 2px 6px;
+    min-height: 22px;
+}
+
+.inline-reply-button:disabled {
+    background: transparent;
+    color: @text-color-disabled;
+    border-color: transparent;
+}
+
+.inline-reply-button:hover {
+    background: @noti-bg-hover;
+}
+
+tooltip,
+tooltip * {
+    opacity: 0;
+    background: transparent;
+    border: none;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
+}

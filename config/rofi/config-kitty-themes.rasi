@@ -1,0 +1,13 @@
+/**
+ * Seletor de temas Kitty — Enter pré-visualiza, Ctrl+S aplica.
+ */
+
+@import "config-menu.rasi"
+
+configuration {
+    kb-custom-1: "Control+s";
+}
+
+entry {
+    placeholder: "Tema Kitty...";
+}

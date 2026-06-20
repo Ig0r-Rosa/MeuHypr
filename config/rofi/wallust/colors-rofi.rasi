@@ -1,0 +1,19 @@
+/**
+ * Paleta Wallust + bordas vermelhas do Hyprland (UserDecorations.conf).
+ */
+
+* {
+    background:     rgba(1, 1, 2, 0.58);
+    background-alt: rgba(31, 4, 4, 0.45);
+    foreground:     #f3ecf5;
+    foreground-dim: #bab0bd;
+    border-window:  #6b1414;
+    border-active:  #9a2020;
+    selected:       rgba(107, 20, 20, 0.35);
+    alternate-normal-background: transparent;
+    alternate-normal-foreground:   #f3ecf5;
+    alternate-active-background:   transparent;
+    alternate-active-foreground:   #f3ecf5;
+    alternate-urgent-background:   transparent;
+    alternate-urgent-foreground:   #f3ecf5;
+}

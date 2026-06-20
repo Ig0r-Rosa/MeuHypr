@@ -1,0 +1,1 @@
+/home/igor/.config/hypr/scripts/RofiLauncherApps.py

@@ -1,0 +1,102 @@
+/**
+ * Estilo compartilhado dos menus Rofi (Super+D, Super+S, Super+H, etc.).
+ * Importar após wallust/colors-rofi.rasi.
+ */
+
+window {
+    transparency:     "real";
+    location:         center;
+    anchor:           center;
+    border:           2px;
+    border-color:     @border-window;
+    border-radius:    0;
+    background-color: @background;
+    padding:          0px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  0px;
+}
+
+inputbar {
+    children:         [ prompt, entry ];
+    padding:          20px 24px 12px;
+    spacing:          10px;
+    background-color: transparent;
+}
+
+prompt {
+    text-color: @foreground;
+    font:       "JetBrains Mono Bold 12";
+}
+
+entry {
+    placeholder-color: @foreground-dim;
+    text-color:        @foreground;
+    background-color:  @background-alt;
+    padding:           10px 16px;
+    border-radius:     0;
+    border:            1px;
+    border-color:      @border-window;
+}
+
+listview {
+    cycle:         false;
+    spacing:       6px;
+    padding:       4px 20px 20px;
+    fixed-height:  true;
+    scrollbar:     false;
+}
+
+element {
+    padding:          10px 12px;
+    border-radius:    0;
+    spacing:          8px;
+    background-color: transparent;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+element normal.urgent,
+element alternate.urgent,
+element normal.active,
+element alternate.active {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+element-icon {
+    size:             24px;
+    background-color: transparent;
+}
+
+element selected.normal element-icon,
+element selected.alternate element-icon,
+element selected.active element-icon,
+element selected.alternate.active element-icon {
+    size:             24px;
+    background-color: transparent;
+    opacity:          1;
+}
+
+element-text {
+    text-color:       @foreground;
+    background-color: transparent;
+}
+
+element selected.normal,
+element selected.alternate {
+    background-color: @selected;
+    border:           2px;
+    border-color:     @border-active;
+}
+
+element selected.normal element-text,
+element selected.alternate element-text {
+    text-color: @foreground;
+}

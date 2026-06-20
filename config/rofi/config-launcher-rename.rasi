@@ -1,0 +1,34 @@
+/**
+ * Renomear app (Ctrl+R no Super+D) — mesmo visual do Super+S.
+ */
+
+@import "wallust/colors-rofi.rasi"
+@import "config-theme-base.rasi"
+
+configuration {
+    modi:            "dmenu";
+    font:            "JetBrains Mono 11";
+    location:        0;
+    anchor:          1;
+    width:           52;
+    lines:           1;
+    fixed-num-lines: true;
+    hide-scrollbar:  true;
+    click-to-exit:   true;
+}
+
+mainbox {
+    children: [ inputbar ];
+    spacing:  0px;
+}
+
+inputbar {
+    children: [ entry ];
+    padding:  20px 24px;
+    spacing:  0px;
+}
+
+entry {
+    placeholder: "Nome exibido no menu...";
+    expand:      true;
+}

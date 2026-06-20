@@ -1,0 +1,31 @@
+/**
+ * Menu padrão — listas com filtro (Super+W, emoji, perfis, etc.).
+ */
+
+@import "wallust/colors-rofi.rasi"
+@import "config-theme-base.rasi"
+
+configuration {
+    modi:            "dmenu";
+    font:            "JetBrains Mono 11";
+    location:        0;
+    anchor:          1;
+    width:           60;
+    lines:           14;
+    fixed-num-lines: true;
+    hide-scrollbar:  true;
+    scroll-method:   1;
+    sorting-method:  "normal";
+    click-to-exit:   true;
+    hover-select:    true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+}
+
+entry {
+    placeholder: "Filtrar...";
+}
+
+listview {
+    lines: 14;
+}

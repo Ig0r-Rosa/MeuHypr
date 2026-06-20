@@ -1,0 +1,21 @@
+add_newline = false
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[username]
+show_always = true
+style_user = "bold cyan"
+
+[directory]
+style = "bold blue"
+truncation_length = 3
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[cmd_duration]
+min_time = 500
+style = "yellow"

@@ -1,0 +1,31 @@
+/**
+ * Super+H — lista de atalhos do Hyprland (somente consulta).
+ */
+
+@import "wallust/colors-rofi.rasi"
+@import "config-theme-base.rasi"
+
+configuration {
+    modi:            "dmenu";
+    font:            "JetBrains Mono 11";
+    location:        0;
+    anchor:          1;
+    width:           72;
+    lines:           18;
+    fixed-num-lines: true;
+    hide-scrollbar:  true;
+    scroll-method:   1;
+    sorting-method:  "normal";
+    click-to-exit:   true;
+    hover-select:    false;
+    me-select-entry: "";
+    me-accept-entry: "";
+}
+
+entry {
+    placeholder: "Filtrar atalhos...";
+}
+
+listview {
+    lines: 18;
+}

@@ -1,0 +1,74 @@
+/**
+ * Launcher Super+Shift+D — apps ocultos (sem slot fantasma).
+ */
+
+@import "wallust/colors-rofi.rasi"
+@import "config-theme-base.rasi"
+
+configuration {
+    show-icons:          true;
+    application-fallback-icon: "🗿";
+    font:                "JetBrains Mono 11";
+    location:            0;
+    anchor:              1;
+    width:               68;
+    lines:               4;
+    columns:             7;
+    fixed-num-lines:     true;
+    hide-scrollbar:      true;
+    terminal:            "kitty";
+    sorting-method:      "normal";
+    disable-history:     false;
+    scroll-method:       0;
+    hover-select:        true;
+    click-to-exit:       true;
+    me-select-entry:     "";
+    me-accept-entry:     "MousePrimary";
+    kb-move-char-forward: "Right";
+    kb-custom-1:         "Control+r";
+    kb-custom-2:         "Control+o";
+}
+
+entry {
+    placeholder: "Buscar apps ocultos...";
+    expand:      true;
+}
+
+inputbar {
+    children: [ entry ];
+    padding:  20px 24px 12px;
+    spacing:  0px;
+    border:        0px 0px 2px dash;
+    border-color:  #bab0bd;
+    margin-bottom: 2px;
+}
+
+listview {
+    flow:          horizontal;
+    columns:       7;
+    lines:         4;
+    spacing:       10px;
+    padding:       8px 20px 24px;
+    fixed-columns: true;
+}
+
+element {
+    orientation: vertical;
+    padding:     12px 8px;
+    spacing:     6px;
+}
+
+element-icon {
+    size:   52px;
+    margin: 0 0 4px 0;
+}
+
+element selected.normal element-icon {
+    size:    52px;
+    opacity: 1;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+}

@@ -1,0 +1,62 @@
+/**
+ * Menu de energia — Super+Alt+Delete (só emojis grandes).
+ */
+
+@import "wallust/colors-rofi.rasi"
+@import "config-theme-base.rasi"
+
+configuration {
+    show-icons:      false;
+    font:            "Noto Color Emoji 56";
+    location:        0;
+    anchor:          1;
+    width:           22;
+    lines:           1;
+    columns:         3;
+    fixed-num-lines: true;
+    hide-scrollbar:  true;
+    scroll-method:   0;
+    sorting-method:  "normal";
+    click-to-exit:   false;
+    hover-select:    true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+}
+
+window {
+    border:       2px;
+    border-color: @border-window;
+}
+
+mainbox {
+    children: [ listview ];
+    border:   0;
+}
+
+listview {
+    flow:          horizontal;
+    columns:       3;
+    lines:         1;
+    spacing:       8px;
+    padding:       20px 24px 24px;
+    fixed-columns: true;
+    border:        0;
+}
+
+element {
+    orientation: vertical;
+    padding:     16px 20px;
+    spacing:     0;
+    border:      2px;
+    border-color: transparent;
+}
+
+element selected.normal {
+    background-color: @selected;
+    border-color:     @border-active;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+}

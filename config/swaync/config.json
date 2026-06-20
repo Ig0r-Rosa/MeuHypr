@@ -1,0 +1,81 @@
+{
+    "$schema": "/etc/xdg/swaync/configSchema.json",
+    "positionX": "right",
+    "positionY": "top",
+    "control-center-positionX": "right",
+    "layer": "overlay",
+    "control-center-layer": "overlay",
+    "control-center-exclusive-zone": true,
+    "layer-shell": true,
+    "layer-shell-cover-screen": true,
+    "cssPriority": "user",
+    "control-center-margin-top": 5,
+    "control-center-margin-bottom": 0,
+    "control-center-margin-right": 8,
+    "control-center-margin-left": 0,
+    "notification-2fa-action": true,
+    "notification-inline-replies": false,
+    "notification-icon-size": 24,
+    "notification-body-image-height": 100,
+    "notification-body-image-width": 100,
+    "notification-window-width": 650,
+    "timeout": 4,
+    "timeout-low": 4,
+    "timeout-critical": 0,
+    "fit-to-screen": false,
+    "control-center-width": 450,
+    "control-center-height": 720,
+    "keyboard-shortcuts": true,
+    "image-visibility": "when-available",
+    "transition-time": 200,
+    "hide-on-clear": false,
+    "hide-on-action": true,
+    "text-empty": "Sem notificações",
+    "script-fail-notify": true,
+    "widgets": [
+        "buttons-grid",
+        "mpris",
+        "volume",
+        "title",
+        "notifications"
+    ],
+    "widget-config": {
+        "title": {
+            "text": "Notificações",
+            "clear-all-button": true,
+            "button-text": "Limpar"
+        },
+        "label": {
+            "max-lines": 1,
+            "text": "Notificação"
+        },
+        "mpris": {
+            "image-size": 72,
+            "image-radius": 0
+        },
+        "volume": {
+            "label": "\udb81\udd7e",
+            "empty-list-label": "Nenhum áudio ativo"
+        },
+        "buttons-grid": {
+            "actions": [
+                {
+                    "label": "🎮",
+                    "command": "bash -c $HOME/.config/hypr/scripts/GameMode.sh"
+                },
+                {
+                    "label": "🌀",
+                    "command": "bash -c $HOME/.config/hypr/scripts/WaybarBluetui.sh"
+                },
+                {
+                    "label": "🌐",
+                    "command": "bash -c $HOME/.config/hypr/scripts/WaybarNmtui.sh"
+                },
+                {
+                    "label": "⚡",
+                    "command": "bash -c $HOME/.config/hypr/scripts/Wlogout.sh"
+                }
+            ]
+        }
+    }
+}

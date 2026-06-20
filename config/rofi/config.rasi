@@ -1,0 +1,13 @@
+/**
+ * Config base do Rofi — temas específicos ficam em arquivos separados.
+ */
+
+@import "wallust/colors-rofi.rasi"
+
+configuration {
+    show-icons: true;
+    icon-theme: "Flat-Remix-Blue-Dark";
+    font:       "JetBrains Mono 11";
+    terminal:   "kitty";
+    click-to-exit: true;
+}
