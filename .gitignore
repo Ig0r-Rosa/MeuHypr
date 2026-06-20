@@ -2,6 +2,10 @@
 *.swp
 *~
 .DS_Store
+__pycache__/
+*.pyc
+config/rofi/.current_wallpaper
+config/hypr/.initial_startup_done
 
 # Wallpapers (não versionados de propósito)
 **/.wallpaper_current
