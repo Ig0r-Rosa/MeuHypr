@@ -68,8 +68,8 @@ def run_action(key: str) -> None:
     for opt_key, _emoji, cmd in POWER_OPTIONS:
         if opt_key != key:
             continue
-        # Logout em background — o script agenda a TTY antes do hyprctl exit.
-        run_script(Path(cmd), detach=(opt_key == "logout"))
+        # Logout na sessão Wayland ativa — hyprctl exige o env do Rofi (sem detach).
+        run_script(Path(cmd), detach=False)
         return
 
 

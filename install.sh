@@ -197,8 +197,8 @@ deploy_system_files() {
   log "Configurando sessão Hyprland e wrapper de ambiente..."
   ensure_start_hyprland_binary
   install -Dm755 "$SYSTEM_SRC/local-bin/hyprland-session.sh" /usr/local/bin/hyprland-session
-  install -Dm755 "$SYSTEM_SRC/local-bin/meuhypr-logout.sh" /usr/local/bin/meuhypr-logout
-  rm -f /usr/local/bin/meuhypr-logout-sddm /usr/local/bin/meuhypr-logout-vt
+  rm -f /usr/local/bin/meuhypr-logout /usr/local/bin/meuhypr-logout-sddm /usr/local/bin/meuhypr-logout-vt
+  rm -f /etc/sudoers.d/meuhypr-sddm-logout
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/share/wayland-sessions/hyprland.desktop
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/local/share/wayland-sessions/hyprland.desktop
 
@@ -207,13 +207,6 @@ deploy_system_files() {
   install -Dm644 "$SYSTEM_SRC/sddm.conf.d/10-gnome-default.conf" /etc/sddm.conf.d/10-gnome-default.conf
   install -d /usr/share/sddm/themes/noc-sddm
   rsync -a "$SDDM_THEME_SRC/" /usr/share/sddm/themes/noc-sddm/
-
-  log "Permissão de logout (reinicia SDDM via helper root)..."
-  install -Dm440 /dev/stdin /etc/sudoers.d/meuhypr-sddm-logout <<EOF
-# Logout Hyprland - helper root encerra sessao e reinicia SDDM.
-${TARGET_USER} ALL=(root) NOPASSWD: /usr/local/bin/meuhypr-logout
-EOF
-  visudo -cf /etc/sudoers.d/meuhypr-sddm-logout >/dev/null
 }
 
 finalize_config_permissions() {
