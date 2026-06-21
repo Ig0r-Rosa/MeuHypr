@@ -197,7 +197,8 @@ deploy_system_files() {
   log "Configurando sessão Hyprland e wrapper de ambiente..."
   ensure_start_hyprland_binary
   install -Dm755 "$SYSTEM_SRC/local-bin/hyprland-session.sh" /usr/local/bin/hyprland-session
-  install -Dm755 "$SYSTEM_SRC/local-bin/meuhypr-logout-sddm.sh" /usr/local/bin/meuhypr-logout-sddm
+  install -Dm755 "$SYSTEM_SRC/local-bin/meuhypr-logout-vt.sh" /usr/local/bin/meuhypr-logout-vt
+  rm -f /usr/local/bin/meuhypr-logout-sddm
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/share/wayland-sessions/hyprland.desktop
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/local/share/wayland-sessions/hyprland.desktop
 
@@ -207,10 +208,10 @@ deploy_system_files() {
   install -d /usr/share/sddm/themes/noc-sddm
   rsync -a "$SDDM_THEME_SRC/" /usr/share/sddm/themes/noc-sddm/
 
-  log "Permissão de logout (restart SDDM sem senha)..."
+  log "Permissão de logout (chvt greeter SDDM sem senha)..."
   install -Dm440 /dev/stdin /etc/sudoers.d/meuhypr-sddm-logout <<EOF
-# Logout Hyprland - helper root reinicia SDDM fora da sessao Wayland.
-${TARGET_USER} ALL=(root) NOPASSWD: /usr/local/bin/meuhypr-logout-sddm
+# Logout Hyprland - helper root troca para TTY do greeter SDDM.
+${TARGET_USER} ALL=(root) NOPASSWD: /usr/local/bin/meuhypr-logout-vt
 EOF
   visudo -cf /etc/sudoers.d/meuhypr-sddm-logout >/dev/null
 }

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Logout: encerra Hyprland e reinicia SDDM (greeter na tty2).
+# Logout: encerra Hyprland e volta ao greeter SDDM na TTY correta (sem reiniciar SDDM).
 
 session="${XDG_SESSION_ID:-self}"
 scripts_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-logout_helper="/usr/local/bin/meuhypr-logout-sddm"
+logout_helper="/usr/local/bin/meuhypr-logout-vt"
 
 # shellcheck source=/dev/null
 source "$scripts_dir/PowerActionGuard.sh"
@@ -21,9 +21,10 @@ sddm_vt() {
   echo "${vt:-2}"
 }
 
-schedule_sddm_restart() {
+schedule_greeter_switch() {
   [[ -x "$logout_helper" ]] || return 1
-  sudo -n "$logout_helper" 2>/dev/null || sudo "$logout_helper" 2>/dev/null
+  sudo -n env XDG_SESSION_ID="$session" "$logout_helper" 2>/dev/null \
+    || sudo env XDG_SESSION_ID="$session" "$logout_helper" 2>/dev/null
 }
 
 fallback_logout() {
@@ -37,7 +38,7 @@ if [[ -z "${ROFI_POWER_GUARDED:-}" ]]; then
   acquire_power_action_guard || exit 0
 fi
 
-if schedule_sddm_restart; then
+if schedule_greeter_switch; then
   hyprctl dispatch exit 0 2>/dev/null \
     || loginctl terminate-session "$session" 2>/dev/null \
     || true
