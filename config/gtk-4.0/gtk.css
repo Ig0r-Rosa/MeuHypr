@@ -1,3 +1,9 @@
+/* GTK4 / libadwaita — cantos retos (padrão MeuHypr / Hyprland) */
+
+:root {
+  --window-radius: 0px;
+}
+
 /* Sem botões na barra de título (GTK/libadwaita) */
 .titlebutton,
 .titlebutton.minimize,
@@ -17,20 +23,29 @@ headerbar windowcontrols button {
   -gtk-icon-source: none;
 }
 
-/* Diálogos GTK/libadwaita sem cantos arredondados */
+window,
+.background,
 dialog,
 messagedialog,
-.adw-message-dialog,
 .adw-dialog,
+.adw-message-dialog,
+.adw-alert-dialog,
+.adw-alert-dialog *,
+.adw-dialog *,
+.adw-message-dialog *,
 window.dialog,
 .alert-dialog {
   border-radius: 0;
 }
 
+.adw-alert-dialog .card,
 .adw-message-dialog .card,
-.adw-message-dialog box,
-.adw-alert-dialog,
+.adw-dialog .card,
 .adw-alert-dialog box,
-.dialog-vbox {
+.adw-message-dialog box,
+.adw-dialog box,
+.dialog-vbox,
+button,
+.button {
   border-radius: 0;
 }

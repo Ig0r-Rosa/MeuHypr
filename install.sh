@@ -40,7 +40,7 @@ install_apt_packages() {
     xdg-desktop-portal xdg-desktop-portal-gtk \
     qt5ct qt6ct qt-style-kvantum \
     nwg-displays nwg-look \
-    python3 python3-pip zsh fastfetch btop cava \
+    python3 python3-pip python3-nautilus zsh fastfetch btop cava \
     fonts-noto fonts-noto-color-emoji fonts-firacode \
     libnotify-bin imagemagick \
     gnome-themes-extra adwaita-icon-theme
@@ -156,6 +156,7 @@ deploy_user_configs() {
   rsync -a "$CONFIG_SRC/gtk-4.0/" "$TARGET_HOME/.config/gtk-4.0/"
   cp -a "$CONFIG_SRC/starship.toml" "$TARGET_HOME/.config/"
   cp -a "$CONFIG_SRC/mimeapps.list" "$TARGET_HOME/.config/"
+  cp -a "$CONFIG_SRC/xdg-terminals.list" "$TARGET_HOME/.config/"
 
   chown -R "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config" "$TARGET_HOME/Pictures"
 
@@ -165,11 +166,31 @@ deploy_user_configs() {
   done
 
   setup_gtk_bookmarks
+  setup_nautilus
   finalize_config_permissions
 
   # Placeholder de wallpaper (sem incluir imagens no repositório)
   touch "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
   chown "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+}
+
+install_nautilus_extension() {
+  log "Instalando extensão nautilus-open-any-terminal para $TARGET_USER..."
+  local schemas_dir="$TARGET_HOME/.local/share/glib-2.0/schemas"
+
+  sudo -u "$TARGET_USER" bash -lc "
+    pip3 install --user nautilus-open-any-terminal 2>/dev/null \
+      || pip3 install --user --break-system-packages nautilus-open-any-terminal
+  "
+
+  if [[ -d "$schemas_dir" ]]; then
+    sudo -u "$TARGET_USER" glib-compile-schemas "$schemas_dir"
+  fi
+}
+
+setup_nautilus() {
+  log "Aplicando preferências do Nautilus para $TARGET_USER..."
+  bash "$SCRIPT_DIR/config/hypr/scripts/setup-nautilus.sh" "$TARGET_USER"
 }
 
 setup_gtk_bookmarks() {
@@ -193,12 +214,22 @@ ensure_start_hyprland_binary() {
   cmake --install "$build_dir/start/build"
 }
 
+install_logout_helper() {
+  log "Instalando helper de logout (chvt para greeter SDDM)..."
+  install -Dm755 "$SYSTEM_SRC/local-bin/meuhypr-logout-vt.sh" /usr/local/bin/meuhypr-logout-vt
+  rm -f /usr/local/bin/meuhypr-logout /usr/local/bin/meuhypr-logout-sddm
+  install -Dm440 /dev/stdin /etc/sudoers.d/meuhypr-sddm-logout <<'EOF'
+# Logout Hyprland — troca para TTY do greeter SDDM após encerrar sessão.
+%sudo ALL=(root) NOPASSWD: /usr/local/bin/meuhypr-logout-vt
+EOF
+  visudo -cf /etc/sudoers.d/meuhypr-sddm-logout >/dev/null
+}
+
 deploy_system_files() {
   log "Configurando sessão Hyprland e wrapper de ambiente..."
   ensure_start_hyprland_binary
   install -Dm755 "$SYSTEM_SRC/local-bin/hyprland-session.sh" /usr/local/bin/hyprland-session
-  rm -f /usr/local/bin/meuhypr-logout /usr/local/bin/meuhypr-logout-sddm /usr/local/bin/meuhypr-logout-vt
-  rm -f /etc/sudoers.d/meuhypr-sddm-logout
+  install_logout_helper
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/share/wayland-sessions/hyprland.desktop
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/local/share/wayland-sessions/hyprland.desktop
 
@@ -247,6 +278,7 @@ main() {
   install_starship
   install_hypr_stack
   install_rofi_wayland
+  install_nautilus_extension
   deploy_user_configs
   deploy_system_files
   post_install_notes

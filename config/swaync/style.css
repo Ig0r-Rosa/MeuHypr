@@ -29,6 +29,7 @@ blankwindow,
     font-weight: 600;
     font-size: 0.85rem;
     color: @text-color;
+    border-radius: 0;
 }
 
 label {
@@ -36,6 +37,11 @@ label {
 }
 
 /* GTK3/Adwaita — impede tema claro e cantos arredondados */
+.notification-background {
+    border-radius: 0;
+    box-shadow: none;
+}
+
 .control-center button,
 .control-center scale,
 .control-center switch,
@@ -87,7 +93,15 @@ label {
     transition: background 0.15s ease-in-out;
 }
 
-.notification-row .notification-background .notification {
+.notification-row .notification-background .notification,
+.notification-row .notification-background .notification.low,
+.notification-row .notification-background .notification.normal,
+.notification-row .notification-background .notification.critical,
+.floating-notifications .notification,
+.floating-notifications .notification.critical,
+.control-center .control-center-list .notification,
+.control-center .control-center-list .notification.critical,
+.notification-group.critical .notification {
     border-radius: 0;
     border: 1px solid @noti-border-color;
     padding: 0;
@@ -230,8 +244,64 @@ label {
     background: transparent;
 }
 
-.floating-notifications .notification {
+/* Notificações flutuantes (centro — Nautilus, progresso, etc.) */
+.floating-notifications .notification-row .notification-background,
+.floating-notifications.background .notification-row .notification-background {
+    background: @noti-bg;
+    border: 1px solid @noti-border-color;
+    border-radius: 0;
     box-shadow: none;
+    padding: 4px 10px;
+}
+
+.floating-notifications .notification-row .notification-background .close-button {
+    background: @noti-close-bg;
+    color: @text-color;
+    border-radius: 0;
+    border: 1px solid @border-window;
+    box-shadow: none;
+}
+
+.floating-notifications .notification-row .notification-background .close-button:hover {
+    background: @noti-close-bg-hover;
+    border-color: @border-active;
+}
+
+.floating-notifications .notification-row .notification-background .notification,
+.floating-notifications .notification-row .notification-background .notification.critical,
+.floating-notifications .notification-row .notification-background .notification.low,
+.floating-notifications .notification-row .notification-background .notification.normal {
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+}
+
+.floating-notifications .notification-row .notification-background .notification .notification-default-action,
+.floating-notifications .notification-row .notification-background .notification .notification-default-action .notification-content,
+.floating-notifications .notification-row .notification-background .notification .notification-default-action .notification-content .image,
+.floating-notifications .notification-row .notification-background .notification .notification-default-action .notification-content .body-image,
+.floating-notifications .notification-row .notification-background .notification .notification-action,
+.floating-notifications .notification-row .notification-background .notification .notification-action:first-child,
+.floating-notifications .notification-row .notification-background .notification .notification-action:last-child {
+    border-radius: 0;
+}
+
+.floating-notifications .notification,
+.floating-notifications .notification.critical {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Notificações críticas/erro — sobrescreve cantos arredondados do tema padrão SwayNC/GTK */
+.notification-row .notification-background .notification.critical .notification-default-action,
+.notification-row .notification-background .notification.critical .notification-default-action .notification-content,
+.notification-row .notification-background .notification.critical .notification-default-action .notification-content .image,
+.notification-row .notification-background .notification.critical .notification-default-action .notification-content .body-image,
+.notification-row .notification-background .notification.critical .notification-action,
+.notification-group.critical,
+.notification-group.critical .notification-row .notification {
+    border-radius: 0;
 }
 
 /* ---- Widgets ---- */
