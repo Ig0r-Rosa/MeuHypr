@@ -77,18 +77,6 @@
 	"tooltip-format": "Check KooL Dots update\nIf available",
 },
 
-// Hypridle inhibitor
-"custom/hypridle": {
-	"format": "󱫗 ",
-	"return-type": "json",
-	"escape": true,
-	"exec-on-event": true,
-	"interval": 60,
-	"exec": "$HOME/.config/hypr/scripts/Hypridle.sh status",
-	"on-click": "$HOME/.config/hypr/scripts/Hypridle.sh toggle",
-	"on-click-right": "hyprlock"
-},
-
 "custom/keyboard": {
 	"exec": "$HOME/.config/hypr/scripts/KeyboardLayout.sh status",
 	"interval": 1,
@@ -116,13 +104,6 @@
 	"tooltip": true,
 	"tooltip-format": "Night light toggle",
 	"escape": false
-},
-
-"custom/lock": {
-	"format": "󰌾",
-	"on-click": "$HOME/.config/hypr/scripts/LockScreen.sh",
-	"tooltip": true,
-	"tooltip-format": "󰷛 Screen Lock",
 },
 
 "custom/menu": {

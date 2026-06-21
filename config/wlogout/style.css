@@ -45,13 +45,6 @@ button span {
 }
 
 
-#lock {
-    background-image: image(url("./icons/lock.png"));
-}
-#lock:hover {
-    background-image: image(url("./icons/lock-hover.png"));
-}
-
 #logout {
     background-image: image(url("./icons/logout.png"));
 }

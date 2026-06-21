@@ -94,12 +94,7 @@ install_hypr_stack() {
   make install
   cd ..
 
-  build_from_cmake https://github.com/hyprwm/hypridle.git hypridle
   build_from_cmake https://github.com/hyprwm/hyprsunset.git hyprsunset
-
-  if ! command -v hyprlock >/dev/null; then
-    build_from_cmake https://github.com/hyprwm/hyprlock.git hyprlock
-  fi
 
   if ! command -v swww >/dev/null; then
     log "Compilando swww..."

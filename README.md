@@ -10,7 +10,7 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 
 | Pasta | Conteúdo |
 |-------|----------|
-| `config/hypr/` | Hyprland, scripts, regras de janela, hypridle, hyprlock, wallust |
+| `config/hypr/` | Hyprland, scripts, regras de janela, wallust |
 | `config/waybar/` | Barra superior minimalista (Igor Essential) |
 | `config/rofi/` | Launcher Super+D, menu de energia, temas Wallust |
 | `config/swaync/` | Painel de notificações |
@@ -44,7 +44,7 @@ sudo ./install.sh
 O script:
 
 1. Instala pacotes APT (waybar, kitty, swww, swaync, etc.)
-2. Compila **Hyprland**, **hypridle**, **hyprsunset**, **hyprlock** e **Rofi Wayland**
+2. Compila **Hyprland**, **hyprsunset** e **Rofi Wayland**
 3. Instala **wallust**, **bluetui** (Cargo) e **starship**
 4. Copia configs para `~/.config/`
 5. Instala tema SDDM `noc-sddm` e sessão Hyprland
@@ -72,8 +72,6 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 | Pacote / binário | Função |
 |------------------|--------|
 | Hyprland | Compositor Wayland (compilado em `/usr/local/bin`) |
-| hypridle | Bloqueio automático após 10 min |
-| hyprlock | Tela de bloqueio |
 | hyprsunset | Filtro de luz noturna |
 | hyprctl | Controle do compositor |
 | xdg-desktop-portal-hyprland | Portals (screenshot, etc.) |
@@ -292,10 +290,10 @@ Definidos em `UserConfigs/01-UserDefaults.conf`:
 
 ---
 
-## Idle e bloqueio
+## Idle
 
-- **10 minutos** sem atividade → bloqueio (`hypridle` + `hyprlock`)
 - Brilho da tela fixo no máximo ao iniciar (`brightnessctl set 100%`)
+- Sem bloqueio de tela por inatividade
 - `swhkd` está **desabilitado** (interceptava a tecla Super)
 
 ---

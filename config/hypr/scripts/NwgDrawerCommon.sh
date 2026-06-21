@@ -13,7 +13,6 @@ nwg_drawer_build_args() {
     -is 72 \
     -spacing 28 \
     -ovl \
-    -pblock "$scripts_dir/LockScreen.sh" \
     -pbexit "hyprctl dispatch exit 0" \
     -pbsleep "systemctl suspend" \
     -pbreboot "systemctl reboot" \
