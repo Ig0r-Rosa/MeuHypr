@@ -17,7 +17,7 @@ configuration {
     hide-scrollbar:  true;
     scroll-method:   0;
     sorting-method:  "normal";
-    click-to-exit:   false;
+    click-to-exit:   true;
     hover-select:    true;
     me-select-entry: "";
     me-accept-entry: "MousePrimary";
@@ -48,13 +48,10 @@ element {
     padding:     16px 20px;
     spacing:     0;
     border:      2px;
-    border-color: transparent;
+    border-radius: 8px;
 }
 
-element selected.normal {
-    background-color: @selected;
-    border-color:     @border-active;
-}
+/* Cores vêm do theme por linha (RofiPower.py) — theme-base zera active/urgent. */
 
 element-text {
     horizontal-align: 0.5;

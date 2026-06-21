@@ -69,10 +69,12 @@ while true; do
     theme="$hidden_theme"
   fi
 
+  # Slot 0 = spacer interno; índice 1 = primeiro app visível.
   "$rofi_bin" \
     -show launcher \
     -config "$theme" \
     -pid "$launcher_pid" \
+    -selected-row 1 \
     "$@"
 
   [[ -f "$action_file" ]] || break

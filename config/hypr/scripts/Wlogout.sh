@@ -23,4 +23,5 @@ reset_power_action_guard
 "$rofi_bin" \
   -show power \
   -modi "power:$power_py" \
-  -config "$theme"
+  -config "$theme" \
+  -click-to-exit

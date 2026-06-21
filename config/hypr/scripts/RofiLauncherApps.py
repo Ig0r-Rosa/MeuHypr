@@ -6,7 +6,6 @@ from __future__ import annotations
 import json
 import os
 import re
-import shutil
 import subprocess
 import sys
 from configparser import ConfigParser
@@ -22,6 +21,16 @@ ICON_CACHE_DIR = Path(
 ) / "rofi-launcher-icons"
 MOAI_EMOJI = "🗿"
 MOAI_ICON_FILE = ICON_CACHE_DIR / "_moai_fallback.png"
+TRANSPARENT_ICON_FILE = ICON_CACHE_DIR / "_transparent.png"
+# Igual ao element-icon do config-launcher.rasi (52px).
+ICON_TARGET_SIZE = 52
+# Grid do launcher (config-launcher.rasi): 7 colunas × 4 linhas.
+GRID_COLUMNS = 7
+GRID_LINES = 4
+SLOTS_PER_PAGE = GRID_COLUMNS * GRID_LINES
+# Cantos vazios por página: 1ª/última coluna da 1ª e da última linha.
+_PAGE_LAST_ROW = (GRID_LINES - 1) * GRID_COLUMNS
+PAGE_CORNER_SLOTS = frozenset({0, GRID_COLUMNS - 1, _PAGE_LAST_ROW, SLOTS_PER_PAGE - 1})
 
 
 def load_state() -> dict:
@@ -205,9 +214,9 @@ def has_desktop_icon(app: dict) -> bool:
     return bool((app.get("icon") or "").strip())
 
 
-def ensure_moai_icon(size: int = 128) -> str:
+def ensure_moai_icon(size: int = ICON_TARGET_SIZE) -> str:
     """PNG com 🗿 — fallback quando o ícone real não carrega."""
-    if MOAI_ICON_FILE.is_file() and validate_png(MOAI_ICON_FILE):
+    if validate_png(MOAI_ICON_FILE, size=size):
         return str(MOAI_ICON_FILE)
 
     ICON_CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -242,19 +251,59 @@ def ensure_moai_icon(size: int = 128) -> str:
     return str(MOAI_ICON_FILE)
 
 
+def ensure_transparent_icon(size: int = ICON_TARGET_SIZE) -> str:
+    """PNG transparente 52×52 — ocupa slot 0 e evita bug async do Rofi."""
+    if validate_png(TRANSPARENT_ICON_FILE, size=size):
+        return str(TRANSPARENT_ICON_FILE)
+
+    ICON_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        import gi
+
+        gi.require_version("GdkPixbuf", "2.0")
+        import cairo  # noqa: PLC0415
+        from gi.repository import GdkPixbuf  # noqa: PLC0415
+
+        surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, size, size)
+        ctx = cairo.Context(surface)
+        ctx.set_source_rgba(0, 0, 0, 0)
+        ctx.paint()
+        surface.write_to_png(str(TRANSPARENT_ICON_FILE))
+        fsync_file(TRANSPARENT_ICON_FILE)
+        if validate_png(TRANSPARENT_ICON_FILE, size=size):
+            return str(TRANSPARENT_ICON_FILE)
+    except Exception:
+        pass
+
+    return ensure_moai_icon(size)
+
+
 def icon_cache_file(app_id: str) -> Path:
     safe = app_id.replace("/", "_")
     return ICON_CACHE_DIR / f"{safe}.png"
 
 
-def validate_png(path: Path) -> bool:
-    """Confirma que o PNG existe e pode ser lido."""
+def _pixbuf_module():
+    """GdkPixbuf com versão fixada — evita PyGIWarning."""
+    import gi
+
+    gi.require_version("GdkPixbuf", "2.0")
+    from gi.repository import GdkPixbuf  # noqa: PLC0415
+
+    return GdkPixbuf
+
+
+def validate_png(path: Path, *, size: int | None = None) -> bool:
+    """Confirma que o PNG existe, é legível e (opcional) tem o tamanho esperado."""
     if not path.is_file() or path.stat().st_size == 0:
         return False
     try:
-        from gi.repository import GdkPixbuf  # noqa: PLC0415
-
-        GdkPixbuf.Pixbuf.new_from_file(str(path))
+        pixbuf = _pixbuf_module().Pixbuf.new_from_file(str(path))
+        if size is not None:
+            return (
+                pixbuf.get_width() == size
+                and pixbuf.get_height() == size
+            )
         return True
     except Exception:
         return False
@@ -265,27 +314,32 @@ def fsync_file(path: Path) -> None:
         os.fsync(handle.fileno())
 
 
-def write_png_from_source(src: Path, cache: Path, size: int = 128) -> bool:
-    """Converte/copia origem para PNG estável no cache."""
+def write_png_from_source(
+    src: Path,
+    cache: Path,
+    size: int = ICON_TARGET_SIZE,
+) -> bool:
+    """Redimensiona qualquer origem para PNG estável no cache (sempre size×size)."""
     ICON_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     try:
-        if src.suffix.lower() in {".svg", ".xpm"}:
-            from gi.repository import GdkPixbuf  # noqa: PLC0415
-
-            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(str(src), size, size)
-            pixbuf.savev(str(cache), "png", [], [])
-        else:
-            shutil.copy2(src, cache)
+        GdkPixbuf = _pixbuf_module()
+        pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(
+            str(src),
+            size,
+            size,
+            True,
+        )
+        pixbuf.savev(str(cache), "png", [], [])
         fsync_file(cache)
-        return validate_png(cache)
-    except OSError:
+        return validate_png(cache, size=size)
+    except (OSError, Exception):
         return False
 
 
 def materialize_icon(
     icon: str,
     app_id: str,
-    size: int = 128,
+    size: int = ICON_TARGET_SIZE,
     *,
     force: bool = False,
 ) -> str:
@@ -308,37 +362,49 @@ def materialize_icon(
         not force
         and cache.is_file()
         and cache.stat().st_mtime >= src_mtime
-        and validate_png(cache)
+        and validate_png(cache, size=size)
     ):
         return str(cache)
 
     if write_png_from_source(src, cache, size):
         return str(cache)
 
-    if src.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".ico"}:
-        return str(src)
-
     return "application-x-executable"
 
 
 def icon_field(icon: str, app_id: str) -> str:
-    """Retorna PNG do app ou 🗿 quando o ícone não puder ser carregado."""
-    moai = ensure_moai_icon()
-    if not (icon or "").strip():
-        return moai
+    """Um ícone por linha — tema GTK (como drun) ou PNG 52px cacheado."""
+    raw = (icon or "").strip()
+    if not raw:
+        return ensure_moai_icon()
 
-    path = materialize_icon(icon, app_id)
-    if path.startswith("/"):
-        candidate = Path(path)
-        if candidate.is_file() and validate_png(candidate):
-            return path
+    source = resolve_icon_path(raw)
+    if not source.startswith("/"):
+        return source
 
-    return moai
+    cached = materialize_icon(raw, app_id, size=ICON_TARGET_SIZE)
+    if cached.startswith("/"):
+        candidate = Path(cached)
+        if candidate.is_file() and validate_png(candidate, size=ICON_TARGET_SIZE):
+            return cached
+
+    return ensure_moai_icon()
+
+
+def touch_icon_cache() -> None:
+    """Pré-carrega PNGs na memória antes do Rofi abrir."""
+    ensure_transparent_icon()
+    ensure_moai_icon()
+    for png in ICON_CACHE_DIR.glob("*.png"):
+        try:
+            _pixbuf_module().Pixbuf.new_from_file(str(png))
+        except Exception:
+            pass
 
 
 def warm_icons(show_hidden: bool) -> None:
-    """Pré-gera PNGs antes do Rofi abrir; 1º item com force evita slot 0 vazio."""
-    ensure_moai_icon()
+    """Pré-gera PNGs 52px antes do Rofi abrir."""
+    touch_icon_cache()
     state = load_state()
     apps = scan_apps()
     hidden_ids = set(state["hidden"])
@@ -349,9 +415,62 @@ def warm_icons(show_hidden: bool) -> None:
     pool = sorted(pool, key=lambda a: sort_key(a, state))
     for app in pool:
         if has_desktop_icon(app):
-            materialize_icon(app["icon"], app["id"])
+            materialize_icon(app["icon"], app["id"], size=ICON_TARGET_SIZE)
     if pool and has_desktop_icon(pool[0]):
-        materialize_icon(pool[0]["icon"], pool[0]["id"], force=True)
+        materialize_icon(
+            pool[0]["icon"],
+            pool[0]["id"],
+            size=ICON_TARGET_SIZE,
+            force=True,
+        )
+    touch_icon_cache()
+
+
+def is_corner_slot(slot: int) -> bool:
+    """True nos 4 cantos de cada página do grid."""
+    return (slot % SLOTS_PER_PAGE) in PAGE_CORNER_SLOTS
+
+
+def emit_grid_pad(slot: int) -> None:
+    """Célula transparente — absorve bug async do Rofi nos cantos do grid."""
+    emit_row(
+        f"\x01gridpad-{slot}",
+        [
+            f"icon\x1f{ensure_transparent_icon()}",
+            "display\x1f",
+            "meta\x1fgridpad",
+            "info\x1f",
+            "nonselectable\x1ftrue",
+        ],
+    )
+
+
+def emit_apps_in_grid(pool: list[dict], state: dict) -> None:
+    """Apps nos slots úteis; cantos de cada página ficam vazios."""
+    app_i = 0
+    slot = 0
+
+    while app_i < len(pool):
+        if is_corner_slot(slot):
+            emit_grid_pad(slot)
+        else:
+            emit_app(pool[app_i], state)
+            app_i += 1
+        slot += 1
+
+    if not pool or slot % SLOTS_PER_PAGE == 0:
+        return
+
+    page_end = (slot // SLOTS_PER_PAGE + 1) * SLOTS_PER_PAGE
+    while slot < page_end:
+        emit_grid_pad(slot)
+        slot += 1
+
+
+def emit_apps_flat(pool: list[dict], state: dict) -> None:
+    """Lista contínua — usada durante a busca (sem cantos reservados)."""
+    for app in pool:
+        emit_app(app, state)
 
 
 def emit_header(
@@ -440,8 +559,10 @@ def emit_list(
         )
         return
 
-    for app in pool:
-        emit_app(app, state)
+    if query.strip():
+        emit_apps_flat(pool, state)
+    else:
+        emit_apps_in_grid(pool, state)
 
 
 def hide_app(state: dict, app_id: str) -> None:

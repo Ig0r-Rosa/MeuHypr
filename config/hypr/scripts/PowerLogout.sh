@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Encerra Hyprland e devolve o controle ao SDDM na TTY correta.
+# Encerra Hyprland e reinicia o SDDM na TTY do greeter (fallback: chvt).
 
 session="${XDG_SESSION_ID:-self}"
 mode="${1:-}"
@@ -41,8 +41,17 @@ active_vt() {
 }
 
 try_chvt() {
-  local vt="$1"
-  chvt "$vt" 2>/dev/null || true
+  chvt "$1" 2>/dev/null || true
+}
+
+on_sddm_tty() {
+  [[ "$(active_vt)" == "$1" ]]
+}
+
+restart_sddm() {
+  systemctl is-active --quiet sddm 2>/dev/null || return 1
+  sudo -n systemctl restart sddm 2>/dev/null \
+    || sudo systemctl restart sddm 2>/dev/null
 }
 
 kill_stuck_session() {
@@ -63,48 +72,45 @@ kill_stuck_session() {
   [[ "$state" != "active" ]]
 }
 
-on_sddm_tty() {
-  local target="$1"
-  [[ "$(active_vt)" == "$target" ]]
+hyprland_stopped() {
+  pgrep -x Hyprland >/dev/null && return 1
+  return 0
+}
+
+finish_logout() {
+  restart_sddm && return 0
+  try_chvt "$(sddm_vt)"
+  on_sddm_tty "$(sddm_vt)"
 }
 
 run_logout_watchdog() {
-  local vt attempt hyprland_gone=0
+  local attempt stuck=0
 
   sleep "$TTY_SWITCH_DELAY"
 
   for ((attempt = 1; attempt <= WATCHDOG_ATTEMPTS; attempt++)); do
-    vt=$(sddm_vt)
-    try_chvt "$vt"
-
-    if ! pgrep -x Hyprland >/dev/null; then
-      hyprland_gone=1
+    if hyprland_stopped; then
+      stuck=1
     elif kill_stuck_session "$attempt"; then
-      hyprland_gone=1
+      stuck=1
     fi
 
-    if on_sddm_tty "$vt" && (( hyprland_gone || attempt >= 4 )); then
-      return 0
+    # Hyprland sumiu ou travou — reinicia SDDM (como após reboot).
+    if (( stuck || attempt >= 20 )); then
+      finish_logout && return 0
     fi
 
     sleep "$WATCHDOG_INTERVAL"
   done
 
-  try_chvt "$(sddm_vt)"
-  return 1
+  finish_logout
 }
 
 start_logout_watchdog() {
   setsid env XDG_SESSION_ID="$session" "$0" --watchdog </dev/null >/dev/null 2>&1 &
 }
 
-if [[ "$mode" == "--watchdog" ]]; then
-  run_logout_watchdog
-  exit $?
-fi
-
-# Compatibilidade com invocações antigas.
-if [[ "$mode" == "--switch-tty" || "$mode" == "--fallback" ]]; then
+if [[ "$mode" == "--watchdog" || "$mode" == "--switch-tty" || "$mode" == "--fallback" ]]; then
   run_logout_watchdog
   exit $?
 fi

@@ -202,6 +202,13 @@ deploy_system_files() {
   install -Dm644 "$SYSTEM_SRC/sddm.conf.d/10-gnome-default.conf" /etc/sddm.conf.d/10-gnome-default.conf
   install -d /usr/share/sddm/themes/noc-sddm
   rsync -a "$SDDM_THEME_SRC/" /usr/share/sddm/themes/noc-sddm/
+
+  log "Permissão de logout (restart SDDM sem senha)..."
+  install -Dm440 /dev/stdin /etc/sudoers.d/meuhypr-sddm-logout <<EOF
+# Logout Hyprland — PowerLogout.sh reinicia o greeter na TTY correta.
+${TARGET_USER} ALL=(root) NOPASSWD: /usr/bin/systemctl restart sddm
+EOF
+  visudo -cf /etc/sudoers.d/meuhypr-sddm-logout >/dev/null
 }
 
 setup_directories_and_permissions() {
