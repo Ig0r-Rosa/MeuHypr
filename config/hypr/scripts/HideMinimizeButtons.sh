@@ -4,6 +4,7 @@
 LAYOUT=":"
 PID_FILE="${XDG_CACHE_HOME:-$HOME/.cache}/block-minimize.pid"
 LOG="${XDG_CACHE_HOME:-$HOME/.cache}/block-minimize.log"
+scripts_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 apply_gtk_layout() {
   gsettings set org.gnome.desktop.wm.preferences button-layout "$LAYOUT" 2>/dev/null || true
@@ -30,29 +31,7 @@ apply_gtk_layout() {
 }
 
 install_gtk_css() {
-  local css='/* Sem botões na barra de título (GTK/libadwaita) */
-.titlebutton,
-.titlebutton.minimize,
-.titlebutton.maximize,
-.titlebutton.close,
-button.minimize,
-button.maximize,
-button.close,
-windowcontrols button,
-headerbar windowcontrols button {
-  opacity: 0;
-  min-width: 0;
-  min-height: 0;
-  padding: 0;
-  margin: 0;
-  border: none;
-  -gtk-icon-source: none;
-}'
-
-  for gtk_dir in "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-4.0"; do
-    mkdir -p "$gtk_dir"
-    printf '%s\n' "$css" >"$gtk_dir/gtk.css"
-  done
+  "$scripts_dir/ApplyGtkCss.sh" 2>/dev/null || true
 }
 
 patch_brave_prefs() {

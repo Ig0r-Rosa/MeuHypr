@@ -143,6 +143,7 @@ deploy_user_configs() {
   rsync -a --delete \
     --exclude='.wallpaper_current' \
     --exclude='.wallpaper_modified' \
+    --exclude='monitors.json' \
     "$CONFIG_SRC/hypr/" "$TARGET_HOME/.config/hypr/"
 
   rsync -a "$CONFIG_SRC/waybar/" "$TARGET_HOME/.config/waybar/"
@@ -154,6 +155,9 @@ deploy_user_configs() {
 
   rsync -a --exclude='bookmarks' "$CONFIG_SRC/gtk-3.0/" "$TARGET_HOME/.config/gtk-3.0/"
   rsync -a "$CONFIG_SRC/gtk-4.0/" "$TARGET_HOME/.config/gtk-4.0/"
+  mkdir -p "$TARGET_HOME/.config/hypr/assets"
+  cp -a "$CONFIG_SRC/gtk-3.0/gtk.css" "$TARGET_HOME/.config/hypr/assets/gtk-3.0.css"
+  cp -a "$CONFIG_SRC/gtk-4.0/gtk.css" "$TARGET_HOME/.config/hypr/assets/gtk-4.0.css"
   cp -a "$CONFIG_SRC/starship.toml" "$TARGET_HOME/.config/"
   cp -a "$CONFIG_SRC/mimeapps.list" "$TARGET_HOME/.config/"
   cp -a "$CONFIG_SRC/xdg-terminals.list" "$TARGET_HOME/.config/"
@@ -172,6 +176,11 @@ deploy_user_configs() {
   # Placeholder de wallpaper (sem incluir imagens no repositório)
   touch "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
   chown "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+  if [[ ! -f "$TARGET_HOME/.config/hypr/wallpaper_effects/monitors.json" ]]; then
+    cp -a "$CONFIG_SRC/hypr/wallpaper_effects/monitors.json.example" \
+      "$TARGET_HOME/.config/hypr/wallpaper_effects/monitors.json"
+    chown "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config/hypr/wallpaper_effects/monitors.json"
+  fi
 }
 
 install_nautilus_extension() {

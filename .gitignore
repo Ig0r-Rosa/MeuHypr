@@ -10,4 +10,5 @@ config/hypr/.initial_startup_done
 # Wallpapers (não versionados de propósito)
 **/.wallpaper_current
 **/.wallpaper_modified
+**/monitors.json
 **/Pictures/wallpapers/
