@@ -19,43 +19,13 @@ POWER_OPTIONS = (
 )
 
 
-# Cores de fundo: (normal, selecionado/hover)
-POWER_COLORS = {
-    "logout": ("#16a34a", "#22c55e"),
-    "reboot": ("#ca8a04", "#eab308"),
-    "shutdown": ("#dc2626", "#ef4444"),
-}
-
-
-def row_theme(normal: str, selected: str) -> str:
-    """Snippet de tema por botão — evita conflito com active/urgent do theme-base."""
-    return (
-        f"element {{ background-color: {normal}; border-color: {normal}; "
-        f"border-radius: 8px; }} "
-        f"element selected.normal {{ background-color: {selected}; "
-        f"border-color: @border-active; border-radius: 8px; }}"
-    )
-
-
 def emit_row(key: str, emoji: str) -> None:
-    """Emite uma opção com emoji e cor de fundo própria."""
-    normal, selected = POWER_COLORS[key]
-    emit_row_fields(
-        key,
-        [
-            f"display\x1f{emoji}",
-            f"info\x1f{key}",
-            f"theme\x1f{row_theme(normal, selected)}",
-        ],
-    )
-
-
-def emit_row_fields(key: str, fields: list[str]) -> None:
-    sys.stdout.write(f"{key}\0" + "\x1f".join(fields) + "\n")
+    """Emite uma opção — apenas o emoji no display."""
+    sys.stdout.write(f"{key}\0display\x1f{emoji}\x1finfo\x1f{key}\n")
 
 
 def emit_list() -> None:
-    """Logout (verde), reboot (amarelo) e shutdown (vermelho)."""
+    """Logout, reboot e shutdown — três colunas com emoji grande."""
     for key, emoji, _cmd in POWER_OPTIONS:
         emit_row(key, emoji)
 

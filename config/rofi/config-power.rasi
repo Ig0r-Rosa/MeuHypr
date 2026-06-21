@@ -48,10 +48,13 @@ element {
     padding:     16px 20px;
     spacing:     0;
     border:      2px;
-    border-radius: 8px;
+    border-color: transparent;
 }
 
-/* Cores vêm do theme por linha (RofiPower.py) — theme-base zera active/urgent. */
+element selected.normal {
+    background-color: @selected;
+    border-color:     @border-active;
+}
 
 element-text {
     horizontal-align: 0.5;
