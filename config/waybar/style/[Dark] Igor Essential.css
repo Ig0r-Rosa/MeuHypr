@@ -10,6 +10,26 @@ window#waybar {
   background: transparent;
   color: #e0e0e0;
   min-height: 0;
+  border: none;
+  box-shadow: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+button:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+#clock {
+  background: transparent;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 tooltip {
@@ -83,20 +103,26 @@ tooltip {
   font-size: 18px;
 }
 
-#clock.module.time {
+#clock.time {
   font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", monospace;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
+  background: transparent;
+  border: none;
+  box-shadow: none;
   padding: 0 3px 0 2px;
   margin: 0;
 }
 
-#clock.module.date {
+#clock.date {
   font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", monospace;
   font-size: 13px;
   font-weight: 500;
   color: #9a9a9a;
+  background: transparent;
+  border: none;
+  box-shadow: none;
   padding: 0 6px 0 0;
   margin: 0;
 }
@@ -114,7 +140,8 @@ tooltip {
 }
 
 #workspaces button.active {
-  border-bottom: 2px solid #888;
+  border: none;
+  box-shadow: none;
 }
 
 #custom-launcher:hover,
