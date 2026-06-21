@@ -10,9 +10,9 @@ configuration {
     font:            "Noto Color Emoji 56";
     location:        0;
     anchor:          1;
-    width:           22;
+    width:           16;
     lines:           1;
-    columns:         3;
+    columns:         2;
     fixed-num-lines: true;
     hide-scrollbar:  true;
     scroll-method:   0;
@@ -35,7 +35,7 @@ mainbox {
 
 listview {
     flow:          horizontal;
-    columns:       3;
+    columns:       2;
     lines:         1;
     spacing:       8px;
     padding:       20px 24px 24px;

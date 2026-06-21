@@ -158,7 +158,7 @@
 	"on-click": "$HOME/.config/hypr/scripts/Wlogout.sh",
 	"on-click-right": "$HOME/.config/hypr/scripts/ChangeBlur.sh",
 	"tooltip": true,
-	"tooltip-format": "Left Click: Logout Menu\nRight Click: Change Blur",
+	"tooltip-format": "Clique: Reiniciar / Desligar\nBotão direito: Change Blur",
 },
 
 "custom/reboot": {

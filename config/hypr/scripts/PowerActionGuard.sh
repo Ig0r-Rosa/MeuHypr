@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Guarda atômica — impede reboot/shutdown/logout duplicados no menu de energia.
+# Guarda atômica — impede reboot/shutdown duplicados no menu de energia.
 
 _power_marker_path() {
   local uid="${UID:-$(id -u)}"

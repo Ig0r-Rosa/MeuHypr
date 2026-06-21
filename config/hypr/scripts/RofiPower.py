@@ -13,7 +13,6 @@ ACTION_MARKER = Path(f"/run/user/{os.getuid()}/rofi-power.action")
 
 # key, emoji exibido, comando
 POWER_OPTIONS = (
-    ("logout", "➡️", f"{SCRIPTS_DIR}/PowerLogout.sh"),
     ("reboot", "🔄", f"{SCRIPTS_DIR}/PowerReboot.sh"),
     ("shutdown", "❎", f"{SCRIPTS_DIR}/PowerShutdown.sh"),
 )
@@ -25,7 +24,7 @@ def emit_row(key: str, emoji: str) -> None:
 
 
 def emit_list() -> None:
-    """Logout, reboot e shutdown — três colunas com emoji grande."""
+    """Reiniciar e desligar — duas colunas com emoji grande."""
     for key, emoji, _cmd in POWER_OPTIONS:
         emit_row(key, emoji)
 
@@ -61,14 +60,14 @@ def run_script(script: Path, *, detach: bool = False) -> None:
 
 
 def run_action(key: str) -> None:
-    """Executa logout, reboot ou shutdown uma única vez."""
+    """Executa reboot ou shutdown uma única vez."""
     if not acquire_action_once():
         return
 
     for opt_key, _emoji, cmd in POWER_OPTIONS:
         if opt_key != key:
             continue
-        # Logout na sessão Wayland ativa — hyprctl exige o env do Rofi (sem detach).
+        # Reiniciar/desligar — executa na sessão ativa (sem detach).
         run_script(Path(cmd), detach=False)
         return
 
