@@ -194,6 +194,7 @@ deploy_system_files() {
   log "Configurando sessão Hyprland e wrapper de ambiente..."
   ensure_start_hyprland_binary
   install -Dm755 "$SYSTEM_SRC/local-bin/hyprland-session.sh" /usr/local/bin/hyprland-session
+  install -Dm755 "$SYSTEM_SRC/local-bin/meuhypr-logout-sddm.sh" /usr/local/bin/meuhypr-logout-sddm
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/share/wayland-sessions/hyprland.desktop
   install -Dm644 "$SYSTEM_SRC/wayland-sessions/hyprland.desktop" /usr/local/share/wayland-sessions/hyprland.desktop
 
@@ -205,8 +206,8 @@ deploy_system_files() {
 
   log "Permissão de logout (restart SDDM sem senha)..."
   install -Dm440 /dev/stdin /etc/sudoers.d/meuhypr-sddm-logout <<EOF
-# Logout Hyprland — PowerLogout.sh reinicia o greeter na TTY correta.
-${TARGET_USER} ALL=(root) NOPASSWD: /usr/bin/systemctl restart sddm
+# Logout Hyprland - helper root reinicia SDDM fora da sessao Wayland.
+${TARGET_USER} ALL=(root) NOPASSWD: /usr/local/bin/meuhypr-logout-sddm
 EOF
   visudo -cf /etc/sudoers.d/meuhypr-sddm-logout >/dev/null
 }
