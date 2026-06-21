@@ -146,9 +146,11 @@ deploy_user_configs() {
     "$CONFIG_SRC/hypr/" "$TARGET_HOME/.config/hypr/"
 
   rsync -a "$CONFIG_SRC/waybar/" "$TARGET_HOME/.config/waybar/"
-  for item in rofi swaync swhkd kitty wallust fuzzel xdg-desktop-portal fastfetch wlogout qt5ct qt6ct; do
+  for item in swaync swhkd kitty wallust fuzzel xdg-desktop-portal fastfetch wlogout qt5ct qt6ct; do
     rsync -a "$CONFIG_SRC/$item/" "$TARGET_HOME/.config/$item/"
   done
+  # launcher.py é symlink gerado no pós-deploy — não copiar cópia estática
+  rsync -a --exclude='scripts/launcher.py' "$CONFIG_SRC/rofi/" "$TARGET_HOME/.config/rofi/"
 
   rsync -a --exclude='bookmarks' "$CONFIG_SRC/gtk-3.0/" "$TARGET_HOME/.config/gtk-3.0/"
   rsync -a "$CONFIG_SRC/gtk-4.0/" "$TARGET_HOME/.config/gtk-4.0/"
@@ -163,6 +165,7 @@ deploy_user_configs() {
   done
 
   setup_gtk_bookmarks
+  finalize_config_permissions
 
   # Placeholder de wallpaper (sem incluir imagens no repositório)
   touch "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
@@ -212,12 +215,9 @@ EOF
   visudo -cf /etc/sudoers.d/meuhypr-sddm-logout >/dev/null
 }
 
-setup_directories_and_permissions() {
-  log "Ajustando permissões dos scripts..."
-  chmod +x "$TARGET_HOME/.config/hypr"/scripts/*.sh 2>/dev/null || true
-  chmod +x "$TARGET_HOME/.config/hypr"/UserScripts/*.sh 2>/dev/null || true
-  chmod +x "$TARGET_HOME/.config/hypr"/initial-boot.sh 2>/dev/null || true
-  chown -R "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config/hypr"
+finalize_config_permissions() {
+  log "Finalizando permissões e integração Rofi..."
+  bash "$SCRIPT_DIR/system/scripts/finalize-config-permissions.sh" "$TARGET_USER"
 }
 
 post_install_notes() {
@@ -243,7 +243,6 @@ main() {
     need_root
     deploy_user_configs
     deploy_system_files
-    setup_directories_and_permissions
     post_install_notes
     exit 0
   fi
@@ -256,7 +255,6 @@ main() {
   install_rofi_wayland
   deploy_user_configs
   deploy_system_files
-  setup_directories_and_permissions
   post_install_notes
 }
 

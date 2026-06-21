@@ -31,6 +31,8 @@ SLOTS_PER_PAGE = GRID_COLUMNS * GRID_LINES
 # Cantos vazios por página: 1ª/última coluna da 1ª e da última linha.
 _PAGE_LAST_ROW = (GRID_LINES - 1) * GRID_COLUMNS
 PAGE_CORNER_SLOTS = frozenset({0, GRID_COLUMNS - 1, _PAGE_LAST_ROW, SLOTS_PER_PAGE - 1})
+# Chave de busca dos spacers — caractere fora do teclado ABNT2.
+GRID_PAD_FILTER = "ゔ"
 
 
 def load_state() -> dict:
@@ -434,11 +436,11 @@ def is_corner_slot(slot: int) -> bool:
 def emit_grid_pad(slot: int) -> None:
     """Célula transparente — absorve bug async do Rofi nos cantos do grid."""
     emit_row(
-        f"\x01gridpad-{slot}",
+        f"\x01{GRID_PAD_FILTER}{slot}",
         [
             f"icon\x1f{ensure_transparent_icon()}",
             "display\x1f",
-            "meta\x1fgridpad",
+            f"meta\x1f{GRID_PAD_FILTER}",
             "info\x1f",
             "nonselectable\x1ftrue",
         ],
