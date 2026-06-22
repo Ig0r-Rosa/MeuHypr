@@ -184,6 +184,7 @@ deploy_user_configs() {
   setup_nautilus
   setup_display_preferences
   setup_default_wallpaper_user
+  setup_steam_launcher
   repair_cursor_storage_if_needed
   finalize_config_permissions
 
@@ -221,6 +222,18 @@ setup_gtk_bookmarks() {
 setup_display_preferences() {
   log "Aplicando monitor/Kvantum/fontes GTK para $TARGET_USER..."
   bash "$SCRIPT_DIR/system/scripts/setup-display-preferences.sh" "$TARGET_USER"
+}
+
+# Um único atalho Steam no menu — usa SteamLaunch.sh (Hyprland + NVIDIA).
+setup_steam_launcher() {
+  local dest="$TARGET_HOME/.local/share/applications/steam.desktop"
+  local src="$CONFIG_SRC/applications/steam.desktop"
+
+  [[ -f "$src" ]] || return 0
+  mkdir -p "$(dirname "$dest")"
+  rm -f "$dest" "$TARGET_HOME/.local/share/applications/steam-hyprland.desktop"
+  sed "s|__MEUHYPR_HOME__|$TARGET_HOME|g" "$src" >"$dest"
+  chown "$TARGET_USER:$TARGET_USER" "$dest"
 }
 
 repair_cursor_storage_if_needed() {
