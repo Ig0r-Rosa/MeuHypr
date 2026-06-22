@@ -1,5 +1,5 @@
 /**
- * Menu de energia — Super+Alt+Delete (só emojis grandes).
+ * Menu de energia — Super+Alt+Delete (Reiniciar / Desligar).
  */
 
 @import "wallust/colors-rofi.rasi"
@@ -7,12 +7,12 @@
 
 configuration {
     show-icons:      false;
-    font:            "Noto Color Emoji 56";
+    font:            "JetBrains Mono 20";
     location:        0;
     anchor:          1;
-    width:           16;
-    lines:           1;
-    columns:         2;
+    width:           220px;
+    lines:           2;
+    columns:         1;
     fixed-num-lines: true;
     hide-scrollbar:  true;
     scroll-method:   0;
@@ -24,6 +24,7 @@ configuration {
 }
 
 window {
+    width:        220px;
     border:       2px;
     border-color: @border-window;
 }
@@ -34,24 +35,24 @@ mainbox {
 }
 
 listview {
-    flow:          horizontal;
-    columns:       2;
-    lines:         1;
-    spacing:       8px;
-    padding:       20px 24px 24px;
-    fixed-columns: true;
+    flow:          vertical;
+    columns:       1;
+    lines:         2;
+    spacing:       4px;
+    padding:       12px 10px 14px;
     border:        0;
 }
 
 element {
     orientation: vertical;
-    padding:     16px 20px;
+    padding:     12px 10px;
     spacing:     0;
     border:      2px;
     border-color: transparent;
 }
 
-element selected.normal {
+element selected.normal,
+element selected.alternate {
     background-color: @selected;
     border-color:     @border-active;
 }
@@ -59,4 +60,5 @@ element selected.normal {
 element-text {
     horizontal-align: 0.5;
     vertical-align:   0.5;
+    text-color:       @foreground;
 }

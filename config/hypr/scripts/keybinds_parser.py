@@ -150,11 +150,11 @@ MOD_LABELS = {
 }
 
 EXEC_LABELS = {
-    "SuperDoubleFullscreen.sh": "Alternar tela cheia (duplo Super)",
     "RetileAfterDrag.sh": "Reintegrar janela após arrastar",
 }
 
 DISPATCHER_LABELS = {
+    "fullscreen": "Alternar tela cheia",
     "movefocus": "Mover foco",
     "movewindow": "Mover janela",
     "resizewindow": "Redimensionar janela",

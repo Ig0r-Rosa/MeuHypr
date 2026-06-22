@@ -11,7 +11,7 @@ configuration {
     location:        0;
     anchor:          1;
     width:           72;
-    lines:           18;
+    lines:           12;
     fixed-num-lines: true;
     hide-scrollbar:  true;
     scroll-method:   1;
@@ -22,10 +22,20 @@ configuration {
     me-accept-entry: "";
 }
 
+inputbar {
+    children: [ entry ];
+    padding:  20px 24px 12px;
+    spacing:  0px;
+}
+
 entry {
     placeholder: "Filtrar atalhos...";
+    expand:      true;
 }
 
 listview {
-    lines: 18;
+    lines:        12;
+    fixed-height: true;
+    dynamic:      false;
+    padding:      4px 20px 16px;
 }
