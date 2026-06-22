@@ -184,6 +184,7 @@ deploy_user_configs() {
   setup_nautilus
   setup_display_preferences
   setup_default_wallpaper_user
+  setup_steam_launcher
   repair_cursor_storage_if_needed
   finalize_config_permissions
 
@@ -221,6 +222,31 @@ setup_gtk_bookmarks() {
 setup_display_preferences() {
   log "Aplicando monitor/Kvantum/fontes GTK para $TARGET_USER..."
   bash "$SCRIPT_DIR/system/scripts/setup-display-preferences.sh" "$TARGET_USER"
+}
+
+# Atalho local por usuário — usa SteamLaunch.sh (não versionado em config/applications/).
+setup_steam_launcher() {
+  local dest="$TARGET_HOME/.local/share/applications/steam.desktop"
+  local launch_script="$TARGET_HOME/.config/hypr/scripts/SteamLaunch.sh"
+
+  [[ -x "$launch_script" ]] || return 0
+  mkdir -p "$(dirname "$dest")"
+  rm -f "$dest" "$TARGET_HOME/.local/share/applications/steam-hyprland.desktop"
+  cat >"$dest" <<EOF
+[Desktop Entry]
+Name=Steam
+Comment=Aplicativo para jogar e gerenciar jogos no Steam
+Exec=$launch_script %U
+Icon=steam
+Terminal=false
+Type=Application
+Categories=Network;FileTransfer;Game;
+MimeType=x-scheme-handler/steam;x-scheme-handler/steamlink;
+Keywords=Games
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+EOF
+  chown "$TARGET_USER:$TARGET_USER" "$dest"
 }
 
 repair_cursor_storage_if_needed() {
