@@ -142,7 +142,7 @@ deploy_user_configs() {
     "$CONFIG_SRC/hypr/" "$TARGET_HOME/.config/hypr/"
 
   rsync -a "$CONFIG_SRC/waybar/" "$TARGET_HOME/.config/waybar/"
-  for item in swaync swhkd kitty wallust fuzzel xdg-desktop-portal fastfetch wlogout qt5ct qt6ct; do
+  for item in swaync swhkd kitty wallust fuzzel xdg-desktop-portal fastfetch wlogout qt5ct qt6ct Kvantum; do
     rsync -a "$CONFIG_SRC/$item/" "$TARGET_HOME/.config/$item/"
   done
   # launcher.py é symlink gerado no pós-deploy — não copiar cópia estática
@@ -166,6 +166,7 @@ deploy_user_configs() {
 
   setup_gtk_bookmarks
   setup_nautilus
+  setup_display_preferences
   finalize_config_permissions
 
   # Placeholder de wallpaper (sem incluir imagens no repositório)
@@ -200,6 +201,11 @@ setup_nautilus() {
 setup_gtk_bookmarks() {
   log "Gerando bookmarks GTK/Nautilus para $TARGET_USER..."
   bash "$SCRIPT_DIR/system/scripts/setup-gtk-bookmarks.sh" "$TARGET_USER"
+}
+
+setup_display_preferences() {
+  log "Aplicando monitor/Kvantum/fontes GTK para $TARGET_USER..."
+  bash "$SCRIPT_DIR/system/scripts/setup-display-preferences.sh" "$TARGET_USER"
 }
 
 ensure_start_hyprland_binary() {
