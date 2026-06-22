@@ -22,7 +22,7 @@ configuration {
     me-select-entry: "";
     me-accept-entry: "MousePrimary";
     window-format:   "{c} — {t}";
-    window-match-fields: "title,class,role,name";
+    window-match-fields: "title,class";
 }
 
 entry {
