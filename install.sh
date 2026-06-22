@@ -7,8 +7,15 @@ CONFIG_SRC="$SCRIPT_DIR/config"
 SYSTEM_SRC="$SCRIPT_DIR/system"
 ASSETS_SRC="$SCRIPT_DIR/assets"
 SDDM_THEME_SRC="$SCRIPT_DIR/sddm/themes/noc-sddm"
-DEFAULT_WALLPAPER_SRC="$ASSETS_SRC/wallpapers/matrix-default.jpg"
+
+# Wallpaper padrão (SDDM + fallback Hyprland) — altere só aqui para trocar o fundo do sistema
+DEFAULT_WALLPAPER_FILE="matrix-default.jpg"
+DEFAULT_WALLPAPER_SRC="$ASSETS_SRC/wallpapers/$DEFAULT_WALLPAPER_FILE"
 DEFAULT_WALLPAPER_SYSTEM="/usr/share/backgrounds/meuhypr-matrix.jpg"
+SDDM_WALLPAPER_FILE="matrix.jpg"
+SDDM_WALLPAPER_PATH="/usr/share/sddm/themes/noc-sddm/backgrounds/$SDDM_WALLPAPER_FILE"
+SDDM_THEME_CONF="/usr/share/sddm/themes/noc-sddm/theme.conf"
+USER_WALLPAPER_NAME="$DEFAULT_WALLPAPER_FILE"
 TARGET_USER="${SUDO_USER:-$USER}"
 TARGET_HOME="$(getent passwd "$TARGET_USER" | cut -d: -f6)"
 
@@ -170,21 +177,9 @@ deploy_user_configs() {
   setup_gtk_bookmarks
   setup_nautilus
   setup_display_preferences
+  setup_default_wallpaper_user
   finalize_config_permissions
 
-  # Wallpaper padrão (Matrix) — fallback quando não há wallpaper salvo
-  if [[ -f "$DEFAULT_WALLPAPER_SRC" ]]; then
-    local user_default_wp="$TARGET_HOME/Pictures/wallpapers/matrix-default.jpg"
-    cp -a "$DEFAULT_WALLPAPER_SRC" "$user_default_wp"
-    if [[ ! -s "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current" ]]; then
-      cp -a "$DEFAULT_WALLPAPER_SRC" "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
-    fi
-    chown "$TARGET_USER:$TARGET_USER" "$user_default_wp" \
-      "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
-  elif [[ ! -f "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current" ]]; then
-    touch "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
-    chown "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
-  fi
   if [[ ! -f "$TARGET_HOME/.config/hypr/wallpaper_effects/monitors.json" ]]; then
     cp -a "$CONFIG_SRC/hypr/wallpaper_effects/monitors.json.example" \
       "$TARGET_HOME/.config/hypr/wallpaper_effects/monitors.json"
@@ -219,6 +214,44 @@ setup_gtk_bookmarks() {
 setup_display_preferences() {
   log "Aplicando monitor/Kvantum/fontes GTK para $TARGET_USER..."
   bash "$SCRIPT_DIR/system/scripts/setup-display-preferences.sh" "$TARGET_USER"
+}
+
+# Instala o wallpaper padrão em /usr/share e no tema SDDM.
+setup_default_wallpaper_system() {
+  [[ -f "$DEFAULT_WALLPAPER_SRC" ]] || {
+    log "Aviso: wallpaper padrão não encontrado em $DEFAULT_WALLPAPER_SRC"
+    return 0
+  }
+
+  log "Instalando wallpaper padrão do sistema (SDDM + /usr/share/backgrounds)..."
+  install -Dm644 "$DEFAULT_WALLPAPER_SRC" "$DEFAULT_WALLPAPER_SYSTEM"
+  install -Dm644 "$DEFAULT_WALLPAPER_SRC" "$SDDM_WALLPAPER_PATH"
+
+  if [[ -f "$SDDM_THEME_CONF" ]]; then
+    sed -i "s|^background=.*|background=$SDDM_WALLPAPER_PATH|" "$SDDM_THEME_CONF"
+  fi
+}
+
+# Copia o wallpaper padrão para o usuário e define fallback do Hyprland.
+setup_default_wallpaper_user() {
+  local user_wp="$TARGET_HOME/Pictures/wallpapers/$USER_WALLPAPER_NAME"
+  local fallback_wp="$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+
+  mkdir -p "$TARGET_HOME/Pictures/wallpapers" \
+    "$(dirname "$fallback_wp")"
+
+  if [[ -f "$DEFAULT_WALLPAPER_SRC" ]]; then
+    log "Configurando wallpaper padrão para $TARGET_USER ..."
+    cp -a "$DEFAULT_WALLPAPER_SRC" "$user_wp"
+    if [[ ! -s "$fallback_wp" ]]; then
+      cp -a "$DEFAULT_WALLPAPER_SRC" "$fallback_wp"
+    fi
+    chown "$TARGET_USER:$TARGET_USER" "$user_wp" "$fallback_wp"
+    return 0
+  fi
+
+  [[ -f "$fallback_wp" ]] || touch "$fallback_wp"
+  chown "$TARGET_USER:$TARGET_USER" "$fallback_wp"
 }
 
 ensure_start_hyprland_binary() {
@@ -261,9 +294,9 @@ deploy_system_files() {
   install -Dm644 "$SYSTEM_SRC/sddm.conf.d/10-gnome-default.conf" /etc/sddm.conf.d/10-gnome-default.conf
   install -d /usr/share/sddm/themes/noc-sddm
   rsync -a "$SDDM_THEME_SRC/" /usr/share/sddm/themes/noc-sddm/
-  if [[ -f "$DEFAULT_WALLPAPER_SRC" ]]; then
-    install -Dm644 "$DEFAULT_WALLPAPER_SRC" "$DEFAULT_WALLPAPER_SYSTEM"
-  fi
+  chown -R root:root /usr/share/sddm/themes/noc-sddm
+  chmod -R a+rX /usr/share/sddm/themes/noc-sddm
+  setup_default_wallpaper_system
 }
 
 finalize_config_permissions() {
@@ -276,8 +309,8 @@ post_install_notes() {
   cat <<EOF
 
 Próximos passos manuais:
-  1. Wallpapers extras: $TARGET_HOME/Pictures/wallpapers/ (padrão: matrix-default.jpg)
-  2. SDDM usa o fundo Matrix do repo (theme.conf → backgrounds/matrix.jpg)
+  1. Wallpaper padrão: $DEFAULT_WALLPAPER_SYSTEM (SDDM + fallback Hyprland)
+  2. Wallpapers extras: $TARGET_HOME/Pictures/wallpapers/
   3. Instale a fonte JetBrainsMono Nerd Font em ~/.local/share/fonts/
   4. Ajuste monitors.conf com: nwg-displays (monitores variam por máquina)
   5. Reinicie e selecione a sessão "Hyprland" no SDDM
