@@ -226,6 +226,8 @@ setup_display_preferences() {
 repair_cursor_storage_if_needed() {
   local script="$SCRIPT_DIR/config/hypr/scripts/RepairCursorStorage.sh"
   local leveldb="$TARGET_HOME/.config/Cursor/Local Storage/leveldb"
+  local global_db="$TARGET_HOME/.config/Cursor/User/globalStorage/state.vscdb"
+  local latest_log
 
   [[ -d "$TARGET_HOME/.config/Cursor/User" ]] || return 0
   [[ -x "$script" ]] || chmod +x "$script"
@@ -233,6 +235,27 @@ repair_cursor_storage_if_needed() {
   if [[ -d "$leveldb" ]] && ! find "$leveldb" -maxdepth 1 -name '*.ldb' -print -quit | grep -q .; then
     log "Reparando Cursor Local Storage para $TARGET_USER ..."
     bash "$script" "$TARGET_USER" --local-storage
+  fi
+
+  latest_log="$(ls -t "$TARGET_HOME/.config/Cursor"/logs/*/main.log 2>/dev/null | head -1 || true)"
+  if [[ -f "$global_db" ]] && ! python3 - "$global_db" <<'PY'
+import sqlite3, sys
+try:
+    con = sqlite3.connect(f"file:{sys.argv[1]}?mode=ro", uri=True)
+    ok = con.execute("pragma integrity_check").fetchone()[0]
+    raise SystemExit(0 if ok == "ok" else 1)
+except Exception:
+    raise SystemExit(1)
+PY
+  then
+    log "Reparando Cursor SQLite (state.vscdb) para $TARGET_USER ..."
+    bash "$script" "$TARGET_USER" --sqlite
+    return 0
+  fi
+
+  if [[ -n "$latest_log" ]] && grep -q 'SQLITE_CORRUPT' "$latest_log" 2>/dev/null; then
+    log "Reparando Cursor após SQLITE_CORRUPT para $TARGET_USER ..."
+    bash "$script" "$TARGET_USER" --sqlite
   fi
 }
 

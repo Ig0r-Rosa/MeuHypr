@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Repara Cursor: state.vscdb (SQLite) e Local Storage (LevelDB).
 
-set -euo pipefail
+set -uo pipefail
 
 target_user="${1:-${SUDO_USER:-$USER}}"
 target_home="$(getent passwd "$target_user" | cut -d: -f6)"
@@ -39,6 +39,21 @@ move_db_files() {
   done
 }
 
+sqlite_db_healthy() {
+  local db="$1"
+  [[ -f "$db" ]] || return 0
+  python3 - "$db" <<'PY'
+import sqlite3, sys
+path = sys.argv[1]
+try:
+    con = sqlite3.connect(f"file:{path}?mode=ro", uri=True)
+    ok = con.execute("pragma integrity_check").fetchone()[0]
+    sys.exit(0 if ok == "ok" else 1)
+except Exception:
+    sys.exit(1)
+PY
+}
+
 # LevelDB sem .ldb costuma gerar erro de Local Storage no Chromium/Electron.
 local_storage_healthy() {
   local leveldb="$cursor_config/Local Storage/leveldb"
@@ -59,13 +74,20 @@ reset_leveldb_dir() {
 }
 
 repair_sqlite_state() {
-  log "Recriando state.vscdb ..."
+  local ws_dir ws_name db
+
+  log "Recriando state.vscdb global e de workspaces ..."
   move_db_files "$cursor_user/globalStorage" "$backup/globalStorage"
 
   while IFS= read -r ws_dir; do
+    [[ -n "$ws_dir" ]] || continue
     ws_name="$(basename "$ws_dir")"
+    db="$ws_dir/state.vscdb"
+    if [[ "$repair_mode" == "--sqlite-bad-only" ]] && [[ -f "$db" ]] && sqlite_db_healthy "$db"; then
+      continue
+    fi
     move_db_files "$ws_dir" "$backup/workspaceStorage/$ws_name"
-  done < <(find "$cursor_user/workspaceStorage" -mindepth 1 -maxdepth 1 -type d 2>/dev/null)
+  done < <(find "$cursor_user/workspaceStorage" -mindepth 1 -maxdepth 1 -type d 2>/dev/null || true)
 }
 
 repair_local_storage() {
@@ -79,8 +101,23 @@ repair_local_storage() {
   reset_leveldb_dir "session" "$cursor_config/Session Storage/leveldb" "$backup"
 }
 
+cursor_sqlite_corrupt() {
+  local db log_file
+
+  db="$cursor_user/globalStorage/state.vscdb"
+  if [[ -f "$db" ]] && ! sqlite_db_healthy "$db"; then
+    return 0
+  fi
+
+  log_file="$(ls -t "$cursor_config"/logs/*/main.log 2>/dev/null | head -1 || true)"
+  [[ -n "$log_file" && -f "$log_file" ]] || return 1
+  grep -q 'SQLITE_CORRUPT' "$log_file" 2>/dev/null
+}
+
 should_repair_sqlite() {
-  [[ "$repair_mode" == "--all" || "$repair_mode" == "--sqlite" ]]
+  [[ "$repair_mode" == "--all" || "$repair_mode" == "--sqlite" ]] && return 0
+  [[ "$repair_mode" == "--sqlite-bad-only" ]] && cursor_sqlite_corrupt && return 0
+  return 1
 }
 
 should_repair_local_storage() {
@@ -89,6 +126,7 @@ should_repair_local_storage() {
 
 stop_cursor
 mkdir -p "$backup/globalStorage" "$backup/workspaceStorage"
+chown -R "$target_user:$target_user" "$backup" 2>/dev/null || true
 
 if should_repair_sqlite; then
   repair_sqlite_state
@@ -97,9 +135,6 @@ fi
 if should_repair_local_storage; then
   repair_local_storage
 fi
-
-find "$cursor_user/globalStorage" -maxdepth 1 -type d -name 'corrupt-backup-*' -exec rm -rf {} + 2>/dev/null || true
-find "$cursor_user" -maxdepth 1 -type d -name 'sqlite-reset-*' -exec rm -rf {} + 2>/dev/null || true
 
 chmod 700 "$cursor_config/Local Storage" "$cursor_config/Session Storage" 2>/dev/null || true
 chown -R "$target_user:$target_user" "$backup" "$cursor_config" 2>/dev/null || true
