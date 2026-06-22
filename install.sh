@@ -142,8 +142,11 @@ install_rofi_wayland() {
 }
 
 deploy_user_configs() {
+  local pictures_dir
+  pictures_dir=$(sudo -u "$TARGET_USER" xdg-user-dir PICTURES 2>/dev/null || echo "$TARGET_HOME/Pictures")
+
   log "Copiando configurações para $TARGET_HOME/.config ..."
-  sudo -u "$TARGET_USER" mkdir -p "$TARGET_HOME/.config" "$TARGET_HOME/Pictures/wallpapers"
+  sudo -u "$TARGET_USER" mkdir -p "$TARGET_HOME/.config" "$pictures_dir/wallpapers"
 
   rsync -a --delete \
     --exclude='.wallpaper_current' \
@@ -167,17 +170,21 @@ deploy_user_configs() {
   cp -a "$CONFIG_SRC/mimeapps.list" "$TARGET_HOME/.config/"
   cp -a "$CONFIG_SRC/xdg-terminals.list" "$TARGET_HOME/.config/"
 
-  chown -R "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config" "$TARGET_HOME/Pictures"
+  chown -R "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config" "$pictures_dir" 2>/dev/null || \
+    chown -R "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config" "$TARGET_HOME/Pictures"
 
-  # Ajusta caminhos absolutos do usuário original
-  grep -rl "/home/igor" "$TARGET_HOME/.config" 2>/dev/null | while read -r f; do
-    sed -i "s|/home/igor|$TARGET_HOME|g" "$f"
-  done
+  # Ajusta caminhos absolutos do usuário original (só /home/igor/ — evita corromper /home/igor_retta)
+  if [[ "$TARGET_HOME" != "/home/igor" ]]; then
+    grep -rl '/home/igor/' "$TARGET_HOME/.config" 2>/dev/null | while read -r f; do
+      sed -i "s|/home/igor/|$TARGET_HOME/|g" "$f"
+    done
+  fi
 
   setup_gtk_bookmarks
   setup_nautilus
   setup_display_preferences
   setup_default_wallpaper_user
+  repair_cursor_storage_if_needed
   finalize_config_permissions
 
   if [[ ! -f "$TARGET_HOME/.config/hypr/wallpaper_effects/monitors.json" ]]; then
@@ -216,6 +223,19 @@ setup_display_preferences() {
   bash "$SCRIPT_DIR/system/scripts/setup-display-preferences.sh" "$TARGET_USER"
 }
 
+repair_cursor_storage_if_needed() {
+  local script="$SCRIPT_DIR/config/hypr/scripts/RepairCursorStorage.sh"
+  local leveldb="$TARGET_HOME/.config/Cursor/Local Storage/leveldb"
+
+  [[ -d "$TARGET_HOME/.config/Cursor/User" ]] || return 0
+  [[ -x "$script" ]] || chmod +x "$script"
+
+  if [[ -d "$leveldb" ]] && ! find "$leveldb" -maxdepth 1 -name '*.ldb' -print -quit | grep -q .; then
+    log "Reparando Cursor Local Storage para $TARGET_USER ..."
+    bash "$script" "$TARGET_USER" --local-storage
+  fi
+}
+
 # Instala o wallpaper padrão em /usr/share e no tema SDDM.
 setup_default_wallpaper_system() {
   [[ -f "$DEFAULT_WALLPAPER_SRC" ]] || {
@@ -234,11 +254,12 @@ setup_default_wallpaper_system() {
 
 # Copia o wallpaper padrão para o usuário e define fallback do Hyprland.
 setup_default_wallpaper_user() {
-  local user_wp="$TARGET_HOME/Pictures/wallpapers/$USER_WALLPAPER_NAME"
-  local fallback_wp="$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+  local pictures_dir user_wp fallback_wp
+  pictures_dir=$(sudo -u "$TARGET_USER" xdg-user-dir PICTURES 2>/dev/null || echo "$TARGET_HOME/Pictures")
+  user_wp="$pictures_dir/wallpapers/$USER_WALLPAPER_NAME"
+  fallback_wp="$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
 
-  mkdir -p "$TARGET_HOME/Pictures/wallpapers" \
-    "$(dirname "$fallback_wp")"
+  mkdir -p "$pictures_dir/wallpapers" "$(dirname "$fallback_wp")"
 
   if [[ -f "$DEFAULT_WALLPAPER_SRC" ]]; then
     log "Configurando wallpaper padrão para $TARGET_USER ..."

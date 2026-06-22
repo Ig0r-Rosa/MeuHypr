@@ -23,7 +23,7 @@ wait_for_monitors() {
   target=$(jq 'length' "$STATE_FILE" 2>/dev/null || echo 1)
   [[ "$target" -lt 1 ]] && target=1
 
-  for i in $(seq 1 40); do
+  for i in $(seq 1 50); do
     count=$(hyprctl monitors -j 2>/dev/null | jq 'length')
     [[ "${count:-0}" -ge "$target" ]] && return 0
     sleep 0.3
@@ -38,6 +38,11 @@ start_swww() {
 
 restore_wallpapers() {
   "$SCRIPTSDIR/WallpaperPersist.sh" restore
+  if [[ -f "$STATE_FILE" ]] && jq -e 'length > 0' "$STATE_FILE" >/dev/null 2>&1; then
+    "$SCRIPTSDIR/WallpaperPersist.sh" verify && return 0
+    log "verificação falhou — executando repair"
+    "$SCRIPTSDIR/WallpaperPersist.sh" repair
+  fi
 }
 
 main() {
@@ -46,7 +51,7 @@ main() {
 
   start_swww || log "swww indisponível"
   wait_for_monitors || log "monitores incompletos — restaurando mesmo assim"
-  sleep 0.5
+  sleep 0.8
   restore_wallpapers
   log "concluído"
 }
