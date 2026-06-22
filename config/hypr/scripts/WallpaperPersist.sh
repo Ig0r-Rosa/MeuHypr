@@ -2,8 +2,18 @@
 # Salva e restaura wallpaper por monitor.
 
 STATE_FILE="$HOME/.config/hypr/wallpaper_effects/monitors.json"
-FALLBACK="$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+USER_FALLBACK="$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+SYSTEM_FALLBACK="/usr/share/backgrounds/meuhypr-matrix.jpg"
+USER_WALLPAPER="$HOME/Pictures/wallpapers/matrix-default.jpg"
 CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/swww"
+
+resolve_fallback_wallpaper() {
+  local candidate
+  for candidate in "$USER_FALLBACK" "$USER_WALLPAPER" "$SYSTEM_FALLBACK"; do
+    [[ -s "$candidate" ]] && [[ -f "$candidate" ]] && { echo "$candidate"; return 0; }
+  done
+  return 1
+}
 
 save_for_monitor() {
   local monitor="$1"
@@ -112,9 +122,9 @@ restore_all() {
     return 0
   fi
 
-  if [[ -f "$FALLBACK" ]]; then
-    swww img "$FALLBACK" --transition-duration 0
-  fi
+  local fallback
+  fallback=$(resolve_fallback_wallpaper) || return 0
+  swww img "$fallback" --transition-duration 0
 }
 
 case "${1:-}" in

@@ -5,7 +5,10 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_SRC="$SCRIPT_DIR/config"
 SYSTEM_SRC="$SCRIPT_DIR/system"
+ASSETS_SRC="$SCRIPT_DIR/assets"
 SDDM_THEME_SRC="$SCRIPT_DIR/sddm/themes/noc-sddm"
+DEFAULT_WALLPAPER_SRC="$ASSETS_SRC/wallpapers/matrix-default.jpg"
+DEFAULT_WALLPAPER_SYSTEM="/usr/share/backgrounds/meuhypr-matrix.jpg"
 TARGET_USER="${SUDO_USER:-$USER}"
 TARGET_HOME="$(getent passwd "$TARGET_USER" | cut -d: -f6)"
 
@@ -169,9 +172,19 @@ deploy_user_configs() {
   setup_display_preferences
   finalize_config_permissions
 
-  # Placeholder de wallpaper (sem incluir imagens no repositório)
-  touch "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
-  chown "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+  # Wallpaper padrão (Matrix) — fallback quando não há wallpaper salvo
+  if [[ -f "$DEFAULT_WALLPAPER_SRC" ]]; then
+    local user_default_wp="$TARGET_HOME/Pictures/wallpapers/matrix-default.jpg"
+    cp -a "$DEFAULT_WALLPAPER_SRC" "$user_default_wp"
+    if [[ ! -s "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current" ]]; then
+      cp -a "$DEFAULT_WALLPAPER_SRC" "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+    fi
+    chown "$TARGET_USER:$TARGET_USER" "$user_default_wp" \
+      "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+  elif [[ ! -f "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current" ]]; then
+    touch "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+    chown "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+  fi
   if [[ ! -f "$TARGET_HOME/.config/hypr/wallpaper_effects/monitors.json" ]]; then
     cp -a "$CONFIG_SRC/hypr/wallpaper_effects/monitors.json.example" \
       "$TARGET_HOME/.config/hypr/wallpaper_effects/monitors.json"
@@ -248,6 +261,9 @@ deploy_system_files() {
   install -Dm644 "$SYSTEM_SRC/sddm.conf.d/10-gnome-default.conf" /etc/sddm.conf.d/10-gnome-default.conf
   install -d /usr/share/sddm/themes/noc-sddm
   rsync -a "$SDDM_THEME_SRC/" /usr/share/sddm/themes/noc-sddm/
+  if [[ -f "$DEFAULT_WALLPAPER_SRC" ]]; then
+    install -Dm644 "$DEFAULT_WALLPAPER_SRC" "$DEFAULT_WALLPAPER_SYSTEM"
+  fi
 }
 
 finalize_config_permissions() {
@@ -260,9 +276,8 @@ post_install_notes() {
   cat <<EOF
 
 Próximos passos manuais:
-  1. Coloque seus wallpapers em: $TARGET_HOME/Pictures/wallpapers/
-  2. Defina o wallpaper do SDDM em /usr/share/sddm/themes/noc-sddm/theme.conf
-     (campo background=). O padrão aponta para /usr/share/backgrounds/wallpaper11.png
+  1. Wallpapers extras: $TARGET_HOME/Pictures/wallpapers/ (padrão: matrix-default.jpg)
+  2. SDDM usa o fundo Matrix do repo (theme.conf → backgrounds/matrix.jpg)
   3. Instale a fonte JetBrainsMono Nerd Font em ~/.local/share/fonts/
   4. Ajuste monitors.conf com: nwg-displays (monitores variam por máquina)
   5. Reinicie e selecione a sessão "Hyprland" no SDDM

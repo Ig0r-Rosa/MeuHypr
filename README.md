@@ -2,7 +2,7 @@
 
 Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfiles [JaKooLit/Hyprland-Dots](https://github.com/JaKooLit/Hyprland-Dots)), pronto para reinstalar em outra máquina Debian.
 
-> **Wallpapers não estão incluídos.** Após instalar, coloque suas imagens em `~/Pictures/wallpapers/` e configure o SDDM em `sddm/themes/noc-sddm/theme.conf`.
+> **Wallpaper padrão:** `assets/wallpapers/matrix-default.jpg` (SDDM + fallback Hyprland). Wallpapers extras em `~/Pictures/wallpapers/`.
 
 ---
 
@@ -20,6 +20,7 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 | `config/gtk-*`, `qt*ct`, `fuzzel/` | Temas GTK/Qt e alternador de janelas |
 | `config/starship.toml` | Prompt do Zsh |
 | `system/` | SDDM, sessão Wayland e wrapper `hyprland-session` |
+| `assets/wallpapers/` | Wallpaper padrão Matrix (SDDM + fallback) |
 | `sddm/themes/noc-sddm/` | Tema SDDM minimalista personalizado |
 
 ---
@@ -57,8 +58,8 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 
 ### Pós-instalação manual
 
-1. **Wallpapers:** `~/Pictures/wallpapers/` — use `Super+W` para escolher
-2. **SDDM:** edite `background=` em `/usr/share/sddm/themes/noc-sddm/theme.conf`
+1. **Wallpapers:** padrão Matrix em `assets/wallpapers/`; extras em `~/Pictures/wallpapers/` — use `Super+W` para escolher
+2. **SDDM:** fundo Matrix em `sddm/themes/noc-sddm/backgrounds/matrix.jpg` (aplicado no install)
 3. **Fonte:** [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads) → `~/.local/share/fonts/`
 4. **Monitores:** `nwg-displays` → gera `~/.config/hypr/monitors.conf`
 5. Reinicie e escolha **Hyprland** no SDDM
