@@ -159,7 +159,8 @@ deploy_user_configs() {
     rsync -a "$CONFIG_SRC/$item/" "$TARGET_HOME/.config/$item/"
   done
   # launcher.py é symlink gerado no pós-deploy — não copiar cópia estática
-  rsync -a --exclude='scripts/launcher.py' "$CONFIG_SRC/rofi/" "$TARGET_HOME/.config/rofi/"
+  rsync -a --exclude='scripts/launcher.py' --exclude='launcher-state.json' \
+    "$CONFIG_SRC/rofi/" "$TARGET_HOME/.config/rofi/"
 
   rsync -a --exclude='bookmarks' "$CONFIG_SRC/gtk-3.0/" "$TARGET_HOME/.config/gtk-3.0/"
   rsync -a "$CONFIG_SRC/gtk-4.0/" "$TARGET_HOME/.config/gtk-4.0/"
@@ -167,7 +168,6 @@ deploy_user_configs() {
   cp -a "$CONFIG_SRC/gtk-3.0/gtk.css" "$TARGET_HOME/.config/hypr/assets/gtk-3.0.css"
   cp -a "$CONFIG_SRC/gtk-4.0/gtk.css" "$TARGET_HOME/.config/hypr/assets/gtk-4.0.css"
   cp -a "$CONFIG_SRC/starship.toml" "$TARGET_HOME/.config/"
-  cp -a "$CONFIG_SRC/mimeapps.list" "$TARGET_HOME/.config/"
   cp -a "$CONFIG_SRC/xdg-terminals.list" "$TARGET_HOME/.config/"
 
   chown -R "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config" "$pictures_dir" 2>/dev/null || \
@@ -184,7 +184,6 @@ deploy_user_configs() {
   setup_nautilus
   setup_display_preferences
   setup_default_wallpaper_user
-  setup_steam_launcher
   repair_cursor_storage_if_needed
   finalize_config_permissions
 
@@ -222,18 +221,6 @@ setup_gtk_bookmarks() {
 setup_display_preferences() {
   log "Aplicando monitor/Kvantum/fontes GTK para $TARGET_USER..."
   bash "$SCRIPT_DIR/system/scripts/setup-display-preferences.sh" "$TARGET_USER"
-}
-
-# Um único atalho Steam no menu — usa SteamLaunch.sh (Hyprland + NVIDIA).
-setup_steam_launcher() {
-  local dest="$TARGET_HOME/.local/share/applications/steam.desktop"
-  local src="$CONFIG_SRC/applications/steam.desktop"
-
-  [[ -f "$src" ]] || return 0
-  mkdir -p "$(dirname "$dest")"
-  rm -f "$dest" "$TARGET_HOME/.local/share/applications/steam-hyprland.desktop"
-  sed "s|__MEUHYPR_HOME__|$TARGET_HOME|g" "$src" >"$dest"
-  chown "$TARGET_USER:$TARGET_USER" "$dest"
 }
 
 repair_cursor_storage_if_needed() {

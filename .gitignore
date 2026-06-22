@@ -7,6 +7,12 @@ __pycache__/
 config/rofi/.current_wallpaper
 config/hypr/.initial_startup_done
 
+# Menu de apps e preferências por usuário (definir após instalar)
+config/rofi/launcher-state.json
+**/launcher-state.json
+config/mimeapps.list
+config/applications/
+
 # Wallpapers (não versionados de propósito)
 **/.wallpaper_current
 **/.wallpaper_modified
