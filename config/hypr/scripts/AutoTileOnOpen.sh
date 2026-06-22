@@ -34,7 +34,7 @@ parse_open_event() {
 should_keep_floating() {
   local class="$1" title="$2" width="$3" height="$4"
 
-  [[ "$class" =~ ^(swaync|rofi|yad|hyprland-donate-screen|pavucontrol|org\.pulseaudio\.pavucontrol|nm-applet|org\.gnome\.Calculator|qalculate-gtk|zoom|onedriver|qt5ct|qt6ct)$ ]] && return 0
+  [[ "$class" =~ ^(swaync|rofi|yad|hyprland-donate-screen|pavucontrol|org\.pulseaudio\.pavucontrol|nm-applet|org\.gnome\.Calculator|qalculate-gtk|zoom|onedriver|qt5ct|qt6ct|[Ss]team|steamwebhelper)$ ]] && return 0
   [[ "$title" =~ ^(Picture-in-Picture|Authentication Required|Add Folder to Workspace|Save As|Keybindings|ROG Control|SDDM Background|File Operation Progress|Open Files)$ ]] && return 0
   [[ "$class" =~ ^(org\.gnome\.Loupe|eog|blueman-manager|nm-connection-editor)$ ]] && return 1
   (( width > 0 && width < 320 && height > 0 && height < 240 )) && return 0
