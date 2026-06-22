@@ -1,0 +1,8 @@
+# gtkrc mínimo para o GTK2 antigo da Steam.
+# Temas GTK2 do sistema (Adwaita etc.) falham no parser e causam loop do steamwebhelper.
+
+style "steam-default" {
+  font_name = "Sans 10"
+}
+
+class "GtkWidget" style "steam-default"

@@ -52,7 +52,7 @@ install_apt_packages() {
     nwg-displays nwg-look \
     python3 python3-pip python3-nautilus zsh fastfetch btop cava \
     fonts-noto fonts-noto-color-emoji fonts-firacode \
-    libnotify-bin imagemagick \
+    libnotify-bin imagemagick xdotool \
     gnome-themes-extra adwaita-icon-theme
 }
 
@@ -184,7 +184,7 @@ deploy_user_configs() {
   setup_nautilus
   setup_display_preferences
   setup_default_wallpaper_user
-  setup_steam_launcher
+  setup_steam_hyprland
   repair_cursor_storage_if_needed
   finalize_config_permissions
 
@@ -224,29 +224,16 @@ setup_display_preferences() {
   bash "$SCRIPT_DIR/system/scripts/setup-display-preferences.sh" "$TARGET_USER"
 }
 
-# Atalho local por usuário — usa SteamLaunch.sh (não versionado em config/applications/).
-setup_steam_launcher() {
-  local dest="$TARGET_HOME/.local/share/applications/steam.desktop"
-  local launch_script="$TARGET_HOME/.config/hypr/scripts/SteamLaunch.sh"
+# Steam no Hyprland: launcher, workaround de ícones (nwg-look) e regras de janela.
+setup_steam_hyprland() {
+  local script="$SCRIPT_DIR/system/scripts/setup-steam-hyprland.sh"
+  [[ -x "$script" ]] || chmod +x "$script"
+  bash "$script" "$TARGET_USER"
+}
 
-  [[ -x "$launch_script" ]] || return 0
-  mkdir -p "$(dirname "$dest")"
-  rm -f "$dest" "$TARGET_HOME/.local/share/applications/steam-hyprland.desktop"
-  cat >"$dest" <<EOF
-[Desktop Entry]
-Name=Steam
-Comment=Aplicativo para jogar e gerenciar jogos no Steam
-Exec=$launch_script %U
-Icon=steam
-Terminal=false
-Type=Application
-Categories=Network;FileTransfer;Game;
-MimeType=x-scheme-handler/steam;x-scheme-handler/steamlink;
-Keywords=Games
-PrefersNonDefaultGPU=true
-X-KDE-RunOnDiscreteGpu=true
-EOF
-  chown "$TARGET_USER:$TARGET_USER" "$dest"
+# Legado — mantido como alias interno.
+setup_steam_launcher() {
+  setup_steam_hyprland
 }
 
 repair_cursor_storage_if_needed() {
@@ -384,6 +371,10 @@ Próximos passos manuais:
   3. Instale a fonte JetBrainsMono Nerd Font em ~/.local/share/fonts/
   4. Ajuste monitors.conf com: nwg-displays (monitores variam por máquina)
   5. Reinicie e selecione a sessão "Hyprland" no SDDM
+  6. Steam: abrir pelo menu (SteamLaunch.sh). Reparo: SteamLaunch.sh --repair
+
+Nota Steam/Hyprland: nwg-look não deve criar tema em ~/.local/share/icons/default
+  (quebra steamwebhelper). O install desativa esse tema automaticamente.
 
 Para aplicar só as configs (sem reinstalar pacotes):
   sudo MEUHYPR_CONFIG_ONLY=1 $SCRIPT_DIR/install.sh
