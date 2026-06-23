@@ -22,4 +22,11 @@ sync_kew_music_path() {
 }
 
 sync_kew_music_path
-exec "$script_dir/SwayncFocusOrLaunchTui.sh" kew kew
+
+# Buffer maior no PipeWire/Pulse — reduz engasgos no áudio.
+export PULSE_LATENCY_MSEC=60
+
+kew_bin="$HOME/.local/bin/kew"
+[[ -x "$kew_bin" ]] || kew_bin="$(command -v kew)"
+
+exec "$script_dir/SwayncFocusOrLaunchTui.sh" kew "${kew_bin##*/}"

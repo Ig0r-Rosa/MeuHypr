@@ -2,7 +2,7 @@
 # Instala dependências e aplica as configurações do MeuHypr no sistema local.
 #
 # Filosofia de instalação:
-#   - Automático: sessão Hyprland, TUIs (yazi, btop, nvtop, kew, glow, dua-cli,
+#   - Automático: sessão Hyprland, TUIs (yazi, btop, nvtop, kew v4, glow, dua-cli,
 #     oxker, cmatrix, bluetui, nmtui…), firefox-esr, Rofi (Super+D/S/H) e deps.
 #   - Manual: Steam, Discord, Nautilus, pavucontrol, nwg-displays, etc.
 set -euo pipefail
@@ -75,10 +75,22 @@ install_apt_packages() {
 
   log "  → Apps TUI (waybar, SwayNC, atalhos)..."
   apt-get install -y \
-    zsh fastfetch btop nvtop cmatrix golang-go kew glow
+    zsh fastfetch btop nvtop cmatrix golang-go glow
+
+  log "  → Dependências para compilar kew v4 (player de música)..."
+  apt-get install -y \
+    libfaad-dev libtag1-dev libfftw3-dev libopus-dev libopusfile-dev \
+    libvorbis-dev libogg-dev libchafa-dev libglib2.0-dev libgdk-pixbuf-2.0-dev g++
 
   log "  → Navegador padrão (Super+B; desinstale com apt se preferir outro)..."
   apt-get install -y firefox-esr
+}
+
+install_kew() {
+  log "Compilando kew v4.0.0 para $TARGET_USER (~/.local/bin)..."
+  bash "$SCRIPT_DIR/system/scripts/install-kew.sh" "$TARGET_USER"
+  grep -qxF 'export PATH="\$HOME/.local/bin:\$PATH"' "$TARGET_HOME/.profile" 2>/dev/null || \
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$TARGET_HOME/.profile"
 }
 
 install_hyprmoncfg() {
@@ -441,6 +453,7 @@ main() {
   need_root
   install_apt_packages
   install_hyprmoncfg
+  install_kew
   install_cargo_tools
   install_starship
   install_hypr_stack
