@@ -2,7 +2,11 @@
 
 Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfiles [JaKooLit/Hyprland-Dots](https://github.com/JaKooLit/Hyprland-Dots)), pronto para reinstalar em outra máquina Debian.
 
+## Preview
+
 ![Preview do desktop MeuHypr](assets/exemple.png)
+
+*Hyprland + waybar + SwayNC + rofi + kew (visualizador) — captura real do ambiente.*
 
 > **Wallpaper padrão:** `assets/wallpapers/matrix-default.jpg` (SDDM + fallback Hyprland). Wallpapers extras em `~/Pictures/wallpapers/`.
 
