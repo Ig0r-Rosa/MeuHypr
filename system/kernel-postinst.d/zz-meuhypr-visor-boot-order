@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Pós-instalação de kernel: mantém Visor como boot padrão.
+/usr/local/sbin/meuhypr-visor-boot-order 2>/dev/null || true
+exit 0

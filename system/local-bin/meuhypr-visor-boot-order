@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# Garante que o Visor seja a primeira opção na ordem de boot UEFI.
+
+set -euo pipefail
+
+visor_boot_num() {
+  efibootmgr 2>/dev/null | grep -m1 'Visor' | sed -n 's/^Boot\([0-9]*\).*/\1/p'
+}
+
+set_visor_first() {
+  local num="$1" order new_order item
+  order="$(efibootmgr | awk -F': ' '/BootOrder/{print $2}')"
+  [[ -n "$order" ]] || return 1
+  [[ "${order%%,*}" == "$num" ]] && return 0
+
+  new_order="$num"
+  IFS=',' read -ra items <<<"$order"
+  for item in "${items[@]}"; do
+    [[ "$item" == "$num" ]] && continue
+    new_order="${new_order},${item}"
+  done
+  efibootmgr -o "$new_order" >/dev/null
+}
+
+install_fallback_bootx64() {
+  local esp="${1:-/boot/efi}"
+  local visor="$esp/EFI/visor/visor_x64.efi"
+  local bootx="$esp/EFI/BOOT/BOOTX64.EFI"
+  local backup="$esp/EFI/BOOT/BOOTX64.EFI.grub-shim.bak"
+
+  [[ -f "$visor" ]] || return 0
+  mokutil --sb-state 2>/dev/null | grep -qi enabled && return 0
+  [[ -f "$bootx" && ! -f "$backup" ]] && cp -a "$bootx" "$backup"
+  cp -a "$visor" "$bootx"
+}
+
+main() {
+  [[ "${EUID:-0}" -eq 0 ]] || exit 0
+  command -v efibootmgr >/dev/null 2>&1 || exit 0
+
+  local num
+  num="$(visor_boot_num)"
+  [[ -n "$num" ]] || exit 0
+
+  set_visor_first "$num"
+  install_fallback_bootx64 "${VISOR_ESP:-/boot/efi}"
+}
+
+main "$@"

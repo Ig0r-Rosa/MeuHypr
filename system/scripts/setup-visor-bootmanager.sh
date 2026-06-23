@@ -157,6 +157,19 @@ register_uefi_entry() {
   log "Boot padrão: Visor (Boot${num})."
 }
 
+install_boot_persistence() {
+  log "Instalando persistência da ordem de boot..."
+  install -Dm755 "$REPO_ROOT/system/local-bin/meuhypr-visor-boot-order" \
+    /usr/local/sbin/meuhypr-visor-boot-order
+  install -Dm644 "$REPO_ROOT/system/systemd/meuhypr-visor-boot-order.service" \
+    /etc/systemd/system/meuhypr-visor-boot-order.service
+  install -Dm755 "$REPO_ROOT/system/kernel-postinst.d/zz-meuhypr-visor-boot-order" \
+    /etc/kernel/postinst.d/zz-meuhypr-visor-boot-order
+  systemctl daemon-reload
+  systemctl enable --now meuhypr-visor-boot-order.service >/dev/null 2>&1 || true
+  /usr/local/sbin/meuhypr-visor-boot-order
+}
+
 main() {
   need_root
   ESP="$(detect_esp)"
@@ -168,6 +181,7 @@ main() {
   sync_kernel_to_esp "$ESP" "$(latest_kernel_version)"
   write_boot_conf "$ESP/$VISOR_REL"
   register_uefi_entry "$ESP"
+  install_boot_persistence
   log "Visor instalado em $ESP/$VISOR_REL — reinicie para testar."
 }
 
