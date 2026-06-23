@@ -11,7 +11,7 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 > **Wallpaper padrão:** `assets/wallpapers/matrix-default.jpg` (SDDM + fallback Hyprland). Wallpapers extras em `~/Pictures/wallpapers/`.
 
 ---
-
+ 
 ## O que está incluído
 
 | Pasta | Conteúdo |
