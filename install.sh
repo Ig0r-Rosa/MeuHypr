@@ -3,7 +3,7 @@
 #
 # Filosofia de instalação:
 #   - Automático: sessão Hyprland, TUIs (yazi, btop, nvtop, kew v4, glow, dua-cli,
-#     oxker, cmatrix, bluetui, nmtui…), firefox-esr, Rofi (Super+D/S/H) e deps.
+#     oxker, cmatrix, bluetui, nmtui…), oh-my-zsh, firefox-esr, Rofi (Super+D/S/H) e deps.
 #   - Manual: Steam, Discord, Nautilus, pavucontrol, nwg-displays, etc.
 set -euo pipefail
 
@@ -140,6 +140,79 @@ install_starship() {
   fi
 }
 
+install_oh_my_zsh() {
+  log "Instalando oh-my-zsh para $TARGET_USER..."
+  local zsh_bin
+  zsh_bin="$(command -v zsh)"
+
+  sudo -u "$TARGET_USER" bash -lc "
+    if [[ ! -d \"\$HOME/.oh-my-zsh\" ]]; then
+      RUNZSH=no CHSH=no KEEP_ZSHRC=yes \
+        sh -c \"\$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"
+    fi
+  "
+
+  if [[ -n "$zsh_bin" ]] && [[ "$(getent passwd "$TARGET_USER" | cut -d: -f7)" != "$zsh_bin" ]]; then
+    chsh -s "$zsh_bin" "$TARGET_USER"
+  fi
+}
+
+deploy_shell_config() {
+  local zshrc_src="$CONFIG_SRC/zsh/zshrc"
+  local zshrc_dst="$TARGET_HOME/.zshrc"
+
+  [[ -f "$zshrc_src" ]] || return 0
+
+  if [[ -f "$zshrc_dst" ]]; then
+    log "  → ~/.zshrc já existe — mantido (use MEUHYPR_FORCE_ZSHRC=1 para sobrescrever)"
+    [[ "${MEUHYPR_FORCE_ZSHRC:-0}" == "1" ]] || return 0
+  fi
+
+  log "Configurando ~/.zshrc (oh-my-zsh + Starship) para $TARGET_USER..."
+  cp -a "$zshrc_src" "$zshrc_dst"
+  chown "$TARGET_USER:$TARGET_USER" "$zshrc_dst"
+}
+
+deploy_kew_config() {
+  local kewrc_src="$CONFIG_SRC/kew/kewrc"
+  local kew_dir="$TARGET_HOME/.config/kew"
+
+  [[ -f "$kewrc_src" ]] || return 0
+
+  sudo -u "$TARGET_USER" mkdir -p "$kew_dir"
+
+  if [[ -f "$kew_dir/kewrc" ]] && [[ "${MEUHYPR_FORCE_KEWRC:-0}" != "1" ]]; then
+    log "  → ~/.config/kew/kewrc já existe — mantido"
+    return 0
+  fi
+
+  log "Configurando kewrc padrão para $TARGET_USER..."
+  cp -a "$kewrc_src" "$kew_dir/kewrc"
+  chown "$TARGET_USER:$TARGET_USER" "$kew_dir/kewrc"
+}
+
+configure_sddm_login() {
+  log "Configurando SDDM como gerenciador de login..."
+  local sddm_bin="/usr/sbin/sddm"
+  [[ -x "$sddm_bin" ]] || sddm_bin="$(command -v sddm 2>/dev/null || true)"
+  [[ -n "$sddm_bin" ]] || {
+    log "  → Aviso: binário sddm não encontrado"
+    return 0
+  }
+
+  if command -v debconf-set-selections >/dev/null; then
+    echo "sddm shared/default-x-display-manager select sddm" | debconf-set-selections
+    DEBIAN_FRONTEND=noninteractive dpkg-reconfigure -f noninteractive sddm 2>/dev/null || true
+  fi
+
+  if [[ -f /etc/X11/default-display-manager ]]; then
+    echo "$sddm_bin" > /etc/X11/default-display-manager
+  fi
+
+  systemctl enable sddm.service 2>/dev/null || true
+  systemctl set-default graphical.target 2>/dev/null || true
+}
+
 build_from_cmake() {
   local repo_url="$1"
   local repo_name="$2"
@@ -243,6 +316,8 @@ deploy_user_configs() {
   setup_gtk_bookmarks
   setup_display_preferences
   setup_default_wallpaper_user
+  deploy_shell_config
+  deploy_kew_config
   repair_cursor_storage_if_needed
   finalize_config_permissions
 
@@ -429,8 +504,9 @@ Próximos passos manuais:
   1. Wallpaper padrão: $DEFAULT_WALLPAPER_SYSTEM (SDDM + fallback Hyprland)
   2. Wallpapers extras: $TARGET_HOME/Pictures/wallpapers/
   3. Instale a fonte JetBrainsMono Nerd Font em ~/.local/share/fonts/
-  4. Monitores: edite ~/.config/hypr/monitors.conf ou use hyprmoncfg (SwayNC 🖥️)
-  5. Reinicie e selecione a sessão "Hyprland" no SDDM
+  4. Driver NVIDIA (se aplicável): non-free + nvidia-driver
+  5. Monitores: edite ~/.config/hypr/monitors.conf ou use hyprmoncfg (SwayNC 🖥️)
+  6. Reinicie e faça login no SDDM (sessão Hyprland)
 
 Apps opcionais (instale você mesmo conforme necessidade):
   Steam, Discord, Nautilus, pavucontrol, nwg-displays, nwg-look, etc.
@@ -456,10 +532,12 @@ main() {
   install_kew
   install_cargo_tools
   install_starship
+  install_oh_my_zsh
   install_hypr_stack
   install_rofi_wayland
   deploy_user_configs
   deploy_system_files
+  configure_sddm_login
   post_install_notes
 }
 

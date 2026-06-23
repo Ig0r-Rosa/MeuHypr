@@ -1,0 +1,19 @@
+# MeuHypr — Zsh com oh-my-zsh + Starship (deploy via install.sh)
+
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+
+# Tema vazio: o prompt vem do Starship (~/.config/starship.toml)
+ZSH_THEME=""
+plugins=(git sudo extract colored-man-pages)
+
+[[ -f "$ZSH/oh-my-zsh.sh" ]] && source "$ZSH/oh-my-zsh.sh"
+
+command -v starship >/dev/null && eval "$(starship init zsh)"
+
+alias ls='ls --color=auto'
+alias ll='ls -lah --color=auto'
+alias grep='grep --color=auto'
+
+COMPLETION_WAITING_DOTS="true"
+setopt ignore_eof

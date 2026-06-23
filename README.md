@@ -2,6 +2,8 @@
 
 Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfiles [JaKooLit/Hyprland-Dots](https://github.com/JaKooLit/Hyprland-Dots)), pronto para reinstalar em outra máquina Debian.
 
+![Preview do desktop MeuHypr](assets/exemple.png)
+
 > **Wallpaper padrão:** `assets/wallpapers/matrix-default.jpg` (SDDM + fallback Hyprland). Wallpapers extras em `~/Pictures/wallpapers/`.
 
 ---
@@ -17,6 +19,8 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 | `config/kitty/` | Terminal sem decoração, opacidade no fundo |
 | `config/wlogout/` | Menu de energia (Super+Alt+Delete) |
 | `config/wallust/` | Geração de cores a partir do wallpaper |
+| `config/zsh/` | Zsh com oh-my-zsh + Starship |
+| `config/kew/` | kewrc padrão (v4, visualizador, cache) |
 | `config/gtk-*`, `qt*ct`, `fuzzel/` | Temas GTK/Qt e alternador de janelas |
 | `config/starship.toml` | Prompt do Zsh |
 | `system/` | SDDM, sessão Wayland e wrapper `hyprland-session` |
@@ -25,32 +29,47 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 
 ---
 
-## Requisitos
+## Pré-requisitos (Debian 13 puro)
 
-- **Debian 13 (trixie)** ou similar
-- GPU NVIDIA híbrida (config em `UserConfigs/ENVariables.conf` — ajuste se necessário)
-- Teclado **ABNT2** (`UserConfigs/UserSettings.conf`)
-- Usuário com sudo
+| Item | Detalhe |
+|------|---------|
+| **SO** | Debian 13 (trixie) instalado (netinst ou imagem completa) |
+| **Usuário** | Conta normal com **sudo** |
+| **Rede** | Internet estável (vários `git clone` + compilações — **30–60+ min**) |
+| **Repositórios** | Recomendado habilitar **non-free** e **non-free-firmware** (NVIDIA, Wi‑Fi) |
+| **Hardware** | Ajuste `UserConfigs/ENVariables.conf` se não usar NVIDIA |
+| **Teclado** | ABNT2 já configurado em `UserConfigs/UserSettings.conf` |
+| **Fonte** | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads) — pós-instalação manual |
+
+### Habilitar non-free no Debian (recomendado)
+
+```bash
+sudo sed -i 's/main$/main contrib non-free non-free-firmware/' /etc/apt/sources.list
+sudo apt update
+```
 
 ---
 
-## Instalação rápida
+## Instalação
 
 ```bash
+git clone https://github.com/Ig0r-Rosa/MeuHypr.git
 cd MeuHypr
 chmod +x install.sh
 sudo ./install.sh
 ```
 
-O script instala **apenas o essencial** para a sessão Hyprland funcionar com os atalhos configurados:
+O script instala **o essencial** para a sessão Hyprland funcionar com os atalhos configurados:
 
 1. **Sessão:** Hyprland (compilado), waybar, kitty, swaync, wlogout, fuzzel, swww, portals
-2. **Atalhos:** Rofi Wayland (Super+D, Super+S, Super+H), grim/slurp, cliphist
-3. **TUIs:** yazi, btop, nvtop, cmatrix, bluetui (Cargo), hyprmoncfg, nmtui
-4. **Navegador:** firefox-esr (Super+B — remova com `apt` se preferir outro)
-5. Copia configs para `~/.config/` e instala tema SDDM `noc-sddm`
+2. **Login:** SDDM como gerenciador padrão + tema `noc-sddm`
+3. **Shell:** zsh, **oh-my-zsh**, Starship
+4. **Atalhos:** Rofi Wayland (Super+D, Super+S, Super+H), grim/slurp, cliphist
+5. **TUIs:** yazi, btop, nvtop, cmatrix, bluetui (Cargo), **kew v4**, dua-cli, oxker, hyprmoncfg, nmtui
+6. **Navegador:** firefox-esr (Super+B)
+7. Copia configs para `~/.config/` (Hyprland, kewrc padrão se não existir, etc.)
 
-**Não** instala automaticamente: Steam, Discord, Nautilus, pavucontrol, nwg-displays, nwg-look, etc. Instale depois conforme sua necessidade.
+**Não** instala automaticamente: Steam, Discord, Nautilus, pavucontrol, driver NVIDIA, nwg-displays, etc.
 
 ### Só reaplicar configs (sem reinstalar pacotes)
 
@@ -58,13 +77,21 @@ O script instala **apenas o essencial** para a sessão Hyprland funcionar com os
 sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 ```
 
+### Instalar para outro usuário
+
+```bash
+sudo MEUHYPR_TARGET_USER=igor_retta ./install.sh
+sudo MEUHYPR_TARGET_USER=igor_retta MEUHYPR_CONFIG_ONLY=1 ./install.sh
+```
+
 ### Pós-instalação manual
 
-1. **Wallpapers:** padrão Matrix em `assets/wallpapers/`; extras em `~/Pictures/wallpapers/` — use `Super+W` para escolher
-2. **SDDM:** fundo Matrix em `sddm/themes/noc-sddm/backgrounds/matrix.jpg` (aplicado no install)
-3. **Fonte:** [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads) → `~/.local/share/fonts/`
-4. **Monitores:** edite `~/.config/hypr/monitors.conf` ou use **hyprmoncfg** (botão 🖥️ no SwayNC)
-5. Reinicie e escolha **Hyprland** no SDDM
+1. **Fonte:** JetBrainsMono Nerd Font → `~/.local/share/fonts/` e `fc-cache -fv`
+2. **NVIDIA** (se aplicável): `sudo apt install nvidia-driver firmware-misc-nonfree`
+3. **Monitores:** edite `~/.config/hypr/monitors.conf` ou use **hyprmoncfg** (SwayNC 🖥️)
+4. **Músicas:** copie arquivos para `~/Músicas/` (kew usa essa pasta)
+5. **Wallpapers extras:** `~/Pictures/wallpapers/` — use `Super+W` para escolher
+6. **Reinicie** e faça login no **SDDM** (sessão Hyprland)
 
 ### Apps opcionais (instalação manual)
 
@@ -107,14 +134,16 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 | kitty | Terminal padrão (`Super+Return`) |
 | yazi (Cargo) | Gerenciador TUI (`Super+E`, waybar 📑) |
 | firefox-esr | Navegador padrão (`Super+B`, waybar 🧭) |
-| zsh + starship | Shell com prompt customizado |
+| zsh + oh-my-zsh + starship | Shell com prompt customizado |
 
 ### TUIs e monitoramento
 
 | Pacote / binário | Função |
 |------------------|--------|
-| btop, nvtop | Monitor de sistema (waybar 📊) |
+| btop, nvtop | Monitor de sistema (SwayNC 📊) |
 | cmatrix | Efeito Matrix (waybar 🌎) |
+| kew v4 (compilado) | Player de música (SwayNC 🎵) |
+| dua-cli (Cargo) | Uso de disco (SwayNC 💾) |
 | bluetui (Cargo) | Bluetooth Super+; / SwayNC 🌀 |
 | nmtui | Rede Super+ç / SwayNC 🌐 |
 | hyprmoncfg | Layout de monitores SwayNC 🖥️ |
