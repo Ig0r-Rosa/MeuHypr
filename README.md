@@ -83,10 +83,17 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 
 ### Instalar para outro usuário
 
+Substitua `nome_do_usuario` pelo login Linux da conta destino (ex.: `maria`, `dev`).
+
 ```bash
-sudo MEUHYPR_TARGET_USER=igor_retta ./install.sh
-sudo MEUHYPR_TARGET_USER=igor_retta MEUHYPR_CONFIG_ONLY=1 ./install.sh
+# Instalação completa (pacotes + configs) para a conta indicada
+sudo MEUHYPR_TARGET_USER=nome_do_usuario ./install.sh
+
+# Só reaplicar configs em outra conta (sem reinstalar pacotes)
+sudo MEUHYPR_TARGET_USER=nome_do_usuario MEUHYPR_CONFIG_ONLY=1 ./install.sh
 ```
+
+O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → `/home/nome_do_usuario/`).
 
 ### Pós-instalação manual
 
@@ -150,7 +157,7 @@ sudo MEUHYPR_TARGET_USER=igor_retta MEUHYPR_CONFIG_ONLY=1 ./install.sh
 | dua-cli (Cargo) | Uso de disco (SwayNC 💾) |
 | bluetui (Cargo) | Bluetooth Super+; / SwayNC 🌀 |
 | nmtui | Rede Super+ç / SwayNC 🌐 |
-| hyprmoncfg | Layout de monitores SwayNC 🖥️ |
+| hyprmoncfg | Layout de monitores (SwayNC 🖥️) |
 
 ### Áudio, rede e energia
 
@@ -277,34 +284,66 @@ sudo MEUHYPR_TARGET_USER=igor_retta MEUHYPR_CONFIG_ONLY=1 ./install.sh
 
 ---
 
-## Waybar — cliques na barra
+## Waybar — barra superior
+
+Layout minimalista (**Igor Essential**): fundo transparente, fonte JetBrainsMono Nerd Font, altura 30 px.
+
+| Região | Módulos |
+|--------|---------|
+| **Esquerda** | 🌎 cmatrix · 🚀 launcher · hora · data · glifo da hora |
+| **Centro** | 🟢/⚪ áreas de trabalho · ➕ nova área |
+| **Direita** | 🧭 navegador · 📜 terminal · 📑 yazi · ⚙️ painel SwayNC |
+
+### Cliques na barra
 
 | Ícone | Ação |
 |-------|------|
 | 🌎 | cmatrix em nova área de trabalho |
-| 🚀 | Launcher Rofi |
+| 🚀 | Launcher Rofi (igual `Super+D`) |
 | Hora / Data | Apenas exibição |
+| Glifo da hora | Indicador visual da hora (atualiza a cada minuto) |
 | 🟢/⚪ | Áreas de trabalho — clique para ir; scroll para navegar |
 | ➕ | Criar nova área de trabalho |
-| 🧭 | Navegador padrão (igual Super+B) |
-| 📜 | Terminal |
-| 📑 | yazi (gerenciador TUI) |
-| 📊 | Nova área com btop + nvtop |
-| 🎮 | Modo jogo |
-| ⚙️ | Painel SwayNC (clique direito: DND) |
+| 🧭 | Navegador padrão (igual `Super+B`) |
+| 📜 | Terminal kitty (igual `Super+Return`) |
+| 📑 | yazi (igual `Super+E`) |
+| ⚙️ | Abre/fecha painel SwayNC · clique direito: alternar DND |
+
+Atalhos úteis: `Super+Alt+R` recarrega a Waybar · `Super+Shift+B` restaura layout padrão.
+
+Configs em `~/.config/waybar/config` e `style.css`. Variantes em `configs/` e `style/`.
 
 ---
 
 ## SwayNC — painel de notificações
 
-Abra com `Super+N`. Botões rápidos no topo:
+Abra com **`Super+N`** ou pelo ícone **⚙️** na Waybar. Painel fixo no canto superior direito (450×720 px).
+
+### Grade superior (4 botões)
 
 | Botão | Ação |
 |-------|------|
-| 🖥️ | hyprmoncfg (layout de monitores) |
-| 🌀 | bluetui (Bluetooth) |
-| 🌐 | nmtui (rede) |
+| 💾 | dua-cli — uso de disco |
+| 🌀 | bluetui — Bluetooth |
+| 🌐 | nmtui — rede |
 | ⚡ | Menu de energia (wlogout) |
+
+### Grade inferior (4 botões)
+
+| Botão | Ação |
+|-------|------|
+| 🎵 | kew — player de música |
+| 📊 | btop + nvtop em nova área |
+| 🖥️ | hyprmoncfg — layout de monitores |
+| 🎮 | Modo jogo (igual `Super+Shift+G`) |
+
+### Outros widgets
+
+- **MPRIS** — capa e controles da mídia em reprodução
+- **Volume** — saídas de áudio ativas (PipeWire)
+- **Notificações** — lista com botão **Limpar** no topo
+
+Config em `~/.config/swaync/config.json` e `style.css`.
 
 ---
 
