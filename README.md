@@ -48,7 +48,6 @@ O script instala **apenas o essencial** para a sessão Hyprland funcionar com os
 2. **Atalhos:** Rofi Wayland (Super+D, Super+S, Super+H), grim/slurp, cliphist
 3. **TUIs:** yazi, btop, nvtop, cmatrix, bluetui (Cargo), hyprmoncfg, nmtui
 4. **Navegador:** firefox-esr (Super+B — remova com `apt` se preferir outro)
-5. **Boot:** Visor Boot Manager com dual-boot Linux/Windows e wallpaper `espaco_1`
 5. Copia configs para `~/.config/` e instala tema SDDM `noc-sddm`
 
 **Não** instala automaticamente: Steam, Discord, Nautilus, pavucontrol, nwg-displays, nwg-look, etc. Instale depois conforme sua necessidade.
@@ -150,22 +149,6 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 |--------|--------|
 | sddm | Gerenciador de login |
 | noc-sddm (este repo) | Tema SDDM personalizado |
-
-### Boot (UEFI)
-
-| Componente | Função |
-|------------|--------|
-| [Visor Boot Manager](https://github.com/IO-ZetZor/Visor-BootManager) | Menu gráfico de boot (Linux + Windows), estilo minimalista |
-| `system/scripts/setup-visor-bootmanager.sh` | Compila, instala na ESP e define Visor como boot padrão |
-| `system/visor/backgrounds/espaco_1.png` | Wallpaper do menu de boot |
-
-Instalação isolada (sem reinstalar o Hyprland):
-
-```bash
-sudo /caminho/MeuHypr/system/scripts/setup-visor-bootmanager.sh
-```
-
-Pular no `install.sh` completo: `sudo MEUHYPR_SKIP_VISOR=1 ./install.sh`
 
 ---
 

@@ -404,12 +404,6 @@ deploy_system_files() {
   setup_default_wallpaper_system
 }
 
-setup_visor_bootmanager() {
-  [[ "${MEUHYPR_SKIP_VISOR:-0}" == "1" ]] && return 0
-  log "Instalando Visor Boot Manager (menu de boot)..."
-  bash "$SCRIPT_DIR/system/scripts/setup-visor-bootmanager.sh"
-}
-
 finalize_config_permissions() {
   log "Finalizando permissões e integração Rofi..."
   bash "$SCRIPT_DIR/system/scripts/finalize-config-permissions.sh" "$TARGET_USER"
@@ -425,7 +419,6 @@ Próximos passos manuais:
   3. Instale a fonte JetBrainsMono Nerd Font em ~/.local/share/fonts/
   4. Monitores: edite ~/.config/hypr/monitors.conf ou use hyprmoncfg (SwayNC 🖥️)
   5. Reinicie e selecione a sessão "Hyprland" no SDDM
-  6. Boot: após instalar Visor, reinicie para ver o menu Linux/Windows
 
 Apps opcionais (instale você mesmo conforme necessidade):
   Steam, Discord, Nautilus, pavucontrol, nwg-displays, nwg-look, etc.
@@ -454,7 +447,6 @@ main() {
   install_rofi_wayland
   deploy_user_configs
   deploy_system_files
-  setup_visor_bootmanager
   post_install_notes
 }
 
