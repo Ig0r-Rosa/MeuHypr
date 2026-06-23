@@ -12,6 +12,7 @@
 
   "modules-left": [
     "custom/calendar",
+    "custom/launcher",
     "clock#time",
     "clock#date",
     "custom/hour-glyph"
@@ -23,7 +24,7 @@
   ],
 
   "modules-right": [
-    "custom/launcher",
+    "custom/browser",
     "custom/terminal",
     "custom/files",
     "custom/swaync"
@@ -35,6 +36,12 @@
     "on-click": "$HOME/.config/hypr/scripts/RofiLauncher.sh"
   },
 
+  "custom/browser": {
+    "format": "🧭",
+    "tooltip": false,
+    "on-click": "$HOME/.config/hypr/scripts/WaybarBrowser.sh"
+  },
+
   "custom/terminal": {
     "format": "📜",
     "tooltip": false,
@@ -42,9 +49,9 @@
   },
 
   "custom/calendar": {
-    "format": "📅",
+    "format": "🌎",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/scripts/WaybarCalendar.sh"
+    "on-click": "$HOME/.config/hypr/scripts/WaybarCmatrix.sh"
   },
 
   "clock#time": {
@@ -96,6 +103,6 @@
   "custom/files": {
     "format": "📑",
     "tooltip": false,
-    "on-click": "nautilus --new-window"
+    "on-click": "$HOME/.config/hypr/scripts/WaybarYazi.sh"
   }
 }

@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 # Instala dependências e aplica as configurações do MeuHypr no sistema local.
+#
+# Filosofia de instalação:
+#   - Automático: sessão Hyprland, TUIs (yazi, btop, nvtop, kew, glow, dua-cli,
+#     oxker, cmatrix, bluetui, nmtui…), firefox-esr, Rofi (Super+D/S/H) e deps.
+#   - Manual: Steam, Discord, Nautilus, pavucontrol, nwg-displays, etc.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -16,7 +21,7 @@ SDDM_WALLPAPER_FILE="matrix.jpg"
 SDDM_WALLPAPER_PATH="/usr/share/sddm/themes/noc-sddm/backgrounds/$SDDM_WALLPAPER_FILE"
 SDDM_THEME_CONF="/usr/share/sddm/themes/noc-sddm/theme.conf"
 USER_WALLPAPER_NAME="$DEFAULT_WALLPAPER_FILE"
-TARGET_USER="${SUDO_USER:-$USER}"
+TARGET_USER="${MEUHYPR_TARGET_USER:-${SUDO_USER:-$USER}}"
 TARGET_HOME="$(getent passwd "$TARGET_USER" | cut -d: -f6)"
 
 log() { printf '\n[%s] %s\n' "MeuHypr" "$*"; }
@@ -30,6 +35,8 @@ need_root() {
 install_apt_packages() {
   log "Instalando pacotes APT (Debian trixie)..."
   apt-get update
+
+  log "  → Dependências de compilação (Hyprland, Rofi)..."
   apt-get install -y \
     build-essential git curl wget pkg-config cmake meson ninja-build \
     libwayland-dev libxkbcommon-dev libinput-dev libpixman-1-dev \
@@ -39,32 +46,73 @@ install_apt_packages() {
     libwebp-dev libjpeg-dev libpng-dev libgif-dev librsvg2-dev \
     libdbus-1-dev libpipewire-0.3-dev libspa-0.2-dev libxcb1-dev \
     libxcb-ewmh-dev libxcb-icccm4-dev libxcb-util-dev libstartup-notification0-dev \
-    libxdg-basedir-dev libcheck-dev libjson-c-dev libinih-dev \
-    waybar sddm kitty nautilus \
-    sway-notification-center wlogout fuzzel \
+    libxdg-basedir-dev libcheck-dev libjson-c-dev libinih-dev
+
+  log "  → Sessão Hyprland (barra, terminal, notificações, logout)..."
+  apt-get install -y \
+    waybar sddm kitty \
+    sway-notification-center wlogout fuzzel
+
+  log "  → Atalhos e utilitários (screenshot, clipboard, busca Rofi)..."
+  apt-get install -y \
     grim slurp wl-clipboard cliphist jq \
-    playerctl pamixer pavucontrol brightnessctl \
-    network-manager network-manager-gnome nmtui \
+    python3 python3-pip vim \
+    libnotify-bin imagemagick xdotool
+
+  log "  → Áudio e rede (CLI + agentes; sem GUIs opcionais)..."
+  apt-get install -y \
+    playerctl pamixer brightnessctl \
+    network-manager nmtui \
     polkit-kde-agent-1 \
-    pipewire pipewire-audio wireplumber \
+    pipewire pipewire-audio wireplumber
+
+  log "  → Portals, temas GTK/Qt e fontes base..."
+  apt-get install -y \
     xdg-desktop-portal xdg-desktop-portal-gtk \
     qt5ct qt6ct qt-style-kvantum \
-    nwg-displays nwg-look \
-    python3 python3-pip python3-nautilus zsh fastfetch btop cava \
-    fonts-noto fonts-noto-color-emoji fonts-firacode \
-    libnotify-bin imagemagick xdotool \
-    gnome-themes-extra adwaita-icon-theme
+    gnome-themes-extra adwaita-icon-theme \
+    fonts-noto fonts-noto-color-emoji fonts-firacode
+
+  log "  → Apps TUI (waybar, SwayNC, atalhos)..."
+  apt-get install -y \
+    zsh fastfetch btop nvtop cmatrix golang-go kew glow
+
+  log "  → Navegador padrão (Super+B; desinstale com apt se preferir outro)..."
+  apt-get install -y firefox-esr
+}
+
+install_hyprmoncfg() {
+  log "Compilando hyprmoncfg para $TARGET_USER..."
+  local build_dir="/tmp/meuhypr-hyprmoncfg-build"
+  local bin_dir="$TARGET_HOME/.local/bin"
+
+  mkdir -p "$bin_dir"
+  rm -rf "$build_dir"
+  git clone --depth 1 https://github.com/crmne/hyprmoncfg.git "$build_dir"
+
+  sudo -u "$TARGET_USER" bash -lc "
+    cd '$build_dir'
+    go build -o bin/hyprmoncfg ./cmd/hyprmoncfg
+    go build -o bin/hyprmoncfgd ./cmd/hyprmoncfgd
+    install -Dm755 bin/hyprmoncfg '$bin_dir/hyprmoncfg'
+    install -Dm755 bin/hyprmoncfgd '$bin_dir/hyprmoncfgd'
+  "
+
+  chown -R "$TARGET_USER:$TARGET_USER" "$bin_dir"
+  grep -qxF 'export PATH="\$HOME/.local/bin:\$PATH"' "$TARGET_HOME/.profile" 2>/dev/null || \
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$TARGET_HOME/.profile"
 }
 
 install_cargo_tools() {
-  log "Instalando ferramentas Rust (wallust, bluetui)..."
+  log "Instalando ferramentas TUI via Cargo (wallust, bluetui, yazi, dua-cli, oxker)..."
   local cargo_home="$TARGET_HOME/.cargo"
   local cargo_bin="$cargo_home/bin"
 
   sudo -u "$TARGET_USER" bash -lc "
     command -v cargo >/dev/null || curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
     source \"$cargo_home/env\"
-    cargo install wallust bluetui
+    cargo install wallust bluetui dua-cli oxker
+    cargo install --force yazi-build
   "
 
   if [[ -d "$cargo_bin" ]]; then
@@ -181,10 +229,8 @@ deploy_user_configs() {
   fi
 
   setup_gtk_bookmarks
-  setup_nautilus
   setup_display_preferences
   setup_default_wallpaper_user
-  setup_steam_hyprland
   repair_cursor_storage_if_needed
   finalize_config_permissions
 
@@ -196,6 +242,7 @@ deploy_user_configs() {
 }
 
 install_nautilus_extension() {
+  # Opt-in manual — Nautilus não é instalado pelo MeuHypr.
   log "Instalando extensão nautilus-open-any-terminal para $TARGET_USER..."
   local schemas_dir="$TARGET_HOME/.local/share/glib-2.0/schemas"
 
@@ -210,6 +257,7 @@ install_nautilus_extension() {
 }
 
 setup_nautilus() {
+  # Opt-in manual — requer nautilus instalado pelo usuário.
   log "Aplicando preferências do Nautilus para $TARGET_USER..."
   bash "$SCRIPT_DIR/config/hypr/scripts/setup-nautilus.sh" "$TARGET_USER"
 }
@@ -224,7 +272,7 @@ setup_display_preferences() {
   bash "$SCRIPT_DIR/system/scripts/setup-display-preferences.sh" "$TARGET_USER"
 }
 
-# Steam no Hyprland: launcher, workaround de ícones (nwg-look) e regras de janela.
+# Opt-in manual — requer Steam instalada pelo usuário.
 setup_steam_hyprland() {
   local script="$SCRIPT_DIR/system/scripts/setup-steam-hyprland.sh"
   [[ -x "$script" ]] || chmod +x "$script"
@@ -369,12 +417,11 @@ Próximos passos manuais:
   1. Wallpaper padrão: $DEFAULT_WALLPAPER_SYSTEM (SDDM + fallback Hyprland)
   2. Wallpapers extras: $TARGET_HOME/Pictures/wallpapers/
   3. Instale a fonte JetBrainsMono Nerd Font em ~/.local/share/fonts/
-  4. Ajuste monitors.conf com: nwg-displays (monitores variam por máquina)
+  4. Monitores: edite ~/.config/hypr/monitors.conf ou use hyprmoncfg (SwayNC 🖥️)
   5. Reinicie e selecione a sessão "Hyprland" no SDDM
-  6. Steam: abrir pelo menu (SteamLaunch.sh). Reparo: SteamLaunch.sh --repair
 
-Nota Steam/Hyprland: nwg-look não deve criar tema em ~/.local/share/icons/default
-  (quebra steamwebhelper). O install desativa esse tema automaticamente.
+Apps opcionais (instale você mesmo conforme necessidade):
+  Steam, Discord, Nautilus, pavucontrol, nwg-displays, nwg-look, etc.
 
 Para aplicar só as configs (sem reinstalar pacotes):
   sudo MEUHYPR_CONFIG_ONLY=1 $SCRIPT_DIR/install.sh
@@ -393,11 +440,11 @@ main() {
 
   need_root
   install_apt_packages
+  install_hyprmoncfg
   install_cargo_tools
   install_starship
   install_hypr_stack
   install_rofi_wayland
-  install_nautilus_extension
   deploy_user_configs
   deploy_system_files
   post_install_notes

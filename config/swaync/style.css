@@ -405,11 +405,25 @@ label {
 
 .widget-buttons-grid {
     padding: 0;
-    margin: 6px 6px;
+    margin: 0 6px;
     border-radius: 0;
     background-color: @noti-bg-alt;
-    border: 1px solid @border-window;
+    border-left: 1px solid @border-window;
+    border-right: 1px solid @border-window;
     color: @text-color;
+}
+
+/* Bloco superior: borda em cima + linha vermelha embaixo */
+.grid-top {
+    margin-top: 6px;
+    border-top: 1px solid @border-window;
+    border-bottom: 1px solid @border-window;
+}
+
+/* Bloco inferior: sem borda em cima (a linha vem do grid-top) */
+.grid-bottom {
+    margin-bottom: 6px;
+    border-bottom: 1px solid @border-window;
 }
 
 .widget-buttons-grid > flowbox {

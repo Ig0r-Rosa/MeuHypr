@@ -79,6 +79,13 @@ launch_waybar() {
   pgrep -x waybar >/dev/null
 }
 
+# Reinicia a waybar (processo pode existir mas estar oculta via SIGUSR1).
+force_restart_waybar() {
+  pkill -x waybar 2>/dev/null || true
+  sleep 0.35
+  launch_waybar
+}
+
 ensure_single_waybar() {
   local procs
   procs=$(count_waybar_procs)
@@ -108,9 +115,8 @@ main() {
   mkdir -p "$(dirname "$LOG")"
 
   if [[ "$mode" == "quick" ]]; then
-    pgrep -x waybar >/dev/null && waybar_on_screen && exit 0
     wait_hyprland || exit 1
-    launch_waybar && exit 0
+    force_restart_waybar && exit 0
     exit 1
   fi
 

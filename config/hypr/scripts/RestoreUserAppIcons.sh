@@ -12,10 +12,15 @@ log() { printf '[restore-icons] %s\n' "$*"; }
 
 mkdir -p "$ICONS_DIR"
 
-# hicolor com ícones de apps — exclui symlinks steam.png (opcional, Steam usa .desktop próprio).
+# hicolor com ícones de apps — sem tema default/ (nwg-look).
 if [[ -d "$ICONS_BAK/hicolor" ]]; then
-  rsync -a --exclude='steam.png' --exclude='steam_tray_mono.png' \
+  rsync -a --exclude='steam_tray_mono.png' \
     "$ICONS_BAK/hicolor/" "$ICONS_DIR/hicolor/"
+fi
+
+# Ícone da Steam para menus (foi omitido no rsync legado).
+if [[ -x "${HOME}/.config/hypr/scripts/SteamMenuIcon.sh" ]]; then
+  "${HOME}/.config/hypr/scripts/SteamMenuIcon.sh" >/dev/null || true
 fi
 
 # Godot existia só na raiz do backup; instala no padrão freedesktop.

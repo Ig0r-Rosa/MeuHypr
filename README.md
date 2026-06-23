@@ -42,13 +42,15 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
-O script:
+O script instala **apenas o essencial** para a sessão Hyprland funcionar com os atalhos configurados:
 
-1. Instala pacotes APT (waybar, kitty, swww, swaync, etc.)
-2. Compila **Hyprland**, **hyprsunset** e **Rofi Wayland**
-3. Instala **wallust**, **bluetui** (Cargo) e **starship**
-4. Copia configs para `~/.config/`
-5. Instala tema SDDM `noc-sddm` e sessão Hyprland
+1. **Sessão:** Hyprland (compilado), waybar, kitty, swaync, wlogout, fuzzel, swww, portals
+2. **Atalhos:** Rofi Wayland (Super+D, Super+S, Super+H), grim/slurp, cliphist
+3. **TUIs:** yazi, btop, nvtop, cmatrix, bluetui (Cargo), hyprmoncfg, nmtui
+4. **Navegador:** firefox-esr (Super+B — remova com `apt` se preferir outro)
+5. Copia configs para `~/.config/` e instala tema SDDM `noc-sddm`
+
+**Não** instala automaticamente: Steam, Discord, Nautilus, pavucontrol, nwg-displays, nwg-look, etc. Instale depois conforme sua necessidade.
 
 ### Só reaplicar configs (sem reinstalar pacotes)
 
@@ -61,8 +63,18 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 1. **Wallpapers:** padrão Matrix em `assets/wallpapers/`; extras em `~/Pictures/wallpapers/` — use `Super+W` para escolher
 2. **SDDM:** fundo Matrix em `sddm/themes/noc-sddm/backgrounds/matrix.jpg` (aplicado no install)
 3. **Fonte:** [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads) → `~/.local/share/fonts/`
-4. **Monitores:** `nwg-displays` → gera `~/.config/hypr/monitors.conf`
+4. **Monitores:** edite `~/.config/hypr/monitors.conf` ou use **hyprmoncfg** (botão 🖥️ no SwayNC)
 5. Reinicie e escolha **Hyprland** no SDDM
+
+### Apps opcionais (instalação manual)
+
+| App | Comando sugerido | Atalho / uso |
+|-----|------------------|--------------|
+| Nautilus | `sudo apt install nautilus` | Super+E (fallback automático para yazi) |
+| pavucontrol | `sudo apt install pavucontrol` | Mixer de áudio GUI |
+| Steam | `sudo apt install steam` + `setup-steam-hyprland.sh` | Scripts em `hypr/scripts/Steam*.sh` |
+| nwg-displays | via repositório nwg ou AUR equivalente | Menu KooL Quick Settings |
+| Discord, etc. | flatpak / snap / apt | Pelo launcher Super+D |
 
 ---
 
@@ -82,19 +94,30 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 | Pacote | Função |
 |--------|--------|
 | waybar | Barra superior |
-| rofi (Wayland) | Launcher Super+D |
+| rofi (Wayland) | Launcher Super+D, busca Super+S, atalhos Super+H |
 | fuzzel | Alternador de janelas Super+J |
 | swaync | Centro de notificações Super+N |
 | wlogout | Menu de energia Super+Alt+Delete |
 | swww | Daemon de wallpaper |
 
-### Terminal e arquivos
+### Terminal, arquivos e navegador
 
 | Pacote | Função |
 |--------|--------|
 | kitty | Terminal padrão (`Super+Return`) |
-| nautilus | Gerenciador de arquivos (`Super+E`) |
+| yazi (Cargo) | Gerenciador TUI (`Super+E`, waybar 📑) |
+| firefox-esr | Navegador padrão (`Super+B`, waybar 🧭) |
 | zsh + starship | Shell com prompt customizado |
+
+### TUIs e monitoramento
+
+| Pacote / binário | Função |
+|------------------|--------|
+| btop, nvtop | Monitor de sistema (waybar 📊) |
+| cmatrix | Efeito Matrix (waybar 🌎) |
+| bluetui (Cargo) | Bluetooth Super+; / SwayNC 🌀 |
+| nmtui | Rede Super+ç / SwayNC 🌐 |
+| hyprmoncfg | Layout de monitores SwayNC 🖥️ |
 
 ### Áudio, rede e energia
 
@@ -102,10 +125,7 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 |--------|--------|
 | pipewire, wireplumber | Áudio |
 | pamixer, playerctl | Atalhos de volume/mídia |
-| pavucontrol | Mixer (via painel SwayNC) |
-| network-manager, nm-applet | Rede |
-| nmtui | Super+ç — utilitário de rede |
-| bluetui | Super+; — Bluetooth (Cargo) |
+| network-manager, nmtui | Rede |
 | brightnessctl | Brilho máximo no boot |
 
 ### Captura e clipboard
@@ -121,7 +141,6 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 |--------|--------|
 | wallust | Cores dinâmicas do wallpaper |
 | qt5ct, qt6ct, kvantum | Apps Qt |
-| nwg-displays, nwg-look | Monitores e temas GTK |
 | fonts-noto, fonts-firacode | Fontes base |
 
 ### Login
@@ -144,10 +163,10 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 | `Super+D` | Launcher de apps (Rofi, grid central) |
 | `Super+Shift+D` | Apps ocultos no launcher |
 | `Super+Return` | Abrir terminal (kitty) |
-| `Super+E` | Gerenciador de arquivos (Nautilus) |
-| `Super+B` | Abrir navegador padrão |
+| `Super+E` | yazi (ou Nautilus se instalado) |
+| `Super+B` | Abrir navegador padrão (Firefox) |
 | `Super+A` | Kitty no Nautilus ou overview |
-| `Super+L` | Abrir lixeira no Nautilus |
+| `Super+L` | Abrir lixeira no Nautilus (requer Nautilus) |
 | `Super+J` | Alternador de janelas (Fuzzel) |
 | `Super+S` | Busca web (Rofi) |
 | `Super+H` | Buscar atalhos disponíveis |
@@ -229,13 +248,16 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 
 | Ícone | Ação |
 |-------|------|
-| 📅 | Calendário (`Super` implícito via script) |
+| 🌎 | cmatrix em nova área de trabalho |
+| 🚀 | Launcher Rofi |
 | Hora / Data | Apenas exibição |
 | 🟢/⚪ | Áreas de trabalho — clique para ir; scroll para navegar |
 | ➕ | Criar nova área de trabalho |
-| 🚀 | Launcher Rofi |
+| 🧭 | Navegador padrão (igual Super+B) |
 | 📜 | Terminal |
-| 📑 | Nautilus |
+| 📑 | yazi (gerenciador TUI) |
+| 📊 | Nova área com btop + nvtop |
+| 🎮 | Modo jogo |
 | ⚙️ | Painel SwayNC (clique direito: DND) |
 
 ---
@@ -246,7 +268,7 @@ Abra com `Super+N`. Botões rápidos no topo:
 
 | Botão | Ação |
 |-------|------|
-| 🎮 | Modo jogo |
+| 🖥️ | hyprmoncfg (layout de monitores) |
 | 🌀 | bluetui (Bluetooth) |
 | 🌐 | nmtui (rede) |
 | ⚡ | Menu de energia (wlogout) |
@@ -276,7 +298,7 @@ Edite preferencialmente estes arquivos (não serão sobrescritos por updates gen
 | `~/.config/hypr/UserConfigs/UserDecorations.conf` | Bordas vermelhas, blur, opacidade |
 | `~/.config/hypr/UserConfigs/UserAnimations.conf` | Animações |
 | `~/.config/hypr/UserConfigs/WindowRules.conf` | Regras de janelas |
-| `~/.config/hypr/monitors.conf` | Monitores (via nwg-displays) |
+| `~/.config/hypr/monitors.conf` | Monitores (hyprmoncfg ou edição manual) |
 | `~/.config/waybar/config` + `style.css` | Barra superior |
 
 ---
@@ -286,7 +308,8 @@ Edite preferencialmente estes arquivos (não serão sobrescritos por updates gen
 Definidos em `UserConfigs/01-UserDefaults.conf`:
 
 - **Terminal:** kitty  
-- **Arquivos:** nautilus  
+- **Arquivos:** yazi (Nautilus opcional)  
+- **Navegador:** firefox-esr (via APT)  
 - **Busca:** Google (`Super+S`)
 
 ---

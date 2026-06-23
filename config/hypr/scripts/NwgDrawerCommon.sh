@@ -6,7 +6,7 @@ nwg_drawer_build_args() {
   printf '%s\n' \
     -wm hyprland \
     -term kitty \
-    -fm nautilus \
+    -fm yazi \
     -lang pt \
     -i Flat-Remix-Blue-Dark \
     -c 7 \

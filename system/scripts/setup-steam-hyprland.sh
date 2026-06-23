@@ -11,7 +11,7 @@ log() { printf '[setup-steam] %s\n' "$*"; }
 ensure_steam_scripts_executable() {
   local script
   for script in SteamLaunch.sh SteamRaiseWindow.sh SteamSeedWindowGeometry.sh \
-    SteamIconsWorkaround.sh RestoreUserAppIcons.sh; do
+    SteamIconsWorkaround.sh RestoreUserAppIcons.sh SteamMenuIcon.sh; do
     [[ -f "$TARGET_HOME/.config/hypr/scripts/$script" ]] || continue
     chmod +x "$TARGET_HOME/.config/hypr/scripts/$script"
   done
@@ -27,8 +27,13 @@ apply_icons_workaround() {
 create_steam_desktop_entry() {
   local dest="$TARGET_HOME/.local/share/applications/steam.desktop"
   local launch_script="$TARGET_HOME/.config/hypr/scripts/SteamLaunch.sh"
+  local icon_script="$TARGET_HOME/.config/hypr/scripts/SteamMenuIcon.sh"
+  local steam_icon="steam"
 
   [[ -x "$launch_script" ]] || return 0
+  if [[ -x "$icon_script" ]]; then
+    steam_icon="$(sudo -u "$TARGET_USER" bash -lc "'$icon_script'" | tail -1)"
+  fi
   mkdir -p "$(dirname "$dest")"
   rm -f "$dest" "$TARGET_HOME/.local/share/applications/steam-hyprland.desktop"
   cat >"$dest" <<DESKTOP
@@ -36,7 +41,7 @@ create_steam_desktop_entry() {
 Name=Steam
 Comment=Aplicativo para jogar e gerenciar jogos no Steam
 Exec=$launch_script %U
-Icon=steam
+Icon=$steam_icon
 Terminal=false
 Type=Application
 Categories=Network;FileTransfer;Game;
@@ -45,6 +50,9 @@ Keywords=Games
 PrefersNonDefaultGPU=false
 DESKTOP
   chown "$TARGET_USER:$TARGET_USER" "$dest"
+  if command -v update-desktop-database >/dev/null; then
+    update-desktop-database "$(dirname "$dest")" 2>/dev/null || true
+  fi
 }
 
 log "Configurando Steam + Hyprland para $TARGET_USER ..."

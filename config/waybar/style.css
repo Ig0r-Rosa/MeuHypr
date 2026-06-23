@@ -49,9 +49,12 @@ tooltip {
   margin: 0;
 }
 
+#custom-browser,
 #custom-launcher,
 #custom-terminal,
+#custom-system-monitor,
 #custom-files,
+#custom-game-mode,
 #custom-swaync,
 #custom-calendar,
 #custom-workspace-add,
@@ -61,19 +64,25 @@ tooltip {
   padding: 0 6px;
 }
 
+#custom-browser label,
 #custom-launcher label,
 #custom-terminal label,
-#custom-swaync label,
+#custom-system-monitor label,
 #custom-files label,
+#custom-game-mode label,
+#custom-swaync label,
 #custom-calendar label,
 #custom-workspace-add label {
   font-size: 13px;
   transition: font-size 160ms ease-out;
 }
 
+#custom-browser,
 #custom-launcher,
 #custom-terminal,
+#custom-system-monitor,
 #custom-files,
+#custom-game-mode,
 #custom-swaync,
 #custom-calendar {
   padding: 0 6px;
@@ -144,20 +153,26 @@ tooltip {
   box-shadow: none;
 }
 
+#custom-browser:hover,
 #custom-launcher:hover,
 #custom-terminal:hover,
+#custom-system-monitor:hover,
 #custom-swaync:hover,
 #custom-files:hover,
+#custom-game-mode:hover,
 #custom-calendar:hover,
 #custom-workspace-add:hover,
 #workspaces button:hover {
   font-size: 17px;
 }
 
+#custom-browser:hover label,
 #custom-launcher:hover label,
 #custom-terminal:hover label,
+#custom-system-monitor:hover label,
 #custom-swaync:hover label,
 #custom-files:hover label,
+#custom-game-mode:hover label,
 #custom-calendar:hover label,
 #custom-workspace-add:hover label {
   font-size: 17px;

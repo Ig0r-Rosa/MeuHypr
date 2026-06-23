@@ -12,6 +12,7 @@ find_client() {
       elif $m == "files" then
         (.class == "org.gnome.Nautilus" or .class == "nautilus")
         or any(.tags[]?; test("^file-manager"))
+        or ((.class | test("(?i)kitty")) and (.title | test("(?i)yazi")))
       else
         false
       end
@@ -25,9 +26,11 @@ focus_client() {
 }
 
 launch_app() {
+  local scripts_dir="$HOME/.config/hypr/scripts"
+
   case "$mode" in
     browser) xdg-open "https://" ;;
-    files)   nautilus ;;
+    files)   "$scripts_dir/FileManagerOpen.sh" ;;
   esac
 }
 
