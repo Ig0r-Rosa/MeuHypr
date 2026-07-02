@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Abre/fecha o painel swaync (waybar, Super+N, etc.).
+# Abre/fecha o painel swaync (duplo Super, waybar, etc.).
 
 MODE="${1:-toggle}"
 
@@ -22,16 +22,8 @@ wait_ready() {
   return 1
 }
 
-panel_open() {
-  hyprctl layers 2>/dev/null | rg -q 'swaync-control-center'
-}
-
 toggle_panel() {
-  if panel_open; then
-    swaync-client -cp -sw
-  else
-    swaync-client -op -sw
-  fi
+  swaync-client -t -sw
 }
 
 run_action() {

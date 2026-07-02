@@ -2,7 +2,30 @@
 # Super + scroll: navega áreas do monitor; na última com janelas, cria vazia;
 # na vazia do fim, scroll de novo volta ao início do monitor.
 
+# Intervalo mínimo entre trocas (ms). O Hyprland mantém scroll_event_delay=0
+# para não rolar apps com Super; o suavização fica aqui.
+SCROLL_COOLDOWN_MS=300
+STATE_DIR="${XDG_RUNTIME_DIR:-/tmp}/meuhypr-workspace-scroll"
+
 direction="${1:-+1}"
+
+now_ms() {
+  date +%s%3N
+}
+
+scroll_throttled() {
+  local now last elapsed
+  mkdir -p "$STATE_DIR"
+  now="$(now_ms)"
+  [[ -f "$STATE_DIR/last" ]] || { echo "$now" > "$STATE_DIR/last"; return 1; }
+
+  last="$(<"$STATE_DIR/last")"
+  elapsed=$((now - last))
+  (( elapsed < SCROLL_COOLDOWN_MS )) && return 0
+
+  echo "$now" > "$STATE_DIR/last"
+  return 1
+}
 
 get_monitor_workspaces() {
   local monitor="$1"
@@ -42,6 +65,8 @@ scroll_next() {
 scroll_prev() {
   hyprctl dispatch workspace m-1
 }
+
+scroll_throttled && exit 0
 
 case "$direction" in
   next|+1|down) scroll_next ;;

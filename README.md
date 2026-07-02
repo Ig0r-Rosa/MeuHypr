@@ -135,7 +135,7 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 | waybar | Barra superior |
 | rofi (Wayland) | Launcher Super+D, busca Super+S, atalhos Super+H |
 | fuzzel | Alternador de janelas Super+J |
-| swaync | Centro de notificações Super+N |
+| swaync | Centro de notificações (duplo Super) |
 | wlogout | Menu de energia Super+Alt+Delete |
 | swww | Daemon de wallpaper |
 
@@ -238,7 +238,7 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 | `Super+Ctrl+1` … `Super+0` | Mover silenciosamente para área |
 | `Super+Shift+[` / `Super+Shift+]` | Mover janela para área anterior/próxima |
 | `Super+=` / `Super+-` | Criar / remover área de trabalho |
-| `Super+Scroll` / `Super+,` / `Super+.` | Navegar entre áreas do monitor |
+| `Super+Scroll` / `Super+,` / `Super+.` | Navegar entre áreas do monitor (scroll não rola apps com Super pressionado) |
 | `Super+Shift+Tab` | Alternar monitor |
 | `Super+U` | Área especial (scratchpad) |
 | `Super+Shift+U` | Mover janela para área especial |
@@ -258,7 +258,7 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 
 | Atalho | Ação |
 |--------|------|
-| `Super+N` | Painel de notificações (SwayNC) |
+| `Super` + `Super` (≤1s) | Painel de notificações (SwayNC) |
 | `Super+Alt+Delete` | Menu de energia (logout/reiniciar/desligar) |
 | `Super+ç` | nmtui (rede) no terminal |
 | `Super+;` | bluetui (Bluetooth) no terminal |
@@ -320,7 +320,7 @@ Configs em `~/.config/waybar/config` e `style.css`. Variantes em `configs/` e `s
 
 ## SwayNC — painel de notificações
 
-Abra com **`Super+N`** ou pelo ícone **⚙️** na Waybar. Painel fixo no canto superior direito (450×720 px).
+Abra com **duplo toque no Super** (em até 1 segundo) ou pelo ícone **⚙️** na Waybar. Painel fixo no canto superior direito (450×720 px).
 
 ### Grade superior (4 botões)
 

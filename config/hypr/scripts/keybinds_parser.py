@@ -130,6 +130,7 @@ KEY_LABELS = {
     "mouse:272": "botão esquerdo",
     "mouse:273": "botão direito",
     "$mainMod_L": "Super",
+    "$mainMod_R": "Super",
     "bracketleft": "[",
     "bracketright": "]",
     "equal": "=",
@@ -306,6 +307,12 @@ def translate_fallback(dispatcher, params):
     return dispatcher
 
 
+def binder_has_description(binder):
+    """bindd, bindld, bindldrp… — flag 'd' indica descrição antes do dispatcher."""
+    flags = binder[4:] if binder.startswith("bind") else ""
+    return "d" in flags
+
+
 def format_for_rofi(raw_binds):
     formatted_lines = []
     
@@ -321,11 +328,7 @@ def format_for_rofi(raw_binds):
         binder = match.group(1).replace(" ", "").replace("\t", "")
         rhs = match.group(2).strip()
         
-        # "bind" ends in d, but doesn't have a description. "bindd" does.
-        # Original script logic `index(binder, "d")>0` was likely buggy for "bind".
-        # We'll assume strict check for bindd or similar if needed, 
-        # but avoiding "bind" having a description is crucial for correct output.
-        has_desc = binder in ("bindd", "bindld", "bindeld", "binded")
+        has_desc = binder_has_description(binder)
 
         # Split by comma regex (handling spaces)
         parts = [p.strip() for p in rhs.split(',')]
@@ -375,8 +378,17 @@ def format_for_rofi(raw_binds):
             formatted_lines.append(f"{combo_str} — {label}")
         else:
             formatted_lines.append(combo_str)
-            
-    return formatted_lines
+
+    # Super_L e Super_R podem gerar a mesma linha (ex.: duplo Super).
+    seen = set()
+    unique_lines = []
+    for line in formatted_lines:
+        if line in seen:
+            continue
+        seen.add(line)
+        unique_lines.append(line)
+
+    return unique_lines
 
 def main():
     if len(sys.argv) < 2:
