@@ -1,18 +1,5 @@
 #!/usr/bin/env bash
-# Abre o nmtui no terminal padrão ($term de 01-UserDefaults.conf).
+# nmtui — rede TUI; foca janela existente ou abre em área vazia.
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-config_file="$HOME/.config/hypr/UserConfigs/01-UserDefaults.conf"
-
-if [[ -f "$config_file" ]]; then
-  config_content=$(sed 's/\$//g' "$config_file" | sed 's/ = /=/')
-  eval "$config_content"
-fi
-
-term="${term:-kitty}"
-
-"$HOME/.config/hypr/scripts/SwayncClosePanel.sh"
-sleep 0.15
-
-hyprctl dispatch exec "$term --title nmtui nmtui"
-"$script_dir/SwayncRepaintWallpaper.sh"
+exec "$script_dir/SwayncFocusOrLaunchTui.sh" nmtui nmtui

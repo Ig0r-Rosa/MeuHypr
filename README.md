@@ -21,6 +21,7 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 | `config/rofi/` | Launcher Super+D, menu de energia, temas Wallust |
 | `config/swaync/` | Painel de notificações |
 | `config/kitty/` | Terminal sem decoração, opacidade no fundo |
+| `config/yazi/` | Gerenciador de arquivos TUI (`Super+A` = terminal na pasta) |
 | `config/wlogout/` | Menu de energia (Super+Alt+Delete) |
 | `config/wallust/` | Geração de cores a partir do wallpaper |
 | `config/zsh/` | Zsh com oh-my-zsh + Starship |
@@ -69,7 +70,7 @@ O script instala **o essencial** para a sessão Hyprland funcionar com os atalho
 2. **Login:** SDDM como gerenciador padrão + tema `noc-sddm`
 3. **Shell:** zsh, **oh-my-zsh**, Starship
 4. **Atalhos:** Rofi Wayland (Super+D, Super+S, Super+H), grim/slurp, cliphist
-5. **TUIs:** yazi, btop, nvtop, cmatrix, bluetui (Cargo), **kew v4**, dua-cli, oxker, hyprmoncfg, nmtui
+5. **TUIs:** yazi, btop, nvtop, cmatrix, bluetui (Cargo), **kew v4**, dua-cli, oxker, pulsemixer, hyprmoncfg, nmtui
 6. **Navegador:** firefox-esr (Super+B)
 7. Copia configs para `~/.config/` (Hyprland, kewrc padrão se não existir, etc.)
 
@@ -143,7 +144,7 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 | Pacote | Função |
 |--------|--------|
 | kitty | Terminal padrão (`Super+Return`) |
-| yazi (Cargo) | Gerenciador TUI (`Super+E`, waybar 📑) |
+| yazi (Cargo) | Gerenciador TUI (`Super+E`, waybar 📑; `Super+A` abre terminal na pasta) |
 | firefox-esr | Navegador padrão (`Super+B`, waybar 🧭) |
 | zsh + oh-my-zsh + starship | Shell com prompt customizado |
 
@@ -153,7 +154,8 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 |------------------|--------|
 | btop, nvtop | Monitor de sistema (SwayNC 📊) |
 | cmatrix | Efeito Matrix (waybar 🌎) |
-| kew v4 (compilado) | Player de música (SwayNC 🎵) |
+| kew v4 (compilado) | Player de música (instalado; sem botão no SwayNC) |
+| pulsemixer (APT) | Controlador de áudio TUI (SwayNC 🔊) |
 | dua-cli (Cargo) | Uso de disco (SwayNC 💾) |
 | bluetui (Cargo) | Bluetooth Super+; / SwayNC 🌀 |
 | nmtui | Rede Super+ç / SwayNC 🌐 |
@@ -205,7 +207,7 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 | `Super+Return` | Abrir terminal (kitty) |
 | `Super+E` | yazi (ou Nautilus se instalado) |
 | `Super+B` | Abrir navegador padrão (Firefox) |
-| `Super+A` | Kitty no Nautilus ou overview |
+| `Super+A` | Terminal na pasta atual (Nautilus ou yazi) |
 | `Super+L` | Abrir lixeira no Nautilus (requer Nautilus) |
 | `Super+J` | Alternador de janelas (Fuzzel) |
 | `Super+S` | Busca web (Rofi) |
@@ -232,6 +234,7 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 |--------|------|
 | `Super+1` … `Super+0` | Ir para área 1–10 |
 | `Super+Shift+1` … `Super+0` | Mover janela para área 1–10 |
+| `Super+Shift+,` / `Super+Shift+.` | Mover janela para área anterior/próxima |
 | `Super+Ctrl+1` … `Super+0` | Mover silenciosamente para área |
 | `Super+Shift+[` / `Super+Shift+]` | Mover janela para área anterior/próxima |
 | `Super+=` / `Super+-` | Criar / remover área de trabalho |
@@ -332,7 +335,7 @@ Abra com **`Super+N`** ou pelo ícone **⚙️** na Waybar. Painel fixo no canto
 
 | Botão | Ação |
 |-------|------|
-| 🎵 | kew — player de música |
+| 🔊 | pulsemixer — áudio (saídas, volume, mudo) |
 | 📊 | btop + nvtop em nova área |
 | 🖥️ | hyprmoncfg — layout de monitores |
 | 🎮 | Modo jogo (igual `Super+Shift+G`) |

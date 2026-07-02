@@ -83,8 +83,8 @@
             "buttons-per-row": 4,
             "actions": [
                 {
-                    "label": "🎵",
-                    "command": "bash -c $HOME/.config/hypr/scripts/SwayncKew.sh"
+                    "label": "🔊",
+                    "command": "bash -c $HOME/.config/hypr/scripts/SwayncPulsemixer.sh"
                 },
                 {
                     "label": "📊",

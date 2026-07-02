@@ -3,7 +3,7 @@
 #
 # Filosofia de instalação:
 #   - Automático: sessão Hyprland, TUIs (yazi, btop, nvtop, kew v4, glow, dua-cli,
-#     oxker, cmatrix, bluetui, nmtui…), oh-my-zsh, firefox-esr, Rofi (Super+D/S/H) e deps.
+#     oxker, cmatrix, bluetui, pulsemixer, nmtui…), oh-my-zsh, firefox-esr, Rofi (Super+D/S/H) e deps.
 #   - Manual: Steam, Discord, Nautilus, pavucontrol, nwg-displays, etc.
 set -euo pipefail
 
@@ -61,7 +61,7 @@ install_apt_packages() {
 
   log "  → Áudio e rede (CLI + agentes; sem GUIs opcionais)..."
   apt-get install -y \
-    playerctl pamixer brightnessctl \
+    playerctl pamixer pulsemixer brightnessctl \
     network-manager nmtui \
     polkit-kde-agent-1 \
     pipewire pipewire-audio wireplumber
@@ -288,7 +288,7 @@ deploy_user_configs() {
     "$CONFIG_SRC/hypr/" "$TARGET_HOME/.config/hypr/"
 
   rsync -a "$CONFIG_SRC/waybar/" "$TARGET_HOME/.config/waybar/"
-  for item in swaync swhkd kitty wallust fuzzel xdg-desktop-portal fastfetch wlogout qt5ct qt6ct Kvantum; do
+  for item in swaync swhkd kitty yazi wallust fuzzel xdg-desktop-portal fastfetch wlogout qt5ct qt6ct Kvantum; do
     rsync -a "$CONFIG_SRC/$item/" "$TARGET_HOME/.config/$item/"
   done
   # launcher.py é symlink gerado no pós-deploy — não copiar cópia estática
