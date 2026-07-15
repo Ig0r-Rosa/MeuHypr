@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Aplica wallpaper com transição animada em um monitor.
+# Aplica wallpaper (imagem ou GIF animado) em um monitor via swww.
 
 SCRIPTSDIR="$HOME/.config/hypr/scripts"
 LOCK_FILE="${XDG_CACHE_HOME:-$HOME/.cache}/wallpaper-change.lock"
@@ -11,6 +11,7 @@ apply_wallpaper_image() {
   local type="${SWWW_TYPE:-any}"
   local duration="${SWWW_DURATION:-2}"
   local bezier="${SWWW_BEZIER:-.43,1.19,1,.4}"
+  local resize="${SWWW_RESIZE:-crop}"
 
   [[ -n "$monitor" && -f "$image_path" ]] || return 1
 
@@ -26,14 +27,16 @@ apply_wallpaper_image() {
   fi
 
   swww img -o "$monitor" "$image_path" \
+    --resize "$resize" \
     --transition-fps "$fps" \
     --transition-type "$type" \
     --transition-duration "$duration" \
     --transition-bezier "$bezier"
 
-  # Espera a animação acabar antes de atualizar cores (evita tela preta).
-  sleep "$duration"
-  sleep 0.25
+  if [[ "$duration" != "0" ]]; then
+    sleep "$duration"
+    sleep 0.25
+  fi
 
   "$SCRIPTSDIR/WallpaperPersist.sh" save "$monitor" "$image_path"
   "$SCRIPTSDIR/WallustSwww.sh" "$image_path"

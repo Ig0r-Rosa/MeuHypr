@@ -9,8 +9,8 @@ STATE_FILE="$HOME/.config/hypr/wallpaper_effects/monitors.json"
 USER_FALLBACK="$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
 SYSTEM_FALLBACK="/usr/share/backgrounds/meuhypr-matrix.jpg"
 CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/swww"
-RESTORE_RETRIES="${WALLPAPER_RESTORE_RETRIES:-4}"
-RESTORE_RETRY_DELAY="${WALLPAPER_RESTORE_RETRY_DELAY:-0.6}"
+RESTORE_RETRIES="${WALLPAPER_RESTORE_RETRIES:-2}"
+RESTORE_RETRY_DELAY="${WALLPAPER_RESTORE_RETRY_DELAY:-0.2}"
 
 resolve_fallback_wallpaper() {
   local candidate
@@ -48,7 +48,7 @@ apply_to_monitor() {
 
   [[ -f "$path" ]] || return 1
   monitor_exists "$monitor" || return 1
-  swww img -o "$monitor" "$path" --transition-duration 0
+  swww img -o "$monitor" "$path" --resize crop --transition-duration 0
 }
 
 apply_to_all_monitors() {
@@ -125,14 +125,17 @@ repair_black_monitors() {
   done < <(jq -r 'to_entries[] | "\(.key)\t\(.value)"' "$STATE_FILE")
 }
 
+# Só considera monitores atualmente conectados (1 tela não espera HDMI).
 apply_state_entries() {
-  local monitor path restored=0 failed=0
+  local monitor path restored=0 failed=0 pending=0
 
   [[ -f "$STATE_FILE" ]] || return 1
   jq -e 'length > 0' "$STATE_FILE" >/dev/null 2>&1 || return 1
 
   while IFS=$'\t' read -r monitor path; do
     [[ -n "$monitor" && -n "$path" ]] || continue
+    monitor_exists "$monitor" || continue
+    pending=$((pending + 1))
     if [[ ! -f "$path" ]]; then
       failed=$((failed + 1))
       continue
@@ -144,24 +147,29 @@ apply_state_entries() {
     fi
   done < <(jq -r 'to_entries[] | "\(.key)\t\(.value)"' "$STATE_FILE")
 
+  # Nenhum monitor do estado está conectado ainda
+  [[ "$pending" -eq 0 ]] && { printf '0 0\n'; return 1; }
   printf '%s %s\n' "$restored" "$failed"
 }
 
 verify_state_restored() {
-  local monitor path
+  local monitor path checked=0
 
   [[ -f "$STATE_FILE" ]] || return 1
   jq -e 'length > 0' "$STATE_FILE" >/dev/null 2>&1 || return 1
 
   while IFS=$'\t' read -r monitor path; do
+    monitor_exists "$monitor" || continue
+    checked=$((checked + 1))
     [[ -f "$path" ]] || return 1
-    monitor_exists "$monitor" || return 1
     monitor_display_ok "$monitor" || return 1
   done < <(jq -r 'to_entries[] | "\(.key)\t\(.value)"' "$STATE_FILE")
+
+  [[ "$checked" -gt 0 ]]
 }
 
 restore_all() {
-  local attempt restored failed fallback counts
+  local attempt restored failed fallback
 
   ensure_swww_daemon || return 1
 
@@ -173,6 +181,7 @@ restore_all() {
     for attempt in $(seq 1 "$RESTORE_RETRIES"); do
       read -r restored failed <<<"$(apply_state_entries)"
       verify_state_restored && return 0
+      # Só espera retry se o monitor ativo ainda estiver preto/quebrado.
       [[ "$attempt" -lt "$RESTORE_RETRIES" ]] && sleep "$RESTORE_RETRY_DELAY"
     done
     repair_black_monitors
