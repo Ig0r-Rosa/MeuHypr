@@ -21,6 +21,11 @@ SDDM_WALLPAPER_FILE="matrix.jpg"
 SDDM_WALLPAPER_PATH="/usr/share/sddm/themes/noc-sddm/backgrounds/$SDDM_WALLPAPER_FILE"
 SDDM_THEME_CONF="/usr/share/sddm/themes/noc-sddm/theme.conf"
 USER_WALLPAPER_NAME="$DEFAULT_WALLPAPER_FILE"
+
+# Fundo do GRUB. Vazio = usa a imagem versionada do tema (padrão do repo).
+# Para escolher outra: nome em assets/wallpapers/ (ex.: "espaco_1.jpg") ou caminho absoluto.
+# Também dá para sobrescrever na hora: MEUHYPR_GRUB_BG=... sudo ./install.sh
+GRUB_WALLPAPER="${MEUHYPR_GRUB_BG:-}"
 TARGET_USER="${MEUHYPR_TARGET_USER:-${SUDO_USER:-$USER}}"
 TARGET_HOME="$(getent passwd "$TARGET_USER" | cut -d: -f6)"
 
@@ -489,6 +494,55 @@ deploy_system_files() {
   chown -R root:root /usr/share/sddm/themes/noc-sddm
   chmod -R a+rX /usr/share/sddm/themes/noc-sddm
   setup_default_wallpaper_system
+  setup_grub_theme
+  setup_plymouth_theme
+  disable_core_dumps
+}
+
+# Desativa a geração de core dumps (arquivos core.* poluindo as homes).
+# Atua no kernel (vale p/ todos os usuários e sessões gráficas) e reforça
+# via limits.conf, removendo configs antigas que reativavam os dumps.
+disable_core_dumps() {
+  log "Desativando core dumps (arquivos core.*)..."
+  _write_coredump_sysctl
+  _write_coredump_limits
+  sysctl -p /etc/sysctl.d/50-coredump.conf >/dev/null 2>&1 || true
+}
+
+# Kernel descarta o dump em vez de gravar em disco.
+_write_coredump_sysctl() {
+  cat > /etc/sysctl.d/50-coredump.conf <<'EOF'
+# MeuHypr: desativa a geracao de core dumps (arquivos core.*).
+# "|/bin/false" faz o kernel descartar o dump em vez de gravar em disco.
+kernel.core_pattern=|/bin/false
+EOF
+}
+
+# Reforço via PAM: zera o limite de core para todos e remove regras conflitantes.
+_write_coredump_limits() {
+  rm -f /etc/security/limits.d/10-coredump-debian.conf \
+        /etc/security/limits.d/20-coredump-debian.conf \
+        /etc/security/limits.d/99-disable-coredump-igor.conf
+  cat > /etc/security/limits.d/99-coredump.conf <<'EOF'
+# MeuHypr: impede core dumps para todos os usuarios (defesa em profundidade).
+*     soft  core  0
+*     hard  core  0
+root  soft  core  0
+root  hard  core  0
+EOF
+}
+
+# Tema GRUB "clean": só fundo + lista de boot (remove mensagens de ajuda).
+# Repassa o fundo escolhido (ou vazio = imagem versionada do tema).
+setup_grub_theme() {
+  log "Aplicando tema GRUB (menu limpo)..."
+  MEUHYPR_GRUB_BG="$GRUB_WALLPAPER" bash "$SYSTEM_SRC/scripts/setup-grub-theme.sh"
+}
+
+# Tema Plymouth "monoarch": splash de boot (só a bolinha girando, sem logo).
+setup_plymouth_theme() {
+  log "Aplicando tema Plymouth (splash de boot)..."
+  bash "$SYSTEM_SRC/scripts/setup-plymouth-theme.sh"
 }
 
 finalize_config_permissions() {

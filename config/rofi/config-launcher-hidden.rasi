@@ -15,15 +15,10 @@ configuration {
     lines:               4;
     columns:             7;
     fixed-num-lines:     true;
-    hide-scrollbar:      true;
     terminal:            "kitty";
     sorting-method:      "normal";
     disable-history:     false;
-    scroll-method:       0;
-    hover-select:        true;
     click-to-exit:       true;
-    me-select-entry:     "";
-    me-accept-entry:     "MousePrimary";
     kb-move-char-forward: "Right";
     kb-custom-1:         "Control+r";
     kb-custom-2:         "Control+o";

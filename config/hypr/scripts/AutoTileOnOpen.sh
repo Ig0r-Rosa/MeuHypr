@@ -30,14 +30,42 @@ parse_open_event() {
   OPEN_TITLE="$title"
 }
 
-# Classes/títulos que devem permanecer flutuantes.
+# Classes que sempre permanecem flutuantes (utilitários, seletores, HUDs).
+is_always_floating_class() {
+  local class="$1"
+  [[ "$class" =~ ^(swaync|rofi|yad|hyprland-donate-screen|hyprland-share-picker|pavucontrol|org\.pulseaudio\.pavucontrol|nm-applet|org\.gnome\.Calculator|qalculate-gtk|zoom|onedriver|qt5ct|qt6ct|[Ss]team|steamwebhelper)$ ]]
+}
+
+# Títulos que sempre permanecem flutuantes (diálogos e splashes conhecidos).
+is_always_floating_title() {
+  local title="$1"
+  [[ "$title" =~ ^(Picture-in-Picture|Authentication Required|Add Folder to Workspace|Save As|Keybindings|ROG Control|SDDM Background|File Operation Progress|Open Files|Discord Updater)$ ]]
+}
+
+# Classes que devem ir para o tiling mesmo abrindo flutuantes.
+is_forced_tiling_class() {
+  local class="$1"
+  [[ "$class" =~ ^(org\.gnome\.Loupe|eog|blueman-manager|nm-connection-editor)$ ]]
+}
+
+# Janela pequena/HUD que abre flutuante mantém o próprio tamanho ("tela solta").
+# Barras finas (ex.: aviso do Meet) e splashes/diálogos pequenos não são tileados.
+is_freeform_small_window() {
+  local width="$1" height="$2"
+  (( width <= 0 || height <= 0 )) && return 1
+  (( height < 130 )) && return 0
+  (( width <= 640 && height <= 560 )) && return 0
+  return 1
+}
+
+# Decide se a janela deve continuar flutuante (não tileia).
 should_keep_floating() {
   local class="$1" title="$2" width="$3" height="$4"
 
-  [[ "$class" =~ ^(swaync|rofi|yad|hyprland-donate-screen|pavucontrol|org\.pulseaudio\.pavucontrol|nm-applet|org\.gnome\.Calculator|qalculate-gtk|zoom|onedriver|qt5ct|qt6ct|[Ss]team|steamwebhelper)$ ]] && return 0
-  [[ "$title" =~ ^(Picture-in-Picture|Authentication Required|Add Folder to Workspace|Save As|Keybindings|ROG Control|SDDM Background|File Operation Progress|Open Files)$ ]] && return 0
-  [[ "$class" =~ ^(org\.gnome\.Loupe|eog|blueman-manager|nm-connection-editor)$ ]] && return 1
-  (( width > 0 && width < 320 && height > 0 && height < 240 )) && return 0
+  is_always_floating_class "$class" && return 0
+  is_always_floating_title "$title" && return 0
+  is_forced_tiling_class "$class" && return 1
+  is_freeform_small_window "$width" "$height" && return 0
   return 1
 }
 
@@ -90,7 +118,7 @@ listen_opens() {
   local socket="${XDG_RUNTIME_DIR}/hypr/${HYPRLAND_INSTANCE_SIGNATURE}/.socket2.sock"
   [[ -S "$socket" ]] || exit 1
 
-  socat -U "UNIX-CONNECT:${socket}" - | while read -r line; do
+  socat -u "UNIX-CONNECT:${socket}" - 2>/dev/null | while read -r line; do
     parse_open_event "$line" || continue
     handle_open
   done

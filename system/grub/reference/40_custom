@@ -1,0 +1,20 @@
+#!/bin/sh
+exec tail -n +3 $0
+
+# Workaround Bluetooth MediaTek MT7921: em 6.12.88 o driver btmtk falha com
+# "Failed to send wmt func ctrl (-22)" (regressão; ver Debian #1136790).
+# Quando o kernel corrigido chegar no Debian, volte para 6.12.88+deb13-amd64.
+menuentry "Linux" {
+    insmod part_gpt
+    insmod ext2
+    set root=(hd0,gpt2)
+    linux /boot/vmlinuz-6.12.57+deb13-amd64 root=UUID=ebb971e3-17fb-478c-82cb-93477047d8f0 ro quiet splash loglevel=0 systemd.show_status=false rd.systemd.show_status=false vt.global_cursor_default=0 modprobe.blacklist=nouveau nouveau.modeset=0
+    initrd /boot/initrd.img-6.12.57+deb13-amd64
+}
+
+menuentry "Windows" {
+    insmod part_gpt
+    insmod fat
+    set root=(hd0,gpt1)
+    chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+}

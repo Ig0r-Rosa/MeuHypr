@@ -3,6 +3,18 @@
  * Importar após wallust/colors-rofi.rasi.
  */
 
+/*
+ * Comportamento PADRÃO de rolagem/seleção para TODAS as listagens.
+ * Cada menu ainda pode sobrescrever pontualmente (ex.: keybinds é só consulta).
+ */
+configuration {
+    scroll-method:   1;                 /* rolagem suave, linha a linha */
+    hover-select:    false;             /* passar o mouse não muda a seleção */
+    me-select-entry: "MousePrimary";    /* 1 clique só move o quadrado de seleção */
+    me-accept-entry: "MouseDPrimary";   /* duplo clique no item já selecionado confirma */
+    hide-scrollbar:  true;
+}
+
 window {
     transparency:     "real";
     location:         center;

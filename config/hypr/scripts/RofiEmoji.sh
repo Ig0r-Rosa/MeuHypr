@@ -20,1852 +20,1852 @@ wl-copy
 exit
 
 # # DATA # #
-😀 grinning face face smile happy joy :D grin
-😃 grinning face with big eyes face happy joy haha :D :) smile funny
-😄 grinning face with smiling eyes face happy joy funny haha laugh like :D :) smile
-😁 beaming face with smiling eyes face happy smile joy kawaii
-😆 grinning squinting face happy joy lol satisfied haha face glad XD laugh
-😅 grinning face with sweat face hot happy laugh sweat smile relief
-🤣 rolling on the floor laughing face rolling floor laughing lol haha rofl
-😂 face with tears of joy face cry tears weep happy happytears haha
-🙂 slightly smiling face face smile
-🙃 upside down face face flipped silly smile
-😉 winking face face happy mischievous secret ;) smile eye
-😊 smiling face with smiling eyes face smile happy flushed crush embarrassed shy joy
-😇 smiling face with halo face angel heaven halo
-🥰 smiling face with hearts face love like affection valentines infatuation crush hearts adore
-😍 smiling face with heart eyes face love like affection valentines infatuation crush heart
-🤩 star struck face smile starry eyes grinning
-😘 face blowing a kiss face love like affection valentines infatuation kiss
-😗 kissing face love like face 3 valentines infatuation kiss
-☺️  smiling face face blush massage happiness
-😚 kissing face with closed eyes face love like affection valentines infatuation kiss
-😙 kissing face with smiling eyes face affection valentines infatuation kiss
-😋 face savoring food happy joy tongue smile face silly yummy nom delicious savouring
-😛 face with tongue face prank childish playful mischievous smile tongue
-😜 winking face with tongue face prank childish playful mischievous smile wink tongue
-🤪 zany face face goofy crazy
-😝 squinting face with tongue face prank playful mischievous smile tongue
-🤑 money mouth face face rich dollar money
-🤗 hugging face face smile hug
-🤭 face with hand over mouth face whoops shock surprise
-🤫 shushing face face quiet shhh
-🤔 thinking face face hmmm think consider
-🤐 zipper mouth face face sealed zipper secret
-🤨 face with raised eyebrow face distrust scepticism disapproval disbelief surprise
-😐 neutral face indifference meh :| neutral
-😑 expressionless face face indifferent - - meh deadpan
-😶 face without mouth face hellokitty
-😏 smirking face face smile mean prank smug sarcasm
-😒 unamused face indifference bored straight face serious sarcasm unimpressed skeptical dubious side eye
-🙄 face with rolling eyes face eyeroll frustrated
-😬 grimacing face face grimace teeth
-🤥 lying face face lie pinocchio
-😌 relieved face face relaxed phew massage happiness
-😔 pensive face face sad depressed upset
-😪 sleepy face face tired rest nap
-🤤 drooling face face
-😴 sleeping face face tired sleepy night zzz
-😷 face with medical mask face sick ill disease
-🤒 face with thermometer sick temperature thermometer cold fever
-🤕 face with head bandage injured clumsy bandage hurt
-🤢 nauseated face face vomit gross green sick throw up ill
-🤮 face vomiting face sick
-🤧 sneezing face face gesundheit sneeze sick allergy
-🥵 hot face face feverish heat red sweating
-🥶 cold face face blue freezing frozen frostbite icicles
-🥴 woozy face face dizzy intoxicated tipsy wavy
-😵 dizzy face spent unconscious xox dizzy
-🤯 exploding head face shocked mind blown
-🤠 cowboy hat face face cowgirl hat
-🥳 partying face face celebration woohoo
-😎 smiling face with sunglasses face cool smile summer beach sunglass
-🤓 nerd face face nerdy geek dork
-🧐 face with monocle face stuffy wealthy
-😕 confused face face indifference huh weird hmmm :/
-😟 worried face face concern nervous :(
-🙁 slightly frowning face face frowning disappointed sad upset
-☹️  frowning face face sad upset frown
-😮 face with open mouth face surprise impressed wow whoa :O
-😯 hushed face face woo shh
-😲 astonished face face xox surprised poisoned
-😳 flushed face face blush shy flattered
-🥺 pleading face face begging mercy
-😦 frowning face with open mouth face aw what
-😧 anguished face face stunned nervous
-😨 fearful face face scared terrified nervous oops huh
-😰 anxious face with sweat face nervous sweat
-😥 sad but relieved face face phew sweat nervous
-😢 crying face face tears sad depressed upset :'(
-😭 loudly crying face face cry tears sad upset depressed
-😱 face screaming in fear face munch scared omg
-😖 confounded face face confused sick unwell oops :S
-😣 persevering face face sick no upset oops
-😞 disappointed face face sad upset depressed :(
-😓 downcast face with sweat face hot sad tired exercise
-😩 weary face face tired sleepy sad frustrated upset
-😫 tired face sick whine upset frustrated
-🥱 yawning face tired sleepy
-😤 face with steam from nose face gas phew proud pride
-😡 pouting face angry mad hate despise
-😠 angry face mad face annoyed frustrated
-🤬 face with symbols on mouth face swearing cursing cussing profanity expletive
-😈 smiling face with horns devil horns
-👿 angry face with horns devil angry horns
-💀 skull dead skeleton creepy death
-☠️  skull and crossbones poison danger deadly scary death pirate evil
-💩 pile of poo hankey shitface fail turd shit
-🤡 clown face face
-👹 ogre monster red mask halloween scary creepy devil demon japanese ogre
-👺 goblin red evil mask monster scary creepy japanese goblin
-👻 ghost halloween spooky scary
-👽 alien UFO paul weird outer space
-👾 alien monster game arcade play
-🤖 robot computer machine bot
-😺 grinning cat animal cats happy smile
-😸 grinning cat with smiling eyes animal cats smile
-😹 cat with tears of joy animal cats haha happy tears
-😻 smiling cat with heart eyes animal love like affection cats valentines heart
-😼 cat with wry smile animal cats smirk
-😽 kissing cat animal cats kiss
-🙀 weary cat animal cats munch scared scream
-😿 crying cat animal tears weep sad cats upset cry
-😾 pouting cat animal cats
-🙈 see no evil monkey monkey animal nature haha
-🙉 hear no evil monkey animal monkey nature
-🙊 speak no evil monkey monkey animal nature omg
-💋 kiss mark face lips love like affection valentines
-💌 love letter email like affection envelope valentines
-💘 heart with arrow love like heart affection valentines
-💝 heart with ribbon love valentines
-💖 sparkling heart love like affection valentines
-💗 growing heart like love affection valentines pink
-💓 beating heart love like affection valentines pink heart
-💞 revolving hearts love like affection valentines
-💕 two hearts love like affection valentines heart
-💟 heart decoration purple-square love like
-❣️  heart exclamation decoration love
-💔 broken heart sad sorry break heart heartbreak
-❤️  red heart love like valentines
-🧡 orange heart love like affection valentines
-💛 yellow heart love like affection valentines
-💚 green heart love like affection valentines
-💙 blue heart love like affection valentines
-💜 purple heart love like affection valentines
-🤎 brown heart coffee
-🖤 black heart evil
-🤍 white heart pure
-💯 hundred points score perfect numbers century exam quiz test pass hundred
-💢 anger symbol angry mad
-💥 collision bomb explode explosion collision blown
-💫 dizzy star sparkle shoot magic
-💦 sweat droplets water drip oops
-💨 dashing away wind air fast shoo fart smoke puff
-🕳️ hole embarrassing
-💣 bomb boom explode explosion terrorism
-💬 speech balloon bubble words message talk chatting
-👁️‍🗨️ eye in speech bubble info
-🗨️ left speech bubble words message talk chatting
-🗯️ right anger bubble caption speech thinking mad
-💭 thought balloon bubble cloud speech thinking dream
-💤 zzz sleepy tired dream
-👋 waving hand hands gesture goodbye solong farewell hello hi palm
-🤚 raised back of hand fingers raised backhand
-🖐️ hand with fingers splayed hand fingers palm
-✋ raised hand fingers stop highfive palm ban
-🖖 vulcan salute hand fingers spock star trek
-👌 ok hand fingers limbs perfect ok okay
-🤏 pinching hand tiny small size
-✌️ victory hand fingers ohyeah hand peace victory two
-🤞 crossed fingers good lucky
-🤟 love you gesture hand fingers gesture
-🤘 sign of the horns hand fingers evil eye sign of horns rock on
-🤙 call me hand hands gesture shaka
-👈 backhand index pointing left direction fingers hand left
-👉 backhand index pointing right fingers hand direction right
-👆 backhand index pointing up fingers hand direction up
-🖕 middle finger hand fingers rude middle flipping
-👇 backhand index pointing down fingers hand direction down
-☝️  index pointing up hand fingers direction up
-👍 thumbs up thumbsup yes awesome good agree accept cool hand like +1
-👎 thumbs down thumbsdown no dislike hand -1
-✊ raised fist fingers hand grasp
-👊 oncoming fist angry violence fist hit attack hand
-🤛 left facing fist hand fistbump
-🤜 right facing fist hand fistbump
-👏 clapping hands hands praise applause congrats yay
-🙌 raising hands gesture hooray yea celebration hands
-👐 open hands fingers butterfly hands open
-🤲 palms up together hands gesture cupped prayer
-🤝 handshake agreement shake
-🙏 folded hands please hope wish namaste highfive pray
-✍️  writing hand lower left ballpoint pen stationery write compose
-💅 nail polish beauty manicure finger fashion nail
-🤳 selfie camera phone
-💪 flexed biceps arm flex hand summer strong biceps
-🦾 mechanical arm accessibility
-🦿 mechanical leg accessibility
-🦵 leg kick limb
-🦶 foot kick stomp
-👂 ear face hear sound listen
-🦻 ear with hearing aid accessibility
-👃 nose smell sniff
-🧠 brain smart intelligent
-🦷 tooth teeth dentist
-🦴 bone skeleton
-👀 eyes look watch stalk peek see
-👁️ eye face look see watch stare
-👅 tongue mouth playful
-👄 mouth mouth kiss
-👶 baby child boy girl toddler
-🧒 child gender-neutral young
-👦 boy man male guy teenager
-👧 girl female woman teenager
-🧑 person gender-neutral person
-👱 person blond hair hairstyle
-👨 man mustache father dad guy classy sir moustache
-🧔 man beard person bewhiskered
-👨‍🦰 man red hair hairstyle
-👨‍🦱 man curly hair hairstyle
-👨‍🦳 man white hair old elder
-👨‍🦲 man bald hairless
-👩 woman female girls lady
-👩‍🦰 woman red hair hairstyle
-🧑‍🦰 person red hair hairstyle
-👩‍🦱 woman curly hair hairstyle
-🧑‍🦱 person curly hair hairstyle
-👩‍🦳 woman white hair old elder
-🧑‍🦳 person white hair elder old
-👩‍🦲 woman bald hairless
-🧑‍🦲 person bald hairless
-👱‍♀️ woman blond hair woman female girl blonde person
-👱‍♂️ man blond hair man male boy blonde guy person
-🧓 older person human elder senior gender-neutral
-👴 old man human male men old elder senior
-👵 old woman human female women lady old elder senior
-🙍 person frowning worried
-🙍‍♂️ man frowning male boy man sad depressed discouraged unhappy
-🙍‍♀️ woman frowning female girl woman sad depressed discouraged unhappy
-🙎 person pouting upset
-🙎‍♂️ man pouting male boy man
-🙎‍♀️ woman pouting female girl woman
-🙅 person gesturing no decline
-🙅‍♂️ man gesturing no male boy man nope
-🙅‍♀️ woman gesturing no female girl woman nope
-🙆 person gesturing ok agree
-🙆‍♂️ man gesturing ok men boy male blue human man
-🙆‍♀️ woman gesturing ok women girl female pink human woman
-💁 person tipping hand information
-💁‍♂️ man tipping hand male boy man human information
-💁‍♀️ woman tipping hand female girl woman human information
-🙋 person raising hand question
-🙋‍♂️ man raising hand male boy man
-🙋‍♀️ woman raising hand female girl woman
-🧏 deaf person accessibility
-🧏‍♂️ deaf man accessibility
-🧏‍♀️ deaf woman accessibility
-🙇 person bowing respectiful
-🙇‍♂️ man bowing man male boy
-🙇‍♀️ woman bowing woman female girl
-🤦 person facepalming disappointed
-🤦‍♂️ man facepalming man male boy disbelief
-🤦‍♀️ woman facepalming woman female girl disbelief
-🤷 person shrugging regardless
-🤷‍♂️ man shrugging man male boy confused indifferent doubt
-🤷‍♀️ woman shrugging woman female girl confused indifferent doubt
-🧑‍⚕️ health worker hospital
-👨‍⚕️ man health worker doctor nurse therapist healthcare man human
-👩‍⚕️ woman health worker doctor nurse therapist healthcare woman human
-🧑‍🎓 student learn
-👨‍🎓 man student graduate man human
-👩‍🎓 woman student graduate woman human
-🧑‍🏫 teacher professor
-👨‍🏫 man teacher instructor professor man human
-👩‍🏫 woman teacher instructor professor woman human
-🧑‍⚖️ judge law
-👨‍⚖️ man judge justice court man human
-👩‍⚖️ woman judge justice court woman human
-🧑‍🌾 farmer crops
-👨‍🌾 man farmer rancher gardener man human
-👩‍🌾 woman farmer rancher gardener woman human
-🧑‍🍳 cook food kitchen culinary
-👨‍🍳 man cook chef man human
-👩‍🍳 woman cook chef woman human
-🧑‍🔧 mechanic worker technician
-👨‍🔧 man mechanic plumber man human wrench
-👩‍🔧 woman mechanic plumber woman human wrench
-🧑‍🏭 factory worker labor
-👨‍🏭 man factory worker assembly industrial man human
-👩‍🏭 woman factory worker assembly industrial woman human
-🧑‍💼 office worker business
-👨‍💼 man office worker business manager man human
-👩‍💼 woman office worker business manager woman human
-🧑‍🔬 scientist chemistry
-👨‍🔬 man scientist biologist chemist engineer physicist man human
-👩‍🔬 woman scientist biologist chemist engineer physicist woman human
-🧑‍💻 technologist computer
-👨‍💻 man technologist coder developer engineer programmer software man human laptop computer
-👩‍💻 woman technologist coder developer engineer programmer software woman human laptop computer
-🧑‍🎤 singer song artist performer
-👨‍🎤 man singer rockstar entertainer man human
-👩‍🎤 woman singer rockstar entertainer woman human
-🧑‍🎨 artist painting draw creativity
-👨‍🎨 man artist painter man human
-👩‍🎨 woman artist painter woman human
-🧑‍✈️ pilot fly plane airplane
-👨‍✈️ man pilot aviator plane man human
-👩‍✈️ woman pilot aviator plane woman human
-🧑‍🚀 astronaut outerspace
-👨‍🚀 man astronaut space rocket man human
-👩‍🚀 woman astronaut space rocket woman human
-🧑‍🚒 firefighter fire
-👨‍🚒 man firefighter fireman man human
-👩‍🚒 woman firefighter fireman woman human
-👮 police officer cop
-👮‍♂️ man police officer man police law legal enforcement arrest 911
-👮‍♀️ woman police officer woman police law legal enforcement arrest 911 female
-🕵️ detective human spy detective
-🕵️‍♂️ man detective crime
-🕵️‍♀️ woman detective human spy detective female woman
-💂 guard protect
-💂‍♂️ man guard uk gb british male guy royal
-💂‍♀️ woman guard uk gb british female royal woman
-👷 construction worker labor build
-👷‍♂️ man construction worker male human wip guy build construction worker labor
-👷‍♀️ woman construction worker female human wip build construction worker labor woman
-🤴 prince boy man male crown royal king
-👸 princess girl woman female blond crown royal queen
-👳 person wearing turban headdress
-👳‍♂️ man wearing turban male indian hinduism arabs
-👳‍♀️ woman wearing turban female indian hinduism arabs woman
-👲 man with skullcap male boy chinese
-🧕 woman with headscarf female hijab mantilla tichel
-🤵 man in tuxedo couple marriage wedding groom
-👰 bride with veil couple marriage wedding woman bride
-🤰 pregnant woman baby
-🤱 breast feeding nursing baby
-👼 baby angel heaven wings halo
-🎅 santa claus festival man male xmas father christmas
-🤶 mrs claus woman female xmas mother christmas
-🦸 superhero marvel
-🦸‍♂️ man superhero man male good hero superpowers
-🦸‍♀️ woman superhero woman female good heroine superpowers
-🦹 supervillain marvel
-🦹‍♂️ man supervillain man male evil bad criminal hero superpowers
-🦹‍♀️ woman supervillain woman female evil bad criminal heroine superpowers
-🧙 mage magic
-🧙‍♂️ man mage man male mage sorcerer
-🧙‍♀️ woman mage woman female mage witch
-🧚 fairy wings magical
-🧚‍♂️ man fairy man male
-🧚‍♀️ woman fairy woman female
-🧛 vampire blood twilight
-🧛‍♂️ man vampire man male dracula
-🧛‍♀️ woman vampire woman female
-🧜 merperson sea
-🧜‍♂️ merman man male triton
-🧜‍♀️ mermaid woman female merwoman ariel
-🧝 elf magical
-🧝‍♂️ man elf man male
-🧝‍♀️ woman elf woman female
-🧞 genie magical wishes
-🧞‍♂️ man genie man male
-🧞‍♀️ woman genie woman female
-🧟 zombie dead
-🧟‍♂️ man zombie man male dracula undead walking dead
-🧟‍♀️ woman zombie woman female undead walking dead
-💆 person getting massage relax
-💆‍♂️ man getting massage male boy man head
-💆‍♀️ woman getting massage female girl woman head
-💇 person getting haircut hairstyle
-💇‍♂️ man getting haircut male boy man
-💇‍♀️ woman getting haircut female girl woman
-🚶 person walking move
-🚶‍♂️ man walking human feet steps
-🚶‍♀️ woman walking human feet steps woman female
-🧍 person standing still
-🧍‍♂️ man standing still
-🧍‍♀️ woman standing still
-🧎 person kneeling pray respectful
-🧎‍♂️ man kneeling pray respectful
-🧎‍♀️ woman kneeling respectful pray
-🧑‍🦯 person with probing cane blind
-👨‍🦯 man with probing cane blind
-👩‍🦯 woman with probing cane blind
-🧑‍🦼 person in motorized wheelchair disability accessibility
-👨‍🦼 man in motorized wheelchair disability accessibility
-👩‍🦼 woman in motorized wheelchair disability accessibility
-🧑‍🦽 person in manual wheelchair disability accessibility
-👨‍🦽 man in manual wheelchair disability accessibility
-👩‍🦽 woman in manual wheelchair disability accessibility
-🏃 person running move
-🏃‍♂️ man running man walking exercise race running
-🏃‍♀️ woman running woman walking exercise race running female
-💃 woman dancing female girl woman fun
-🕺 man dancing male boy fun dancer
-🕴️ man in suit levitating suit business levitate hover jump
-👯 people with bunny ears perform costume
-👯‍♂️ men with bunny ears male bunny men boys
-👯‍♀️ women with bunny ears female bunny women girls
-🧖 person in steamy room relax spa
-🧖‍♂️ man in steamy room male man spa steamroom sauna
-🧖‍♀️ woman in steamy room female woman spa steamroom sauna
-🧗 person climbing sport
-🧗‍♂️ man climbing sports hobby man male rock
-🧗‍♀️ woman climbing sports hobby woman female rock
-🤺 person fencing sports fencing sword
-🏇 horse racing animal betting competition gambling luck
-⛷️ skier sports winter snow
-🏂 snowboarder sports winter
-🏌️ person golfing sports business
-🏌️‍♂️ man golfing sport
-🏌️‍♀️ woman golfing sports business woman female
-🏄 person surfing sport sea
-🏄‍♂️ man surfing sports ocean sea summer beach
-🏄‍♀️ woman surfing sports ocean sea summer beach woman female
-🚣 person rowing boat sport move
-🚣‍♂️ man rowing boat sports hobby water ship
-🚣‍♀️ woman rowing boat sports hobby water ship woman female
-🏊 person swimming sport pool
-🏊‍♂️ man swimming sports exercise human athlete water summer
-🏊‍♀️ woman swimming sports exercise human athlete water summer woman female
-⛹️ person bouncing ball sports human
-⛹️‍♂️ man bouncing ball sport
-⛹️‍♀️ woman bouncing ball sports human woman female
-🏋️ person lifting weights sports training exercise
-🏋️‍♂️ man lifting weights sport
-🏋️‍♀️ woman lifting weights sports training exercise woman female
-🚴 person biking sport move
-🚴‍♂️ man biking sports bike exercise hipster
-🚴‍♀️ woman biking sports bike exercise hipster woman female
-🚵 person mountain biking sport move
-🚵‍♂️ man mountain biking transportation sports human race bike
-🚵‍♀️ woman mountain biking transportation sports human race bike woman female
-🤸 person cartwheeling sport gymnastic
-🤸‍♂️ man cartwheeling gymnastics
-🤸‍♀️ woman cartwheeling gymnastics
-🤼 people wrestling sport
-🤼‍♂️ men wrestling sports wrestlers
-🤼‍♀️ women wrestling sports wrestlers
-🤽 person playing water polo sport
-🤽‍♂️ man playing water polo sports pool
-🤽‍♀️ woman playing water polo sports pool
-🤾 person playing handball sport
-🤾‍♂️ man playing handball sports
-🤾‍♀️ woman playing handball sports
-🤹 person juggling performance balance
-🤹‍♂️ man juggling juggle balance skill multitask
-🤹‍♀️ woman juggling juggle balance skill multitask
-🧘 person in lotus position meditate
-🧘‍♂️ man in lotus position man male meditation yoga serenity zen mindfulness
-🧘‍♀️ woman in lotus position woman female meditation yoga serenity zen mindfulness
-🛀 person taking bath clean shower bathroom
-🛌 person in bed bed rest
-🧑‍🤝‍🧑 people holding hands friendship
-👭 women holding hands pair friendship couple love like female people human
-👫 woman and man holding hands pair people human love date dating like affection valentines marriage
-👬 men holding hands pair couple love like bromance friendship people human
-💏 kiss pair valentines love like dating marriage
-👩‍❤️‍💋‍👨 kiss woman man love
-👨‍❤️‍💋‍👨 kiss man man pair valentines love like dating marriage
-👩‍❤️‍💋‍👩 kiss woman woman pair valentines love like dating marriage
-💑 couple with heart pair love like affection human dating valentines marriage
-👩‍❤️‍👨 couple with heart woman man love
-👨‍❤️‍👨 couple with heart man man pair love like affection human dating valentines marriage
-👩‍❤️‍👩 couple with heart woman woman pair love like affection human dating valentines marriage
-👪 family home parents child mom dad father mother people human
-👨‍👩‍👦 family man woman boy love
-👨‍👩‍👧 family man woman girl home parents people human child
-👨‍👩‍👧‍👦 family man woman girl boy home parents people human children
-👨‍👩‍👦‍👦 family man woman boy boy home parents people human children
-👨‍👩‍👧‍👧 family man woman girl girl home parents people human children
-👨‍👨‍👦 family man man boy home parents people human children
-👨‍👨‍👧 family man man girl home parents people human children
-👨‍👨‍👧‍👦 family man man girl boy home parents people human children
-👨‍👨‍👦‍👦 family man man boy boy home parents people human children
-👨‍👨‍👧‍👧 family man man girl girl home parents people human children
-👩‍👩‍👦 family woman woman boy home parents people human children
-👩‍👩‍👧 family woman woman girl home parents people human children
-👩‍👩‍👧‍👦 family woman woman girl boy home parents people human children
-👩‍👩‍👦‍👦 family woman woman boy boy home parents people human children
-👩‍👩‍👧‍👧 family woman woman girl girl home parents people human children
-👨‍👦 family man boy home parent people human child
-👨‍👦‍👦 family man boy boy home parent people human children
-👨‍👧 family man girl home parent people human child
-👨‍👧‍👦 family man girl boy home parent people human children
-👨‍👧‍👧 family man girl girl home parent people human children
-👩‍👦 family woman boy home parent people human child
-👩‍👦‍👦 family woman boy boy home parent people human children
-👩‍👧 family woman girl home parent people human child
-👩‍👧‍👦 family woman girl boy home parent people human children
-👩‍👧‍👧 family woman girl girl home parent people human children
-🗣️ speaking head user person human sing say talk
-👤 bust in silhouette user person human
-👥 busts in silhouette user person human group team
-👣 footprints feet tracking walking beach
-🐵 monkey face animal nature circus
-🐒 monkey animal nature banana circus
-🦍 gorilla animal nature circus
-🦧 orangutan animal
-🐶 dog face animal friend nature woof puppy pet faithful
-🐕 dog animal nature friend doge pet faithful
-🦮 guide dog animal blind
-🐕‍🦺 service dog blind animal
-🐩 poodle dog animal 101 nature pet
-🐺 wolf animal nature wild
-🦊 fox animal nature face
-🦝 raccoon animal nature
-🐱 cat face animal meow nature pet kitten
-🐈 cat animal meow pet cats
-🦁 lion animal nature
-🐯 tiger face animal cat danger wild nature roar
-🐅 tiger animal nature roar
-🐆 leopard animal nature
-🐴 horse face animal brown nature
-🐎 horse animal gamble luck
-🦄 unicorn animal nature mystical
-🦓 zebra animal nature stripes safari
-🦌 deer animal nature horns venison
-🐮 cow face beef ox animal nature moo milk
-🐂 ox animal cow beef
-🐃 water buffalo animal nature ox cow
-🐄 cow beef ox animal nature moo milk
-🐷 pig face animal oink nature
-🐖 pig animal nature
-🐗 boar animal nature
-🐽 pig nose animal oink
-🐏 ram animal sheep nature
-🐑 ewe animal nature wool shipit
-🐐 goat animal nature
-🐪 camel animal hot desert hump
-🐫 two hump camel animal nature hot desert hump
-🦙 llama animal nature alpaca
-🦒 giraffe animal nature spots safari
-🐘 elephant animal nature nose th circus
-🦏 rhinoceros animal nature horn
-🦛 hippopotamus animal nature
-🐭 mouse face animal nature cheese wedge rodent
-🐁 mouse animal nature rodent
-🐀 rat animal mouse rodent
-🐹 hamster animal nature
-🐰 rabbit face animal nature pet spring magic bunny
-🐇 rabbit animal nature pet magic spring
-🐿️ chipmunk animal nature rodent squirrel
-🦔 hedgehog animal nature spiny
-🦇 bat animal nature blind vampire
-🐻 bear animal nature wild
-🐨 koala animal nature
-🐼 panda animal nature panda
-🦥 sloth animal
-🦦 otter animal
-🦨 skunk animal
-🦘 kangaroo animal nature australia joey hop marsupial
-🦡 badger animal nature honey
-🐾 paw prints animal tracking footprints dog cat pet feet
-🦃 turkey animal bird
-🐔 chicken animal cluck nature bird
-🐓 rooster animal nature chicken
-🐣 hatching chick animal chicken egg born baby bird
-🐤 baby chick animal chicken bird
-🐥 front facing baby chick animal chicken baby bird
-🐦 bird animal nature fly tweet spring
-🐧 penguin animal nature
-🕊️ dove animal bird
-🦅 eagle animal nature bird
-🦆 duck animal nature bird mallard
-🦢 swan animal nature bird
-🦉 owl animal nature bird hoot
-🦩 flamingo animal
-🦚 peacock animal nature peahen bird
-🦜 parrot animal nature bird pirate talk
-🐸 frog animal nature croak toad
-🐊 crocodile animal nature reptile lizard alligator
-🐢 turtle animal slow nature tortoise
-🦎 lizard animal nature reptile
-🐍 snake animal evil nature hiss python
-🐲 dragon face animal myth nature chinese green
-🐉 dragon animal myth nature chinese green
-🦕 sauropod animal nature dinosaur brachiosaurus brontosaurus diplodocus extinct
-🦖 t rex animal nature dinosaur tyrannosaurus extinct
-🐳 spouting whale animal nature sea ocean
-🐋 whale animal nature sea ocean
-🐬 dolphin animal nature fish sea ocean flipper fins beach
-🐟 fish animal food nature
-🐠 tropical fish animal swim ocean beach nemo
-🐡 blowfish animal nature food sea ocean
-🦈 shark animal nature fish sea ocean jaws fins beach
-🐙 octopus animal creature ocean sea nature beach
-🐚 spiral shell nature sea beach
-🐌 snail slow animal shell
-🦋 butterfly animal insect nature caterpillar
-🐛 bug animal insect nature worm
-🐜 ant animal insect nature bug
-🐝 honeybee animal insect nature bug spring honey
-🐞 lady beetle animal insect nature ladybug
-🦗 cricket animal cricket chirp
-🕷️ spider animal arachnid
-🕸️ spider web animal insect arachnid silk
-🦂 scorpion animal arachnid
-🦟 mosquito animal nature insect malaria
-🦠 microbe amoeba bacteria germs virus
-💐 bouquet flowers nature spring
-🌸 cherry blossom nature plant spring flower
-💮 white flower japanese spring
-🏵️ rosette flower decoration military
-🌹 rose flowers valentines love spring
-🥀 wilted flower plant nature flower
-🌺 hibiscus plant vegetable flowers beach
-🌻 sunflower nature plant fall
-🌼 blossom nature flowers yellow
-🌷 tulip flowers plant nature summer spring
-🌱 seedling plant nature grass lawn spring
-🌲 evergreen tree plant nature
-🌳 deciduous tree plant nature
-🌴 palm tree plant vegetable nature summer beach mojito tropical
-🌵 cactus vegetable plant nature
-🌾 sheaf of rice nature plant
-🌿 herb vegetable plant medicine weed grass lawn
-☘️ shamrock vegetable plant nature irish clover
-🍀 four leaf clover vegetable plant nature lucky irish
-🍁 maple leaf nature plant vegetable ca fall
-🍂 fallen leaf nature plant vegetable leaves
-🍃 leaf fluttering in wind nature plant tree vegetable grass lawn spring
-🍇 grapes fruit food wine
-🍈 melon fruit nature food
-🍉 watermelon fruit food picnic summer
-🍊 tangerine food fruit nature orange
-🍋 lemon fruit nature
-🍌 banana fruit food monkey
-🍍 pineapple fruit nature food
-🥭 mango fruit food tropical
-🍎 red apple fruit mac school
-🍏 green apple fruit nature
-🍐 pear fruit nature food
-🍑 peach fruit nature food
-🍒 cherries food fruit
-🍓 strawberry fruit food nature
-🥝 kiwi fruit fruit food
-🍅 tomato fruit vegetable nature food
-🥥 coconut fruit nature food palm
-🥑 avocado fruit food
-🍆 eggplant vegetable nature food aubergine
-🥔 potato food tuber vegatable starch
-🥕 carrot vegetable food orange
-🌽 ear of corn food vegetable plant
-🌶️ hot pepper food spicy chilli chili
-🥒 cucumber fruit food pickle
-🥬 leafy green food vegetable plant bok choy cabbage kale lettuce
-🥦 broccoli fruit food vegetable
-🧄 garlic food spice cook
-🧅 onion cook food spice
-🍄 mushroom plant vegetable
-🥜 peanuts food nut
-🌰 chestnut food squirrel
-🍞 bread food wheat breakfast toast
-🥐 croissant food bread french
-🥖 baguette bread food bread french
-🥨 pretzel food bread twisted
-🥯 bagel food bread bakery schmear
-🥞 pancakes food breakfast flapjacks hotcakes
-🧇 waffle food breakfast
-🧀 cheese wedge food chadder
-🍖 meat on bone good food drumstick
-🍗 poultry leg food meat drumstick bird chicken turkey
-🥩 cut of meat food cow meat cut chop lambchop porkchop
-🥓 bacon food breakfast pork pig meat
-🍔 hamburger meat fast food beef cheeseburger mcdonalds burger king
-🍟 french fries chips snack fast food
-🍕 pizza food party
-🌭 hot dog food frankfurter
-🥪 sandwich food lunch bread
-🌮 taco food mexican
-🌯 burrito food mexican
-🥙 stuffed flatbread food flatbread stuffed gyro
-🧆 falafel food
-🥚 egg food chicken breakfast
-🍳 cooking food breakfast kitchen egg
-🥘 shallow pan of food food cooking casserole paella
-🍲 pot of food food meat soup
-🥣 bowl with spoon food breakfast cereal oatmeal porridge
-🥗 green salad food healthy lettuce
-🍿 popcorn food movie theater films snack
-🧈 butter food cook
-🧂 salt condiment shaker
-🥫 canned food food soup
-🍱 bento box food japanese box
-🍘 rice cracker food japanese
-🍙 rice ball food japanese
-🍚 cooked rice food china asian
-🍛 curry rice food spicy hot indian
-🍜 steaming bowl food japanese noodle chopsticks
-🍝 spaghetti food italian noodle
-🍠 roasted sweet potato food nature
-🍢 oden food japanese
-🍣 sushi food fish japanese rice
-🍤 fried shrimp food animal appetizer summer
-🍥 fish cake with swirl food japan sea beach narutomaki pink swirl kamaboko surimi ramen
-🥮 moon cake food autumn
-🍡 dango food dessert sweet japanese barbecue meat
-🥟 dumpling food empanada pierogi potsticker
-🥠 fortune cookie food prophecy
-🥡 takeout box food leftovers
-🦀 crab animal crustacean
-🦞 lobster animal nature bisque claws seafood
-🦐 shrimp animal ocean nature seafood
-🦑 squid animal nature ocean sea
-🦪 oyster food
-🍦 soft ice cream food hot dessert summer
-🍧 shaved ice hot dessert summer
-🍨 ice cream food hot dessert
-🍩 doughnut food dessert snack sweet donut
-🍪 cookie food snack oreo chocolate sweet dessert
-🎂 birthday cake food dessert cake
-🍰 shortcake food dessert
-🧁 cupcake food dessert bakery sweet
-🥧 pie food dessert pastry
-🍫 chocolate bar food snack dessert sweet
-🍬 candy snack dessert sweet lolly
-🍭 lollipop food snack candy sweet
-🍮 custard dessert food
-🍯 honey pot bees sweet kitchen
-🍼 baby bottle food container milk
-🥛 glass of milk beverage drink cow
-☕ hot beverage beverage caffeine latte espresso coffee
-🍵 teacup without handle drink bowl breakfast green british
-🍶 sake wine drink drunk beverage japanese alcohol booze
-🍾 bottle with popping cork drink wine bottle celebration
-🍷 wine glass drink beverage drunk alcohol booze
-🍸 cocktail glass drink drunk alcohol beverage booze mojito
-🍹 tropical drink beverage cocktail summer beach alcohol booze mojito
-🍺 beer mug relax beverage drink drunk party pub summer alcohol booze
-🍻 clinking beer mugs relax beverage drink drunk party pub summer alcohol booze
-🥂 clinking glasses beverage drink party alcohol celebrate cheers wine champagne toast
-🥃 tumbler glass drink beverage drunk alcohol liquor booze bourbon scotch whisky glass shot
-🥤 cup with straw drink soda
-🧃 beverage box drink
-🧉 mate drink tea beverage
-🧊 ice water cold
-🥢 chopsticks food
-🍽️ fork and knife with plate food eat meal lunch dinner restaurant
-🍴 fork and knife cutlery kitchen
-🥄 spoon cutlery kitchen tableware
-🔪 kitchen knife knife blade cutlery kitchen weapon
-🏺 amphora vase jar
-🌍 globe showing europe africa globe world international
-🌎 globe showing americas globe world USA international
-🌏 globe showing asia australia globe world east international
-🌐 globe with meridians earth international world internet interweb i18n
-🗺️ world map location direction
-🗾 map of japan nation country japanese asia
-🧭 compass magnetic navigation orienteering
-🏔️ snow capped mountain photo nature environment winter cold
-⛰️ mountain photo nature environment
-🌋 volcano photo nature disaster
-🗻 mount fuji photo mountain nature japanese
-🏕️ camping photo outdoors tent
-🏖️ beach with umbrella weather summer sunny sand mojito
-🏜️ desert photo warm saharah
-🏝️ desert island photo tropical mojito
-🏞️ national park photo environment nature
-🏟️ stadium photo place sports concert venue
-🏛️ classical building art culture history
-🏗️ building construction wip working progress
-🧱 brick bricks
-🏘️ houses buildings photo
-🏚️ derelict house abandon evict broken building
-🏠 house building home
-🏡 house with garden home plant nature
-🏢 office building building bureau work
-🏣 japanese post office building envelope communication
-🏤 post office building email
-🏥 hospital building health surgery doctor
-🏦 bank building money sales cash business enterprise
-🏨 hotel building accomodation checkin
-🏩 love hotel like affection dating
-🏪 convenience store building shopping groceries
-🏫 school building student education learn teach
-🏬 department store building shopping mall
-🏭 factory building industry pollution smoke
-🏯 japanese castle photo building
-🏰 castle building royalty history
-💒 wedding love like affection couple marriage bride groom
-🗼 tokyo tower photo japanese
-🗽 statue of liberty american newyork
-⛪ church building religion christ
-🕌 mosque islam worship minaret
-🛕 hindu temple religion
-🕍 synagogue judaism worship temple jewish
-⛩️ shinto shrine temple japan kyoto
-🕋 kaaba mecca mosque islam
-⛲ fountain photo summer water fresh
-⛺ tent photo camping outdoors
-🌁 foggy photo mountain
-🌃 night with stars evening city downtown
-🏙️ cityscape photo night life urban
-🌄 sunrise over mountains view vacation photo
-🌅 sunrise morning view vacation photo
-🌆 cityscape at dusk photo evening sky buildings
-🌇 sunset photo good morning dawn
-🌉 bridge at night photo sanfrancisco
-♨️ hot springs bath warm relax
-🎠 carousel horse photo carnival
-🎡 ferris wheel photo carnival londoneye
-🎢 roller coaster carnival playground photo fun
-💈 barber pole hair salon style
-🎪 circus tent festival carnival party
-🚂 locomotive transportation vehicle train
-🚃 railway car transportation vehicle
-🚄 high speed train transportation vehicle
-🚅 bullet train transportation vehicle speed fast public travel
-🚆 train transportation vehicle
-🚇 metro transportation blue-square mrt underground tube
-🚈 light rail transportation vehicle
-🚉 station transportation vehicle public
-🚊 tram transportation vehicle
-🚝 monorail transportation vehicle
-🚞 mountain railway transportation vehicle
-🚋 tram car transportation vehicle carriage public travel
-🚌 bus car vehicle transportation
-🚍 oncoming bus vehicle transportation
-🚎 trolleybus bart transportation vehicle
-🚐 minibus vehicle car transportation
-🚑 ambulance health 911 hospital
-🚒 fire engine transportation cars vehicle
-🚓 police car vehicle cars transportation law legal enforcement
-🚔 oncoming police car vehicle law legal enforcement 911
-🚕 taxi uber vehicle cars transportation
-🚖 oncoming taxi vehicle cars uber
-🚗 automobile red transportation vehicle
-🚘 oncoming automobile car vehicle transportation
-🚙 sport utility vehicle transportation vehicle
-🚚 delivery truck cars transportation
-🚛 articulated lorry vehicle cars transportation express
-🚜 tractor vehicle car farming agriculture
-🏎️ racing car sports race fast formula f1
-🏍️ motorcycle race sports fast
-🛵 motor scooter vehicle vespa sasha
-🦽 manual wheelchair accessibility
-🦼 motorized wheelchair accessibility
-🛺 auto rickshaw move transportation
-🚲 bicycle sports bicycle exercise hipster
-🛴 kick scooter vehicle kick razor
-🛹 skateboard board
-🚏 bus stop transportation wait
-🛣️ motorway road cupertino interstate highway
-🛤️ railway track train transportation
-🛢️ oil drum barrell
-⛽ fuel pump gas station petroleum
-🚨 police car light police ambulance 911 emergency alert error pinged law legal
-🚥 horizontal traffic light transportation signal
-🚦 vertical traffic light transportation driving
-🛑 stop sign stop
-🚧 construction wip progress caution warning
-⚓ anchor ship ferry sea boat
-⛵ sailboat ship summer transportation water sailing
-🛶 canoe boat paddle water ship
-🚤 speedboat ship transportation vehicle summer
-🛳️ passenger ship yacht cruise ferry
-⛴️ ferry boat ship yacht
-🛥️ motor boat ship
-🚢 ship transportation titanic deploy
-✈️ airplane vehicle transportation flight fly
-🛩️ small airplane flight transportation fly vehicle
-🛫 airplane departure airport flight landing
-🛬 airplane arrival airport flight boarding
-🪂 parachute fly glide
-💺 seat sit airplane transport bus flight fly
-🚁 helicopter transportation vehicle fly
-🚟 suspension railway vehicle transportation
-🚠 mountain cableway transportation vehicle ski
-🚡 aerial tramway transportation vehicle ski
-🛰️ satellite communication gps orbit spaceflight NASA ISS
-🚀 rocket launch ship staffmode NASA outer space outer space fly
-🛸 flying saucer transportation vehicle ufo
-🛎️ bellhop bell service
-🧳 luggage packing travel
-⌛ hourglass done time clock oldschool limit exam quiz test
-⏳ hourglass not done oldschool time countdown
-⌚ watch time accessories
-⏰ alarm clock time wake
-⏱️ stopwatch time deadline
-⏲️ timer clock alarm
-🕰️ mantelpiece clock time
-🕛 twelve o clock time noon midnight midday late early schedule
-🕧 twelve thirty time late early schedule
-🕐 one o clock time late early schedule
-🕜 one thirty time late early schedule
-🕑 two o clock time late early schedule
-🕝 two thirty time late early schedule
-🕒 three o clock time late early schedule
-🕞 three thirty time late early schedule
-🕓 four o clock time late early schedule
-🕟 four thirty time late early schedule
-🕔 five o clock time late early schedule
-🕠 five thirty time late early schedule
-🕕 six o clock time late early schedule dawn dusk
-🕡 six thirty time late early schedule
-🕖 seven o clock time late early schedule
-🕢 seven thirty time late early schedule
-🕗 eight o clock time late early schedule
-🕣 eight thirty time late early schedule
-🕘 nine o clock time late early schedule
-🕤 nine thirty time late early schedule
-🕙 ten o clock time late early schedule
-🕥 ten thirty time late early schedule
-🕚 eleven o clock time late early schedule
-🕦 eleven thirty time late early schedule
-🌑 new moon nature twilight planet space night evening sleep
-🌒 waxing crescent moon nature twilight planet space night evening sleep
-🌓 first quarter moon nature twilight planet space night evening sleep
-🌔 waxing gibbous moon nature night sky gray twilight planet space evening sleep
-🌕 full moon nature yellow twilight planet space night evening sleep
-🌖 waning gibbous moon nature twilight planet space night evening sleep waxing gibbous moon
-🌗 last quarter moon nature twilight planet space night evening sleep
-🌘 waning crescent moon nature twilight planet space night evening sleep
-🌙 crescent moon night sleep sky evening magic
-🌚 new moon face nature twilight planet space night evening sleep
-🌛 first quarter moon face nature twilight planet space night evening sleep
-🌜 last quarter moon face nature twilight planet space night evening sleep
-🌡️ thermometer weather temperature hot cold
-☀️ sun weather nature brightness summer beach spring
-🌝 full moon face nature twilight planet space night evening sleep
-🌞 sun with face nature morning sky
-🪐 ringed planet outerspace
-⭐ star night yellow
-🌟 glowing star night sparkle awesome good magic
-🌠 shooting star night photo
-🌌 milky way photo space stars
-☁️ cloud weather sky
-⛅ sun behind cloud weather nature cloudy morning fall spring
-⛈️ cloud with lightning and rain weather lightning
-🌤️ sun behind small cloud weather
-🌥️ sun behind large cloud weather
-🌦️ sun behind rain cloud weather
-🌧️ cloud with rain weather
-🌨️ cloud with snow weather
-🌩️ cloud with lightning weather thunder
-🌪️ tornado weather cyclone twister
-🌫️ fog weather
-🌬️ wind face gust air
-🌀 cyclone weather swirl blue cloud vortex spiral whirlpool spin tornado hurricane typhoon
-🌈 rainbow nature happy unicorn face photo sky spring
-🌂 closed umbrella weather rain drizzle
-☂️ umbrella weather spring
-☔ umbrella with rain drops rainy weather spring
-⛱️ umbrella on ground weather summer
-⚡ high voltage thunder weather lightning bolt fast
-❄️ snowflake winter season cold weather christmas xmas
-☃️ snowman winter season cold weather christmas xmas frozen
-⛄ snowman without snow winter season cold weather christmas xmas frozen without snow
-☄️ comet space
-🔥 fire hot cook flame
-💧 droplet water drip faucet spring
-🌊 water wave sea water wave nature tsunami disaster
-🎃 jack o lantern halloween light pumpkin creepy fall
-🎄 christmas tree festival vacation december xmas celebration
-🎆 fireworks photo festival carnival congratulations
-🎇 sparkler stars night shine
-🧨 firecracker dynamite boom explode explosion explosive
-✨ sparkles stars shine shiny cool awesome good magic
-🎈 balloon party celebration birthday circus
-🎉 party popper party congratulations birthday magic circus celebration tada
-🎊 confetti ball festival party birthday circus
-🎋 tanabata tree plant nature branch summer
-🎍 pine decoration plant nature vegetable panda pine decoration
-🎎 japanese dolls japanese toy kimono
-🎏 carp streamer fish japanese koinobori carp banner
-🎐 wind chime nature ding spring bell
-🎑 moon viewing ceremony photo japan asia tsukimi
-🧧 red envelope gift
-🎀 ribbon decoration pink girl bowtie
-🎁 wrapped gift present birthday christmas xmas
-🎗️ reminder ribbon sports cause support awareness
-🎟️ admission tickets sports concert entrance
-🎫 ticket event concert pass
-🎖️ military medal award winning army
-🏆 trophy win award contest place ftw ceremony
-🏅 sports medal award winning
-🥇 1st place medal award winning first
-🥈 2nd place medal award second
-🥉 3rd place medal award third
-⚽ soccer ball sports football
-⚾ baseball sports balls
-🥎 softball sports balls
-🏀 basketball sports balls NBA
-🏐 volleyball sports balls
-🏈 american football sports balls NFL
-🏉 rugby football sports team
-🎾 tennis sports balls green
-🥏 flying disc sports frisbee ultimate
-🎳 bowling sports fun play
-🏏 cricket game sports
-🏑 field hockey sports
-🏒 ice hockey sports
-🥍 lacrosse sports ball stick
-🏓 ping pong sports pingpong
-🏸 badminton sports
-🥊 boxing glove sports fighting
-🥋 martial arts uniform judo karate taekwondo
-🥅 goal net sports
-⛳ flag in hole sports business flag hole summer
-⛸️ ice skate sports
-🎣 fishing pole food hobby summer
-🤿 diving mask sport ocean
-🎽 running shirt play pageant
-🎿 skis sports winter cold snow
-🛷 sled sleigh luge toboggan
-🥌 curling stone sports
-🎯 direct hit game play bar target bullseye
-🪀 yo yo toy
-🪁 kite wind fly
-🎱 pool 8 ball pool hobby game luck magic
-🔮 crystal ball disco party magic circus fortune teller
-🧿 nazar amulet bead charm
-🎮 video game play console PS4 controller
-🕹️ joystick game play
-🎰 slot machine bet gamble vegas fruit machine luck casino
-🎲 game die dice random tabletop play luck
-🧩 puzzle piece interlocking puzzle piece
-🧸 teddy bear plush stuffed
-♠️ spade suit poker cards suits magic
-♥️ heart suit poker cards magic suits
-♦️ diamond suit poker cards magic suits
-♣️ club suit poker cards magic suits
-♟️ chess pawn expendable
-🃏 joker poker cards game play magic
-🀄 mahjong red dragon game play chinese kanji
-🎴 flower playing cards game sunset red
-🎭 performing arts acting theater drama
-🖼️ framed picture photography
-🎨 artist palette design paint draw colors
-🧵 thread needle sewing spool string
-🧶 yarn ball crochet knit
-👓 glasses fashion accessories eyesight nerdy dork geek
-🕶️ sunglasses face cool accessories
-🥽 goggles eyes protection safety
-🥼 lab coat doctor experiment scientist chemist
-🦺 safety vest protection
-👔 necktie shirt suitup formal fashion cloth business
-👕 t shirt fashion cloth casual shirt tee
-👖 jeans fashion shopping
-🧣 scarf neck winter clothes
-🧤 gloves hands winter clothes
-🧥 coat jacket
-🧦 socks stockings clothes
-👗 dress clothes fashion shopping
-👘 kimono dress fashion women female japanese
-🥻 sari dress
-🩱 one piece swimsuit fashion
-🩲 briefs clothing
-🩳 shorts clothing
-👙 bikini swimming female woman girl fashion beach summer
-👚 woman s clothes fashion shopping bags female
-👛 purse fashion accessories money sales shopping
-👜 handbag fashion accessory accessories shopping
-👝 clutch bag bag accessories shopping
-🛍️ shopping bags mall buy purchase
-🎒 backpack student education bag backpack
-👞 man s shoe fashion male
-👟 running shoe shoes sports sneakers
-🥾 hiking boot backpacking camping hiking
-🥿 flat shoe ballet slip-on slipper
-👠 high heeled shoe fashion shoes female pumps stiletto
-👡 woman s sandal shoes fashion flip flops
-🩰 ballet shoes dance
-👢 woman s boot shoes fashion
-👑 crown king kod leader royalty lord
-👒 woman s hat fashion accessories female lady spring
-🎩 top hat magic gentleman classy circus
-🎓 graduation cap school college degree university graduation cap hat legal learn education
-🧢 billed cap cap baseball
-⛑️ rescue worker s helmet construction build
-📿 prayer beads dhikr religious
-💄 lipstick female girl fashion woman
-💍 ring wedding propose marriage valentines diamond fashion jewelry gem engagement
-💎 gem stone blue ruby diamond jewelry
-🔇 muted speaker sound volume silence quiet
-🔈 speaker low volume sound volume silence broadcast
-🔉 speaker medium volume volume speaker broadcast
-🔊 speaker high volume volume noise noisy speaker broadcast
-📢 loudspeaker volume sound
-📣 megaphone sound speaker volume
-📯 postal horn instrument music
-🔔 bell sound notification christmas xmas chime
-🔕 bell with slash sound volume mute quiet silent
-🎼 musical score treble clef compose
-🎵 musical note score tone sound
-🎶 musical notes music score
-🎙️ studio microphone sing recording artist talkshow
-🎚️ level slider scale
-🎛️ control knobs dial
-🎤 microphone sound music PA sing talkshow
-🎧 headphone music score gadgets
-📻 radio communication music podcast program
-🎷 saxophone music instrument jazz blues
-🎸 guitar music instrument
-🎹 musical keyboard piano instrument compose
-🎺 trumpet music brass
-🎻 violin music instrument orchestra symphony
-🪕 banjo music instructment
-🥁 drum music instrument drumsticks snare
-📱 mobile phone technology apple gadgets dial
-📲 mobile phone with arrow iphone incoming
-☎️ telephone technology communication dial telephone
-📞 telephone receiver technology communication dial
-📟 pager bbcall oldschool 90s
-📠 fax machine communication technology
-🔋 battery power energy sustain
-🔌 electric plug charger power
-💻 laptop technology laptop screen display monitor
-🖥️ desktop computer technology computing screen
-🖨️ printer paper ink
-⌨️ keyboard technology computer type input text
-🖱️ computer mouse click
-🖲️ trackball technology trackpad
-💽 computer disk technology record data disk 90s
-💾 floppy disk oldschool technology save 90s 80s
-💿 optical disk technology dvd disk disc 90s
-📀 dvd cd disk disc
-🧮 abacus calculation
-🎥 movie camera film record
-🎞️ film frames movie
-📽️ film projector video tape record movie
-🎬 clapper board movie film record
-📺 television technology program oldschool show television
-📷 camera gadgets photography
-📸 camera with flash photography gadgets
-📹 video camera film record
-📼 videocassette record video oldschool 90s 80s
-🔍 magnifying glass tilted left search zoom find detective
-🔎 magnifying glass tilted right search zoom find detective
-🕯️ candle fire wax
-💡 light bulb light electricity idea
-🔦 flashlight dark camping sight night
-🏮 red paper lantern light paper halloween spooky
-🪔 diya lamp lighting
-📔 notebook with decorative cover classroom notes record paper study
-📕 closed book read library knowledge textbook learn
-📖 open book book read library knowledge literature learn study
-📗 green book read library knowledge study
-📘 blue book read library knowledge learn study
-📙 orange book read library knowledge textbook study
-📚 books literature library study
-📓 notebook stationery record notes paper study
-📒 ledger notes paper
-📃 page with curl documents office paper
-📜 scroll documents ancient history paper
-📄 page facing up documents office paper information
-📰 newspaper press headline
-🗞️ rolled up newspaper press headline
-📑 bookmark tabs favorite save order tidy
-🔖 bookmark favorite label save
-🏷️ label sale tag
-💰 money bag dollar payment coins sale
-💴 yen banknote money sales japanese dollar currency
-💵 dollar banknote money sales bill currency
-💶 euro banknote money sales dollar currency
-💷 pound banknote british sterling money sales bills uk england currency
-💸 money with wings dollar bills payment sale
-💳 credit card money sales dollar bill payment shopping
-🧾 receipt accounting expenses
-💹 chart increasing with yen green-square graph presentation stats
-💱 currency exchange money sales dollar travel
-💲 heavy dollar sign money sales payment currency buck
-✉️ envelope letter postal inbox communication
-📧 e mail communication inbox
-📨 incoming envelope email inbox
-📩 envelope with arrow email communication
-📤 outbox tray inbox email
-📥 inbox tray email documents
-📦 package mail gift cardboard box moving
-📫 closed mailbox with raised flag email inbox communication
-📪 closed mailbox with lowered flag email communication inbox
-📬 open mailbox with raised flag email inbox communication
-📭 open mailbox with lowered flag email inbox
-📮 postbox email letter envelope
-🗳️ ballot box with ballot election vote
-✏️ pencil stationery write paper writing school study
-✒️ black nib pen stationery writing write
-🖋️ fountain pen stationery writing write
-🖊️ pen stationery writing write
-🖌️ paintbrush drawing creativity art
-🖍️ crayon drawing creativity
-📝 memo write documents stationery pencil paper writing legal exam quiz test study compose
-💼 briefcase business documents work law legal job career
-📁 file directory documents business office
-📂 open file directory documents load
-🗂️ card index dividers organizing business stationery
-📅 calendar calendar schedule
-📆 tear off calendar schedule date planning
-🗒️ spiral notepad memo stationery
-🗓️ spiral calendar date schedule planning
-📇 card index business stationery
-📈 chart increasing graph presentation stats recovery business economics money sales good success
-📉 chart decreasing graph presentation stats recession business economics money sales bad failure
-📊 bar chart graph presentation stats
-📋 clipboard stationery documents
-📌 pushpin stationery mark here
-📍 round pushpin stationery location map here
-📎 paperclip documents stationery
-🖇️ linked paperclips documents stationery
-📏 straight ruler stationery calculate length math school drawing architect sketch
-📐 triangular ruler stationery math architect sketch
-✂️ scissors stationery cut
-🗃️ card file box business stationery
-🗄️ file cabinet filing organizing
-🗑️ wastebasket bin trash rubbish garbage toss
-🔒 locked security password padlock
-🔓 unlocked privacy security
-🔏 locked with pen security secret
-🔐 locked with key security privacy
-🔑 key lock door password
-🗝️ old key lock door password
-🔨 hammer tools build create
-🪓 axe tool chop cut
-⛏️ pick tools dig
-⚒️ hammer and pick tools build create
-🛠️ hammer and wrench tools build create
-🗡️ dagger weapon
-⚔️ crossed swords weapon
-🔫 pistol violence weapon pistol revolver
-🏹 bow and arrow sports
-🛡️ shield protection security
-🔧 wrench tools diy ikea fix maintainer
-🔩 nut and bolt handy tools fix
-⚙️ gear cog
-🗜️ clamp tool
-⚖️ balance scale law fairness weight
-🦯 probing cane accessibility
-🔗 link rings url
-⛓️ chains lock arrest
-🧰 toolbox tools diy fix maintainer mechanic
-🧲 magnet attraction magnetic
-⚗️ alembic distilling science experiment chemistry
-🧪 test tube chemistry experiment lab science
-🧫 petri dish bacteria biology culture lab
-🧬 dna biologist genetics life
-🔬 microscope laboratory experiment zoomin science study
-🔭 telescope stars space zoom science astronomy
-📡 satellite antenna communication future radio space
-💉 syringe health hospital drugs blood medicine needle doctor nurse
-🩸 drop of blood period hurt harm wound
-💊 pill health medicine doctor pharmacy drug
-🩹 adhesive bandage heal
-🩺 stethoscope health
-🚪 door house entry exit
-🛏️ bed sleep rest
-🛋️ couch and lamp read chill
-🪑 chair sit furniture
-🚽 toilet restroom wc washroom bathroom potty
-🚿 shower clean water bathroom
-🛁 bathtub clean shower bathroom
-🪒 razor cut
-🧴 lotion bottle moisturizer sunscreen
-🧷 safety pin diaper
-🧹 broom cleaning sweeping witch
-🧺 basket laundry
-🧻 roll of paper roll
-🧼 soap bar bathing cleaning lather
-🧽 sponge absorbing cleaning porous
-🧯 fire extinguisher quench
-🛒 shopping cart trolley
-🚬 cigarette kills tobacco cigarette joint smoke
-⚰️ coffin vampire dead die death rip graveyard cemetery casket funeral box
-⚱️ funeral urn dead die death rip ashes
-🗿 moai rock easter island moai
-🏧 atm sign money sales cash blue-square payment bank
-🚮 litter in bin sign blue-square sign human info
-🚰 potable water blue-square liquid restroom cleaning faucet
-♿ wheelchair symbol blue-square disabled accessibility
-🚹 men s room toilet restroom wc blue-square gender male
-🚺 women s room purple-square woman female toilet loo restroom gender
-🚻 restroom blue-square toilet refresh wc gender
-🚼 baby symbol orange-square child
-🚾 water closet toilet restroom blue-square
-🛂 passport control custom blue-square
-🛃 customs passport border blue-square
-🛄 baggage claim blue-square airport transport
-🛅 left luggage blue-square travel
-⚠️ warning exclamation wip alert error problem issue
-🚸 children crossing school warning danger sign driving yellow-diamond
-⛔ no entry limit security privacy bad denied stop circle
-🚫 prohibited forbid stop limit denied disallow circle
-🚳 no bicycles cyclist prohibited circle
-🚭 no smoking cigarette blue-square smell smoke
-🚯 no littering trash bin garbage circle
-🚱 non potable water drink faucet tap circle
-🚷 no pedestrians rules crossing walking circle
-📵 no mobile phones iphone mute circle
-🔞 no one under eighteen 18 drink pub night minor circle
-☢️ radioactive nuclear danger
-☣️ biohazard danger
-⬆️ up arrow blue-square continue top direction
-↗️ up right arrow blue-square point direction diagonal northeast
-➡️ right arrow blue-square next
-↘️ down right arrow blue-square direction diagonal southeast
-⬇️ down arrow blue-square direction bottom
-↙️ down left arrow blue-square direction diagonal southwest
-⬅️ left arrow blue-square previous back
-↖️ up left arrow blue-square point direction diagonal northwest
-↕️ up down arrow blue-square direction way vertical
-↔️ left right arrow shape direction horizontal sideways
-↩️ right arrow curving left back return blue-square undo enter
-↪️ left arrow curving right blue-square return rotate direction
-⤴️ right arrow curving up blue-square direction top
-⤵️ right arrow curving down blue-square direction bottom
-🔃 clockwise vertical arrows sync cycle round repeat
-🔄 counterclockwise arrows button blue-square sync cycle
-🔙 back arrow arrow words return
-🔚 end arrow words arrow
-🔛 on arrow arrow words
-🔜 soon arrow arrow words
-🔝 top arrow words blue-square
-🛐 place of worship religion church temple prayer
-⚛️ atom symbol science physics chemistry
-🕉️ om hinduism buddhism sikhism jainism
-✡️ star of david judaism
-☸️ wheel of dharma hinduism buddhism sikhism jainism
-☯️ yin yang balance
-✝️ latin cross christianity
-☦️ orthodox cross suppedaneum religion
-☪️ star and crescent islam
-☮️ peace symbol hippie
-🕎 menorah hanukkah candles jewish
-🔯 dotted six pointed star purple-square religion jewish hexagram
-♈ aries sign purple-square zodiac astrology
-♉ taurus purple-square sign zodiac astrology
-♊ gemini sign zodiac purple-square astrology
-♋ cancer sign zodiac purple-square astrology
-♌ leo sign purple-square zodiac astrology
-♍ virgo sign zodiac purple-square astrology
-♎ libra sign purple-square zodiac astrology
-♏ scorpio sign zodiac purple-square astrology scorpio
-♐ sagittarius sign zodiac purple-square astrology
-♑ capricorn sign zodiac purple-square astrology
-♒ aquarius sign purple-square zodiac astrology
-♓ pisces purple-square sign zodiac astrology
-⛎ ophiuchus sign purple-square constellation astrology
-🔀 shuffle tracks button blue-square shuffle music random
-🔁 repeat button loop record
-🔂 repeat single button blue-square loop
-▶️ play button blue-square right direction play
-⏩ fast forward button blue-square play speed continue
-⏭️ next track button forward next blue-square
-⏯️ play or pause button blue-square play pause
-◀️ reverse button blue-square left direction
-⏪ fast reverse button play blue-square
-⏮️ last track button backward
-🔼 upwards button blue-square triangle direction point forward top
-⏫ fast up button blue-square direction top
-🔽 downwards button blue-square direction bottom
-⏬ fast down button blue-square direction bottom
-⏸️ pause button pause blue-square
-⏹️ stop button blue-square
-⏺️ record button blue-square
-⏏️ eject button blue-square
-🎦 cinema blue-square record film movie curtain stage theater
-🔅 dim button sun afternoon warm summer
-🔆 bright button sun light
-📶 antenna bars blue-square reception phone internet connection wifi bluetooth bars
-📳 vibration mode orange-square phone
-📴 mobile phone off mute orange-square silence quiet
-♀️ female sign woman women lady girl
-♂️ male sign man boy men
-⚕️ medical symbol health hospital
-♾️ infinity forever
-♻️ recycling symbol arrow environment garbage trash
-⚜️ fleur de lis decorative scout
-🔱 trident emblem weapon spear
-📛 name badge fire forbid
-🔰 japanese symbol for beginner badge shield
-⭕ hollow red circle circle round
-✅ check mark button green-square ok agree vote election answer tick
-☑️ check box with check ok agree confirm black-square vote election yes tick
-✔️ check mark ok nike answer yes tick
-✖️ multiplication sign math calculation
-❌ cross mark no delete remove cancel red
-❎ cross mark button x green-square no deny
-➕ plus sign math calculation addition more increase
-➖ minus sign math calculation subtract less
-➗ division sign divide math calculation
-➰ curly loop scribble draw shape squiggle
-➿ double curly loop tape cassette
-〽️ part alternation mark graph presentation stats business economics bad
-✳️ eight spoked asterisk star sparkle green-square
-✴️ eight pointed star orange-square shape polygon
-❇️ sparkle stars green-square awesome good fireworks
-‼️ double exclamation mark exclamation surprise
-⁉️ exclamation question mark wat punctuation surprise
-❓ question mark doubt confused
-❔ white question mark doubts gray huh confused
-❕ white exclamation mark surprise punctuation gray wow warning
-❗ exclamation mark heavy exclamation mark danger surprise punctuation wow warning
-〰️ wavy dash draw line moustache mustache squiggle scribble
-©️ copyright ip license circle law legal
-®️ registered alphabet circle
-™️ trade mark trademark brand law legal
-ycap  symbol blue-square twitter
-*️⃣ keycap  star keycap
-0️⃣ keycap 0 0 numbers blue-square null
-1️⃣ keycap 1 blue-square numbers 1
-2️⃣ keycap 2 numbers 2 prime blue-square
-3️⃣ keycap 3 3 numbers prime blue-square
-4️⃣ keycap 4 4 numbers blue-square
-5️⃣ keycap 5 5 numbers blue-square prime
-6️⃣ keycap 6 6 numbers blue-square
-7️⃣ keycap 7 7 numbers blue-square prime
-8️⃣ keycap 8 8 blue-square numbers
-9️⃣ keycap 9 blue-square numbers 9
-🔟 keycap 10 numbers 10 blue-square
-🔠 input latin uppercase alphabet words blue-square
-🔡 input latin lowercase blue-square alphabet
-🔢 input numbers numbers blue-square
-🔣 input symbols blue-square music note ampersand percent glyphs characters
-🔤 input latin letters blue-square alphabet
-🅰️ a button red-square alphabet letter
-🆎 ab button red-square alphabet
-🅱️ b button red-square alphabet letter
-🆑 cl button alphabet words red-square
-🆒 cool button words blue-square
-🆓 free button blue-square words
-ℹ️ information blue-square alphabet letter
-🆔 id button purple-square words
-Ⓜ️ circled m alphabet blue-circle letter
-🆕 new button blue-square words start
-🆖 ng button blue-square words shape icon
-🅾️ o button alphabet red-square letter
-🆗 ok button good agree yes blue-square
-🅿️ p button cars blue-square alphabet letter
-🆘 sos button help red-square words emergency 911
-🆙 up button blue-square above high
-🆚 vs button words orange-square
-🈁 japanese here button blue-square here katakana japanese destination
-🈂️ japanese service charge button japanese blue-square katakana
-🈷️ japanese monthly amount button chinese month moon japanese orange-square kanji
-🈶 japanese not free of charge button orange-square chinese have kanji
-🈯 japanese reserved button chinese point green-square kanji
-🉐 japanese bargain button chinese kanji obtain get circle
-🈹 japanese discount button cut divide chinese kanji pink-square
-🈚 japanese free of charge button nothing chinese kanji japanese orange-square
-🈲 japanese prohibited button kanji japanese chinese forbidden limit restricted red-square
-🉑 japanese acceptable button ok good chinese kanji agree yes orange-circle
-🈸 japanese application button chinese japanese kanji orange-square
-🈴 japanese passing grade button japanese chinese join kanji red-square
-🈳 japanese vacancy button kanji japanese chinese empty sky blue-square
-㊗️ japanese congratulations button chinese kanji japanese red-circle
-㊙️ japanese secret button privacy chinese sshh kanji red-circle
-🈺 japanese open for business button japanese opening hours orange-square
-🈵 japanese no vacancy button full chinese japanese red-square kanji
-🔴 red circle shape error danger
-🟠 orange circle round
-🟡 yellow circle round
-🟢 green circle round
-🔵 blue circle shape icon button
-🟣 purple circle round
-🟤 brown circle round
-⚫ black circle shape button round
-⚪ white circle shape round
-🟥 red square
-🟧 orange square
-🟨 yellow square
-🟩 green square
-🟦 blue square
-🟪 purple square
-🟫 brown square
-⬛ black large square shape icon button
-⬜ white large square shape icon stone button
-◼️ black medium square shape button icon
-◻️ white medium square shape stone icon
-◾ black medium small square icon shape button
-◽ white medium small square shape stone icon button
-▪️ black small square shape icon
-▫️ white small square shape icon
-🔶 large orange diamond shape jewel gem
-🔷 large blue diamond shape jewel gem
-🔸 small orange diamond shape jewel gem
-🔹 small blue diamond shape jewel gem
-🔺 red triangle pointed up shape direction up top
-🔻 red triangle pointed down shape direction bottom
-💠 diamond with a dot jewel blue gem crystal fancy
-🔘 radio button input old music circle
-🔳 white square button shape input
-🔲 black square button shape input frame
-🏁 chequered flag contest finishline race gokart
-🚩 triangular flag mark milestone place
-🎌 crossed flags japanese nation country border
-🏴 black flag pirate
-🏳️ white flag losing loser lost surrender give up fail
-🏳️‍🌈 rainbow flag flag rainbow pride gay lgbt glbt queer homosexual lesbian bisexual transgender
-🏴‍☠️ pirate flag skull crossbones flag banner
-🇦🇨 flag ascension island
-🇦🇩 flag andorra ad flag nation country banner andorra
-🇦🇪 flag united arab emirates united arab emirates flag nation country banner united arab emirates
-🇦🇫 flag afghanistan af flag nation country banner afghanistan
-🇦🇬 flag antigua barbuda antigua barbuda flag nation country banner antigua barbuda
-🇦🇮 flag anguilla ai flag nation country banner anguilla
-🇦🇱 flag albania al flag nation country banner albania
-🇦🇲 flag armenia am flag nation country banner armenia
-🇦🇴 flag angola ao flag nation country banner angola
-🇦🇶 flag antarctica aq flag nation country banner antarctica
-🇦🇷 flag argentina ar flag nation country banner argentina
-🇦🇸 flag american samoa american ws flag nation country banner american samoa
-🇦🇹 flag austria at flag nation country banner austria
-🇦🇺 flag australia au flag nation country banner australia
-🇦🇼 flag aruba aw flag nation country banner aruba
-🇦🇽 flag aland islands Åland islands flag nation country banner aland islands
-🇦🇿 flag azerbaijan az flag nation country banner azerbaijan
-🇧🇦 flag bosnia herzegovina bosnia herzegovina flag nation country banner bosnia herzegovina
-🇧🇧 flag barbados bb flag nation country banner barbados
-🇧🇩 flag bangladesh bd flag nation country banner bangladesh
-🇧🇪 flag belgium be flag nation country banner belgium
-🇧🇫 flag burkina faso burkina faso flag nation country banner burkina faso
-🇧🇬 flag bulgaria bg flag nation country banner bulgaria
-🇧🇭 flag bahrain bh flag nation country banner bahrain
-🇧🇮 flag burundi bi flag nation country banner burundi
-🇧🇯 flag benin bj flag nation country banner benin
-🇧🇱 flag st barthelemy saint barthélemy flag nation country banner st barthelemy
-🇧🇲 flag bermuda bm flag nation country banner bermuda
-🇧🇳 flag brunei bn darussalam flag nation country banner brunei
-🇧🇴 flag bolivia bo flag nation country banner bolivia
-🇧🇶 flag caribbean netherlands bonaire flag nation country banner caribbean netherlands
-🇧🇷 flag brazil br flag nation country banner brazil
-🇧🇸 flag bahamas bs flag nation country banner bahamas
-🇧🇹 flag bhutan bt flag nation country banner bhutan
-🇧🇻 flag bouvet island norway
-🇧🇼 flag botswana bw flag nation country banner botswana
-🇧🇾 flag belarus by flag nation country banner belarus
-🇧🇿 flag belize bz flag nation country banner belize
-🇨🇦 flag canada ca flag nation country banner canada
-🇨🇨 flag cocos islands cocos keeling islands flag nation country banner cocos islands
-🇨🇩 flag congo kinshasa congo democratic republic flag nation country banner congo kinshasa
-🇨🇫 flag central african republic central african republic flag nation country banner central african republic
-🇨🇬 flag congo brazzaville congo flag nation country banner congo brazzaville
-🇨🇭 flag switzerland ch flag nation country banner switzerland
-🇨🇮 flag cote d ivoire ivory coast flag nation country banner cote d ivoire
-🇨🇰 flag cook islands cook islands flag nation country banner cook islands
-🇨🇱 flag chile flag nation country banner chile
-🇨🇲 flag cameroon cm flag nation country banner cameroon
-🇨🇳 flag china china chinese prc flag country nation banner china
-🇨🇴 flag colombia co flag nation country banner colombia
-🇨🇵 flag clipperton island
-🇨🇷 flag costa rica costa rica flag nation country banner costa rica
-🇨🇺 flag cuba cu flag nation country banner cuba
-🇨🇻 flag cape verde cabo verde flag nation country banner cape verde
-🇨🇼 flag curacao curaçao flag nation country banner curacao
-🇨🇽 flag christmas island christmas island flag nation country banner christmas island
-🇨🇾 flag cyprus cy flag nation country banner cyprus
-🇨🇿 flag czechia cz flag nation country banner czechia
-🇩🇪 flag germany german nation flag country banner germany
-🇩🇬 flag diego garcia
-🇩🇯 flag djibouti dj flag nation country banner djibouti
-🇩🇰 flag denmark dk flag nation country banner denmark
-🇩🇲 flag dominica dm flag nation country banner dominica
-🇩🇴 flag dominican republic dominican republic flag nation country banner dominican republic
-🇩🇿 flag algeria dz flag nation country banner algeria
-🇪🇦 flag ceuta melilla
-🇪🇨 flag ecuador ec flag nation country banner ecuador
-🇪🇪 flag estonia ee flag nation country banner estonia
-🇪🇬 flag egypt eg flag nation country banner egypt
-🇪🇭 flag western sahara western sahara flag nation country banner western sahara
-🇪🇷 flag eritrea er flag nation country banner eritrea
-🇪🇸 flag spain spain flag nation country banner spain
-🇪🇹 flag ethiopia et flag nation country banner ethiopia
-🇪🇺 flag european union european union flag banner
-🇫🇮 flag finland fi flag nation country banner finland
-🇫🇯 flag fiji fj flag nation country banner fiji
-🇫🇰 flag falkland islands falkland islands malvinas flag nation country banner falkland islands
-🇫🇲 flag micronesia micronesia federated states flag nation country banner micronesia
-🇫🇴 flag faroe islands faroe islands flag nation country banner faroe islands
-🇫🇷 flag france banner flag nation france french country france
-🇬🇦 flag gabon ga flag nation country banner gabon
-🇬🇧 flag united kingdom united kingdom great britain northern ireland flag nation country banner british UK english england union jack united kingdom
-🇬🇩 flag grenada gd flag nation country banner grenada
-🇬🇪 flag georgia ge flag nation country banner georgia
-🇬🇫 flag french guiana french guiana flag nation country banner french guiana
-🇬🇬 flag guernsey gg flag nation country banner guernsey
-🇬🇭 flag ghana gh flag nation country banner ghana
-🇬🇮 flag gibraltar gi flag nation country banner gibraltar
-🇬🇱 flag greenland gl flag nation country banner greenland
-🇬🇲 flag gambia gm flag nation country banner gambia
-🇬🇳 flag guinea gn flag nation country banner guinea
-🇬🇵 flag guadeloupe gp flag nation country banner guadeloupe
-🇬🇶 flag equatorial guinea equatorial gn flag nation country banner equatorial guinea
-🇬🇷 flag greece gr flag nation country banner greece
-🇬🇸 flag south georgia south sandwich islands south georgia sandwich islands flag nation country banner south georgia south sandwich islands
-🇬🇹 flag guatemala gt flag nation country banner guatemala
-🇬🇺 flag guam gu flag nation country banner guam
-🇬🇼 flag guinea bissau gw bissau flag nation country banner guinea bissau
-🇬🇾 flag guyana gy flag nation country banner guyana
-🇭🇰 flag hong kong sar china hong kong flag nation country banner hong kong sar china
-🇭🇲 flag heard mcdonald islands
-🇭🇳 flag honduras hn flag nation country banner honduras
-🇭🇷 flag croatia hr flag nation country banner croatia
-🇭🇹 flag haiti ht flag nation country banner haiti
-🇭🇺 flag hungary hu flag nation country banner hungary
-🇮🇨 flag canary islands canary islands flag nation country banner canary islands
-🇮🇩 flag indonesia flag nation country banner indonesia
-🇮🇪 flag ireland ie flag nation country banner ireland
-🇮🇱 flag israel il flag nation country banner israel
-🇮🇲 flag isle of man isle man flag nation country banner isle of man
-🇮🇳 flag india in flag nation country banner india
-🇮🇴 flag british indian ocean territory british indian ocean territory flag nation country banner british indian ocean territory
-🇮🇶 flag iraq iq flag nation country banner iraq
-🇮🇷 flag iran iran islamic republic flag nation country banner iran
-🇮🇸 flag iceland is flag nation country banner iceland
-🇮🇹 flag italy italy flag nation country banner italy
-🇯🇪 flag jersey je flag nation country banner jersey
-🇯🇲 flag jamaica jm flag nation country banner jamaica
-🇯🇴 flag jordan jo flag nation country banner jordan
-🇯🇵 flag japan japanese nation flag country banner japan
-🇰🇪 flag kenya ke flag nation country banner kenya
-🇰🇬 flag kyrgyzstan kg flag nation country banner kyrgyzstan
-🇰🇭 flag cambodia kh flag nation country banner cambodia
-🇰🇮 flag kiribati ki flag nation country banner kiribati
-🇰🇲 flag comoros km flag nation country banner comoros
-🇰🇳 flag st kitts nevis saint kitts nevis flag nation country banner st kitts nevis
-🇰🇵 flag north korea north korea nation flag country banner north korea
-🇰🇷 flag south korea south korea nation flag country banner south korea
-🇰🇼 flag kuwait kw flag nation country banner kuwait
-🇰🇾 flag cayman islands cayman islands flag nation country banner cayman islands
-🇰🇿 flag kazakhstan kz flag nation country banner kazakhstan
-🇱🇦 flag laos lao democratic republic flag nation country banner laos
-🇱🇧 flag lebanon lb flag nation country banner lebanon
-🇱🇨 flag st lucia saint lucia flag nation country banner st lucia
-🇱🇮 flag liechtenstein li flag nation country banner liechtenstein
-🇱🇰 flag sri lanka sri lanka flag nation country banner sri lanka
-🇱🇷 flag liberia lr flag nation country banner liberia
-🇱🇸 flag lesotho ls flag nation country banner lesotho
-🇱🇹 flag lithuania lt flag nation country banner lithuania
-🇱🇺 flag luxembourg lu flag nation country banner luxembourg
-🇱🇻 flag latvia lv flag nation country banner latvia
-🇱🇾 flag libya ly flag nation country banner libya
-🇲🇦 flag morocco ma flag nation country banner morocco
-🇲🇨 flag monaco mc flag nation country banner monaco
-🇲🇩 flag moldova moldova republic flag nation country banner moldova
-🇲🇪 flag montenegro me flag nation country banner montenegro
-🇲🇫 flag st martin
-🇲🇬 flag madagascar mg flag nation country banner madagascar
-🇲🇭 flag marshall islands marshall islands flag nation country banner marshall islands
-🇲🇰 flag north macedonia macedonia flag nation country banner north macedonia
-🇲🇱 flag mali ml flag nation country banner mali
-🇲🇲 flag myanmar mm flag nation country banner myanmar
-🇲🇳 flag mongolia mn flag nation country banner mongolia
-🇲🇴 flag macao sar china macao flag nation country banner macao sar china
-🇲🇵 flag northern mariana islands northern mariana islands flag nation country banner northern mariana islands
-🇲🇶 flag martinique mq flag nation country banner martinique
-🇲🇷 flag mauritania mr flag nation country banner mauritania
-🇲🇸 flag montserrat ms flag nation country banner montserrat
-🇲🇹 flag malta mt flag nation country banner malta
-🇲🇺 flag mauritius mu flag nation country banner mauritius
-🇲🇻 flag maldives mv flag nation country banner maldives
-🇲🇼 flag malawi mw flag nation country banner malawi
-🇲🇽 flag mexico mx flag nation country banner mexico
-🇲🇾 flag malaysia my flag nation country banner malaysia
-🇲🇿 flag mozambique mz flag nation country banner mozambique
-🇳🇦 flag namibia na flag nation country banner namibia
-🇳🇨 flag new caledonia new caledonia flag nation country banner new caledonia
-🇳🇪 flag niger ne flag nation country banner niger
-🇳🇫 flag norfolk island norfolk island flag nation country banner norfolk island
-🇳🇬 flag nigeria flag nation country banner nigeria
-🇳🇮 flag nicaragua ni flag nation country banner nicaragua
-🇳🇱 flag netherlands nl flag nation country banner netherlands
-🇳🇴 flag norway no flag nation country banner norway
-🇳🇵 flag nepal np flag nation country banner nepal
-🇳🇷 flag nauru nr flag nation country banner nauru
-🇳🇺 flag niue nu flag nation country banner niue
-🇳🇿 flag new zealand new zealand flag nation country banner new zealand
-🇴🇲 flag oman om symbol flag nation country banner oman
-🇵🇦 flag panama pa flag nation country banner panama
-🇵🇪 flag peru pe flag nation country banner peru
-🇵🇫 flag french polynesia french polynesia flag nation country banner french polynesia
-🇵🇬 flag papua new guinea papua new guinea flag nation country banner papua new guinea
-🇵🇭 flag philippines ph flag nation country banner philippines
-🇵🇰 flag pakistan pk flag nation country banner pakistan
-🇵🇱 flag poland pl flag nation country banner poland
-🇵🇲 flag st pierre miquelon saint pierre miquelon flag nation country banner st pierre miquelon
-🇵🇳 flag pitcairn islands pitcairn flag nation country banner pitcairn islands
-🇵🇷 flag puerto rico puerto rico flag nation country banner puerto rico
-🇵🇸 flag palestinian territories palestine palestinian territories flag nation country banner palestinian territories
-🇵🇹 flag portugal pt flag nation country banner portugal
-🇵🇼 flag palau pw flag nation country banner palau
-🇵🇾 flag paraguay py flag nation country banner paraguay
-🇶🇦 flag qatar qa flag nation country banner qatar
-🇷🇪 flag reunion réunion flag nation country banner reunion
-🇷🇴 flag romania ro flag nation country banner romania
-🇷🇸 flag serbia rs flag nation country banner serbia
-🇷🇺 flag russia russian federation flag nation country banner russia
-🇷🇼 flag rwanda rw flag nation country banner rwanda
-🇸🇦 flag saudi arabia flag nation country banner saudi arabia
-🇸🇧 flag solomon islands solomon islands flag nation country banner solomon islands
-🇸🇨 flag seychelles sc flag nation country banner seychelles
-🇸🇩 flag sudan sd flag nation country banner sudan
-🇸🇪 flag sweden se flag nation country banner sweden
-🇸🇬 flag singapore sg flag nation country banner singapore
-🇸🇭 flag st helena saint helena ascension tristan cunha flag nation country banner st helena
-🇸🇮 flag slovenia si flag nation country banner slovenia
-🇸🇯 flag svalbard jan mayen
-🇸🇰 flag slovakia sk flag nation country banner slovakia
-🇸🇱 flag sierra leone sierra leone flag nation country banner sierra leone
-🇸🇲 flag san marino san marino flag nation country banner san marino
-🇸🇳 flag senegal sn flag nation country banner senegal
-🇸🇴 flag somalia so flag nation country banner somalia
-🇸🇷 flag suriname sr flag nation country banner suriname
-🇸🇸 flag south sudan south sd flag nation country banner south sudan
-🇸🇹 flag sao tome principe sao tome principe flag nation country banner sao tome principe
-🇸🇻 flag el salvador el salvador flag nation country banner el salvador
-🇸🇽 flag sint maarten sint maarten dutch flag nation country banner sint maarten
-🇸🇾 flag syria syrian arab republic flag nation country banner syria
-🇸🇿 flag eswatini sz flag nation country banner eswatini
-🇹🇦 flag tristan da cunha
-🇹🇨 flag turks caicos islands turks caicos islands flag nation country banner turks caicos islands
-🇹🇩 flag chad td flag nation country banner chad
-🇹🇫 flag french southern territories french southern territories flag nation country banner french southern territories
-🇹🇬 flag togo tg flag nation country banner togo
-🇹🇭 flag thailand th flag nation country banner thailand
-🇹🇯 flag tajikistan tj flag nation country banner tajikistan
-🇹🇰 flag tokelau tk flag nation country banner tokelau
-🇹🇱 flag timor leste timor leste flag nation country banner timor leste
-🇹🇲 flag turkmenistan flag nation country banner turkmenistan
-🇹🇳 flag tunisia tn flag nation country banner tunisia
-🇹🇴 flag tonga to flag nation country banner tonga
-🇹🇷 flag turkey turkey flag nation country banner turkey
-🇹🇹 flag trinidad tobago trinidad tobago flag nation country banner trinidad tobago
-🇹🇻 flag tuvalu flag nation country banner tuvalu
-🇹🇼 flag taiwan tw flag nation country banner taiwan
-🇹🇿 flag tanzania tanzania united republic flag nation country banner tanzania
-🇺🇦 flag ukraine ua flag nation country banner ukraine
-🇺🇬 flag uganda ug flag nation country banner uganda
-🇺🇲 flag u s outlying islands
-🇺🇳 flag united nations un flag banner
-🇺🇸 flag united states united states america flag nation country banner united states
-🇺🇾 flag uruguay uy flag nation country banner uruguay
-🇺🇿 flag uzbekistan uz flag nation country banner uzbekistan
-🇻🇦 flag vatican city vatican city flag nation country banner vatican city
-🇻🇨 flag st vincent grenadines saint vincent grenadines flag nation country banner st vincent grenadines
-🇻🇪 flag venezuela ve bolivarian republic flag nation country banner venezuela
-🇻🇬 flag british virgin islands british virgin islands bvi flag nation country banner british virgin islands
-🇻🇮 flag u s virgin islands virgin islands us flag nation country banner u s virgin islands
-🇻🇳 flag vietnam viet nam flag nation country banner vietnam
-🇻🇺 flag vanuatu vu flag nation country banner vanuatu
-🇼🇫 flag wallis futuna wallis futuna flag nation country banner wallis futuna
-🇼🇸 flag samoa ws flag nation country banner samoa
-🇽🇰 flag kosovo xk flag nation country banner kosovo
-🇾🇪 flag yemen ye flag nation country banner yemen
-🇾🇹 flag mayotte yt flag nation country banner mayotte
-🇿🇦 flag south africa south africa flag nation country banner south africa
-🇿🇲 flag zambia zm flag nation country banner zambia
-🇿🇼 flag zimbabwe zw flag nation country banner zimbabwe
-🏴󠁧󠁢󠁥󠁮󠁧󠁿 flag england flag english
-🏴󠁧󠁢󠁳󠁣󠁴󠁿 flag scotland flag scottish
-🏴󠁧󠁢󠁷󠁬󠁳󠁿 flag wales flag welsh
-🥲 smiling face with tear sad cry pretend
-🥸 disguised face pretent brows glasses moustache
-🤌 pinched fingers size tiny small
-🫀 anatomical heart health heartbeat
-🫁 lungs breathe
-🥷 ninja ninjutsu skills japanese
-🤵‍♂️ man in tuxedo formal fashion
-🤵‍♀️ woman in tuxedo formal fashion
-👰‍♂️ man with veil wedding marriage
-👰‍♀️ woman with veil wedding marriage
-👩‍🍼 woman feeding baby birth food
-👨‍🍼 man feeding baby birth food
-🧑‍🍼 person feeding baby birth food
-🧑‍🎄 mx claus christmas
-🫂 people hugging care
-🐈‍⬛ black cat superstition luck
-🦬 bison ox
-🦣 mammoth elephant tusks
-🦫 beaver animal rodent
-🐻‍❄️ polar bear animal arctic
-🦤 dodo animal bird
-🪶 feather bird fly
-🦭 seal animal creature sea
-🪲 beetle insect
-🪳 cockroach insect pests
-🪰 fly insect
-🪱 worm animal
-🪴 potted plant greenery house
-🫐 blueberries fruit
-🫒 olive fruit
-🫑 bell pepper fruit plant
-🫓 flatbread flour food
-🫔 tamale food masa
-🫕 fondue cheese pot food
-🫖 teapot drink hot
-🧋 bubble tea taiwan boba milk tea straw
-🪨 rock stone
-🪵 wood nature timber trunk
-🛖 hut house structure
-🛻 pickup truck car transportation
-🛼 roller skate footwear sports
-🪄 magic wand supernature power
-🪅 pinata mexico candy celebration
-🪆 nesting dolls matryoshka toy
-🪡 sewing needle stitches
-🪢 knot rope scout
-🩴 thong sandal footwear summer
-🪖 military helmet army protection
-🪗 accordion music
-🪘 long drum music
-🪙 coin money currency
-🪃 boomerang weapon
-🪚 carpentry saw cut chop
-🪛 screwdriver tools
-🪝 hook tools
-🪜 ladder tools
-🛗 elevator lift
-🪞 mirror reflection
-🪟 window scenery
-🪠 plunger toilet
-🪤 mouse trap cheese
-🪣 bucket water container
-🪥 toothbrush hygiene dental
-🪦 headstone death rip grave
-🪧 placard announcement
-⚧️ transgender symbol lgbtq
-🏳️‍⚧️ transgender flag lgbtq
-😶‍🌫️ face in clouds shower steam dream
-😮‍💨 face exhaling relieve relief tired sigh
-😵‍💫 face with spiral eyes sick ill confused nauseous nausea
-❤️‍🔥 heart on fire passionate enthusiastic
-❤️‍🩹 mending heart broken heart bandage wounded
-🧔‍♂️ man beard facial hair
-🧔‍♀️ woman beard facial hair
-🫠 melting face hot heat
-🫢 face with open eyes and hand over mouth silence secret shock surprise
-🫣 face with peeking eye scared frightening embarrassing
-🫡 saluting face respect salute
-🫥 dotted line face invisible lonely isolation depression
-🫤 face with diagonal mouth skeptic confuse frustrated indifferent
-🥹 face holding back tears touched gratitude
-🫱 rightwards hand palm offer
-🫲 leftwards hand palm offer
-🫳 palm down hand palm drop
-🫴 palm up hand lift offer demand
-🫰 hand with index finger and thumb crossed heart love money expensive
-🫵 index pointing at the viewer you recruit
-🫶 heart hands love appreciation support
-🫦 biting lip flirt sexy pain worry
-🫅 person with crown royalty power
-🫃 pregnant man baby belly
-🫄 pregnant person baby belly
-🧌 troll mystical monster
-🪸 coral ocean sea reef
-🪷 lotus flower calm meditation
-🪹 empty nest bird
-🪺 nest with eggs bird
-🫘 beans food
-🫗 pouring liquid cup water
-🫙 jar container sauce
-🛝 playground slide fun park
-🛞 wheel car transport
-🛟 ring buoy life saver life preserver
-🪬 hamsa religion protection
-🪩 mirror ball disco dance party
-🪫 low battery drained dead
-🩼 crutch accessibility assist
-🩻 x-ray skeleton medicine
-🫧 bubbles soap fun carbonation sparkling
-🪪 identification card document
-🟰 heavy equals sign math
+😀 rosto risonho engraçado feliz lol rindo risada riso rosto sorridente
+😃 rosto risonho com olhos bem abertos aberto boca feliz olhos arregalados risada risonho rosto rosto sorrindo com boca aberta sorridente sorrindo sorriso
+😄 rosto risonho com olhos sorridentes aberta boca engraçado feliz haha lol risada riso risonho sorridente sorriso
+😁 rosto contente com olhos sorridentes feliz olho olhos sorrindo rindo rosto rosto rindo com olhos sorridentes sorridente sorrindo sorriso sorriso aberto
+😆 rosto risonho com olhos semicerrados gargalhada gargalhando hahaha kkk olhos fechados rir rosto sorriso com olhos fechados sorriso estilo XD
+😅 rosto risonho com gota de suor estressada estressado nervoso rindo rosto sorriso com suor frio sorriso mas com suor frio suando frio suor frio
+🤣 rolando no chão de rir chão choro engraçada feliz gargalhada haha kkk lágrimas rindo rir risada rolando
+😂 rosto chorando de rir alegria chorando de rir engraçada engraçado gargalhada hahaha kkk lágrimas lágrimas de alegria rosto rosto com lágrimas de alegria
+🙂 rosto levemente sorridente feliz rosto rosto sorrindo sorriso sorriso leve
+🙃 rosto de cabeça para baixo de cabeça para baixo rosto invertido
+😉 rosto com olho piscando flerte piscada rosto rosto piscando
+😊 rosto sorridente com olhos sorridentes alegre encabulada envergonhada feliz fofo ruborizar satisfeita sim sorriso vergonha
+😇 rosto sorridente com auréola anjinho anjo auréola inocente rosto sorriso sorriso com auréola
+🥰 rosto sorridente com 3 corações amando amei amo apaixonada coração crush paixão romance rosto sorridente te amo
+😍 rosto sorridente com olhos de coração amor apaixonado coração olhar apaixonado olhos olhos de coração paixão romance rosto
+🤩 rosto com olhar maravilhado estrela gargalhando olhos rosto super animada super animado super feliz superanimada superanimado superfeliz
+😘 rosto mandando um beijo beijo flerte jogando beijos mandando beijo rosto rosto jogando beijos
+😗 rosto beijando beijo rosto rosto com beijo
+☺️ rosto sorridente corada corado relaxado rosto rosto sorrindo rosto sorrindo não preenchido sorridente sorriso
+😚 rosto beijando com olhos fechados beijando beijando com os olhos fechados beijinho mandando beijo olhos fechados rosto
+😙 rosto beijando com olhos sorridentes beijar e sorrir beijinho beijos flerte mandando beijo olhos sorrindo rosto rosto beijando com um sorriso sorriso
+😋 rosto saboreando comida apetitoso comida gostosa delicioso gostoso nham rosto rosto com sorriso rosto saboreando saboroso sorriso
+😛 rosto mostrando a língua língua para fora rosto rosto com língua para fora
+😜 rosto piscando e com língua para fora brincadeira língua para fora com piscadela piscadela piscando e mostrando a língua provocação rosto
+🤪 rosto bizarro cara de maluco doida doido excêntrico grande louca louco olhar de maluco olho pequeno
+😝 rosto com olhos semicerrados e língua para fora eca horrível língua para fora língua para fora com os olhos fechados olhos fechados rosto
+🤑 rosto com cifrões avarenta caro cifrão dinheiro ganância grana rica riqueza
+🤗 rosto abraçando abraço carinho feliz mãos abraçando rosto rosto sorrindo
+🤭 rosto com a mão sobre a boca hehe ops risadinha risonho sorriso envergonhado vergonha
+🤫 rosto fazendo sinal de silêncio faça silêncio fica quieta quieta quieto silêncio
+🤔 rosto pensativo curiosa curioso dúvida hmm ideia ideias mão no queixo pensando pensativa pensativo rosto
+🤐 rosto com boca de zíper boca fechada calada calado quieta quieto rosto segredo zíper
+🤨 rosto com sobrancelha levantada cética ceticismo cético confusa confuso desconfiada desconfiado desconfiança
+😐 rosto neutro neutro putz rosto rosto sem emoção sem comentários sem emoção sem reação
+😑 rosto inexpressivo aff inespressiva inespressivo nada a dizer rosto sem comentários sem expressão tanto faz
+😶 rosto sem boca calada calado quieto rosto sem boca sem comentários sem palavras
+😏 rosto com sorriso maroto flerte rosto sorriso maldoso sorriso malicioso sorriso maroto suspeito
+😒 rosto aborrecido aff blasé nada engraçado não achou graça não está feliz rosto rosto de que não achou graça rosto de quem não achou graça
+🙄 rosto com olhos revirados olhando para cima olhos revirando os olhos rolando os olhos rosto tanto faz virando os olhos
+😬 rosto expressando desagrado careta fazendo careta rosto rosto fazendo careta sem graça
+🤥 rosto de mentiroso mentindo mentira mentiroso nariz crescendo pinocchio pinóquio
+😌 rosto aliviado alívio em paz rosto zen
+😔 rosto deprimido abatido chateado deprimido desanimado pensativo pra baixo rosto
+😪 rosto sonolento cara de sono rosto rosto com sono
+🤤 rosto babando babando babar rosto salivando
+😴 rosto dormindo boa noite cama cansada cansado cochilo dormindo dormir rosto soneca sono zzz
+😷 rosto com máscara médica doente gripado máscara máscara médica resfriado rosto rosto com máscara
+🤒 rosto com termômetro de cama doente febre febril rosto termômetro
+🤕 rosto com atadura na cabeça acidentado doente ferimento machucado rosto rosto com curativos
+🤢 rosto nauseado doente enjoado enjoo náusea vômito
+🤮 rosto vomitando doente nojenta nojento nojo vomitando vômito
+🤧 rosto espirrando de cama doente espirrando espirro gripado resfriado
+🥵 rosto fervendo de calor calor febre febril insolação língua de fora ofegante quente rosto rosto vermelho suando suor
+🥶 rosto gelado abaixo de zero azul congelando congelei frio gelado gélido glacial rosto
+🥴 rosto embriagado alcoolizado bêbada bêbado boca ondulada embriagada embriagado intoxicado olhos tortos rosto tonta tonto
+😵 rosto atordoado acabado atordoado doente morto rosto tontura
+🤯 cabeça explodindo cabeça chocada chocado chocante choque explodindo incrível perplexo surpreendente surpresa surpreso
+🤠 rosto com chapéu de caubói cara cara de cauboi cauboi caubói cowboy rosto sertanejo vaqueiro
+🥳 rosto festivo animação aniversário apito chapéu comemoração comemorar feliz aniversário festa língua de sogra parabéns rosto viva
+😎 rosto sorridente com óculos escuros muito sol na boa óculos escuros rosto sol sorrindo sorrindo de óculos escuros sorriso de óculos to legal
+🤓 rosto de nerd cdf esperto estudioso inteligência inteligente nerd óculos óculos de grau sabe tudo sabe-tudo
+🧐 rosto com monóculo conservador
+😕 rosto confuso confuso indeciso não entendi não tenho certeza rosto
+😟 rosto preocupado decepcionado preocupado rosto
+🙁 rosto meio triste rosto triste tristeza tristinho
+☹️ rosto descontente decepção decepcionado descontente insatisfeito rosto rosto de desaprovação triste
+😮 rosto com boca aberta boca boca aberta boquiaberto empatia pasmo rosto
+😯 rosto surpreso espantado rosto surpreso uau
+😲 rosto espantado chocado estupefato rosto totalmente chocado
+😳 rosto ruborizado atordoado deslumbrado horrorizado impressionado rosto ruborizado vergonha
+🥺 rosto implorando implorando olhar de cachorrinho olhos grandes perdão por favor por que não pq não rosto triste
+😦 rosto franzido com boca aberta aberta assustado boca decepcionado inesperado rosto assustado uau
+😧 rosto angustiado angustiado rosto sofrendo
+😨 rosto amedrontado ansiedade assustado com medo medo preocupado rosto
+😰 rosto ansioso com gota de suor boca aberta nervoso rosto rosto azul com suor frio suando frio suor frio
+😥 rosto triste, mas aliviado aliviado decepcionado não rosto triste ufa
+😢 rosto chorando chorando choro lágrimas rosto triste
+😭 rosto chorando aos berros chorando chorando alto chorar infeliz lágrimas rosto triste
+😱 rosto gritando de medo assustada assustado gritando grito medo rosto susto temeroso
+😖 rosto perplexo bravo frustrado indignado perplexo rosto
+😣 rosto perseverante concentração concentrado dor de cabeça foco perseverança perseverante rosto
+😞 rosto desapontado decepção desapontado desapontamento rosto rosto decepcionado triste
+😓 rosto cabisbaixo com gota de suor rosto rosto com suor frio suando frio suor frio
+😩 rosto desolado aborrecido cansado cansei decepcionado desolado exausto infeliz perdi rosto
+😫 rosto cansado cansado desesperado exausto rosto
+🥱 rosto bocejando bocejo cansada cansado com sono entediada entediado sono zzz
+😤 rosto soltando vapor pelo nariz brava bravo furiosa furioso irritada irritado rosto soltando fumaça triunfo vitória
+😡 rosto furioso bravo furioso irado rosto vermelho zangado
+😠 rosto zangado irado rosto zangado
+🤬 rosto com símbolos na boca boca censurado fala mal rosto rude símbolos xingando
+😈 rosto sorridente com chifres cara chifres diabinho diabo malícia rosto roxa sorridente sorriso
+👿 rosto zangado com chifres bravo chifres demônio diabinho diabo rosto zangado
+💀 caveira conto corpo fadas morte rosto
+☠️ caveira e ossos cruzados caveira morte ossos ossos cruzados pirata
+💩 cocô estrume excremento fezes pilha
+🤡 rosto de palhaço cara circo engraçado palhaço piada rosto
+👹 ogro assustador conto de fadas demoníaco japonês malvado máscara monstro oni rosto
+👺 duende japonês bravo conto duende fadas goblin japonês máscara monstro raiva rosto tengu zangado
+👻 fantasma assombração assombrado buu conto fadas halloween rosto
+👽 alienígena extraterrestre OVNI rosto
+👾 monstro alienígena alien E.T. extraterrestre game invasores monstro OVNI pixelado
+🤖 rosto de robô monstro robô robotizado rosto
+😺 rosto de gato sorrindo aberta animal boca feliz gato rosto sorrindo sorriso
+😸 rosto de gato sorrindo com olhos sorridentes gato rindo riso rosto sorrindo sorriso
+😹 rosto de gato com lágrimas de alegria alegria chorando choro engraçado felicidade feliz gato lágrimas rir risos rosto
+😻 rosto de gato sorridente com olhos de coração adorei amor apaixonado coração gato paixão rosto sorriso
+😼 rosto de gato com sorriso irônico gato irônico rosto sorriso
+😽 rosto de gato mandando um beijo beijando beijo fechado gato olho rosto
+🙀 rosto de gato desolado choque desolado gato meu deus oh! rosto surpresa surpreso
+😿 rosto de gato chorando chorando choro gato lágrima rosto triste
+😾 rosto de gato mal-humorado bico bravo gato mal-humorado rosto
+🙈 macaco que não vê nada envergonhado macaco não veja o mal não vi nada olhos tapados vergonha
+🙉 macaco que não ouve nada macaco não ouça o mal não ouço não ouve nada não quero ouvir ouvidos tapados
+🙊 macaco que não fala nada animal boca tapada macaco não não fale nada não posso contar não posso falar segredo silencio ups
+💋 marca de beijo beijo lábios romance
+💌 carta de amor carta coração correspondência com coração romance
+💘 coração com flecha amor coração cupido emoção flecha flechado paixão romance s2
+💝 coração com fita amor aniversário coração dia dos namorados fita presente s2
+💖 coração brilhante amor brilhante coração emoção emocionante s2
+💗 coração crescendo amor animado batendo coração crescendo emoção nervosismo s2
+💓 coração pulsante amor batendo coração emoção pulsante s2
+💞 corações girando adorável amor bonitinho coração corações emoção girando s2
+💕 dois corações amor aniversário casal coração dois emoção s2
+💟 coração decorativo amor coração decoração decorativo roxo s2 selo
+❣️ exclamação de coração amor coração exclamação pontuação s2 sinal
+💔 coração partido amorosa coração decepção desilusão emoção partido quebrado rompimento s2 sofrendo sofrimento triste
+❤️ coração vermelho amor coração s2
+🧡 coração laranja coração emoção laranja s2
+💛 coração amarelo amarelo amor coração emoção love s2
+💚 coração verde coração emoção s2 verde
+💙 coração azul azul coração emoção s2
+💜 coração roxo coração coração lilás emoção roxo s2
+🤎 coração marrom coração marrom s2
+🖤 coração preto coração negro preto s2
+🤍 coração branco branco coração s2
+💯 cem pontos 100 cem certamente certeza conte comigo pontos sem dúvida top total
+💢 símbolo de raiva com raiva emoção engraçado raiva
+💥 colisão emoção engraçado explosão símbolo de colisão
+💫 zonzo brilhante emoção engraçado estrelas olhando para as estrelas
+💦 pingos de suor borrifo com suor emoção engraçado splash suor
+💨 rapidez correr corrida emoção engraçado fugir
+🕳️ buraco buraco no chão
+💣 bomba emoção engraçado explosão explosivo perigo
+💬 balão de diálogo balão balão de conversa diálogo engraçado
+👁️‍🗨️ olho no balão de diálogo balão de diálogo olho testemunha
+🗨️ balão de diálogo à esquerda azul balão conversa diálogo esquerda
+🗯️ balão de raiva à direita balão briga conversa diálogo direita discurso discussão enérgico furioso irado raiva
+💭 balão de pensamento balão engraçado ideia invenção inventando pensamento pensando
+💤 zzz boa noite cansada cansado com sono dormindo dormir emoção engraçado roncando sono
+👋 mão acenando acenando aceno até mais está aí? flw mão oi olá taí? tchau
+🤚 dorso da mão levantado dorso levantada levantado mão para tudo pare
+🖐️ mão aberta com os dedos separados 5 aberta cinco dedos mão palma pare separados
+✋ mão levantada 5 cinco erguida high five levantada mão papel pare toca aqui
+🖖 saudação vulcana dedos jornada nas estrelas mão saudação saudação star trek spock star trek startrek
+👌 sinal de ok beliscar certo concordo mão ok ótimo rude sinal sinalizando
+🤏 mão beliscando beliscar mão pequena quantidade pequeno pouco pouquinho
+✌️ mão em V de vitória beleza mão paz sim V de vitória vitória
+🤞 dedos cruzados boa sorte cruzados dedos mão sorte torcendo
+🤟 gesto de "te amo" amor gesto mão te amo
+🤘 saudação do rock chifres dedos mão metal rock
+🤙 sinal "me liga" legal ligar mão me liga
+👈 dorso da mão com indicador apontando para a esquerda costas dedo dorso esquerda indicador mão
+👉 dorso da mão com indicador apontando para a direita apontar costas dedo direita dorso indicador mão
+👆 dorso da mão com indicador apontando para cima cima costas dedo dedo para cima dorso indicador mão
+🖕 dedo do meio dedo gesto ofensivo mão
+👇 dorso da mão com indicador apontando para baixo abaixo costas da mão dedo dedo apontado para baixo dedo indicador dedo para baixo dorso da mão com dedo indicador apontando para baixo embaixo
+☝️ indicador apontando para cima dedo dedo apontando para cima eu indicador mão
+👍 polegar para cima beleza cima concordo dedão joia mão ok polegar sim sinal valeu
+👎 polegar para baixo dedão dedão para baixo desaprovação desaprovado mão não não gostei para baixo ruim sinal
+✊ punho levantado pedra punho punho erguido solidariedade
+👊 soco beleza fechado força mão punho tá ligado
+🤛 punho esquerdo esquerdo fechada mão punho soco
+🤜 punho direito direito punho soco
+👏 mãos aplaudindo aplauso bom trabalho mãos palmas parabéns sinal
+🙌 mãos para cima ambas as mãos comemoração levantando ambas as mãos para comemorar viva
+👐 mãos abertas abertas mão sinal sinal de mãos abertas
+🤲 palmas unidas para cima cima devoção juntas oração palmas unidas
+🤝 aperto de mãos aperto combinado cumprimento mãos
+🙏 mãos juntas gesto mão reza rezando rezar
+✍️ escrevendo à mão caneta escrevendo mão
+💅 esmalte de unha cosméticos esmalte manicure mão unhas
+🤳 selfie camera câmera celular foto smartphone
+💪 bíceps academia contraído engraçado forte musculação músculo
+🦾 braço mecânico acessibilidade prótese
+🦿 perna mecânica acessibilidade prótese
+🦵 perna chute joelho membro pé perna dobrada
+🦶 pé calcanhar chutar chute pisão pisar tornozelo
+👂 orelha corpo escutar ouvido
+🦻 ouvido com aparelho auditivo acessibilidade aparelho auditivo deficiência auditiva surda surdo
+👃 nariz cheirar cheiro corpo odor rosto
+🧠 cérebro inteligência inteligente
+🦷 dente branco dentista
+🦴 osso cachorro esqueleto
+👀 olhos olhando olho rosto tô de olho
+👁️ olho parte do corpo rosto
+👅 língua corpo rosto
+👄 boca batom beijo corpo lábios rosto
+👶 bebê bebezinho grávida neném pessoas recém-nascido
+🧒 criança filho jovem neto pequeno
+👦 menino garoto guri jovem loiro pessoas piá
+👧 menina filha garota menininha neta pessoas
+🧑 pessoa adulta adulto
+👱 pessoa: cabelo louro cabelo loiro louro pessoa pessoa loira pessoa loura rosto
+👨 homem adulto amigo irmão marido namorado
+🧔 homem: barba barba barbudo homem pessoa
+👨‍🦰 homem: cabelo vermelho adulto amigo cabelo vermelho homem irmão marido namorado
+👨‍🦱 homem: cabelo cacheado adulto amigo cabelo cacheado homem irmão marido namorado
+👨‍🦳 homem: cabelo branco adulto amigo cabelo branco homem irmão marido namorado
+👨‍🦲 homem: careca adulto amigo careca homem irmão marido namorado
+👩 mulher adulta garota guria loira menina mina
+👩‍🦰 mulher: cabelo vermelho adulta cabelo vermelho garota guria loira menina mina mulher
+🧑‍🦰 pessoa: cabelo vermelho adulta adulto cabelo vermelho pessoa
+👩‍🦱 mulher: cabelo cacheado adulta cabelo cacheado garota guria loira menina mina mulher
+🧑‍🦱 pessoa: cabelo cacheado adulta adulto cabelo cacheado pessoa
+👩‍🦳 mulher: cabelo branco adulta cabelo branco garota guria loira menina mina mulher
+🧑‍🦳 pessoa: cabelo branco adulta adulto cabelo branco pessoa
+👩‍🦲 mulher: careca adulta careca garota guria loira menina mina mulher
+🧑‍🦲 pessoa: careca adulta adulto careca pessoa
+👱‍♀️ mulher: cabelo loiro garota guria loira loura menina mulher
+👱‍♂️ homem: cabelo loiro cabelo homem loiro louro
+🧓 idoso adulto avô sábio velho vovó
+👴 homem idoso adulto avô careca homem idoso pessoas vovô
+👵 idosa adulta mulher pessoas velhinha vovó vovozinha
+🙍 franzindo a sobrancelha brava bravo chateada chateado franzindo a testa gesto pessoa pessoa franzindo a sobrancelha triste
+🙍‍♂️ homem franzindo a sobrancelha carrancudo chateado desconfiado gesto homem magoado menino
+🙍‍♀️ mulher franzindo a sobrancelha carrancuda desconfiada mulher
+🙎 pessoa fazendo bico beicinho beiço careta chateada chateado emburrada emburrado fazendo bico gesto pessoa
+🙎‍♂️ homem fazendo bico apontando bico cara feia gesto homem homen apontando
+🙎‍♀️ mulher fazendo bico bico cara feia mulher
+🙅 pessoa fazendo gesto de “não” de jeito nenhum gesto mão não proibido sem chance
+🙅‍♂️ homem fazendo gesto de “não” gesto homem mão menino não proibido proibir
+🙅‍♀️ mulher fazendo gesto de “não” gesto mão mulher proibido
+🙆 pessoa fazendo gesto de “OK” exercício gesto gesto para OK mão mãos para cima OK pessoa
+🙆‍♂️ homem fazendo gesto de “OK” cabeça exercício gesto homem mão menino nossa ok
+🙆‍♀️ mulher fazendo gesto de “OK” gesto mão mulher OK
+💁 pessoa com a palma virada para cima ajuda diva divo fala sério fofoca informações jogada de cabelo mão pessoa pessoa com a mão virada para cima sarcasmo
+💁‍♂️ homem com a palma virada para cima ajuda fofoca garoto gorjeta guri homem menino sarcasmo sarcástico
+💁‍♀️ mulher com a palma virada para cima mulher
+🙋 pessoa levantando a mão dúvida eu eu sei feliz gesto levantando a mão levantar a mão mão pessoa
+🙋‍♂️ homem levantando a mão eu eu sei gesto homem levantando a mão mão menino pedir a palavra pergunta voluntário
+🙋‍♀️ mulher levantando a mão gesto mão mulher pedir a palavra
+🧏 pessoa surda acessibilidade audição orelha surda surdo surdos
+🧏‍♂️ homem surdo homem surdo
+🧏‍♀️ mulher surda mulher surda
+🙇 pessoa fazendo reverência arrependimento desculpa desculpe gesto meditação perdão pessoa reverência reverência respeitosa
+🙇‍♂️ homem fazendo reverência desculpas gesto homem homem pedindo desculpas respeito reverência
+🙇‍♀️ mulher fazendo reverência desculpas desculpe gesto meditação meditar mulher mulher pedindo desculpas respeito reverência
+🤦 pessoa decepcionada como assim decepção decepcionada decepcionado desapontamento descrença inacreditável meu deus não acredito não é possível pessoa pessoa dececionada
+🤦‍♂️ homem decepcionado como assim decepção decepcionado desapontamento homem inacreditável meu deus não acredito não é possível
+🤦‍♀️ mulher decepcionada como assim decepção decepcionada desapontamento inacreditável meu deus mulher não acredito não é possível
+🤷 pessoa dando de ombros dar de ombros dúvida ignorância indiferença não sei ombros pessoa quem sabe sei lá tanto faz
+🤷‍♂️ homem dando de ombros dar de ombros dúvida homem indiferença menino não sei quem sabe sei lá tanto faz
+🤷‍♀️ mulher dando de ombros dar de ombros dúvida garota indiferença menina mulher não sei quem sabe sei lá tanto faz
+🧑‍⚕️ profissional de saúde cuidados de saúde enfermeira médico terapeuta
+👨‍⚕️ homem profissional da saúde doutor enfermeiro homem médico saúde terapeuta
+👩‍⚕️ mulher profissional da saúde doutora enfermeira garota guria médica menina mulher saúde terapeuta
+🧑‍🎓 aluno estudante graduando
+👨‍🎓 estudante aluno colando grau formando graduação homem
+👩‍🎓 aluna estudante formanda mulher
+🧑‍🏫 professora na escola instrutora professora
+👨‍🏫 professor educador homem instrutor mestre
+👩‍🏫 professora instrutora mestra mulher
+🧑‍⚖️ juiz no tribunal balança juiz
+👨‍⚖️ juiz balança homem juíz justiça
+👩‍⚖️ juíza balança justiça mulher
+🧑‍🌾 agricultor jardineiro rancheiro
+👨‍🌾 fazendeiro agricultor homem jardineiro
+👩‍🌾 fazendeira agricultora jardineira mulher
+🧑‍🍳 chef de cozinha chef cozinheiro
+👨‍🍳 cozinheiro chef homem restaurante
+👩‍🍳 cozinheira chef mulher
+🧑‍🔧 mecânico trabalhando eletricista encanador mecânico prestador de serviço
+👨‍🔧 mecânico eletricista encanador homem prestador de serviços
+👩‍🔧 mecânica eletricista encanadora mulher prestadora de serviços
+🧑‍🏭 funcionário de fábrica fábrica industrial montagem trabalhador
+👨‍🏭 operário fábrica homem indústria metalúrgico trabalhador
+👩‍🏭 operária fábrica indústria mulher trabalhadora
+🧑‍💼 trabalhador de escritório arquiteto colarinho branco gerente negócios
+👨‍💼 funcionário de escritório arquiteto colarinho branco empresário escritório gerente homem
+👩‍💼 funcionária de escritório arquiteta branco colarinho empresária escritório funcionária gerente mulher
+🧑‍🔬 cientista biólogo engenheiro físico químico
+👨‍🔬 cientista homem biólogo físico homem professor químico
+👩‍🔬 cientista mulher bióloga cientista física mulher professora química
+🧑‍💻 programador desenvolvedor inventor software tecnólogo
+👨‍💻 tecnólogo codificador computador criador desenvolvedor homem inventor programador software
+👩‍💻 tecnóloga codificadora computador criadora desenvolvedora inventora mulher programadora software
+🧑‍🎤 cantor ator entretenimento estrela rock
+👨‍🎤 cantor homem artista ator cantor homem pop rock
+👩‍🎤 cantora artista atriz mulher pop rock
+🧑‍🎨 artista paleta
+👨‍🎨 artista plástico artista homem pintor pintura plástico quadros
+👩‍🎨 artista plástica artista mulher pintura
+🧑‍✈️ piloto avião
+👨‍✈️ piloto de avião homem avião homem piloto
+👩‍✈️ piloto de avião mulher avião garota guria mulher piloto voando
+🧑‍🚀 astronauta foguete
+👨‍🚀 astronauta homem espaço foguete homem
+👩‍🚀 astronauta mulher astronauta espaço foguete mulher
+🧑‍🚒 bombeiro caminhão de bombeiros
+👨‍🚒 bombeiro homem bombeiro caminhão corpo de bombeiros fogo homem incêndio
+👩‍🚒 bombeira caminhão corpo de bombeiros fogo incêndio mulher
+👮 policial autoridade multar pessoa polícia prender
+👮‍♂️ policial homem homem polícia policial tira
+👮‍♀️ policial mulher autoridade mulher multar polícia policial prender tira
+🕵️ detetive espião investigador rosto rosto com lupa
+🕵️‍♂️ detetive homem espião homem investigador
+🕵️‍♀️ detetive mulher detetive espiã espionar investigadora investigar mulher
+💂 guarda londres palácio pessoas segurança
+💂‍♂️ guarda homem guarda homem segurança
+💂‍♀️ guarda mulher buckingham guarda Londres mulher palacio realeza segurança
+👷 trabalhador de construção civil capacete chapéu construção construção civil construir pessoa trabalhador
+👷‍♂️ pedreiro construção homem operário
+👷‍♀️ pedreira capacete construção contrução mulher operária operário pedreiro
+🤴 príncipe Realeza rei
+👸 princesa conto coroa fadas fantasia loira menina mulher pessoas rainha
+👳 pessoa com turbante pessoa turbante
+👳‍♂️ homem com turbante homem turbante
+👳‍♀️ mulher com turbante mulher turbante
+👲 homem de boné chapéu chinês gua pi mao guapimao homem com gua pi mao pessoas
+🧕 mulher com véu cabeça hijab lenço mulher
+🤵 pessoa de smoking festa gala homem homem de smoking noivo smoking
+👰 pessoa com véu casamento noiva noiva com véu pessoas véu véu de noiva
+🤰 grávida estou grávida gravidez mulher
+🤱 amamentando amamentação bebê leite mãe materno neném
+👼 bebê anjo anjo bebê conto fadas rosto
+🎅 Papai Noel comemoração festas natal noel papai
+🤶 Mamãe Noel comemoração mamãe Natal noel vovó
+🦸 super-herói bem boa bom herói heroína super-homem superman superpoder
+🦸‍♂️ homem super-herói bom herói homem superpoder
+🦸‍♀️ super-heroína boa herói heroína mulher superpoder
+🦹 supervilão bandido criminoso mal malvado mau superpoder vilão
+🦹‍♂️ homem supervilão criminoso homem mal superpoder vilão
+🦹‍♀️ supervilã criminosa má mulher superpoder vilã
+🧙 mago bruxa fantasia feiticeira feiticeiro feitiço maga magia rpg
+🧙‍♂️ homem mago feiticeiro mago
+🧙‍♀️ maga bruxa feiticeira
+🧚 fada asas conto encantado fantasia ser
+🧚‍♂️ homem fada fada
+🧚‍♀️ mulher fada fada
+🧛 vampiro assustador bruxas dia drácula fantasia halloween monstro sangue terror
+🧛‍♂️ homem vampiro Drácula vampiro
+🧛‍♀️ mulher vampira vampira
+🧜 pessoa sereia canto cauda contos criatura fada fundo mar oceano ser encantado sereia sirene tridente
+🧜‍♂️ sereio Tritão
+🧜‍♀️ sereia
+🧝 elfo duende fantasia légolas magia mágico místico rpg ser encantado
+🧝‍♂️ elfo homem duende homem elfo
+🧝‍♀️ elfa duende mulher
+🧞 gênio desejos fantasia lâmpada mágica místico
+🧞‍♂️ homem gênio
+🧞‍♀️ mulher gênio
+🧟 zumbi apocalipse assustador bruxas dia halloween morto-vivo terror
+🧟‍♂️ homem zumbi cazumbi
+🧟‍♀️ mulher zumbi cazumbi
+💆 pessoa recebendo massagem facial dor de cabeça massagem massagem facial pele relaxar rosto spa tensão
+💆‍♂️ homem recebendo massagem facial acalmar dor de cabeça homem massagem menino relaxamento relaxar rosto salão tensão tenso
+💆‍♀️ mulher recebendo massagem facial massagem mulher relaxamento
+💇 pessoa cortando o cabelo beleza cortando o cabelo corte de cabelo pessoa salão salão de beleza
+💇‍♂️ homem cortando o cabelo barbeiro beleza cabelo corte homem menino salão
+💇‍♀️ mulher cortando o cabelo corte de cabelo mulher salão de beleza
+🚶 pessoa andando andar caminhada caminhar passo pedestre perambulando pessoa
+🚶‍♂️ homem andando andar caminhar homem caminhando
+🚶‍♀️ mulher andando andando andar caminhada caminhando caminhar mulher passeio pedestre perambulando
+🧍 pessoa em pé de pé
+🧍‍♂️ homem em pé em pé homem
+🧍‍♀️ mulher em pé em pé mulher
+🧎 pessoa ajoelhando ajoelhado ajoelhar joelhos pedir pessoa por favor
+🧎‍♂️ homem ajoelhando ajoelhado homem
+🧎‍♀️ mulher ajoelhando ajoelhada mulher
+🧑‍🦯 pessoa com bengala para cego acessibilidade cego
+👨‍🦯 homem com bengala para cego accessibilidade cego homem
+👩‍🦯 mulher com bengala para cego accessibilidade cega deficiência visual mulher
+🧑‍🦼 pessoa em cadeira de rodas motorizada acessibilidade cadeira de rodas
+👨‍🦼 homem em cadeira de rodas motorizada acessibilidade cadeira de rodas homem
+👩‍🦼 mulher em cadeira de rodas motorizada acessibilidade cadeira de rodas mulher
+🧑‍🦽 pessoa em cadeira de rodas manual acessibilidade cadeira de rodas
+👨‍🦽 homem em cadeira de rodas manual acessibilidade cadeira de rodas homem
+👩‍🦽 mulher em cadeira de rodas manual acessibilidade cadeira de rodas mulher
+🏃 pessoa correndo correndo correr corrida esporte maratona maratonista pessoa pressa
+🏃‍♂️ homem correndo corrida esporte homem maratona
+🏃‍♀️ mulher correndo corredora correndo corrida esporte garota guria maratona menina mulher pressa rápida rápido
+💃 mulher dançando bailarina dança dançando flamenco mulher pessoas salsa tango vamos dançar
+🕺 homem dançando dançando homem
+🕴️ homem de terno levitando homem homem de terno terno
+👯 pessoas com orelhas de coelho amigas coelho dançar dançarinas festa gêmeas melhores orelhas
+👯‍♂️ homens com orelhas de coelho coelho dançarino festa homem meninos orelhas
+👯‍♀️ mulheres com orelhas de coelho dançarinas festa mulheres orelha de coelho
+🧖 pessoa na sauna banho homem mulher pessoa relaxar sauna spa
+🧖‍♂️ homem na sauna sauna
+🧖‍♀️ mulher na sauna sauna
+🧗 pessoa escalando alpinista escalada escalando escalar esporte montanha
+🧗‍♂️ homem escalando escalar
+🧗‍♀️ mulher escalando escalar
+🤺 esgrimista esgrima espada esporte pessoa
+🏇 corrida de cavalos cavalo corrida esporte jockey jóquei
+⛷️ esquiador esporte esqui frio neve
+🏂 praticante de snowboard esporte inverno neve ski snowboard
+🏌️ golfista bola esporte golf golfe jogando
+🏌️‍♂️ homem golfista golfe homem homem jogando golfe
+🏌️‍♀️ mulher golfista bola esporte garota golf golfe golfista menina mulher
+🏄 surfista esporte onda ondas pessoa praia prancha surf
+🏄‍♂️ homem surfista homem surfando
+🏄‍♀️ mulher surfista esporte garota guria mar menina mulher onda praia surfando surfe surfista
+🚣 pessoa remando barco bote canoa mar oceano pessoa remo rio
+🚣‍♂️ homem remando esporte homem remador remo
+🚣‍♀️ mulher remando barco caiaque canoa esporte garota menina mulher pescaria remadora remando remo rio
+🏊 pessoa nadando esporte nadar natação olimpíada triatlo
+🏊‍♂️ homem nadando homem nadar natação
+🏊‍♀️ mulher nadando esporte homem nadadora nado natação olimpíada triatlo
+⛹️ pessoa jogando basquete arremesso atleta basquete bater bola bola cesta esporte jogador lance livre
+⛹️‍♂️ homem jogando basquete basquete bola esporte homem
+⛹️‍♀️ mulher jogando basquete basketball basquete bola esporte garota jogadora jogo menina mulher
+🏋️ pessoa levantando peso bodybuilder esporte fisiculturista força levantar peso
+🏋️‍♂️ homem levantando peso esporte força homem peso
+🏋️‍♀️ mulher levantando peso esporte força garota guria levantadora de peso levantar malhar menina mulher peso
+🚴 ciclista bicicleta bike ciclismo esporte pedalar
+🚴‍♂️ homem ciclista bicicleta esporte homem passeio
+🚴‍♀️ mulher ciclista bicicleta bike ciclismo ciclista esporte garota guria menina mulher passeio pedalando pedalar
+🚵 pessoa fazendo mountain bike bicicleta ciclismo ciclista esporte montanha mountain bike pedalando trilha
+🚵‍♂️ homem fazendo mountain bike bicicleta ciclista mountain bike
+🚵‍♀️ mulher fazendo mountain bike bicicleta bike ciclista esporte garota guria menina montanha mountain mulher pedalar
+🤸 pessoa fazendo estrela animada animado esporte estrela estrelinha feliz ginasta ginástica pessoa
+🤸‍♂️ homem fazendo estrela animado esporte estrela estrelinha feliz ginástica homem menino virar
+🤸‍♀️ mulher fazendo estrela animada esporte estrela feliz ginasta ginástica menina mulher virar
+🤼 pessoas lutando combate esporte greco-romana livre luta lutador pessoa torneio
+🤼‍♂️ homens lutando combate esporte greco-romana homem livre luta lutador torneio
+🤼‍♀️ mulheres lutando combate esporte greco-romana livre luta lutadora mulher torneio
+🤽 pessoa jogando polo aquático aquático competição esporte pessoa piscina polo
+🤽‍♂️ homem jogando polo aquático aquático esporte homem jogador jogando piscina polo
+🤽‍♀️ mulher jogando polo aquático aquático esporte jogadora menina mulher piscina polo
+🤾 handebol atleta bola esporte gol handball jogador passe pessoa
+🤾‍♂️ jogador de handebol bola esporte handball handebol homem jogador jogando menino quadra
+🤾‍♀️ jogadora de handebol bola esporte gol handball handebol jogadora jogando menina mulher passe quadra
+🤹 malabarista equilíbrio habilidade malabares malabarismo multitarefa
+🤹‍♂️ homem malabarista equilíbrio habilidade homem malabares malabarismo multitarefa
+🤹‍♀️ mulher malabarista equilíbrio habilidade malabarismo malabarista mulher multitarefa
+🧘 pessoa na posição de lótus cruzadas ioga lótus meditação pernas posição postura relaxar serenidade yoga zen
+🧘‍♂️ homem na posição de lótus ioga meditação yoga
+🧘‍♀️ mulher na posição de lótus ioga meditação yoga
+🛀 pessoa tomando banho água banheira banho espuma pessoa
+🛌 pessoa deitada na cama boa cama cochilo dormindo dormir hotel noite pessoa soneca sono
+🧑‍🤝‍🧑 pessoas de mãos dadas amigos casal dadas gêmeos mãos parceiros parceria pessoa
+👭 duas mulheres de mãos dadas amigas casal dadas gêmeas mãos parceiras parceria pessoa
+👫 homem e mulher de mãos dadas amigos casal homem mãos dadas mulher pessoas
+👬 dois homens de mãos dadas amigos casal dois homens gêmeos homem irmãos mãos dadas namorados pessoas
+💏 beijo amor beijar casal coração pessoas romance
+👩‍❤️‍💋‍👨 beijo: mulher e homem amor beijar beijo casal coração homem mulher pessoas romance
+👨‍❤️‍💋‍👨 beijo: homem e homem amor beijar beijo casal coração homem pessoas romance
+👩‍❤️‍💋‍👩 beijo: mulher e mulher amor beijar beijo casal coração mulher pessoas romance
+💑 casal apaixonado casal casal com um coração coração pessoas romance
+👩‍❤️‍👨 casal apaixonado: mulher e homem casal casal apaixonado casal com um coração coração homem mulher pessoas romance
+👨‍❤️‍👨 casal apaixonado: homem e homem casal casal apaixonado casal com um coração coração homem pessoas romance
+👩‍❤️‍👩 casal apaixonado: mulher e mulher casal casal apaixonado casal com um coração coração mulher pessoas romance
+👪 família filho mãe pai pessoas um filho
+👨‍👩‍👦 família: homem, mulher e menino família filho homem mãe menino mulher pai pessoas um filho
+👨‍👩‍👧 família: homem, mulher e menina família filho homem mãe menina mulher pai pessoas um filho
+👨‍👩‍👧‍👦 família: homem, mulher, menina e menino família filho homem mãe menina menino mulher pai pessoas um filho
+👨‍👩‍👦‍👦 família: homem, mulher, menino e menino família filho homem mãe menino mulher pai pessoas um filho
+👨‍👩‍👧‍👧 família: homem, mulher, menina e menina família filho homem mãe menina mulher pai pessoas um filho
+👨‍👨‍👦 família: homem, homem e menino família filho homem mãe menino pai pessoas um filho
+👨‍👨‍👧 família: homem, homem e menina família filho homem mãe menina pai pessoas um filho
+👨‍👨‍👧‍👦 família: homem, homem, menina e menino família filho homem mãe menina menino pai pessoas um filho
+👨‍👨‍👦‍👦 família: homem, homem, menino e menino família filho homem mãe menino pai pessoas um filho
+👨‍👨‍👧‍👧 família: homem, homem, menina e menina família filho homem mãe menina pai pessoas um filho
+👩‍👩‍👦 família: mulher, mulher e menino família filho mãe menino mulher pai pessoas um filho
+👩‍👩‍👧 família: mulher, mulher e menina família filho mãe menina mulher pai pessoas um filho
+👩‍👩‍👧‍👦 família: mulher, mulher, menina e menino família filho mãe menina menino mulher pai pessoas um filho
+👩‍👩‍👦‍👦 família: mulher, mulher, menino e menino família filho mãe menino mulher pai pessoas um filho
+👩‍👩‍👧‍👧 família: mulher, mulher, menina e menina família filho mãe menina mulher pai pessoas um filho
+👨‍👦 família: homem e menino família filho homem mãe menino pai pessoas um filho
+👨‍👦‍👦 família: homem, menino e menino família filho homem mãe menino pai pessoas um filho
+👨‍👧 família: homem e menina família filho homem mãe menina pai pessoas um filho
+👨‍👧‍👦 família: homem, menina e menino família filho homem mãe menina menino pai pessoas um filho
+👨‍👧‍👧 família: homem, menina e menina família filho homem mãe menina pai pessoas um filho
+👩‍👦 família: mulher e menino família filho mãe menino mulher pai pessoas um filho
+👩‍👦‍👦 família: mulher, menino e menino família filho mãe menino mulher pai pessoas um filho
+👩‍👧 família: mulher e menina família filho mãe menina mulher pai pessoas um filho
+👩‍👧‍👦 família: mulher, menina e menino família filho mãe menina menino mulher pai pessoas um filho
+👩‍👧‍👧 família: mulher, menina e menina família filho mãe menina mulher pai pessoas um filho
+🗣️ silhueta falando berro cabeça falando grito silhueta voz
+👤 silhueta de busto busto mistério pessoas silhueta sombra
+👥 silhueta de bustos amigos busto dupla pessoas silhueta
+👣 pegadas corpo gravura pé pés descalços rastro
+🐵 rosto de macaco animal macaco rosto
+🐒 macaco animal
+🦍 gorila animal macaco
+🦧 orangotango macaco primata
+🐶 rosto de cachorro animal cachorro rosto
+🐕 cachorro animal cão
+🦮 cão-guia acessibilidade cachorro cadela cão cega cego cegueira deficiência visual guia labrador
+🐕‍🦺 cão de serviço accessibilidade assistência cachorro cadela cão cão-guia pastor alemão serviço
+🐩 poodle animal cachorro
+🐺 rosto de lobo animal lobo rosto
+🦊 rosto de raposa animal bicho raposa rosto
+🦝 guaxinim animal astuto curioso travesso
+🐱 rosto de gato animal felino gatinho gato rosto
+🐈 gato animal felino
+🦁 rosto de leão animal leão rosto zodíaco
+🐯 rosto de tigre animal tigre
+🐅 tigre animal
+🐆 leopardo animal onça
+🐴 rosto de cavalo animal cavalo equino rosto
+🐎 cavalo animal corrida equestre
+🦄 rosto de unicórnio animal rosto unicórnio
+🦓 zebra animal listra listras
+🦌 cervo animal veado
+🐮 rosto de vaca animal fazenda leite muuu rosto vaca vaquinha
+🐂 boi animal Touro zodíaco
+🐃 búfalo-asiático água animal búfalo
+🐄 vaca animal fazenda
+🐷 rosto de porco animal porco rosto
+🐖 porco animal
+🐗 javali animal
+🐽 nariz de porco animal nariz porco rosto
+🐏 carneiro animal áries chifre zodíaco
+🐑 ovelha animal fazenda lã
+🐐 cabra animal bode capricórnio zodíaco
+🐪 camelo animal camelo de uma só corcova corcova deserto dromedário
+🐫 camelo com duas corcovas animal camelo camelo asiático com duas corcovas corcova deserto
+🦙 lhama alpaca animal guanaco lã vicunha
+🦒 girafa animal
+🐘 elefante animal
+🦏 rinoceronte animal
+🦛 hipopótamo animal
+🐭 rosto de camundongo animal camundongo ratinho rato rosto
+🐁 camundongo animal ratinho
+🐀 rato animal ratazana
+🐹 rosto de hamster animal hamster rosto
+🐰 rosto de coelho animal coelho rosto
+🐇 coelho animal coelhinho coelhinho da páscoa
+🐿️ esquilo animal
+🦔 porco-espinho animal espinhoso ouriço
+🦇 morcego animal vampiro
+🐻 rosto de urso animal rosto urso
+🐨 coala animal
+🐼 rosto de panda animal panda rosto
+🦥 preguiça bicho-preguiça devagar lenta lentidão preguiçosa preguiçoso
+🦦 lontra brincalhona pesca
+🦨 gambá fedida fedido fedor
+🦘 canguru animal Austrália filhote joey marsupial pula pulo salto
+🦡 texugo animal incomodar ratel texugo de mel
+🐾 patas animal pata patinhas de cachorro pegada pegada de pata
+🦃 peru animal ave peru de natal
+🐔 galinha animal ave
+🐓 galo animal ave
+🐣 pintinho chocando animal ave bebê chocando filhote galinha pintinho pinto
+🐤 pintinho de perfil animal ave bebê filhote galinha pintinho pinto rosto de pintinho
+🐥 pintinho de frente animal ave bebê fihote galinha pintinho pintinho olhando para frente pinto
+🐦 pássaro animal
+🐧 pinguim animal antartica frio
+🕊️ pomba branca animal ave branca pássaro paz pomba
+🦅 águia pássaro
+🦆 pato animal pássaro
+🦢 cisne animal ave pássaro patinho feio
+🦉 coruja pássaro sabedoria
+🦩 flamingo ave extravagante tropical
+🦚 pavão animal ave colorido orgulhoso pavoa pomposo
+🦜 papagaio animal ave fala pássaro pirata repete
+🐸 sapo animal rosto rosto de sapo
+🐊 crocodilo animal jacaré
+🐢 tartaruga animal
+🦎 lagartixa animal lagarto réptil
+🐍 cobra animal réptil serpente
+🐲 rosto de dragão animal dragão rosto
+🐉 dragão animal game of thrones
+🦕 saurópode braquiosaurus braquiossauro brontossauro brontossuro dinossauro diplódoco diplodocus
+🦖 tiranossauro rex dinossauro t-rex
+🐳 baleia esguichando água animal baleia esguicho
+🐋 baleia animal mar oceano
+🐬 golfinho animal oceano
+🐟 peixe animal Peixes pesca pescar signo de peixes zodíaco
+🐠 peixe tropical animal peixe
+🐡 baiacu animal peixe
+🦈 tubarão peixe
+🐙 polvo animal oceano octopus
+🐚 caramujo animal concha concha do mar concha em espiral
+🐌 caracol animal escargot
+🦋 borboleta beleza inseto
+🐛 inseto animal centopeia lagarta
+🐜 formiga animal inseto
+🐝 abelha animal inseto natureza
+🐞 joaninha animal besouro inseto tipo de besouro
+🦗 grilo gafanhoto inseto
+🕷️ aranha animal dias das bruxas halloween inseto
+🕸️ teia de aranha aranha halloween inseto teia
+🦂 escorpião animal deserto inseto zodíaco
+🦟 mosquito aedes aegypti amarela animal chicungunha dengue doença febre inseto malária pernilongo vírus zica
+🦠 micróbio ameba bactéria ciência vírus
+💐 buquê aniversário flor planta romance
+🌸 flor de cerejeira cereja cerejeira flor planta primavera
+💮 flor branca carimbo carimbo de flor carimbo de parabéns flor
+🏵️ roseta flor flor amarela planta primavera
+🌹 rosa flor
+🥀 flor murcha flor morrendo murcha murchando
+🌺 hibisco flor planta primavera
+🌻 girassol flor planta
+🌼 flor florescer planta
+🌷 tulipa flor
+🌱 muda de planta brotar broto jovem muda planta jovem plantinha
+🌲 conífera árvore árvore de pinheiro floresta natal pinheirinho pinheiro
+🌳 árvore caidiça árvore árvore cheia caidiça desfolha natureza
+🌴 palmeira árvore árvore de palmeira coqueiro
+🌵 cacto deserto natureza planta seca
+🌾 planta de arroz arroz comida espiga espiga de arroz fazenda grãos planta planta do arroz
+🌿 erva folha planta
+☘️ trevo Irlanda irlandês planta trevo de três folhas
+🍀 trevo de quatro folhas folhas irlandês planta quatro sorte sortudo trevo
+🍁 folha de bordo folha folha caída folha vermelha maple outono
+🍂 folhas caídas caídas cair folha folhas outono
+🍃 folha ao vento folha soprando vento
+🍇 uvas fruta uva
+🍈 melão fruta
+🍉 melancia fruta
+🍊 tangerina cítrica fruta laranja
+🍋 limão azedo cítrico fruta lima limão siciliano
+🍌 banana fruta
+🍍 abacaxi comida fome fruta
+🥭 manga comida fruta tropical
+🍎 maçã vermelha fruta maçã vermelha
+🍏 maçã verde comida fome fruta maçã verde
+🍐 pera comida fome fruta
+🍑 pêssego fruta
+🍒 cereja comida fome fruta frutas vermelhas
+🍓 morango comida fome fruta frutas vermelhas
+🥝 kiwi comida fruta
+🍅 tomate fruta fruto legume vegetal
+🥥 coco fruta palmeira piña colada
+🥑 abacate comida fruta
+🍆 berinjela beringela comida legume vegetal
+🥔 batata comida fome legume vegetal
+🥕 cenoura comida fome legume salada vegetal
+🌽 milho comida espiga espiga de milho fome
+🌶️ pimenta apimentada apimentado tempero
+🥒 pepino comida fome legume picles salada vegetal
+🥬 verdura alface bok choy comida couve hambúrguer repolho repolho chinês salada
+🥦 brócolis brócoli
+🧄 alho tempero
+🧅 cebola tempero
+🍄 cogumelo champignon fungo mario planta
+🥜 amendoim comida
+🌰 castanha planta
+🍞 pão pão de forma pão para fatiar restaurante torrada tostex
+🥐 croissant café da manhã comida fome pão
+🥖 baguete bisnaga comida pão pão francês
+🥨 pretzel pão torcido
+🥯 bagel café da manhã chimia comida confeitaria pão rosca rosquinha
+🥞 panquecas café da manhã comida crepes fome
+🧇 waffle doce gofre wafel wafle
+🧀 queijo comida fome queijo suíço
+🍖 carne carne com osso carne no osso churras churrasco osso restaurante
+🍗 coxa de frango aves comida coxa coxinha fome osso peru restaurante
+🥩 corte de carne bife carne carne vermelha costela de cordeiro costeleta costeleta de porco porco
+🥓 bacon comida fome toucinho
+🍔 hambúrguer búrguer cheese burguer restaurante
+🍟 batata frita comida fast food fome fritas lanchonete restaurante
+🍕 pizza fatia restaurante
+🌭 cachorro-quente cachorro quente hot dog pão com salsicha pão com vina vina
+🥪 sanduíche pão pão de forma
+🌮 taco comida mexicana mexicano tacos
+🌯 burrito comida mexicana mexicano
+🥙 pão recheado comida kebab pão recheio wrap
+🧆 falafel almôndega grão de bico
+🥚 ovo comida fome
+🍳 ovo frito comida culinária frigideira ovo ovo estrelado restaurante
+🥘 caçarola com comida caçarola comida fome paella panela rasa
+🍲 panela ensopado restaurante tigela de comida
+🥣 tigela com colher café da manhã cereal prato de sopa
+🥗 salada verde comida fome restaurante salada verde
+🍿 pipoca balde cinema
+🧈 manteiga laticínio margarina
+🧂 sal comida condimento sabor saleiro salgado
+🥫 comida enlatada lata
+🍱 bentô almoço japonês caixa caixa de bentô restaurante
+🍘 biscoito de arroz arroz bolacha de arroz cracker
+🍙 arroz japonês arroz bolinho de arroz comida fome japonês onigiri restaurante
+🍚 arroz cozido arroz comida fome restaurante
+🍛 arroz com curry arroz curry curry e arroz restaurante
+🍜 lámen comida fome macarrão miojo quentinha ramen restaurante sopa tigela tigela de macarrão
+🍝 espaguete comida fome italiano macarrão macarronada restaurante
+🍠 batata assada assada batata batata-doce doce restaurante
+🍢 oden espetinho frutos do mar frutos do mar no espetinho restaurante
+🍣 sushi comida japonesa restaurante restaurante japonês sashimi
+🍤 camarão frito camarão camarão empanado restaurante tempura
+🍥 bolinho de peixe croquete peixe redemoinho restaurante
+🥮 bolo lunar bolo da lua comida confeitaria festival festival chinês outono yuèbǐng
+🍡 dango bolinho de mochi bolinho de mochi no espetinho bolinho japonês comida doce fome japonês mochi mochiko sobremesa
+🥟 bolinho asiático asiático bolinho chinês dumpling empanada gyōza jiaozi massa pierogi potsticker
+🥠 biscoito da sorte biscoito chinês biscoito da fortuna profecia sorte
+🥡 caixa para viagem caixinha para levar delivery marmita
+🦀 caranguejo animal animal marinho Câncer signo de câncer zodíaco
+🦞 lagosta animal bisque caldo fruto do mar garras
+🦐 camarão animal comida crustáceo
+🦑 lula animal comida molusco
+🦪 ostra frutos do mar mar mergulho pérola
+🍦 sorvete italiano doce fome sobremesa sorvete sorvete de casquinha sorvete de massa sorvete na casquinha
+🍧 raspadinha de gelo gelo raspadinha restaurante sobremesa
+🍨 sorvete creme gelo restaurante sobremesa
+🍩 donut comida fome restaurante rosquinha sonho doce
+🍪 biscoito bolacha comida cookie doce fome sobremesa
+🎂 bolo de aniversário aniversário bolo comemoração doce feliz aniversário festa niver
+🍰 pão de ló de morango bolo bolo recheado doce fatia fatia de bolo pão de ló restaurante sobremesa
+🧁 cupcake açúcar bolinho bolo comida confeitaria confeito doce sobremesa torta
+🥧 torta abóbora carne doce fatia fatia de torta fruta maçã padaria recheio salgado
+🍫 chocolate barra barra de chocolate doce fome
+🍬 bala balinha doce
+🍭 pirulito bala doce
+🍮 pudim pudim de leite pudim de ovos restaurante
+🍯 pote de mel mel pote restaurante
+🍼 mamadeira bebê leite leitinho mamar neném
+🥛 copo de leite copo leite
+☕ café cafeína cafezinho chá inverno quente
+🍵 xícara de chá sem alça bebida chá chá verde xícara xícara de chá
+🍶 saquê bar bebida copo garrafa garrafa e copo de saquê japonês restaurante
+🍾 garrafa de champanhe aniversário bar champagne champanha champanhe cidra comemorar espumante estourar festa garrafa parabéns
+🍷 vinho bar bebida cálice de vinho restaurante taça
+🍸 coquetel bar beber bebida cachaça happy hour martini restaurante taça taça de coquetel
+🍹 bebida tropical bar bebida coquetel coquetel de frutas drink happy hour restaurante tropical
+🍺 cerveja bar bebida caneca caneca de cerveja chopp gelada happy hour restaurante
+🍻 canecas de cerveja bar caneca cerveja chope Chopp restaurante
+🥂 taças brindando brinde champagne champanhe comemoração taça tim-tim
+🥃 copo bar bebida drink whisky
+🥤 copo com canudo água canudo copo refrigerante suco
+🧃 suco de caixa caixa de suco caixinha de suco suco suquinho
+🧉 mate bebida chimarrão cuia de chimarrão tereré
+🧊 cubo de gelo gelado gelo iceberg
+🥢 hashi comida japonesa pauzinhos
+🍽️ prato com talheres almoço faca fome garfo jantar prato prato com talheres ao lado restaurante talheres
+🍴 garfo e faca almoço comer comida faca fome garfo jantar restaurante talher talheres
+🥄 colher talher
+🔪 faca de cozinha chef cozinhar faca
+🏺 ânfora ornamento chinês vaso vaso chinês
+🌍 globo mostrando Europa e África África Europa Terra
+🌎 globo mostrando as Américas América as Américas Terra
+🌏 globo mostrando Ásia e Oceania Ásia Austrália Oceania planeta terra Terra
+🌐 globo com meridianos meridianos
+🗺️ mapa-múndi geografia mapa mundo
+🗾 mapa do Japão Japão mapa
+🧭 bússola bússola magnética direção ímã magnético navegação norte orientação pontos cardeais
+🏔️ montanha com neve alpes frio montanha neve
+⛰️ montanha natureza
+🌋 vulcão erupção vulcânica lava natureza
+🗻 Monte Fuji montanha
+🏕️ acampamento barraca
+🏖️ praia e guarda-sol guarda-sol praia
+🏜️ deserto clima seco
+🏝️ ilha deserta ilha palmeira praia
+🏞️ parque nacional parque parque com rio reserva florestal rio
+🏟️ estádio arena
+🏛️ prédio grego arquitetura clássico grego
+🏗️ construção guindaste obra
+🧱 tijolo argamassa argila cimento muro parede terra
+🏘️ casas
+🏚️ casa abandonada casa
+🏠 casa construção domicílio lar residência
+🏡 casa com jardim casa construção jardim lar
+🏢 edifício comercial edifício escritório
+🏣 correio japonês correio japonês oriental prédio
+🏤 correio europeu prédio
+🏥 hospital doente internado médico prédio
+🏦 banco prédio
+🏨 hotel prédio
+🏩 motel amor hotel prédio
+🏪 loja de conveniência 24 horas 24h conveniência loja prédio
+🏫 escola colégio prédio prédio da escola
+🏬 loja de departamentos departamentos estabelecimento comercial loja
+🏭 fábrica prédio
+🏯 castelo japonês castelo japonês pagoda pagode prédio
+🏰 castelo castelo europeu castelo medieval prédio
+💒 capela de casamento capela casamento romance
+🗼 Torre de Tóquio Japão Tóquio torre
+🗽 Estátua da Liberdade estátua liberdade
+⛪ igreja capela cristã cristão missa prédio religião
+🕌 mesquita islã muçulmano religião
+🛕 templo hindu hindu templo
+🕍 sinagoga judaísmo judeu judia religião templo
+⛩️ santuário japonês japonês oriental religião santuário xintoísmo
+🕋 caaba islã islã muçulmano religião
+⛲ fonte água chafariz praça
+⛺ barraca acampamento acampar
+🌁 enevoado bruma cerração neblina névoa nevoeiro
+🌃 noite estrelada cidade à noite estrelas noite prédios
+🏙️ cidade prédios urbano
+🌄 aurora sobre montanhas montanha nascer do sol sobre as montanhas sol da manhã
+🌅 aurora sobre água amanhecer aurora natureza oceano rio sol sol da manhã sol nascendo
+🌆 cidade ao anoitecer anoitecer cidade noite paisagem pôr do sol prédio
+🌇 pôr do sol anoitecer calor cidade entardecer pôr do sol sobre prédios prédio
+🌉 ponte à noite noite ponte pontilhão
+♨️ chamas calor fogo fumaça quente
+🎠 carrossel cavalo cavalo de carrossel entretenimento parque de diversão
+🎡 roda gigante entretenimento gigante parque de diversões roda
+🎢 montanha russa entretenimento montanha parque de diversões parque temático russa
+💈 barbearia barbeiro barber pole cortar cabelo poste poste de barbeiro
+🎪 circo entretenimento lona lona de circo tenda
+🚂 locomotiva trem vapor veículo
+🚃 vagão de trem bonde elétrico ferroviário transporte trem trólebus vagão veículo
+🚄 trem de alta velocidade alta bala japonês trem trens veículo velocidade veloz
+🚅 trem de alta velocidade japonês bala ferrovia japão trem velocidade veloz viagem
+🚆 trem ferrovia veículo
+🚇 metrô trem túnel túnel subterrâneo veículo
+🚈 trem urbano chegada cheguei leve trem veículo
+🚉 estação estação de trem metrô trem
+🚊 bonde elétrico trólebus veículo
+🚝 monotrilho trem veículo
+🚞 estrada de ferro na montanha carro estrada de ferro montanha teleférico veículo
+🚋 bonde bonde elétrico carro trólebus veículo
+🚌 ônibus transporte público veículo
+🚍 ônibus se aproximando ônibus se aproximando veículo
+🚎 trólebus bonde elétrico ônibus ônibus movido a eletricidade veículo
+🚐 van mini ônibus ônibus veículo veraneio
+🚑 ambulância veículo
+🚒 carro do corpo de bombeiros bombeiro caminhão do corpo de bombeiros carro fogo incêndio veículo
+🚓 viatura policial carro patrulha polícia veículo
+🚔 viatura policial se aproximando polícia veículo viatura policial
+🚕 táxi veículo
+🚖 táxi se aproximando chegada táxi transporte veículo
+🚗 carro automóvel veículo
+🚘 carro se aproximando automóvel carona carro chegada se aproximando veículo
+🚙 SUV carro trailer veículo veículo recreacional
+🚚 caminhão de entrega caminhão veículo
+🚛 caminhão caminhão articulado semi trailer veículo
+🚜 trator obra veículo
+🏎️ carro de corrida automobilismo carro corrida
+🏍️ motocicleta corrida moto veículo
+🛵 scooter monareta motinho moto motoca
+🦽 cadeira de rodas manual acessibilidade cadeira de rodas
+🦼 cadeira de rodas motorizada acessibilidade
+🛺 automóvel riquixá autorriquixá tuk tuk
+🚲 bicicleta bike veículo
+🛴 patinete brinquedo
+🛹 skate rodinhas skatista
+🚏 ponto de ônibus bus busão ônibus ponto transporte público
+🛣️ estrada caminho viagem viajar
+🛤️ trilhos trem
+🛢️ barril de óleo barril lata latão óleo
+⛽ posto de gasolina abastecer álcool bomba combustível gasolina posto
+🚨 sirene carro da polícia farol policial luz de viatura policial luz giratória
+🚥 semáforo horizontal cruzamento horizontal luz semáforo sinal sinaleira trânsito
+🚦 semáforo vertical cruzamento luz semáforo sinal sinaleira trânsito vertical
+🛑 sinal de pare pare sinal
+🚧 em construção construção símbolo símbolo para “em construção”
+⚓ âncora marinha navegar sinal
+⛵ barco a vela barco iate navegar oceano praia resort vela
+🛶 canoa barco
+🚤 lancha barco férias praia veículo verão
+🛳️ cruzeiro barco embarcação navio passageiros veículo
+⛴️ balsa barco ferry ferry boat ferry-boat navegar
+🛥️ barco lancha motor navio veículo
+🚢 navio aquático barco cruzeiro férias veículo viagem
+✈️ avião aéreo veículo viajar voar voo
+🛩️ avião pequeno aéreo avião jatinho jato pequeno veículo
+🛫 avião decolando avião decolar férias fui partindo partiu viagem viajando
+🛬 avião aterrissando aterrissagem aterrissando avião chegando pousando veículo voltando
+🪂 paraquedas asa-delta paraquedista parasail saltar de paraquedas
+💺 assento cadeira poltrona
+🚁 helicóptero veículo viagem viajar voo
+🚟 estrada de ferro suspensa estrada de ferro suspensão trem veículo
+🚠 teleférico de montanha bonde cabo cabo suspenso usado em teleféricos nas montanhas montanha teleférico teleférico na montanha veículo
+🚡 teleférico aérea bonde gôndola linha veículo
+🛰️ satélite antena espaço
+🚀 foguete espaço veículo
+🛸 disco voador alienígena disco ET extra óvni terrestre voador
+🛎️ sineta hotel portaria sino
+🧳 mala bagagem rodinhas viagem
+⌛ ampulheta areia tempo
+⏳ ampulheta contando o tempo ampulheta areia cheia contando em cima hora relógio tempo
+⌚ relógio de pulso hora relógio tempo
+⏰ despertador alarme atrasada atrasado hora horário relógio
+⏱️ cronômetro relógio tempo
+⏲️ relógio temporizador cronômetro relógio timer
+🕰️ relógio de mesa relógio relógio antigo
+🕛 12 horas 12h00 doze meia-noite meio-dia relógio
+🕧 doze e meia 12h30 relógio
+🕐 1 hora 13h 1h 1h00 relógio uma
+🕜 uma e meia 1:30 13:30 13h30 1h30 relógio
+🕑 2 horas 14h 2h 2h00 duas relógio
+🕝 duas e meia 2:30 2h30 relógio
+🕒 3 horas 15h 3:00 3h00 hora horário relógio três
+🕞 três e meia 3:30 3h30 relógio
+🕓 4 horas 4:00 4h00 horário quatro relógio
+🕟 quatro e meia 4h30 relógio
+🕔 5 horas 5h00 cinco relógio
+🕠 cinco e meia 17h30 5h30 relógio
+🕕 6 horas 18h 6h00 relógio seis
+🕡 seis e meia 18h30 6h30 relógio
+🕖 7 horas 19h 7h00 relógio sete
+🕢 sete e meia 7:30 7h30 relógio
+🕗 8 horas 8:00 8h00 hora oito relógio
+🕣 oito e meia 8:30 8h30 relógio
+🕘 9 horas 21h 9h00 nove relógio
+🕤 nove e meia 9:30 9h30 hora relógio
+🕙 10 horas 10h00 22h dez relógio
+🕥 dez e meia 10h30 22h30 relógio
+🕚 11 horas 11:00 11h00 onze relógio
+🕦 onze e meia 11h30 23h30 relógio
+🌑 lua nova escuro lua lua negra noite nova
+🌒 lua crescente côncava côncava crescente lua noite
+🌓 quarto crescente lua lua de quarto crescente quarto
+🌔 lua crescente convexa convexa crescente lua
+🌕 lua cheia cheia lua luar
+🌖 lua minguante convexa convexa lua minguante
+🌗 quarto minguante lua lua de quarto minguante quarto
+🌘 lua minguante côncava côncava lua minguante
+🌙 lua crescente crescente lua
+🌚 rosto da lua nova lua lua nova lua nova com rosto rosto
+🌛 rosto da lua de quarto crescente crescente lua noite quarto rosto
+🌜 rosto da lua de quarto minguante lua lua com rosto lua de quarto minguante quarto minguante quarto minguante com rosto rosto
+🌡️ termômetro clima temperatura tempo
+☀️ sol clima dia claro raios solar tempo
+🌝 rosto da lua cheia cheia lua lua cheia com rosto lua com rosto rosto
+🌞 rosto do sol praia rosto sol
+🪐 planeta com anéis anéis planeta saturnino saturno
+⭐ estrela branca média amarela astronomia estrela
+🌟 estrela brilhante brilhante brilho cintilante estrela luminosa reluzente
+🌠 estrela cadente cadente cai estrela
+🌌 via láctea céu espaço estrelado
+☁️ nuvem clima
+⛅ sol por trás das nuvens clima nublado nuvem sol
+⛈️ chuva com trovão chuva clima nuvem relâmpago temporal trovão
+🌤️ sol com nuvens clima ensolarado nublado nuvem sol
+🌥️ nublado clima nuvem sol
+🌦️ sol com chuva chuva clima nuvem sol
+🌧️ nuvem com chuva chovendo chuva clima nuvem
+🌨️ nuvem com neve clima frio neve nuvem
+🌩️ nuvem com trovão clima nuvem relâmpago
+🌪️ tornado clima furacão nuvem
+🌫️ nevoeiro clima furacão neblina nuvem
+🌬️ rosto de vento clima nuvem rosto soprar sopro vento
+🌀 ciclone clima espiral furacão tonto twister zonzo
+🌈 arco-íris chuva clima gay lésbica lgbt lgbtqia+ natureza orgulho queer transgênero
+🌂 guarda-chuva fechado chuva chuvoso guarda-chuva
+☂️ guarda-chuva acessório chuva clima sombrinha aberta
+☔ sombrinha na chuva acessório chuva clima gotas guarda-chuva sombrinha
+⛱️ guarda-sol chuva clima praia sol sombra sombrinha
+⚡ alta tensão alta eletricidade natureza perigo relâmpago sinal tensão
+❄️ floco de neve clima floco frio neve
+☃️ boneco de neve boneco clima frio inverno neve
+⛄ boneco de neve sem neve boneco frio inverno neve
+☄️ cometa espaço estrela cadente meteoro satélite
+🔥 fogo chama
+💧 gota com suor engraçado gota de suor suor
+🌊 onda água mar oceano praia surfe tsunami
+🎃 abóbora de halloween abóbora comemoração dia das bruxas halloween jack lanterna
+🎄 árvore de natal árvore comemoração Natal pinheirinho
+🎆 fogos de artifício ano novo comemoração fogos
+🎇 vela estrela comemoração fogo de artifício fogo de artifício vela estrela
+🧨 bombinha artifício bomba chiando dinamite estourar explosivo faísca fogo luz pirotecnia roubada
+✨ brilhos * brilhantes estrelas faíscas mágica
+🎈 balão aniversário celebração comemoração festa parabéns
+🎉 cone de festa alegria aniversário celebrar comemoração cone eba festa oba parabéns
+🎊 confete bola celebração comemoração eba oba parabéns
+🎋 árvore de tanabata árvore comemoração Estrelas Festival japonesa papel tanabata tiras
+🎍 decoração de pinhos bambu comemoração decoração de pinhas japonês pinha
+🎎 bonecas japonesas bonecas comemoração festival japanesas japonês
+🎏 bandeira de carpas bandeira carpas comemoração koinobori
+🎐 carrilhão de vento sino som vento
+🎑 contemplação da lua cerimônia de contemplação da lua comemoração contemplação lua
+🧧 envelope vermelho boa sorte dinheiro hóngbāo lai see presente
+🎀 laço de fita comemoração fita laço presente
+🎁 presente comemoração embrulhado mimo
+🎗️ fita de lembrete celebração comemoração laço lembrete
+🎟️ ingresso de cinema cinema entrada ingresso ticket
+🎫 ingresso entretenimento
+🎖️ medalha militar condecoração medalha militar prêmio
+🏆 troféu campeã campeão prêmio
+🏅 medalha esportiva medalha vitória
+🥇 medalha de ouro 1o. lugar 1º. lugar medalha ouro vitória
+🥈 medalha de prata 2o. lugar 2º. lugar medalha prata segundo
+🥉 medalha de bronze 3o. lugar 3º. lugar bronze medalha terceiro
+⚽ bola de futebol bola futebol jogar
+⚾ bola de beisebol beisebol bola esportes
+🥎 softbol bola esporte luva softball
+🏀 bola de basquete basquete bola cesta esporte jogo
+🏐 bola de vôlei bola jogar jogo vôlei
+🏈 bola de futebol americano americano bola esporte futebol super bowl
+🏉 bola de rugby americano bola esporte futebol rugby
+🎾 tênis bola esporte raquete
+🥏 frisbee disco esporte ultimate voador
+🎳 boliche bola jogo strike
+🏏 críquete betes bola jogo taco
+🏑 hóquei de campo bola campo hóquei jogo taco
+🏒 hóquei no gelo disco gelo hóquei jogo taco
+🥍 lacrosse bastão bola esporte gol raquete taco
+🏓 pingue-pongue mesa pingpong raquete tênis
+🏸 badminton jogo peteca raquete
+🥊 luva de boxe boxe esporte luta luva
+🥋 quimono de artes marciais artes esporte faixa judô karatê marciais preta quimono taekwondo uniforme
+🥅 gol esporte futebol goleira goleiro rede
+⛳ bandeira no buraco bandeira buraco esporte golfe
+⛸️ patins de gelo gelo patinação patins
+🎣 pesca entretenimento peixe pescador pescaria recreação vara
+🤿 máscara de mergulho esnórquel máscara mergulhador mergulho scuba snorkel snorkeling
+🎽 camiseta de corrida camiseta corrida esporte faixa
+🎿 esqui bota esporte esquiar neve
+🛷 trenó neve tobogã
+🥌 pedra de curling curling jogo pedra
+🎯 no alvo alvo certeiro dardos jogo mira mosca tiro
+🪀 ioiô brinquedo flutua
+🪁 pipa papagaio planar voar
+🎱 bilhar bola oito jogo
+🔮 bola de cristal adivinhação bola cristal destino futuro prever
+🧿 olho grego amuleto conta grego mau-olhado miçanga nazar olho talismã
+🎮 videogame controle game jogo jogos playstation video xbox
+🕹️ joystick atari controle game jogo video videogame
+🎰 caça-níquel aposta azar cassino jogo máquina
+🎲 jogo de dado dado dados jogo sorte
+🧩 quebra-cabeça dica encaixe peça
+🧸 ursinho de pelúcia bichinho brinquedo enchimento pelúcia ursinho urso
+♠️ naipe de espadas baralho carta espadas jogo naipe
+♥️ naipe de copas baralho carta copas jogo naipe s2
+♦️ naipe de ouros baralho carta jogo naipe ouro
+♣️ naipe de paus baralho carta jogo naipe paus
+♟️ peão de xadrez peão truque xadrez
+🃏 curinga baralho carta coringa jogo joker
+🀄 dragão vermelho de mahjong dragão jogo mahjong peça vermelho
+🎴 carta de flores baralho carta de baralho flores Hanafuda jogo de baralho
+🎭 máscara arte ator atriz drama dramática entretenimento espetáculo peça performance teatro
+🖼️ quadro emoldurado arte emoldurado moldura museu pintura quadro
+🎨 paleta de tintas arte artista artística museu paleta pintor pintura tinta
+🧵 carretel agulha barbante costura linha
+🧶 novelo bola crochê lã tricô tricotar
+👓 óculos acessório
+🕶️ óculos escuros óculos óculos de sol
+🥽 óculos de proteção mergulho natação óculos olhos proteção ski solda soldagem
+🥼 jaleco cientista dr. experiência experimento médico roupa
+🦺 colete salva-vidas colete emergência refletivo salva-vidas segurança
+👔 gravata acessório roupa
+👕 camiseta camisa roupa
+👖 jeans calça roupa
+🧣 cachecol frio inverno pescoço
+🧤 luvas inverno luva mão
+🧥 casaco agasalho blusa frio jaqueta
+🧦 meias meia meião
+👗 vestido peça única roupa
+👘 quimono roupa vestir
+🥻 sari Índia indiana roupa vestido
+🩱 maiô banho nadar praia roupa
+🩲 cueca banho íntima nadar praia roupa sunga
+🩳 shorts banho bermuda nadar praia roupa
+👙 biquíni banho piscina praia roupa
+👚 roupas femininas azul blusa camiseta feminina roupa
+👛 bolsinha acessório bolsa moeda niqueleira porta rosa
+👜 bolsa de mão acessório bolsa fashion mala mão
+👝 bolsa pequena acessório bolsa carteira fashion pequena
+🛍️ sacolas de compras compras presente sacolas shopping
+🎒 mochila bolsa escola viagem viajar
+👞 sapato masculino acessório sapatos
+👟 tênis de corrida acessório correr corrida esportivo sapato tênis
+🥾 bota de trekking acampamento acampar bota caminhada marrom mochilão natureza sapato trilha
+🥿 sapatilha confortável sapatilha de balé sapato sem fivela
+👠 sapato de salto alto acessório alto chique fashion moda mulher salto sapato scarpin
+👡 sandália feminina acessório feminino médio salto sandália
+🩰 sapatilha de balé bailarina balé dança sapatilha
+👢 bota feminina acessório bota calçado feminina médio salto
+👑 coroa acessório família real game of thrones medieval rainha realeza rei reinado
+👒 chapéu feminino acessório chapéu fashion feminino
+🎩 cartola chapéu chique entretenimento roupa
+🎓 chapéu de formatura capelo chapéu comemoração formatura
+🧢 boné boné de beisebol chapéu
+⛑️ capacacete de socorrista ajuda branca capacete cruz primeiros resgate rosto salvamento socorrista socorros vermelho
+📿 rosário de oração acessório oração religião reza rosário terço
+💄 batom cosméticos makeup maquiagem vermelho
+💍 anel diamante romance
+💎 pedra preciosa diamante joia
+🔇 alto-falante silenciado alto-falante calar mudo mute quieto silenciar silêncio som
+🔈 alto-falante com volume baixo alto-falante baixo mudo música silêncio som volume
+🔉 alto-falante com volume médio alto-falante baixo diminuir médio som volume
+🔊 alto-falante com volume alto alto alto-falante gritar música som volume
+📢 buzina alto alto-falante aviso comunicado discurso gritar megafone
+📣 megafone aplausos comunicação
+📯 corneta postal corneta correios postal
+🔔 sino capela
+🔕 sino silenciado mudo notificação proibido quieto sem som silêncio silencioso sino
+🎼 partitura musical música partitura
+🎵 nota musical música nota
+🎶 notas musicais música nota notas
+🎙️ microfone de estúdio estúdio microfone música
+🎚️ controle de volume controle música volume
+🎛️ botões giratórios botões controle música
+🎤 microfone cantar entretenimento karaokê mic música
+🎧 fones de ouvido entretenimento fone música ouvido som
+📻 rádio radiola som vídeo
+🎷 saxofone instrumento instrumento musical música sax
+🎸 guitarra instrumento instrumento musical música
+🎹 teclado musical instrumento instrumento musical música piano teclado
+🎺 trompete instrumento instrumento musical música
+🎻 violino instrumento instrumento musical música
+🪕 banjo cordas instrumento música
+🥁 tambor baquetas música percussão
+📱 telefone celular celular telefone telefone móvel
+📲 telefone celular com seta celular chamada fazer ligar receber seta smartphone telefone
+☎️ telefone no gancho gancho telefone
+📞 telefone aparelho de telefone comunicação
+📟 pager comunicação
+📠 fax comunicação máquina de fax
+🔋 pilha bateria
+🔌 tomada elétrica cabo elétrica eletricidade energia plugue tomada
+💻 laptop computador notebook PC pessoal trabalho
+🖥️ computador de mesa computador desktop mesa monitor
+🖨️ impressora acessório computador documento impressão imprimir
+⌨️ teclado acessório computador digitação
+🖱️ mouse acessório computador
+🖲️ trackball acessório bolinha computador mouse
+💽 minidisc computação disc disco HD MD mini rígido
+💾 disquete computador disco disco flexível
+💿 cd blu-ray computador disco DVD óptico
+📀 DVD blu-ray cd computador disco óptico
+🧮 ábaco calculadora cálculo matemática número
+🎥 câmera de cinema câmera cinema entretenimento filmar filme hollywood
+🎞️ rolo de filmes cinema filme
+📽️ projetor de filmes cinema filme projetor vídeo
+🎬 claquete cena entretenimento filme tomada
+📺 televisão canal TV vídeo
+📷 câmera foto selfie vídeo
+📸 câmera com flash câmera flash foto fotografia vídeo
+📹 câmera de vídeo câmera filmadora vídeo
+📼 videocassete cassete fita vhs vídeo
+🔍 lupa para a esquerda aumento busca esquerda ferramenta lente lupa pesquisa procura
+🔎 lupa para a direita aumento busca direita ferramenta lente lupa pesquisa procura
+🕯️ vela acesa luz
+💡 lâmpada elétrica ideia luz quadrinhos tenho uma ideia
+🔦 lanterna elétrica ferramenta luz
+🏮 lanterna vermelha de papel bar izakaya lanterna papel restaurante vermelha
+🪔 lâmpada de óleo diya lâmpada óleo
+📔 caderno decorado agenda caderno capa decoração escola livro
+📕 livro fechado apostila fechado livro
+📖 livro aberto aberto biblioteca leitura lendo ler livraria livro
+📗 livro verde biblioteca caderno colégio escola estudar lendo ler livraria livro verde
+📘 livro azul apostila azul escola estudo leitura livro
+📙 livro laranja apostila cartilha laranja livro
+📚 livros biblioteca estudando estudar leitura lendo ler livraria livro
+📓 caderno folhas
+📒 livro contábil caderno
+📃 página dobrada dobrado documento página papel
+📜 pergaminho rolo de papel
+📄 página voltada para cima documento oficial página papel
+📰 jornal notícias
+🗞️ jornal enrolado enrolado jornal notícias
+📑 marcadores de página marcador marcar página
+🔖 marcador de página livro marcador página
+🏷️ etiqueta identificar rótulo
+💰 saco de dinheiro dinheiro dólares saco
+💴 nota de iene cédula dinheiro grana iene moeda nota
+💵 nota de dólar dinheiro dólar moeda nota nota bancária
+💶 nota de euro cédula dinheiro euro grana moeda nota
+💷 nota de libra cédula dinheiro grana libra moeda nota
+💸 dinheiro voando asas banco cédula dinheiro dinheiro indo embora nota voando
+💳 cartão de crédito banco cartão crédito débito dinheiro
+🧾 recibo contabilidade escrituração evidência fatura prova
+💹 gráfico subindo com iene ascendente ascensão crescimento dinheiro gráfico iene iene em alta mercado
+💱 câmbio de moeda banco câmbio dinheiro moeda
+💲 cifrão dinheiro dólar grana moeda símbolo do dólar símbolo do dólar em negrito
+✉️ envelope carta correspondência e-mail email
+📧 e-mail carta comunicação correspondência
+📨 envelope chegando carta chegando comunicação correspondência e-mail envelope nova recebida
+📩 envelope com seta carta comunicação correspondência e-mail email envelope seta
+📤 bandeja de saída bandeja caixa comunicação correspondência enviada saída
+📥 bandeja de entrada bandeja caixa comunicação correspondência e-mail email entrada recebida recebido
+📦 pacote caixa embrulho
+📫 caixa de correio fechada com bandeira levantada bandeira caixa correio correspondência fechada levantada
+📪 caixa de correio fechada com bandeira abaixada abaixada bandeira caixa correio correspondência fechada vazia
+📬 caixa de correio aberta com bandeira levantada aberta bandeira caixa de correspondência aberta com bandeira levantada correspondência
+📭 caixa de correio aberta com bandeira abaixada aberta bandeira caixa de correspondência aberta com bandeira abaixada caixa de correspondência aberta e vazia correspondência
+📮 caixa de correio caixa carta correio correspondência enviar
+🗳️ urna eleitoral com cédula cédula eleição eleitoral urna votar voto
+✏️ lápis
+✒️ ponta de caneta tinteiro caneta ponta preto tinta tinteiro
+🖋️ caneta tinteiro caneta destro tinteiro
+🖊️ caneta esferográfica tinteiro
+🖌️ pincel pintando pintar
+🖍️ giz de cera cera desenho giz vermelho
+📝 memorando anotações caderno comunicação lápis notas
+💼 maleta mala pasta
+📁 pasta de arquivos arquivo pasta
+📂 pasta de arquivos aberta aberta abrir arquivo pasta
+🗂️ divisores de pastas arquivo divisor índice organizador pasta
+📅 calendário data datas
+📆 calendário com folhas destacáveis calendário data destacáveis destacável dia folha páginas várias
+🗒️ bloco espiral bloco caderno espiral
+🗓️ calendário espiral bloco calendário data espiral
+📇 índice de cartões índice
+📈 gráfico subindo crescimento diagrama gráfico gráfico de tendência de crescimento tendência de crescimento
+📉 gráfico caindo diagrama gráfico gráfico de tendência negativa negativa tendência negativa
+📊 gráfico de barras barra diagrama gráfico
+📋 prancheta anotações
+📌 tacha alfinete
+📍 tacha redonda alfinete localização mapa redonda tacha
+📎 clipe de papel clipe
+🖇️ clipes de papel conectados clipe clipes clipes de papel
+📏 régua reta régua
+📐 régua triangular ângulo geometria matemática régua triangular triângulo
+✂️ tesoura aberta cortar ferramenta
+🗃️ caixa de arquivos arquivo caixa cartão documentos ficheiro
+🗄️ gavetas de escritório arquivo escritório gabinete gavetas
+🗑️ lixeira cesto lixo
+🔒 cadeado fechado trancado
+🔓 cadeado aberto aberto cadeado destrancado
+🔏 cadeado com caneta cadeado caneta privacidade privado tinteiro
+🔐 cadeado fechado com chave cadeado chave fechado seguro trancado
+🔑 chave senha trancado trancar
+🗝️ chave antiga antiga chave fechadura
+🔨 martelo construção ferramenta martelada reparo
+🪓 machado cortar madeira partir
+⛏️ picareta ferramenta mineração
+⚒️ martelo e picareta ferramenta geologia martelo picareta
+🛠️ martelo e chave-inglesa chave chave-inglesa ferramenta inglesa martelo
+🗡️ adaga arma faca
+⚔️ espadas cruzadas arma batalha cruzadas espadas guerra
+🔫 pistola d’água água arma ferramenta pistola revólver
+🏹 arco e flecha arco arma flecha sagitário zodíaco
+🛡️ escudo arma
+🔧 chave inglesa chave ferramenta inglesa obra reforma
+🔩 porca e parafuso construção ferramenta parafuso porca
+⚙️ engrenagem ferramenta
+🗜️ braçadeira compressão ferramenta morsa torno
+⚖️ balança ferramenta justiça libra peso zodíaco
+🦯 bengala para cegos acessibilidade bengala cega cego cegueira deficiente visual
+🔗 link anéis corrente dois símbolo vínculo
+⛓️ correntes corrente metal
+🧰 caixa de ferramentas caixa ferramenta mecânico vermelha
+🧲 ímã atração ferradura magnético positivo-negativo
+⚗️ alambique ferramenta química
+🧪 tubo de ensaio ciência ensaio experiência experimento laboratório química químico tubo
+🧫 placa de Petri bactéria biologia biologista biólogo ciência cultura laboratório Petri placa
+🧬 dna biologista biólogo código evolução gene genética genético vida
+🔬 microscópio ciência ferramenta microscópico
+🔭 telescópio ciência ferramenta
+📡 antena parabólica antena comunicação parabólica satélite
+💉 seringa agulha injeção médico remédio vacina vacinação
+🩸 gota de sangue doação gota medicina menstruação sangrar sangue
+💊 comprimido cápsula medicina médico pílula remédio
+🩹 atadura adesiva adesiva atadura bandaid bandeide curativo
+🩺 estetoscópio coração médica medicina médico tum tum
+🚪 porta fechada
+🛏️ cama dormir hotel sono
+🛋️ sofá e luminária hotel lâmpada sofá
+🪑 cadeira assento sentar
+🚽 vaso sanitário banheiro patente privada sanitário toalete vaso
+🚿 chuveiro água banho ducha
+🛁 banheira banho
+🪒 lâmina afiada afiado barbeador barbear depilar gilete raspar
+🧴 frasco de loção condicionador creme frasco hidratante loção protetor shampoo solar xampu
+🧷 alfinete de segurança alfinete fralda punk rock
+🧹 vassoura bruxa limpar limpeza varrer
+🧺 cesta agrícola agricultura lavanderia lavoura piquenique roupa suja
+🧻 rolo de papel higiênico papel rolo toalha
+🧼 sabonete banho barra espuma limpar limpeza saboneteira
+🧽 esponja absorção absorvente encharcar limpeza porosa poroso
+🧯 extintor de incêndio apagar extinguir extintor fogo incêndio
+🛒 carrinho de compras carrinho compras mercado supermercado
+🚬 cigarro é permitido fumar fumante fumar fumo símbolo símbolo para “É permitido fumar”
+⚰️ caixão caixão funerário funeral morte velório
+⚱️ urna funerária cinzas funeral morte urna
+🗿 moai estátua moyai rosto
+🏧 símbolo de caixa automático ATM automático banco caixa dinheiro eletrônico grana saque símbolo
+🚮 símbolo de lixeira coloque o lixo no lixo lata lixeira lixo símbolo
+🚰 água potável água beber potável símbolo torneira
+♿ símbolo de cadeira de rodas acesso cadeira rodas símbolo sinal
+🚹 banheiro masculino banheiro homem lavatório masculino símbolo toalete wc
+🚺 banheiro feminino banheiro feminino lavabo lavatório mulher símbolo toalete wc
+🚻 banheiro lavabo sanitário símbolo toalete
+🚼 símbolo de bebê bebê fralda fraldário símbolo trocar
+🚾 WC latrina lavabo privada toalete vaso sanitário
+🛂 controle de passaportes controle passaporte
+🛃 alfândega aduana aduaneira bens federal impostos receita
+🛄 restituição de bagagem aeroporto área bagagem bagagens esteira férias mala recolhimento restituição viagem
+🛅 depósito de bagagem bagagem depósito esquecida malas serviço
+⚠️ aviso atenção cuidado sinal
+🚸 crianças atravessando atravessando criança crianças pedestre símbolo tráfego
+⛔ entrada proibida entrada entre não placa proibida proibido sinal trânsito
+🚫 proibido entrada não proibida símbolo sinal
+🚳 proibido andar de bicicleta bicicleta não permitidas proibido sem
+🚭 proibido fumar cigarro fumar não é permitido fumar proibido símbolo
+🚯 proibido jogar lixo no chão jogar lixo não não jogue lixo no chão proibido símbolo
+🚱 água não potável água consumo imprópria não potável proibido seco sem
+🚷 proibida a passagem de pedestres não passagem pedestre permitidos proibida proibido
+📵 proibido o uso de telefone celular cel celular não permitidos proibido sem smartphone telefone
+🔞 proibido para menores de 18 anos 18 anos dezoito idade menor menores proibido restrição
+☢️ radioativo perigo radiação radiativo símbolo sinal
+☣️ risco biológico biológico ciência perigo resíduos resíduos biológicos risco
+⬆️ seta para cima cardinal direção norte seta
+↗️ seta para cima e para a direita diagonal direção direita flecha intercardinal nordeste seta superior
+➡️ seta para a direita direção direita flecha leste seta
+↘️ seta para baixo e para a direita diagonal direção direita flecha inferior intercardinal seta sudeste
+⬇️ seta para baixo abaixo baixo cardinal direção embaixo flecha seta sul
+↙️ seta para baixo e para a esquerda diagonal direção esquerda flecha inferior intercardinal seta sudoeste
+⬅️ seta para a esquerda atrás direção esquerda flecha oeste seta voltar
+↖️ seta para cima e para a esquerda diagonal superior esquerda direção flecha intercardinal noroeste seta seta para esquerda superior
+↕️ seta para cima e para baixo flecha para baixo para cima seta vertical
+↔️ seta para esquerda e direita flecha horizontal lados seta
+↩️ seta curva da direita para a esquerda curva flecha retorno seta seta curva da direita para esquerda voltar à esquerda
+↪️ seta curva da esquerda para a direita curva flecha retorno seta seta curva da esquerda para direita voltar à direita
+⤴️ seta para a direita curvada para cima curva flecha seta seta curva de baixo para cima seta para cima
+⤵️ seta para a direita curvada para baixo curva embaixo flecha seta curva de cima para baixo seta para baixo
+🔃 setas verticais no sentido horário flechas recarregar sentido horário seta setas setas em sentido horário na vertical símbolo de recarregar
+🔄 botão de setas em sentido anti-horário anti-horário atualizar botão de setas no sentido anti-horário sentido anti-horário seta setas setas em sentido anti-horário
+🔙 seta "BACK" flecha seta seta para a esquerda seta para voltar voltar voltar com seta para a esquerda
+🔚 seta "END" fim fim com seta para a esquerda final seta seta para a esquerda seta para ir para o fim
+🔛 seta "ON!" flecha marca on ON! seta seta “ON”
+🔜 seta "SOON" “Soon” com seta para a direita em breve flecha seta símbolo “Soon” soon
+🔝 seta "TOP" cima para cima seta seta "TOP seta para cima símbolo top top top com seta para cima
+🛐 local de culto culto local sagrado oração religião reza
+⚛️ símbolo de átomo ateísmo ateu átomo símbolo do ateísmo
+🕉️ om hindu religião
+✡️ estrela de Davi davi estrela judaico judeu religião
+☸️ roda do Dharma budista dharma religião roda
+☯️ yin yang religião tao taoista taoistas yang yin yin-yang
+✝️ cruz latina cristão cruz religião
+☦️ cruz ortodoxa cristão cruz religião
+☪️ estrela e lua crescente islã muçulmano religião símbolo islã
+☮️ símbolo da paz paz símbolo
+🕎 menorá candelabro candelabro judeu castiçal judaísmo memorah religião
+🔯 estrela de seis pontas adivinhação destino seis pontas
+♈ signo de Áries Áries carneiro zodíaco
+♉ signo de Touro boi touro zodíaco
+♊ signo de Gêmeos gêmeos zodíaco
+♋ signo de Câncer câncer caranguejo zodíaco
+♌ signo de Leão leão zodíaco
+♍ signo de Virgem virgem zodíaco
+♎ signo de Libra balança justiça libra signo de Virgem zodíaco
+♏ signo de Escorpião escorpião zodíaco
+♐ signo de Sagitário arqueiro sagitário zodíaco
+♑ signo de Capricórnio cabra capricórnio zodíaco
+♒ signo de Aquário água aquário zodíaco
+♓ signo de Peixes peixes zodíaco
+⛎ signo de Ofiúco cobra Ofiúco Ophiuchus serpente zodíaco
+🔀 botão de músicas aleatórias cruzadas flechas seta setas setas cruzadas em direção à direita
+🔁 botão de repetir flechas horário repetir sentido horário seta setas setas em sentido horário
+🔂 botão de repetir uma única faixa botão de repetir horário número 1 repetir repetir uma vez sentido horário seta setas setas em sentido horário com número 1 uma vez
+▶️ botão reproduzir direita play reproduzir seta seta para a direita triângulo
+⏩ botão avançar avançar direita dupla flechas passar para a frente rápido seta seta dupla para a direita
+⏭️ botão de próxima faixa avançar flechas duplas passar para frente próxima cena próxima faixa seta seta dupla para a direita
+⏯️ botão de reproduzir ou pausar botão direita pausar pause play reproduzir reproduzir ou pausar seta seta para a direita triângulo
+◀️ botão de voltar esquerda seta seta para a esquerda triângulo voltar
+⏪ botão de retroceder dupla esquerda retroceder seta seta dupla para a esquerda seta dupla para trás voltar
+⏮️ botão de faixa anterior anterior cena anterior faixa anterior flechas para esquerda seta seta dupla para a esquerda setas para a esquerda triângulo última faixa voltar
+🔼 botão apontando para cima acima botão botão de triângulo apontando para cima para cima seta triângulo triângulo apontando para cima vermelho
+⏫ botão de avanço para cima dupla flechas para cima para cima seta seta dupla para cima
+🔽 botão apontando para baixo botão botão de triângulo apontando para baixo para baixo seta triângulo triângulo apontando para baixo vermelho
+⏬ botão de avanço para baixo flechas flechas para baixo para baixo retroceder rápido seta seta dupla para baixo
+⏸️ botão pausar barra dupla pausado pausar pause vertical
+⏹️ botão parar parar quadrado stop
+⏺️ botão gravar botão círculo gravar
+⏏️ botão ejetar ejetar
+🎦 cinema entretenimento filme símbolo do cinema
+🔅 botão de diminuir brilho brilho diminuir escurecer símbolo para reduzir brilho
+🔆 botão de aumentar brilho aumentar brilho brilho símbolo para aumentar brilho
+📶 barras de sinal antena antena com barras celular conexão força do sinal internet sinais de telefonia móvel telefone
+📳 modo vibratório cel celular modo smartphone telefone vibração
+📴 telefone celular desligado celular desligado desligue o celular smartphone telefone
+♀️ símbolo de feminino feminino mulher
+♂️ símbolo de masculino homem masculino
+⚕️ símbolo da medicina bastão de asclépio esculápio medicina símbolo
+♾️ infinito eternidade ilimitado universal
+♻️ símbolo de reciclagem reciclagem reclicar símbolo de reciclagem sólido universal sinal
+⚜️ flor-de-lis cavaleiros símbolo
+🔱 emblema de tridente âncora emblema ferramenta navio símbolo de tridente tridente
+📛 crachá identificação nome
+🔰 símbolo japonês de principiante folha verde e amarela iniciante japonês símbolo japonês para iniciante verde e amarela verde e amarelo
+⭕ círculo grande oco aro círculo círculo vermelho vazio grande o vermelho
+✅ marca de seleção branca ✓ botão check completo feito marca marca de verificação marca de verificação grande verificação verificado
+☑️ caixa de seleção marcada com tique ✓ caixa check feito marca de verificação marca de verificação cinza verificação
+✔️ marca de seleção ✓ check feito marca marca de verificação simples marcar selecionar verificação
+✖️ sinal de multiplicação × cancelar multiplicação multiplicar X x de multiplicação X preto
+❌ xis × cancelar multiplicação multiplicar vermelho X
+❎ botão de xis × botão com x botão de caixa com X marcado multiplicar quadrado x x em um quadrado verde x verde
+➕ símbolo de adição + cruz mais matemática sinal sinal de maior sinal de mais somar
+➖ símbolo de subtração - − diminuir matemática menos sinal sinal de menos travessão
+➗ símbolo de divisão ÷ dividir divisão matemática sinal sinal de divisão sinal de divisão grande
+➰ laço encaracolado loop onda ondulado volta
+➿ loop encaracolado duas vezes duas vezes duplo encaradolado loop onda ondulado
+〽️ sinal japonês indicando início de música canto japonês símbolo japonês de canto
+✳️ asterisco de oito pontas * asterisco estrela
+✴️ estrela de oito pontas * estrela oito pontas
+❇️ faísca * cruz
+‼️ dupla exclamação ! !! exclamação exclamação dupla explosão ponto de exclamação duplo pontuação
+⁉️ exclamação com interrogação ! !? ? exclamação interrogação pergunta pontuação sinal
+❓ ponto de interrogação vermelho ? interrogação pergunta ponto ponto de interrogação pontuação sinal
+❔ ponto de interrogação branco ? delineado interrogação pergunta pontuação sinal
+❕ ponto de exclamação branco ! delineado exclamação mark ponto pontuação sinal
+❗ ponto de exclamação vermelho ! exclamação ponto de exclamação pontuação
+〰️ travessão ondulado onda ondulado pontuação travessão
+©️ símbolo de copyright copyright direitos autorais
+®️ símbolo de registrado marca registrada marca registrada “R”
+™️ símbolo de marca registrada marca registrada marca registrada “TM” símbolo
+#️⃣ tecla # cerquilha hashtag jogo da velha número símbolo
+*️⃣ tecla: * tecla
+0️⃣ tecla: 0 0 tecla zero
+1️⃣ tecla: 1 1 tecla um
+2️⃣ tecla: 2 2 dois tecla
+3️⃣ tecla: 3 3 tecla três
+4️⃣ tecla: 4 4 quatro tecla
+5️⃣ tecla: 5 5 cinco tecla
+6️⃣ tecla: 6 6 seis tecla
+7️⃣ tecla: 7 7 sete tecla
+8️⃣ tecla: 8 8 oito tecla
+9️⃣ tecla: 9 9 nove tecla
+🔟 tecla: 10 tecla
+🔠 letras latinas maiúsculas ABCD caracteres latinos maiúsculos digitação inserir caracteres latinos maiúsculos latinas letras maiúsculas maiúsculos
+🔡 letras latinas minúsculas abcd caracteres latinos minúsculos digitação latinas latino letras minúsculas minúsculos
+🔢 números 1234 digitação inserir números
+🔣 símbolos 〒♪&% digitação inserir símbolos
+🔤 letras latinas abc alfabeto digitação inglês inserir alfabeto latino latinas latino letras
+🅰️ botão A (tipo sanguíneo) A sangue tipo A tipo sanguíneo tipo sanguíneo A
+🆎 botão AB (tipo sanguíneo) AB sangue tipo AB tipo sanguíneo tipo sanguíneo AB
+🅱️ botão B (tipo sanguíneo) B sangue tipo B tipo sanguíneo tipo sanguíneo B
+🆑 botão CL cl limpar símbolo do CL
+🆒 botão "COOL" botão cool cool legal símbolo “cool”
+🆓 botão "FREE" free grátis gratuito símbolo símbolo “Free”
+ℹ️ informações i informação símbolo símbolo de informações
+🆔 botão ID ID identidade símbolo símbolo “ID”
+Ⓜ️ círculo com a letra M círculo letra M m
+🆕 botão "NEW" new Novo símbolo
+🆖 botão NG NG símbolo símbolo “NG”
+🅾️ botão O (tipo sanguíneo) O sangue tipo O tipo sanguíneo tipo sanguíneo O
+🆗 botão OK ok sim símbolo “OK”
+🅿️ botão P estacionamento estacionar garagem de carros
+🆘 botão SOS Ajuda símbolo símbolo “SOS” Socorro SOS
+🆙 botão "UP!" para cima símbolo símbolo “UP!” up UP!
+🆚 botão VS símbolo símbolo “vs” versus vs
+🈁 botão japonês de “aqui” "aqui" “aqui” alfabeto botão "aqui" japonês katakana koko ココ
+🈂️ botão japonês de “taxa de serviço” “taxa de serviço” alfabeto japonês katakana katanaka sa taxa de serviço サ
+🈷️ botão japonês de “quantidade mensal” “quantidade mensal” alfabeto ideográfico ideograma japonês valor mensal 月
+🈶 botão japonês de “não gratuito” “não gratuito” alfabeto ideográfico ideograma japonês não gratuito 有
+🈯 botão japonês de “reservado” “reservado” alfabeto ideográfico ideograma japonês reservado 指
+🉐 botão japonês de “barganha” “barganha” alfabeto barganha ideográfico ideograma japonês pechincha 得
+🈹 botão japonês de “desconto” “desconto” alfabeto desconto ideográfico ideograma japonês 割
+🈚 botão japonês de “gratuito” “gratuito” alfabeto de graça grátis ideográfico ideograma japonês sem custo 無
+🈲 botão japonês de “proibido” “proibido” alfabeto ideográfico ideográfico quadrado “proibir” ideograma japonês proibido proibir 禁
+🉑 botão japonês de “aceitável” “aceitável” aceitar alfabeto chinês ideográfico circular “aceitar” ideograma japonês 可
+🈸 botão japonês de “aplicação” “aplicação” alfabeto aplicar chinês ideográfico quadrado “aplicar” ideograma japonês 申
+🈴 botão japonês de “nota mínima” “nota mínima” alfabeto chinês ideográfico ideográfico quadrado “juntos” ideograma japonês juntos 合
+🈳 botão japonês de “vago” “vago” alfabeto ideográfico ideograma japonês vaga vago vazio 空
+㊗️ botão japonês de “parabéns” “parabéns” alfabeto ideográfico ideográfico circular “parabéns” ideograma janonês japonês parabéns 祝
+㊙️ botão japonês de “segredo” “segredo” alfabeto ideográfico ideográfico circular “segredo” ideograma japonês segredo 秘
+🈺 botão japonês de “aberto para negócios” “aberto para negócios” chinês ideográfico quadrado “operando” ideograma japonês operando 営
+🈵 botão japonês de “sem vagas” “sem vagas” alfabeto completude ideográfico ideográfico quadrado “completude” ideograma japonês 満
+🔴 círculo vermelho bola vermelha círculo círculo vermelho grande geométrico vermelho
+🟠 círculo laranja círculo laranja
+🟡 círculo amarelo amarelo círculo
+🟢 círculo verde círculo verde
+🔵 círculo azul azul bolinha azul círculo círculo azul grande geométrico
+🟣 círculo roxo círculo roxo
+🟤 círculo marrom círculo marrom
+⚫ círculo preto círculo geométrico preto
+⚪ círculo branco branco círculo geométrico
+🟥 quadrado vermelho quadrado vermelho
+🟧 quadrado laranja laranja quadrado
+🟨 quadrado amarelo amarelo quadrado
+🟩 quadrado verde quadrado verde
+🟦 quadrado azul anil azul quadrado
+🟪 quadrado roxo púrpura quadrado roxo
+🟫 quadrado marrom marrom quadrado
+⬛ quadrado preto grande geométrico preto quadrado
+⬜ quadrado branco grande geométrico quadrado
+◼️ quadrado preto médio geométrico quadrado
+◻️ quadrado branco médio geométrico quadrado
+◾ quadrado preto médio menor geométrico preto quadrado
+◽ quadrado branco médio menor branco geométrico quadrado
+▪️ quadrado preto pequeno geométrico pequeno preto quadrado
+▫️ quadrado branco pequeno branco geométrico pequeno quadrado
+🔶 losango laranja grande cor de laranja diamante diamante cor de laranja grande diamante laranja grande geométrico laranja losango
+🔷 losango azul grande azul balão diamante diamante azul grande geométrico losango
+🔸 losango laranja pequeno cor de laranja diamante diamante cor de laranja pequeno diamante laranja pequeno geométrico laranja losango
+🔹 losango azul pequeno azul diamante diamante azul pequeno geométrico losango
+🔺 triângulo vermelho para cima geométrico triângulo triângulo vermelho apontando para cima triangulo vermelho para cima vermelho
+🔻 triângulo vermelho para baixo geométrico triângulo triângulo vermelho apontando para baixo triangulo vermelho para baixo vermelho
+💠 diamante com um ponto cômico dentro diamante diamante com ponto formato de diamante geométrico
+🔘 botão de opção botão geométrico rádio
+🔳 botão quadrado branco botão botão quadrado branco e preto quadrado
+🔲 botão quadrado preto botão botão quadrado preto e branco geométrico quadrado
+🏁 bandeira quadriculada bandeira chegada corrida esporte quadriculada vitória
+🚩 bandeira triangular bandeira informações localização poste triangular vermelha vermelho
+🎌 bandeiras cruzadas bandeira comemoração cruzadas cruzar Japão Japonês
+🏴 bandeira preta bandeira preta tremulando
+🏳️ bandeira branca bandeira branca paz tremulando
+🏳️‍🌈 bandeira do arco-íris arco-íris bandeira bissexual gay lésbica lgbt lgbtq lgbtqia orgulho transexual transgênero travesti
+🏴‍☠️ bandeira de pirata bandeira caveira osso pirata saque tesouro
+🇦🇨 bandeira: Ilha de Ascensão bandeira
+🇦🇩 bandeira: Andorra bandeira
+🇦🇪 bandeira: Emirados Árabes Unidos bandeira
+🇦🇫 bandeira: Afeganistão bandeira
+🇦🇬 bandeira: Antígua e Barbuda bandeira
+🇦🇮 bandeira: Anguila bandeira
+🇦🇱 bandeira: Albânia bandeira
+🇦🇲 bandeira: Armênia bandeira
+🇦🇴 bandeira: Angola bandeira
+🇦🇶 bandeira: Antártida bandeira
+🇦🇷 bandeira: Argentina bandeira
+🇦🇸 bandeira: Samoa Americana bandeira
+🇦🇹 bandeira: Áustria bandeira
+🇦🇺 bandeira: Austrália bandeira
+🇦🇼 bandeira: Aruba bandeira
+🇦🇽 bandeira: Ilhas Aland bandeira
+🇦🇿 bandeira: Azerbaijão bandeira
+🇧🇦 bandeira: Bósnia e Herzegovina bandeira
+🇧🇧 bandeira: Barbados bandeira
+🇧🇩 bandeira: Bangladesh bandeira
+🇧🇪 bandeira: Bélgica bandeira
+🇧🇫 bandeira: Burquina Faso bandeira
+🇧🇬 bandeira: Bulgária bandeira
+🇧🇭 bandeira: Barein bandeira
+🇧🇮 bandeira: Burundi bandeira
+🇧🇯 bandeira: Benin bandeira
+🇧🇱 bandeira: São Bartolomeu bandeira
+🇧🇲 bandeira: Bermudas bandeira
+🇧🇳 bandeira: Brunei bandeira
+🇧🇴 bandeira: Bolívia bandeira
+🇧🇶 bandeira: Países Baixos Caribenhos bandeira
+🇧🇷 bandeira: Brasil bandeira
+🇧🇸 bandeira: Bahamas bandeira
+🇧🇹 bandeira: Butão bandeira
+🇧🇻 bandeira: Ilha Bouvet bandeira
+🇧🇼 bandeira: Botsuana bandeira
+🇧🇾 bandeira: Bielorrússia bandeira
+🇧🇿 bandeira: Belize bandeira
+🇨🇦 bandeira: Canadá bandeira
+🇨🇨 bandeira: Ilhas Cocos (Keeling) bandeira
+🇨🇩 bandeira: Congo - Kinshasa bandeira
+🇨🇫 bandeira: República Centro-Africana bandeira
+🇨🇬 bandeira: República do Congo bandeira
+🇨🇭 bandeira: Suíça bandeira
+🇨🇮 bandeira: Costa do Marfim bandeira
+🇨🇰 bandeira: Ilhas Cook bandeira
+🇨🇱 bandeira: Chile bandeira
+🇨🇲 bandeira: Camarões bandeira
+🇨🇳 bandeira: China bandeira
+🇨🇴 bandeira: Colômbia bandeira
+🇨🇵 bandeira: Ilha de Clipperton bandeira
+🇨🇷 bandeira: Costa Rica bandeira
+🇨🇺 bandeira: Cuba bandeira
+🇨🇻 bandeira: Cabo Verde bandeira
+🇨🇼 bandeira: Curaçao bandeira
+🇨🇽 bandeira: Ilha Christmas bandeira
+🇨🇾 bandeira: Chipre bandeira
+🇨🇿 bandeira: Tchéquia bandeira
+🇩🇪 bandeira: Alemanha bandeira
+🇩🇬 bandeira: Diego Garcia bandeira
+🇩🇯 bandeira: Djibuti bandeira
+🇩🇰 bandeira: Dinamarca bandeira
+🇩🇲 bandeira: Dominica bandeira
+🇩🇴 bandeira: República Dominicana bandeira
+🇩🇿 bandeira: Argélia bandeira
+🇪🇦 bandeira: Ceuta e Melilla bandeira
+🇪🇨 bandeira: Equador bandeira
+🇪🇪 bandeira: Estônia bandeira
+🇪🇬 bandeira: Egito bandeira
+🇪🇭 bandeira: Saara Ocidental bandeira
+🇪🇷 bandeira: Eritreia bandeira
+🇪🇸 bandeira: Espanha bandeira
+🇪🇹 bandeira: Etiópia bandeira
+🇪🇺 bandeira: União Europeia bandeira
+🇫🇮 bandeira: Finlândia bandeira
+🇫🇯 bandeira: Fiji bandeira
+🇫🇰 bandeira: Ilhas Malvinas bandeira
+🇫🇲 bandeira: Micronésia bandeira
+🇫🇴 bandeira: Ilhas Faroé bandeira
+🇫🇷 bandeira: França bandeira
+🇬🇦 bandeira: Gabão bandeira
+🇬🇧 bandeira: Reino Unido bandeira
+🇬🇩 bandeira: Granada bandeira
+🇬🇪 bandeira: Geórgia bandeira
+🇬🇫 bandeira: Guiana Francesa bandeira
+🇬🇬 bandeira: Guernsey bandeira
+🇬🇭 bandeira: Gana bandeira
+🇬🇮 bandeira: Gibraltar bandeira
+🇬🇱 bandeira: Groenlândia bandeira
+🇬🇲 bandeira: Gâmbia bandeira
+🇬🇳 bandeira: Guiné bandeira
+🇬🇵 bandeira: Guadalupe bandeira
+🇬🇶 bandeira: Guiné Equatorial bandeira
+🇬🇷 bandeira: Grécia bandeira
+🇬🇸 bandeira: Ilhas Geórgia do Sul e Sandwich do Sul bandeira
+🇬🇹 bandeira: Guatemala bandeira
+🇬🇺 bandeira: Guam bandeira
+🇬🇼 bandeira: Guiné-Bissau bandeira
+🇬🇾 bandeira: Guiana bandeira
+🇭🇰 bandeira: Hong Kong, RAE da China bandeira
+🇭🇲 bandeira: Ilhas Heard e McDonald bandeira
+🇭🇳 bandeira: Honduras bandeira
+🇭🇷 bandeira: Croácia bandeira
+🇭🇹 bandeira: Haiti bandeira
+🇭🇺 bandeira: Hungria bandeira
+🇮🇨 bandeira: Ilhas Canárias bandeira
+🇮🇩 bandeira: Indonésia bandeira
+🇮🇪 bandeira: Irlanda bandeira
+🇮🇱 bandeira: Israel bandeira
+🇮🇲 bandeira: Ilha de Man bandeira
+🇮🇳 bandeira: Índia bandeira
+🇮🇴 bandeira: Território Britânico do Oceano Índico bandeira
+🇮🇶 bandeira: Iraque bandeira
+🇮🇷 bandeira: Irã bandeira
+🇮🇸 bandeira: Islândia bandeira
+🇮🇹 bandeira: Itália bandeira
+🇯🇪 bandeira: Jersey bandeira
+🇯🇲 bandeira: Jamaica bandeira
+🇯🇴 bandeira: Jordânia bandeira
+🇯🇵 bandeira: Japão bandeira
+🇰🇪 bandeira: Quênia bandeira
+🇰🇬 bandeira: Quirguistão bandeira
+🇰🇭 bandeira: Camboja bandeira
+🇰🇮 bandeira: Quiribati bandeira
+🇰🇲 bandeira: Comores bandeira
+🇰🇳 bandeira: São Cristóvão e Névis bandeira
+🇰🇵 bandeira: Coreia do Norte bandeira
+🇰🇷 bandeira: Coreia do Sul bandeira
+🇰🇼 bandeira: Kuwait bandeira
+🇰🇾 bandeira: Ilhas Cayman bandeira
+🇰🇿 bandeira: Cazaquistão bandeira
+🇱🇦 bandeira: Laos bandeira
+🇱🇧 bandeira: Líbano bandeira
+🇱🇨 bandeira: Santa Lúcia bandeira
+🇱🇮 bandeira: Liechtenstein bandeira
+🇱🇰 bandeira: Sri Lanka bandeira
+🇱🇷 bandeira: Libéria bandeira
+🇱🇸 bandeira: Lesoto bandeira
+🇱🇹 bandeira: Lituânia bandeira
+🇱🇺 bandeira: Luxemburgo bandeira
+🇱🇻 bandeira: Letônia bandeira
+🇱🇾 bandeira: Líbia bandeira
+🇲🇦 bandeira: Marrocos bandeira
+🇲🇨 bandeira: Mônaco bandeira
+🇲🇩 bandeira: Moldávia bandeira
+🇲🇪 bandeira: Montenegro bandeira
+🇲🇫 bandeira: São Martinho bandeira
+🇲🇬 bandeira: Madagascar bandeira
+🇲🇭 bandeira: Ilhas Marshall bandeira
+🇲🇰 bandeira: Macedônia do Norte bandeira
+🇲🇱 bandeira: Mali bandeira
+🇲🇲 bandeira: Mianmar (Birmânia) bandeira
+🇲🇳 bandeira: Mongólia bandeira
+🇲🇴 bandeira: Macau, RAE da China bandeira
+🇲🇵 bandeira: Ilhas Marianas do Norte bandeira
+🇲🇶 bandeira: Martinica bandeira
+🇲🇷 bandeira: Mauritânia bandeira
+🇲🇸 bandeira: Montserrat bandeira
+🇲🇹 bandeira: Malta bandeira
+🇲🇺 bandeira: Maurício bandeira
+🇲🇻 bandeira: Maldivas bandeira
+🇲🇼 bandeira: Malaui bandeira
+🇲🇽 bandeira: México bandeira
+🇲🇾 bandeira: Malásia bandeira
+🇲🇿 bandeira: Moçambique bandeira
+🇳🇦 bandeira: Namíbia bandeira
+🇳🇨 bandeira: Nova Caledônia bandeira
+🇳🇪 bandeira: Níger bandeira
+🇳🇫 bandeira: Ilha Norfolk bandeira
+🇳🇬 bandeira: Nigéria bandeira
+🇳🇮 bandeira: Nicarágua bandeira
+🇳🇱 bandeira: Países Baixos bandeira
+🇳🇴 bandeira: Noruega bandeira
+🇳🇵 bandeira: Nepal bandeira
+🇳🇷 bandeira: Nauru bandeira
+🇳🇺 bandeira: Niue bandeira
+🇳🇿 bandeira: Nova Zelândia bandeira
+🇴🇲 bandeira: Omã bandeira
+🇵🇦 bandeira: Panamá bandeira
+🇵🇪 bandeira: Peru bandeira
+🇵🇫 bandeira: Polinésia Francesa bandeira
+🇵🇬 bandeira: Papua-Nova Guiné bandeira
+🇵🇭 bandeira: Filipinas bandeira
+🇵🇰 bandeira: Paquistão bandeira
+🇵🇱 bandeira: Polônia bandeira
+🇵🇲 bandeira: São Pedro e Miquelão bandeira
+🇵🇳 bandeira: Ilhas Pitcairn bandeira
+🇵🇷 bandeira: Porto Rico bandeira
+🇵🇸 bandeira: Territórios palestinos bandeira
+🇵🇹 bandeira: Portugal bandeira
+🇵🇼 bandeira: Palau bandeira
+🇵🇾 bandeira: Paraguai bandeira
+🇶🇦 bandeira: Catar bandeira
+🇷🇪 bandeira: Reunião bandeira
+🇷🇴 bandeira: Romênia bandeira
+🇷🇸 bandeira: Sérvia bandeira
+🇷🇺 bandeira: Rússia bandeira
+🇷🇼 bandeira: Ruanda bandeira
+🇸🇦 bandeira: Arábia Saudita bandeira
+🇸🇧 bandeira: Ilhas Salomão bandeira
+🇸🇨 bandeira: Seicheles bandeira
+🇸🇩 bandeira: Sudão bandeira
+🇸🇪 bandeira: Suécia bandeira
+🇸🇬 bandeira: Singapura bandeira
+🇸🇭 bandeira: Santa Helena bandeira
+🇸🇮 bandeira: Eslovênia bandeira
+🇸🇯 bandeira: Svalbard e Jan Mayen bandeira
+🇸🇰 bandeira: Eslováquia bandeira
+🇸🇱 bandeira: Serra Leoa bandeira
+🇸🇲 bandeira: San Marino bandeira
+🇸🇳 bandeira: Senegal bandeira
+🇸🇴 bandeira: Somália bandeira
+🇸🇷 bandeira: Suriname bandeira
+🇸🇸 bandeira: Sudão do Sul bandeira
+🇸🇹 bandeira: São Tomé e Príncipe bandeira
+🇸🇻 bandeira: El Salvador bandeira
+🇸🇽 bandeira: Sint Maarten bandeira
+🇸🇾 bandeira: Síria bandeira
+🇸🇿 bandeira: Essuatíni bandeira
+🇹🇦 bandeira: Tristão da Cunha bandeira
+🇹🇨 bandeira: Ilhas Turcas e Caicos bandeira
+🇹🇩 bandeira: Chade bandeira
+🇹🇫 bandeira: Territórios Franceses do Sul bandeira
+🇹🇬 bandeira: Togo bandeira
+🇹🇭 bandeira: Tailândia bandeira
+🇹🇯 bandeira: Tadjiquistão bandeira
+🇹🇰 bandeira: Tokelau bandeira
+🇹🇱 bandeira: Timor-Leste bandeira
+🇹🇲 bandeira: Turcomenistão bandeira
+🇹🇳 bandeira: Tunísia bandeira
+🇹🇴 bandeira: Tonga bandeira
+🇹🇷 bandeira: Turquia bandeira
+🇹🇹 bandeira: Trinidad e Tobago bandeira
+🇹🇻 bandeira: Tuvalu bandeira
+🇹🇼 bandeira: Taiwan bandeira
+🇹🇿 bandeira: Tanzânia bandeira
+🇺🇦 bandeira: Ucrânia bandeira
+🇺🇬 bandeira: Uganda bandeira
+🇺🇲 bandeira: Ilhas Menores Distantes dos EUA bandeira
+🇺🇳 bandeira: Nações Unidas bandeira
+🇺🇸 bandeira: Estados Unidos bandeira
+🇺🇾 bandeira: Uruguai bandeira
+🇺🇿 bandeira: Uzbequistão bandeira
+🇻🇦 bandeira: Cidade do Vaticano bandeira
+🇻🇨 bandeira: São Vicente e Granadinas bandeira
+🇻🇪 bandeira: Venezuela bandeira
+🇻🇬 bandeira: Ilhas Virgens Britânicas bandeira
+🇻🇮 bandeira: Ilhas Virgens Americanas bandeira
+🇻🇳 bandeira: Vietnã bandeira
+🇻🇺 bandeira: Vanuatu bandeira
+🇼🇫 bandeira: Wallis e Futuna bandeira
+🇼🇸 bandeira: Samoa bandeira
+🇽🇰 bandeira: Kosovo bandeira
+🇾🇪 bandeira: Iêmen bandeira
+🇾🇹 bandeira: Mayotte bandeira
+🇿🇦 bandeira: África do Sul bandeira
+🇿🇲 bandeira: Zâmbia bandeira
+🇿🇼 bandeira: Zimbábue bandeira
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 bandeira: Inglaterra bandeira
+🏴󠁧󠁢󠁳󠁣󠁴󠁿 bandeira: Escócia bandeira
+🏴󠁧󠁢󠁷󠁬󠁳󠁿 bandeira: País de Gales bandeira
+🥲 rosto sorridente com lágrima aliviada chorar contente emocionado felicidade feliz grata gratidão lágrima orgulhosa rir sorrir
+🥸 rosto disfarçado bigode disfarce espião incógnito nariz óculos pessoa rosto sobrancelha
+🤌 dedos comprimidos beliscado coxinha dedos gesto de mão hã interrogação itália italiana mão maravilha o quê sarcástico
+🫀 coração humano anatomia batimento batimento cardíaco cardiologia centro coração coração vermelho órgão pulsação pulso s2
+🫁 pulmões anatomia espiração exalação inalação órgão pulmão respiração
+🥷 ninja assassino furtividade guerra habilidades luta lutador oculto pessoa soldado
+🤵‍♂️ homem de smoking homem smoking
+🤵‍♀️ mulher de smoking mulher smoking
+👰‍♂️ noivo com véu noivo véu
+👰‍♀️ noiva com véu noiva véu
+👩‍🍼 mulher alimentando bebê alimentando amamentação amamentando amor bebê mãe mamãe mulher nascido neném pessoa recém recém-nascido
+👨‍🍼 homem alimentando bebê alimentando amamentação amamentando amor bebê homem neném pai papai pessoa recém nascido recém-nascido
+🧑‍🍼 pessoa alimentando bebê alimentando amamentação amamentar bebê homem mãe mulher neném pai pessoa recém-nascido
+🧑‍🎄 noel chapéu feliz festas gorro mamãe natal pessoa
+🫂 pessoas se abraçando abraçando abraço adeus amizade amor carinho conforto obrigado olá
+🐈‍⬛ gato preto animal azar dia das bruxas felino gata gato halloween miado miau preto
+🦬 bisão animal bisonte búfalo rebanho
+🦣 mamute animal extinto grande lanoso pré-histórico presa
+🦫 castor animal dentuço represa
+🐻‍❄️ urso polar ártico branco urso
+🦤 dodô animal ave extinto grande Maurício pássaro
+🪶 pena leve pássaro plumagem voo
+🦭 foca animal animal marinho leão marinho leão-marinho oceano
+🪲 besouro animal bicho inseto
+🪳 barata animal baratas inseto nojento nojo praga
+🪰 mosca animal apodrecendo doença inseto larva mosca-varejeira praga varejeira
+🪱 minhoca anelídeo animal parasita verme
+🪴 vaso com planta casa chato decoração nutrir planta plantar samambaia sem utilidade vaso
+🫐 mirtilos alimento azul baga blueberry comida fruta mirtilo silvestre
+🫒 azeitona alimento comida oliveira
+🫑 pimentão alimento capsicum comida pimenta pimentão verde vegetal
+🫓 pão sírio alimento arepa comida lavash naan pão pão folha pita
+🫔 tamale alimento comida enrolado mexicano milho pamonha
+🫕 fondue alimento chocolate comida derretido panela queijo suíço
+🫖 bule alimento bebida chá chaleira comida infusão
+🧋 chá perolado bebida bolha bubble tea chá comida leite pérola pobá
+🪨 pedra pedregulho pesado rocha seixo sólido
+🪵 madeira lenha madeira serrada tora tronco
+🛖 cabana abrigo casa yurt
+🛻 caminhonete automóvel caçamba caminhão carro picape pick-up pickup transporte veículo
+🛼 patins de rodas esporte patinação patins rodas roller
+🪄 varinha mágica bruxa condão magia mágica mago varinha
+🪅 pinhata cinco de maio comemoração doce festa festival
+🪆 boneca russa boneca matriosca matrioska russa
+🪡 agulha de costura agulha alfaiataria bordados costura linha pontos suturas vagonite
+🪢 nó amarrar corda cordel emaranhado fio laço marinheiro
+🩴 chinelo alpargatas piscina praia rasteirinha sandália
+🪖 capacete militar capacete exército guerra guerreiro militar soldado
+🪗 acordeão concertina instrumento música sanfona
+🪘 tambor comprido atabaque batida comprido conga instrumento percussão ritmo tambor
+🪙 moeda dinheiro dólar euro metal ouro prata real rica rico tesouro
+🪃 bumerangue aborígene arma austrália rebote repercussão
+🪚 serrote carpinteiro cortar ferramenta madeira serra serrar
+🪛 chave de fenda ferramenta
+🪝 gancho atração para venda bandido curva pegar prender
+🪜 escada degrau mão subir
+🛗 elevador acessibilidade descer elevar subir
+🪞 espelho espéculo maquiagem refletor reflexão reflexo
+🪟 janela abertura ar fresco quadro transparente vidro vista
+🪠 desentupidor banheiro cocô encanador fezes sanitário sucção vaso
+🪤 ratoeira armadilha atrair isca prender queijo
+🪣 balde baldinho barril
+🪥 escova de dentes banheiro dental dentes escova higiene limpeza
+🪦 lápide cemitério descanse em paz morto rip sepultura tumba túmulo
+🪧 placa aviso cartaz demonstração letreiro piquete protesto sinal
+⚧️ símbolo transgênero transgênero
+🏳️‍⚧️ bandeira transgênero azul claro bandeira branco rosa transgênero
+😶‍🌫️ rosto nas nuvens cabeça nas nuvens distraído rosto no nevoeiro
+😮‍💨 rosto exalando alívio assobio assopro cansaço cansada choque exalar exausta fumaça suspiro triste
+😵‍💫 rosto com olhos em espiral caramba confuso desnorteado eita espirais hipnotizado problema putz tonto tontura uau
+❤️‍🔥 coração em chamas amor chamas coração coração sagrado fogo luxúria
+❤️‍🩹 coração remendado bem bom curando mais saudável melhorando recuperação
+🧔‍♂️ homem: barbudo barba homem homem: barba
+🧔‍♀️ mulher: barba barba mulher
+🫠 rosto derretendo calor derretendo derreter desaparecer dissolver envergonhada haha quente sarcasmo sarcástica vergonha
+🫢 rosto com olhos abertos e mão sobre a boca assustada chocada descrença em choque espanto nossa omg passada quieta surpresa temor
+🫣 rosto com olho espiando cativada cativado envergonhada envergonhado esconder espiadinha espiando espiar olhar fixamente smiley tímida tímido vergonha
+🫡 rosto saudando boa sorte exército ok respeito saudação senhor sim tropa
+🫥 rosto com linha pontilhada deprimida desaparecer esconder escondido indiferença introvertido invisível meh tanto faz
+🫤 rosto com boca diagonal cético confusão decepção desapontado dúvida frustração indiferença inseguro meh tanto faz
+🥹 rosto segurando as lágrimas admiração alegria chorar com raiva emoção gratidão iti malia lágrimas orgulho por favor resistir tristeza
+🫱 mão para a direita apertar aperto direita mão pegar segurar
+🫲 mão para a esquerda apertar esquerda mão pegar segurar
+🫳 mão com a palma para baixo cair derrubar descartar mão pegar segurar soltar xô
+🫴 mão com a palma para cima acenar levantar mão oferecer pegar segurar venha
+🫰 mão com dedo indicador e polegar cruzados <3 amor army caro coração dinheiro estalar k-pop kpop mão
+🫵 indicador apontando para o visualizador aí apontar cutucar dedo indicador mão tu você
+🫶 mãos de coração <3 amei amo você amor coração mão mãos te amo
+🫦 mordendo o lábio ansioso batom beijo flertar lábios medo mordida nervoso preocupação sedução sexy vontade
+🫅 pessoa com coroa coroa monarca nobre pessoa princesa príncipe rainha real realeza rei reino
+🫃 homem grávido barriga cheia cheio comi demais excesso de peso gravidez grávido homem inchado pessoa
+🫄 pessoa grávida barriga cheia cheio comi demais excesso excesso de peso grávida gravidez inchada pessoa
+🧌 troll conto fadas fantasia gigante monstro ogro
+🪸 coral mar mudança climática oceano recife
+🪷 lótus beleza budismo calma flor flor de lótus hinduísmo Índia paz pureza serenidade Vietnã
+🪹 ninho vazio aninhando galhos lar ninho passarinho pássaro
+🪺 ninho com ovos aninhando galhos lar ninho ovo ovos passarinho pássaro
+🫘 feijões alimento comida feijão grão legume
+🫗 derramando líquido acabou acidente água bebida copo derramar derrubar fim líquido ops pingar vazio
+🫙 jarro armazenar condimento conserva jarra molho nada pote recipiente vazio vidro
+🛝 escorregador brincar brinquedo escorregar parque de diversões parquinho playground
+🛞 roda carro círculo direção girar pneu veículo volante
+🛟 boia colete flutuar guarda-vidas guardar nadar resgate salva salva-vidas segurança vidas
+🪬 hamsá amuleto Fátima guia hamsa mão Maria Miriam palma proteção sorte
+🪩 globo de espelhos balada boate bola brilho dança dançar discoteca espelhado espelho festa globo night
+🪫 pouca bateria acabando bateria cansado descarregada eletrônico energia fim fraca pilha pouca sem
+🩼 muleta ajuda bastão bengala deficiência desculpa lesão machucar mobilidade
+🩻 raio x doutor esqueleto médico ossos radiografia
+🫧 bolhas água aquática aquático arroto bolha embaixo d’água flutuar limpo pérolas sabão
+🪪 cartão de identificação carta cartão carteira crachá credenciais documento habilitação identidade licença motorista RG segurança
+🟰 sinal de igual conta iguais igual igualdade matemática resposta resultado

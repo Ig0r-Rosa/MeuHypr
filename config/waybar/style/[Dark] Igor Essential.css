@@ -54,7 +54,6 @@ tooltip {
 #custom-files,
 #custom-swaync,
 #custom-calendar,
-#custom-workspace-add,
 #workspaces button {
   font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
   font-size: 13px;
@@ -65,8 +64,7 @@ tooltip {
 #custom-terminal label,
 #custom-swaync label,
 #custom-files label,
-#custom-calendar label,
-#custom-workspace-add label {
+#custom-calendar label {
   font-size: 13px;
   transition: font-size 160ms ease-out;
 }
@@ -127,21 +125,28 @@ tooltip {
   margin: 0;
 }
 
-#workspaces {
+/* Número da área ativa (clique = próxima área livre) */
+#custom-workspace-num {
+  min-width: 16px;
   padding: 0 4px;
-}
-
-#workspaces button {
-  min-width: 20px;
-  margin: 0 2px;
   background: transparent;
   border: none;
+  font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", monospace;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
   transition: font-size 160ms ease-out;
 }
 
-#workspaces button.active {
-  border: none;
-  box-shadow: none;
+/* Setas de navegação do indicador de workspace (🢠 anterior / 🢡 próxima) */
+#custom-workspace-prev,
+#custom-workspace-next {
+  font-family: "Noto Sans Symbols 2", "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+  font-size: 15px;
+  font-weight: 700;
+  color: #9a9a9a;
+  padding: 0 2px;
+  transition: color 160ms ease-out;
 }
 
 #custom-launcher:hover,
@@ -149,16 +154,19 @@ tooltip {
 #custom-swaync:hover,
 #custom-files:hover,
 #custom-calendar:hover,
-#custom-workspace-add:hover,
-#workspaces button:hover {
+#custom-workspace-num:hover {
   font-size: 17px;
+}
+
+#custom-workspace-prev:hover,
+#custom-workspace-next:hover {
+  color: #ffffff;
 }
 
 #custom-launcher:hover label,
 #custom-terminal:hover label,
 #custom-swaync:hover label,
 #custom-files:hover label,
-#custom-calendar:hover label,
-#custom-workspace-add:hover label {
+#custom-calendar:hover label {
   font-size: 17px;
 }

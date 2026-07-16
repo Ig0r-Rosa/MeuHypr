@@ -13,13 +13,8 @@ configuration {
     width:           68;
     lines:           22;
     fixed-num-lines: true;
-    hide-scrollbar:  true;
-    scroll-method:   1;
     sorting-method:  "normal";
     click-to-exit:   true;
-    hover-select:    true;
-    me-select-entry: "";
-    me-accept-entry: "MousePrimary";
 }
 
 entry {

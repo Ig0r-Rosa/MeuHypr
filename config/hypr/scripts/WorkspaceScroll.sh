@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Super + scroll: navega áreas do monitor; na última com janelas, cria vazia;
-# na vazia do fim, scroll de novo volta ao início do monitor.
+# Super + scroll e Super + . / , : navega áreas do monitor em ciclo.
+# Na última, volta para a primeira. Não cria áreas novas — criar é do Super + =.
 
 # Intervalo mínimo entre trocas (ms). O Hyprland mantém scroll_event_delay=0
 # para não rolar apps com Super; o suavização fica aqui.
@@ -34,10 +34,6 @@ get_monitor_workspaces() {
     | sort'
 }
 
-is_current_workspace_empty() {
-  hyprctl activeworkspace -j | jq -e '.windows == 0' >/dev/null
-}
-
 go_to_first_workspace() {
   local monitor first_id
   monitor=$(hyprctl activeworkspace -j | jq -r '.monitor')
@@ -45,6 +41,7 @@ go_to_first_workspace() {
   hyprctl dispatch workspace "$first_id"
 }
 
+# Próxima área do monitor; na última, cicla para a primeira (não cria nova).
 scroll_next() {
   local monitor current_id max_id
   monitor=$(hyprctl activeworkspace -j | jq -r '.monitor')
@@ -52,11 +49,7 @@ scroll_next() {
   max_id=$(get_monitor_workspaces "$monitor" | jq 'max')
 
   if [[ "$current_id" -eq "$max_id" ]]; then
-    if is_current_workspace_empty; then
-      go_to_first_workspace
-    else
-      "$HOME/.config/hypr/scripts/WorkspaceCreateEmpty.sh"
-    fi
+    go_to_first_workspace
   else
     hyprctl dispatch workspace m+1
   fi

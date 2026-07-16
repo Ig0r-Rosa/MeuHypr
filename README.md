@@ -29,6 +29,7 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 | `config/gtk-*`, `qt*ct`, `fuzzel/` | Temas GTK/Qt e alternador de janelas |
 | `config/starship.toml` | Prompt do Zsh |
 | `system/` | SDDM, sessão Wayland e wrapper `hyprland-session` |
+| `system/grub/` | Tema GRUB `clean` (só fundo + lista de boot) |
 | `assets/wallpapers/` | Wallpaper padrão Matrix (SDDM + fallback) |
 | `sddm/themes/noc-sddm/` | Tema SDDM minimalista personalizado |
 
@@ -191,6 +192,25 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 |--------|--------|
 | sddm | Gerenciador de login |
 | noc-sddm (este repo) | Tema SDDM personalizado |
+
+### GRUB (menu de boot)
+
+Tema `clean`: só o **wallpaper + a lista de boot** (Linux / Windows), com painel
+escuro translúcido, realce arredondado na seleção e barra de contagem do timeout.
+Remove o título do topo e as mensagens de ajuda em EN/PT. Aplicado pelo `install.sh`.
+
+| Item | Detalhe |
+|------|---------|
+| `system/grub/themes/clean/theme.txt` | Layout do menu (painel + seleção + progress bar) |
+| `system/grub/themes/clean/menu-30.pf2` | Fonte JetBrains Mono (gerada via `grub-mkfont`) |
+| `system/grub/themes/clean/background.jpg` | Wallpaper do menu (self-contained) |
+| `system/grub/themes/clean/{panel,selected}_*.png` | PNGs 9-slice (painel e realce) |
+| `system/grub/themes/clean/generate-assets.py` | Regenera os PNGs (requer Pillow) |
+| `system/scripts/setup-grub-theme.sh` | Espelha o tema, ativa `GRUB_THEME` e roda `update-grub` |
+| `system/grub/reference/` | Cópias de referência do `/etc/default/grub` e `40_custom` (não aplicadas) |
+
+> Aplicar manualmente: `sudo system/scripts/setup-grub-theme.sh`. Fundo do menu: troque
+> `system/grub/themes/clean/background.jpg`. Backup do `/etc/default/grub` é criado a cada execução.
 
 ---
 

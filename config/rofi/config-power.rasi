@@ -14,13 +14,8 @@ configuration {
     lines:           2;
     columns:         1;
     fixed-num-lines: true;
-    hide-scrollbar:  true;
-    scroll-method:   0;
     sorting-method:  "normal";
     click-to-exit:   true;
-    hover-select:    true;
-    me-select-entry: "";
-    me-accept-entry: "MousePrimary";
 }
 
 window {

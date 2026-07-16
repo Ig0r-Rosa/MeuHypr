@@ -338,7 +338,12 @@ def format_for_rofi(raw_binds):
             
         mods = parts[0]
         key = parts[1]
-        
+
+        # Ignora teclas de mídia/hardware (XF86*): são teclas dedicadas do
+        # teclado e poluem a lista "buscar atalhos".
+        if key.upper().startswith("XF86"):
+            continue
+
         desc = ""
         dispatcher = ""
         params = ""

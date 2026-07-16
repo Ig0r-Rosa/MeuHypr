@@ -13,13 +13,8 @@ configuration {
     width:           72;
     lines:           12;
     fixed-num-lines: true;
-    hide-scrollbar:  true;
-    scroll-method:   1;
     sorting-method:  "normal";
     click-to-exit:   true;
-    hover-select:    false;
-    me-select-entry: "";
-    me-accept-entry: "";
 }
 
 inputbar {

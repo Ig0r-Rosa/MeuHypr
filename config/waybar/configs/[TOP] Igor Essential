@@ -19,8 +19,9 @@
   ],
 
   "modules-center": [
-    "hyprland/workspaces",
-    "custom/workspace-add"
+    "custom/workspace-prev",
+    "custom/workspace-num",
+    "custom/workspace-next"
   ],
 
   "modules-right": [
@@ -73,24 +74,26 @@
     "format": "{}"
   },
 
-  "hyprland/workspaces": {
-    "all-outputs": false,
-    "show-special": false,
+  "custom/workspace-num": {
+    "exec": "$HOME/.config/hypr/scripts/WaybarWorkspaceNum.sh",
+    "restart-interval": 2,
     "tooltip": false,
-    "on-click": "hyprctl dispatch workspace name:{name}",
+    "format": "{}",
+    "on-click": "$HOME/.config/hypr/scripts/WaybarAddWorkspace.sh",
     "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "format": "{icon}",
-    "format-icons": {
-      "active": "🟢",
-      "default": "⚪"
-    }
+    "on-scroll-down": "hyprctl dispatch workspace e-1"
   },
 
-  "custom/workspace-add": {
-    "format": "➕",
+  "custom/workspace-prev": {
+    "format": "⮘",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/scripts/WaybarAddWorkspace.sh"
+    "on-click": "hyprctl dispatch workspace e-1"
+  },
+
+  "custom/workspace-next": {
+    "format": "⮚",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch workspace e+1"
   },
 
   "custom/swaync": {

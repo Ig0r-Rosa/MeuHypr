@@ -61,9 +61,8 @@ while true; do
     export ROFI_LAUNCHER_MODE=normal
   fi
 
-  python3 "$apps_py" warm-icons
-  sync
-
+  # Ícones são materializados sob demanda pelo modo do Rofi (icon_field →
+  # materialize_icon usa o cache). Não pré-aquecemos aqui para abrir mais rápido.
   theme="$launcher_theme"
   if [[ "$hidden_mode" -eq 1 ]]; then
     theme="$hidden_theme"
