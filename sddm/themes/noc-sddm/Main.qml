@@ -230,6 +230,25 @@ Rectangle {
         }
     }
 
+    Row {
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.margins: 24
+        spacing: 12
+
+        PowerButton {
+            icon: "images/ic_refresh_white_24px.svg"
+            visible: sddm.canReboot
+            onClicked: sddm.reboot()
+        }
+
+        PowerButton {
+            icon: "images/ic_power_settings_new_white_24px.svg"
+            visible: sddm.canPowerOff
+            onClicked: sddm.powerOff()
+        }
+    }
+
     Component.onCompleted: {
         userList.focus = true
         focusPasswordIfNeeded()
