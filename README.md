@@ -4,11 +4,25 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 
 ## Preview
 
-![Preview do desktop MeuHypr](assets/exemple.png)
+![Preview do desktop MeuHypr](assets/ExemploTela.png)
 
-*Hyprland + waybar + SwayNC + rofi + kew (visualizador) — captura real do ambiente.*
+*Hyprland + waybar + SwayNC + launcher Rofi (grid central) + Nautilus + btop — captura real do ambiente.*
 
 > **Wallpaper padrão:** `assets/wallpapers/matrix-default.jpg` (SDDM + fallback Hyprland). Wallpapers extras em `~/Pictures/wallpapers/`.
+
+---
+
+## Ajustes recentes
+
+| Área | Mudança |
+|------|---------|
+| GRUB | Tema `clean` bonito: wallpaper + lista (Linux/Windows), painel translúcido, seleção arredondada e barra de timeout (sem mensagens de ajuda) |
+| Launcher (Super+D) | Grid com cantos vazios **só na 1ª linha da 1ª tela**; demais linhas/telas preenchem normalmente |
+| Menus Rofi | Rolagem/seleção **centralizada** no `config-theme-base.rasi` (Wallpaper, emoji, atalhos, etc.) |
+| Emoji (Super+Alt+E) | Nomes de busca **traduzidos para PT** |
+| Botão 📑 da Waybar | Abre **Nautilus** (foca se já aberto; yazi só como fallback) |
+| Compartilhar tela | Barra "está compartilhando sua tela" do Chromium/Brave vira pílula fixa no topo (sem borda/sombra) |
+| Boot | Terminal dropdown **não abre mais** no login |
 
 ---
  
@@ -71,7 +85,7 @@ O script instala **o essencial** para a sessão Hyprland funcionar com os atalho
 2. **Login:** SDDM como gerenciador padrão + tema `noc-sddm`
 3. **Shell:** zsh, **oh-my-zsh**, Starship
 4. **Atalhos:** Rofi Wayland (Super+D, Super+S, Super+H), grim/slurp, cliphist
-5. **TUIs:** yazi, btop, nvtop, cmatrix, bluetui (Cargo), **kew v4**, dua-cli, oxker, pulsemixer, hyprmoncfg, nmtui
+5. **TUIs:** yazi, btop, nvtop, bluetui (Cargo), **kew v4**, dua-cli, oxker, pulsemixer, hyprmoncfg, nmtui
 6. **Navegador:** firefox-esr (Super+B)
 7. Copia configs para `~/.config/` (Hyprland, kewrc padrão se não existir, etc.)
 
@@ -154,7 +168,7 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 | Pacote / binário | Função |
 |------------------|--------|
 | btop, nvtop | Monitor de sistema (SwayNC 📊) |
-| cmatrix | Efeito Matrix (waybar 🌎) |
+| FuzzelWindow | Alternador de janelas (waybar 🌎 / Super+J) |
 | kew v4 (compilado) | Player de música (instalado; sem botão no SwayNC) |
 | pulsemixer (APT) | Controlador de áudio TUI (SwayNC 🔊) |
 | dua-cli (Cargo) | Uso de disco (SwayNC 💾) |
@@ -199,6 +213,10 @@ Tema `clean`: só o **wallpaper + a lista de boot** (Linux / Windows), com paine
 escuro translúcido, realce arredondado na seleção e barra de contagem do timeout.
 Remove o título do topo e as mensagens de ajuda em EN/PT. Aplicado pelo `install.sh`.
 
+![Menu GRUB MeuHypr](assets/ExemploGrub.jpg)
+
+*Menu de boot com o tema `clean` (foto real da tela).*
+
 | Item | Detalhe |
 |------|---------|
 | `system/grub/themes/clean/theme.txt` | Layout do menu (painel + seleção + progress bar) |
@@ -225,7 +243,7 @@ Remove o título do topo e as mensagens de ajuda em EN/PT. Aplicado pelo `instal
 | `Super+D` | Launcher de apps (Rofi, grid central) |
 | `Super+Shift+D` | Apps ocultos no launcher |
 | `Super+Return` | Abrir terminal (kitty) |
-| `Super+E` | yazi (ou Nautilus se instalado) |
+| `Super+E` | Gerenciador de arquivos (Nautilus, com yazi de fallback) |
 | `Super+B` | Abrir navegador padrão (Firefox) |
 | `Super+A` | Terminal na pasta atual (Nautilus ou yazi) |
 | `Super+L` | Abrir lixeira no Nautilus (requer Nautilus) |
@@ -313,23 +331,24 @@ Layout minimalista (**Igor Essential**): fundo transparente, fonte JetBrainsMono
 
 | Região | Módulos |
 |--------|---------|
-| **Esquerda** | 🌎 cmatrix · 🚀 launcher · hora · data · glifo da hora |
-| **Centro** | 🟢/⚪ áreas de trabalho · ➕ nova área |
-| **Direita** | 🧭 navegador · 📜 terminal · 📑 yazi · ⚙️ painel SwayNC |
+| **Esquerda** | 🌎 alternador de janelas · 🚀 launcher · hora · data · glifo da hora |
+| **Centro** | ⮘ anterior · número da área atual · ⮚ próxima |
+| **Direita** | 🧭 navegador · 📜 terminal · 📑 arquivos · ⚙️ painel SwayNC |
 
 ### Cliques na barra
 
 | Ícone | Ação |
 |-------|------|
-| 🌎 | cmatrix em nova área de trabalho |
+| 🌎 | alternador de janelas (igual ao Super+J) |
 | 🚀 | Launcher Rofi (igual `Super+D`) |
 | Hora / Data | Apenas exibição |
 | Glifo da hora | Indicador visual da hora (atualiza a cada minuto) |
-| 🟢/⚪ | Áreas de trabalho — clique para ir; scroll para navegar |
-| ➕ | Criar nova área de trabalho |
+| ⮘ | Área de trabalho anterior |
+| número (ex. `1`) | Clique: nova área de trabalho · scroll: navegar entre áreas |
+| ⮚ | Próxima área de trabalho |
 | 🧭 | Navegador padrão (igual `Super+B`) |
 | 📜 | Terminal kitty (igual `Super+Return`) |
-| 📑 | yazi (igual `Super+E`) |
+| 📑 | Gerenciador de arquivos — Nautilus, com yazi de fallback (igual `Super+E`) |
 | ⚙️ | Abre/fecha painel SwayNC · clique direito: alternar DND |
 
 Atalhos úteis: `Super+Alt+R` recarrega a Waybar · `Super+Shift+B` restaura layout padrão.
@@ -403,7 +422,7 @@ Edite preferencialmente estes arquivos (não serão sobrescritos por updates gen
 Definidos em `UserConfigs/01-UserDefaults.conf`:
 
 - **Terminal:** kitty  
-- **Arquivos:** yazi (Nautilus opcional)  
+- **Arquivos:** Nautilus (yazi como fallback TUI)  
 - **Navegador:** firefox-esr (via APT)  
 - **Busca:** Google (`Super+S`)
 

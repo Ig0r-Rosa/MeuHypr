@@ -52,7 +52,7 @@
   "custom/calendar": {
     "format": "🌎",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/scripts/WaybarCmatrix.sh"
+    "on-click": "$HOME/.config/hypr/scripts/FuzzelWindow.sh"
   },
 
   "clock#time": {

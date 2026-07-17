@@ -1,5 +1,8 @@
 /**
  * Alternador de janelas (Super+J).
+ * Layout em duas colunas com fonte monoespaçada:
+ *   - classe do app (~30%): largura fixa em caracteres (trunca/preenche);
+ *   - título da janela (~70%): ocupa o resto e ganha "…" (Pango) se estourar.
  */
 
 @import "wallust/colors-rofi.rasi"
@@ -9,19 +12,27 @@ configuration {
     modi:            "window";
     show-icons:      true;
     icon-theme:      "Flat-Remix-Blue-Dark";
-    font:            "JetBrains Mono 11";
+    /* Nome EXATO da família instalada (monoespaçada) — sem isso o Pango cai
+       numa fonte proporcional e as colunas por caractere não alinham. */
+    font:            "JetBrainsMono Nerd Font 11";
     location:        0;
     anchor:          1;
     width:           72;
     lines:           14;
     fixed-num-lines: true;
     click-to-exit:   true;
-    window-format:   "{c} — {t}";
+    /* {c:30} fixa a coluna da classe (~30%); {t} é a descrição (~70%). */
+    window-format:   "{c:30} {t}";
     window-match-fields: "title,class";
 }
 
+/* Sem rótulo "window": só o campo de busca ocupa a barra. */
+inputbar {
+    children: [ entry ];
+}
+
 entry {
-    placeholder: "Filtrar janelas...";
+    placeholder: "Pesquisar janela...";
 }
 
 listview {

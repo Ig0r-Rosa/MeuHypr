@@ -3,7 +3,7 @@
 #
 # Filosofia de instalação:
 #   - Automático: sessão Hyprland, TUIs (yazi, btop, nvtop, kew v4, glow, dua-cli,
-#     oxker, cmatrix, bluetui, pulsemixer, nmtui…), oh-my-zsh, firefox-esr,
+#     oxker, bluetui, pulsemixer, nmtui…), oh-my-zsh, firefox-esr,
 #     Nautilus (gerenciador de arquivos padrão), Rofi (Super+D/S/H) e deps.
 #   - Manual: Steam, Discord, pavucontrol, nwg-displays, etc.
 set -euo pipefail
@@ -82,7 +82,7 @@ install_apt_packages() {
 
   log "  → Apps TUI (waybar, SwayNC, atalhos)..."
   apt-get install -y \
-    zsh fastfetch btop nvtop cmatrix golang-go glow
+    zsh fastfetch btop nvtop golang-go glow
 
   log "  → Dependências para compilar kew v4 (player de música)..."
   apt-get install -y \

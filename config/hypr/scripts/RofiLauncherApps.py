@@ -28,9 +28,9 @@ ICON_TARGET_SIZE = 52
 GRID_COLUMNS = 7
 GRID_LINES = 4
 SLOTS_PER_PAGE = GRID_COLUMNS * GRID_LINES
-# Cantos vazios por página: 1ª/última coluna da 1ª e da última linha.
-_PAGE_LAST_ROW = (GRID_LINES - 1) * GRID_COLUMNS
-PAGE_CORNER_SLOTS = frozenset({0, GRID_COLUMNS - 1, _PAGE_LAST_ROW, SLOTS_PER_PAGE - 1})
+# Cantos vazios: apenas 1ª e última coluna da 1ª linha da 1ª tela.
+# (Demais linhas/telas preenchem normalmente; sobras ficam no fim.)
+PAGE_CORNER_SLOTS = frozenset({0, GRID_COLUMNS - 1})
 # Chave de busca dos spacers — caractere fora do teclado ABNT2.
 GRID_PAD_FILTER = "ゔ"
 
@@ -429,8 +429,8 @@ def warm_icons(show_hidden: bool) -> None:
 
 
 def is_corner_slot(slot: int) -> bool:
-    """True nos 4 cantos de cada página do grid."""
-    return (slot % SLOTS_PER_PAGE) in PAGE_CORNER_SLOTS
+    """True só na 1ª e última coluna da 1ª linha da 1ª tela."""
+    return slot in PAGE_CORNER_SLOTS
 
 
 def emit_grid_pad(slot: int) -> None:
