@@ -3,8 +3,9 @@
 #
 # Filosofia de instalação:
 #   - Automático: sessão Hyprland, TUIs (yazi, btop, nvtop, kew v4, glow, dua-cli,
-#     oxker, cmatrix, bluetui, pulsemixer, nmtui…), oh-my-zsh, firefox-esr, Rofi (Super+D/S/H) e deps.
-#   - Manual: Steam, Discord, Nautilus, pavucontrol, nwg-displays, etc.
+#     oxker, cmatrix, bluetui, pulsemixer, nmtui…), oh-my-zsh, firefox-esr,
+#     Nautilus (gerenciador de arquivos padrão), Rofi (Super+D/S/H) e deps.
+#   - Manual: Steam, Discord, pavucontrol, nwg-displays, etc.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -56,7 +57,8 @@ install_apt_packages() {
   log "  → Sessão Hyprland (barra, terminal, notificações, logout)..."
   apt-get install -y \
     waybar sddm kitty \
-    sway-notification-center wlogout fuzzel
+    sway-notification-center wlogout fuzzel \
+    nautilus
 
   log "  → Atalhos e utilitários (screenshot, clipboard, busca Rofi)..."
   apt-get install -y \
@@ -323,6 +325,7 @@ deploy_user_configs() {
   setup_default_wallpaper_user
   deploy_shell_config
   deploy_kew_config
+  setup_nautilus
   repair_cursor_storage_if_needed
   finalize_config_permissions
 
@@ -334,7 +337,7 @@ deploy_user_configs() {
 }
 
 install_nautilus_extension() {
-  # Opt-in manual — Nautilus não é instalado pelo MeuHypr.
+  # Extensão "abrir terminal aqui" (kitty) — Nautilus é instalado por padrão.
   log "Instalando extensão nautilus-open-any-terminal para $TARGET_USER..."
   local schemas_dir="$TARGET_HOME/.local/share/glib-2.0/schemas"
 
@@ -349,7 +352,7 @@ install_nautilus_extension() {
 }
 
 setup_nautilus() {
-  # Opt-in manual — requer nautilus instalado pelo usuário.
+  # Aplica as preferências do Nautilus versionadas no repo (setup-nautilus.sh).
   log "Aplicando preferências do Nautilus para $TARGET_USER..."
   bash "$SCRIPT_DIR/config/hypr/scripts/setup-nautilus.sh" "$TARGET_USER"
 }
@@ -589,6 +592,7 @@ main() {
   install_oh_my_zsh
   install_hypr_stack
   install_rofi_wayland
+  install_nautilus_extension
   deploy_user_configs
   deploy_system_files
   configure_sddm_login

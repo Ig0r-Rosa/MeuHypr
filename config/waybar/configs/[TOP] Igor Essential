@@ -106,6 +106,6 @@
   "custom/files": {
     "format": "📑",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/scripts/WaybarYazi.sh"
+    "on-click": "$HOME/.config/hypr/scripts/FocusOrLaunch.sh files"
   }
 }
