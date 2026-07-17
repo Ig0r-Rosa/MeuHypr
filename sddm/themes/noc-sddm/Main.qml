@@ -237,13 +237,15 @@ Rectangle {
         spacing: 12
 
         PowerButton {
-            icon: "images/ic_refresh_white_24px.svg"
+            // Qt.resolvedUrl resolve relativo ao Main.qml (raiz do tema),
+            // não ao PowerButton.qml (components/), senão o ícone some.
+            icon: Qt.resolvedUrl("images/ic_restart_white_24px.svg")
             visible: sddm.canReboot
             onClicked: sddm.reboot()
         }
 
         PowerButton {
-            icon: "images/ic_power_settings_new_white_24px.svg"
+            icon: Qt.resolvedUrl("images/ic_power_settings_new_white_24px.svg")
             visible: sddm.canPowerOff
             onClicked: sddm.powerOff()
         }
