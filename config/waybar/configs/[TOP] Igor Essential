@@ -26,7 +26,6 @@
 
   "modules-right": [
     "custom/browser",
-    "custom/xhat",
     "custom/terminal",
     "custom/files",
     "custom/swaync"
@@ -102,12 +101,6 @@
     "tooltip": false,
     "on-click": "$HOME/.config/hypr/scripts/SwayncPanel.sh toggle",
     "on-click-right": "$HOME/.config/hypr/scripts/SwayncPanel.sh dnd"
-  },
-
-  "custom/xhat": {
-    "format": "💬",
-    "tooltip": false,
-    "on-click": "$HOME/.config/hypr/scripts/WaybarXhat.sh"
   },
 
   "custom/files": {

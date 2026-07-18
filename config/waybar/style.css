@@ -57,7 +57,6 @@ tooltip {
 #custom-game-mode,
 #custom-swaync,
 #custom-calendar,
-#custom-xhat,
 #workspaces button {
   font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
   font-size: 13px;
@@ -71,8 +70,7 @@ tooltip {
 #custom-files label,
 #custom-game-mode label,
 #custom-swaync label,
-#custom-calendar label,
-#custom-xhat label {
+#custom-calendar label {
   font-size: 13px;
   transition: font-size 160ms ease-out;
 }
@@ -84,8 +82,7 @@ tooltip {
 #custom-files,
 #custom-game-mode,
 #custom-swaync,
-#custom-calendar,
-#custom-xhat {
+#custom-calendar {
   padding: 0 6px;
 }
 
@@ -169,7 +166,6 @@ tooltip {
 #custom-files:hover,
 #custom-game-mode:hover,
 #custom-calendar:hover,
-#custom-xhat:hover,
 #custom-workspace-num:hover {
   font-size: 17px;
 }
@@ -186,7 +182,6 @@ tooltip {
 #custom-swaync:hover label,
 #custom-files:hover label,
 #custom-game-mode:hover label,
-#custom-calendar:hover label,
-#custom-xhat:hover label {
+#custom-calendar:hover label {
   font-size: 17px;
 }

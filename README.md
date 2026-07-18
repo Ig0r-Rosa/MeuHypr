@@ -16,8 +16,6 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 
 | Área | Mudança |
 |------|---------|
-| Waybar 💬 | Abre o **Xhat** (assistente TUI local); foca se já estiver aberto |
-| Xhat | Instalado pelo `install.sh` (projeto irmão `../Xhat`) |
 | Waybar 🌎 | Alternador de janelas (igual `Super+J`) — sem cmatrix |
 | Waybar 📑 | Abre **Nautilus** (foca se já aberto; yazi só como fallback) |
 | Nautilus | Instalado **por padrão** + preferências do repo |
@@ -91,13 +89,13 @@ O script instala **o essencial** para a sessão Hyprland funcionar com os atalho
 2. **Login:** SDDM como gerenciador padrão + tema `noc-sddm`
 3. **Shell:** zsh, **oh-my-zsh**, Starship
 4. **Atalhos:** Rofi Wayland (Super+D, Super+S, Super+H), grim/slurp, cliphist
-5. **TUIs:** yazi, btop, nvtop, bluetui (Cargo), **kew v4**, **Xhat**, dua-cli, oxker, pulsemixer, hyprmoncfg, nmtui
+5. **TUIs:** yazi, btop, nvtop, bluetui (Cargo), **kew v4**, dua-cli, oxker, pulsemixer, hyprmoncfg, nmtui
 6. **Arquivos:** Nautilus (padrão) + yazi (fallback TUI)
 7. **Navegador:** firefox-esr (Super+B)
 8. **Boot:** tema GRUB `clean` + Plymouth `monoarch`
 9. Copia configs para `~/.config/` (Hyprland, waybar, kewrc se não existir, etc.)
 
-**Não** instala automaticamente: Steam, Discord, pavucontrol, driver NVIDIA, nwg-displays, etc.
+**Não** instala automaticamente: Steam, Discord, pavucontrol, driver NVIDIA, nwg-displays, Xhat, etc.
 
 ### Variáveis úteis do `install.sh`
 
@@ -106,8 +104,6 @@ O script instala **o essencial** para a sessão Hyprland funcionar com os atalho
 | `MEUHYPR_CONFIG_ONLY=1` | Só configs + arquivos de sistema (sem recompilar) |
 | `MEUHYPR_TARGET_USER=nome` | Instala/aplica para outra conta |
 | `MEUHYPR_GRUB_BG=arquivo` | Fundo do GRUB (nome em `assets/wallpapers/` ou caminho) |
-| `MEUHYPR_XHAT_SRC=/caminho` | Pasta do projeto Xhat (padrão: `../Xhat`) |
-| `MEUHYPR_XHAT_SEM_OLLAMA=1` | Instala o Xhat sem baixar Ollama/modelos |
 
 ### Só reaplicar configs (sem reinstalar pacotes)
 
@@ -128,19 +124,6 @@ sudo MEUHYPR_TARGET_USER=nome_do_usuario MEUHYPR_CONFIG_ONLY=1 ./install.sh
 ```
 
 O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → `/home/nome_do_usuario/`).
-
-### Xhat (assistente TUI)
-
-O `install.sh` chama o `instala.sh` do projeto irmão **Xhat** (`../Xhat` no compartilhado):
-
-| Item | Detalhe |
-|------|---------|
-| Comando | `Xhat` em `~/.local/bin` |
-| Ambiente | `~/.local/share/xhat/venv` (isolado) |
-| Waybar | Botão 💬 → `WaybarXhat.sh` (à direita do navegador) |
-| Flags no install | `--sem-abrir` (não abre a TUI no fim) |
-
-Requer o repositório Xhat ao lado do MeuHypr (ou `MEUHYPR_XHAT_SRC`).
 
 ### Pós-instalação manual
 
@@ -198,7 +181,6 @@ Requer o repositório Xhat ao lado do MeuHypr (ou `MEUHYPR_XHAT_SRC`).
 
 | Pacote / binário | Função |
 |------------------|--------|
-| **Xhat** | Assistente TUI local (waybar 💬; projeto `../Xhat`) |
 | btop, nvtop | Monitor de sistema (SwayNC 📊) |
 | FuzzelWindow | Alternador de janelas (waybar 🌎 / Super+J) |
 | kew v4 (compilado) | Player de música (instalado; sem botão no SwayNC) |
@@ -370,7 +352,7 @@ Layout minimalista (**Igor Essential**): fundo transparente, fonte JetBrainsMono
 |--------|---------|
 | **Esquerda** | 🌎 alternador de janelas · 🚀 launcher · hora · data · glifo da hora |
 | **Centro** | ⮘ anterior · número da área atual · ⮚ próxima |
-| **Direita** | 🧭 navegador · 💬 Xhat · 📜 terminal · 📑 arquivos · ⚙️ painel SwayNC |
+| **Direita** | 🧭 navegador · 📜 terminal · 📑 arquivos · ⚙️ painel SwayNC |
 
 ### Cliques na barra
 
@@ -385,7 +367,6 @@ Layout minimalista (**Igor Essential**): fundo transparente, fonte JetBrainsMono
 | ⮚ | Próxima área de trabalho |
 | 🧭 | Navegador padrão (igual `Super+B`) |
 | 📜 | Terminal kitty (igual `Super+Return`) |
-| 💬 | Xhat — assistente TUI (à direita do 🧭; foca se já aberto) |
 | 📑 | Gerenciador de arquivos — Nautilus, com yazi de fallback (igual `Super+E`) |
 | ⚙️ | Abre/fecha painel SwayNC · clique direito: alternar DND |
 

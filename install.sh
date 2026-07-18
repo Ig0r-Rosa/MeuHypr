@@ -4,7 +4,7 @@
 # Filosofia de instalação:
 #   - Automático: sessão Hyprland, TUIs (yazi, btop, nvtop, kew v4, glow, dua-cli,
 #     oxker, bluetui, pulsemixer, nmtui…), oh-my-zsh, firefox-esr,
-#     Nautilus (gerenciador de arquivos padrão), Xhat (assistente TUI),
+#     Nautilus (gerenciador de arquivos padrão),
 #     Rofi (Super+D/S/H) e deps.
 #   - Manual: Steam, Discord, pavucontrol, nwg-displays, etc.
 set -euo pipefail
@@ -92,9 +92,6 @@ install_apt_packages() {
 
   log "  → Navegador padrão (Super+B; desinstale com apt se preferir outro)..."
   apt-get install -y firefox-esr
-
-  log "  → Dependências do Xhat (venv para o ambiente isolado)..."
-  apt-get install -y python3-venv python3-pip
 }
 
 install_kew() {
@@ -355,39 +352,6 @@ install_nautilus_extension() {
   fi
 }
 
-# Resolve o caminho do projeto Xhat (irmão do MeuHypr, ou MEUHYPR_XHAT_SRC).
-xhat_source_dir() {
-  local candidate="${MEUHYPR_XHAT_SRC:-}"
-  if [[ -n "$candidate" && -x "$candidate/instala.sh" ]]; then
-    echo "$candidate"
-    return 0
-  fi
-  candidate="$SCRIPT_DIR/../Xhat"
-  if [[ -x "$candidate/instala.sh" ]]; then
-    echo "$(cd "$candidate" && pwd)"
-    return 0
-  fi
-  return 1
-}
-
-# Instala o Xhat para o usuário-alvo via o instala.sh do próprio projeto.
-# --sem-abrir: não abre a TUI no fim (instalação silenciosa).
-# Ollama/modelos: use MEUHYPR_XHAT_SEM_OLLAMA=1 para pular (instalação mais rápida).
-install_xhat() {
-  local xhat_src
-  local -a flags=(--sem-abrir)
-
-  if ! xhat_src="$(xhat_source_dir)"; then
-    log "Xhat não encontrado (esperado em ../Xhat ou MEUHYPR_XHAT_SRC) — pulando."
-    return 0
-  fi
-
-  [[ "${MEUHYPR_XHAT_SEM_OLLAMA:-0}" == "1" ]] && flags+=(--sem-ollama)
-
-  log "Instalando Xhat para $TARGET_USER (fonte: $xhat_src)..."
-  sudo -u "$TARGET_USER" bash "$xhat_src/instala.sh" "${flags[@]}"
-}
-
 setup_nautilus() {
   # Aplica as preferências do Nautilus versionadas no repo (setup-nautilus.sh).
   log "Aplicando preferências do Nautilus para $TARGET_USER..."
@@ -614,8 +578,6 @@ EOF
 main() {
   if [[ "${MEUHYPR_CONFIG_ONLY:-0}" == "1" ]]; then
     need_root
-    # Mantém o Xhat atualizado também no modo "só configs".
-    install_xhat
     deploy_user_configs
     deploy_system_files
     post_install_notes
@@ -632,7 +594,6 @@ main() {
   install_hypr_stack
   install_rofi_wayland
   install_nautilus_extension
-  install_xhat
   deploy_user_configs
   deploy_system_files
   configure_sddm_login
