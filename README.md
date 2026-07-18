@@ -16,13 +16,17 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 
 | Área | Mudança |
 |------|---------|
-| GRUB | Tema `clean` bonito: wallpaper + lista (Linux/Windows), painel translúcido, seleção arredondada e barra de timeout (sem mensagens de ajuda) |
-| Launcher (Super+D) | Grid com cantos vazios **só na 1ª linha da 1ª tela**; demais linhas/telas preenchem normalmente |
-| Menus Rofi | Rolagem/seleção **centralizada** no `config-theme-base.rasi` (Wallpaper, emoji, atalhos, etc.) |
-| Emoji (Super+Alt+E) | Nomes de busca **traduzidos para PT** |
-| Botão 📑 da Waybar | Abre **Nautilus** (foca se já aberto; yazi só como fallback) |
-| Compartilhar tela | Barra "está compartilhando sua tela" do Chromium/Brave vira pílula fixa no topo (sem borda/sombra) |
-| Boot | Terminal dropdown **não abre mais** no login |
+| Waybar 💬 | Abre o **Xhat** (assistente TUI local); foca se já estiver aberto |
+| Xhat | Instalado pelo `install.sh` (projeto irmão `../Xhat`) |
+| Waybar 🌎 | Alternador de janelas (igual `Super+J`) — sem cmatrix |
+| Waybar 📑 | Abre **Nautilus** (foca se já aberto; yazi só como fallback) |
+| Nautilus | Instalado **por padrão** + preferências do repo |
+| Menus Rofi | Rolagem/seleção padrão no `config-theme-base.rasi` |
+| Emoji (Super+Alt+E) | Nomes de busca **em português** |
+| GRUB | Tema `clean` dinâmico (painel = nº de entradas); fundo via repo ou `MEUHYPR_GRUB_BG` |
+| Plymouth | Splash de boot (só a bolinha) em `system/plymouth/` |
+| SDDM | Botões ↻ / ⏻ no canto inferior direito |
+| Boot | Terminal dropdown **não abre** no login; core dumps desativados |
 
 ---
  
@@ -43,9 +47,11 @@ Backup completo do ambiente **Hyprland + SDDM** personalizado (baseado nos dotfi
 | `config/gtk-*`, `qt*ct`, `fuzzel/` | Temas GTK/Qt e alternador de janelas |
 | `config/starship.toml` | Prompt do Zsh |
 | `system/` | SDDM, sessão Wayland e wrapper `hyprland-session` |
-| `system/grub/` | Tema GRUB `clean` (só fundo + lista de boot) |
-| `assets/wallpapers/` | Wallpaper padrão Matrix (SDDM + fallback) |
-| `sddm/themes/noc-sddm/` | Tema SDDM minimalista personalizado |
+| `system/grub/` | Tema GRUB `clean` (fundo + lista de boot) |
+| `system/plymouth/` | Tema Plymouth `monoarch` (splash: bolinha) |
+| `assets/wallpapers/` | Wallpapers do sistema / GRUB (`matrix-default`, `espaco_*`) |
+| `sddm/themes/noc-sddm/` | Tema SDDM minimalista (login + power/reboot) |
+| `instalar_tema_grub.sh` | Instala só o tema GRUB (fundo opcional) |
 
 ---
 
@@ -85,11 +91,23 @@ O script instala **o essencial** para a sessão Hyprland funcionar com os atalho
 2. **Login:** SDDM como gerenciador padrão + tema `noc-sddm`
 3. **Shell:** zsh, **oh-my-zsh**, Starship
 4. **Atalhos:** Rofi Wayland (Super+D, Super+S, Super+H), grim/slurp, cliphist
-5. **TUIs:** yazi, btop, nvtop, bluetui (Cargo), **kew v4**, dua-cli, oxker, pulsemixer, hyprmoncfg, nmtui
-6. **Navegador:** firefox-esr (Super+B)
-7. Copia configs para `~/.config/` (Hyprland, kewrc padrão se não existir, etc.)
+5. **TUIs:** yazi, btop, nvtop, bluetui (Cargo), **kew v4**, **Xhat**, dua-cli, oxker, pulsemixer, hyprmoncfg, nmtui
+6. **Arquivos:** Nautilus (padrão) + yazi (fallback TUI)
+7. **Navegador:** firefox-esr (Super+B)
+8. **Boot:** tema GRUB `clean` + Plymouth `monoarch`
+9. Copia configs para `~/.config/` (Hyprland, waybar, kewrc se não existir, etc.)
 
-**Não** instala automaticamente: Steam, Discord, Nautilus, pavucontrol, driver NVIDIA, nwg-displays, etc.
+**Não** instala automaticamente: Steam, Discord, pavucontrol, driver NVIDIA, nwg-displays, etc.
+
+### Variáveis úteis do `install.sh`
+
+| Variável | Efeito |
+|----------|--------|
+| `MEUHYPR_CONFIG_ONLY=1` | Só configs + arquivos de sistema (sem recompilar) |
+| `MEUHYPR_TARGET_USER=nome` | Instala/aplica para outra conta |
+| `MEUHYPR_GRUB_BG=arquivo` | Fundo do GRUB (nome em `assets/wallpapers/` ou caminho) |
+| `MEUHYPR_XHAT_SRC=/caminho` | Pasta do projeto Xhat (padrão: `../Xhat`) |
+| `MEUHYPR_XHAT_SEM_OLLAMA=1` | Instala o Xhat sem baixar Ollama/modelos |
 
 ### Só reaplicar configs (sem reinstalar pacotes)
 
@@ -99,7 +117,7 @@ sudo MEUHYPR_CONFIG_ONLY=1 ./install.sh
 
 ### Instalar para outro usuário
 
-Substitua `nome_do_usuario` pelo login Linux da conta destino (ex.: `maria`, `dev`).
+Substitua `nome_do_usuario` pelo login Linux da conta destino (ex.: `igor_retta`).
 
 ```bash
 # Instalação completa (pacotes + configs) para a conta indicada
@@ -110,6 +128,19 @@ sudo MEUHYPR_TARGET_USER=nome_do_usuario MEUHYPR_CONFIG_ONLY=1 ./install.sh
 ```
 
 O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → `/home/nome_do_usuario/`).
+
+### Xhat (assistente TUI)
+
+O `install.sh` chama o `instala.sh` do projeto irmão **Xhat** (`../Xhat` no compartilhado):
+
+| Item | Detalhe |
+|------|---------|
+| Comando | `Xhat` em `~/.local/bin` |
+| Ambiente | `~/.local/share/xhat/venv` (isolado) |
+| Waybar | Botão 💬 → `WaybarXhat.sh` (à direita do navegador) |
+| Flags no install | `--sem-abrir` (não abre a TUI no fim) |
+
+Requer o repositório Xhat ao lado do MeuHypr (ou `MEUHYPR_XHAT_SRC`).
 
 ### Pós-instalação manual
 
@@ -124,7 +155,6 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 
 | App | Comando sugerido | Atalho / uso |
 |-----|------------------|--------------|
-| Nautilus | `sudo apt install nautilus` | Super+E (fallback automático para yazi) |
 | pavucontrol | `sudo apt install pavucontrol` | Mixer de áudio GUI |
 | Steam | `sudo apt install steam` + `setup-steam-hyprland.sh` | Scripts em `hypr/scripts/Steam*.sh` |
 | nwg-displays | via repositório nwg ou AUR equivalente | Menu KooL Quick Settings |
@@ -158,8 +188,9 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 
 | Pacote | Função |
 |--------|--------|
-| kitty | Terminal padrão (`Super+Return`) |
-| yazi (Cargo) | Gerenciador TUI (`Super+E`, waybar 📑; `Super+A` abre terminal na pasta) |
+| kitty | Terminal padrão (`Super+Return`, waybar 📜) |
+| Nautilus | Gerenciador GUI (`Super+E`, waybar 📑) |
+| yazi (Cargo) | Fallback TUI do gerenciador / `Super+A` na pasta |
 | firefox-esr | Navegador padrão (`Super+B`, waybar 🧭) |
 | zsh + oh-my-zsh + starship | Shell com prompt customizado |
 
@@ -167,6 +198,7 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 
 | Pacote / binário | Função |
 |------------------|--------|
+| **Xhat** | Assistente TUI local (waybar 💬; projeto `../Xhat`) |
 | btop, nvtop | Monitor de sistema (SwayNC 📊) |
 | FuzzelWindow | Alternador de janelas (waybar 🌎 / Super+J) |
 | kew v4 (compilado) | Player de música (instalado; sem botão no SwayNC) |
@@ -205,13 +237,12 @@ O script ajusta automaticamente caminhos em `~/.config` (ex.: `/home/igor/` → 
 | Pacote | Função |
 |--------|--------|
 | sddm | Gerenciador de login |
-| noc-sddm (este repo) | Tema SDDM personalizado |
+| noc-sddm (este repo) | Tema SDDM (usuários + sessão + botões reboot/power) |
 
 ### GRUB (menu de boot)
 
-Tema `clean`: só o **wallpaper + a lista de boot** (Linux / Windows), com painel
-escuro translúcido, realce arredondado na seleção e barra de contagem do timeout.
-Remove o título do topo e as mensagens de ajuda em EN/PT. Aplicado pelo `install.sh`.
+Tema `clean`: **wallpaper + lista de boot**, painel dimensionado ao nº real de entradas,
+títulos longos com reticências. Sem mensagens de ajuda. Aplicado pelo `install.sh`.
 
 ![Menu GRUB MeuHypr](assets/ExemploGrub.jpg)
 
@@ -219,16 +250,22 @@ Remove o título do topo e as mensagens de ajuda em EN/PT. Aplicado pelo `instal
 
 | Item | Detalhe |
 |------|---------|
-| `system/grub/themes/clean/theme.txt` | Layout do menu (painel + seleção + progress bar) |
-| `system/grub/themes/clean/menu-30.pf2` | Fonte JetBrains Mono (gerada via `grub-mkfont`) |
-| `system/grub/themes/clean/background.jpg` | Wallpaper do menu (self-contained) |
-| `system/grub/themes/clean/{panel,selected}_*.png` | PNGs 9-slice (painel e realce) |
-| `system/grub/themes/clean/generate-assets.py` | Regenera os PNGs (requer Pillow) |
-| `system/scripts/setup-grub-theme.sh` | Espelha o tema, ativa `GRUB_THEME` e roda `update-grub` |
-| `system/grub/reference/` | Cópias de referência do `/etc/default/grub` e `40_custom` (não aplicadas) |
+| `system/grub/themes/clean/` | Tema (theme.txt, fonte, PNGs, `background.jpg`) |
+| `system/grub/themes/clean/generate-assets.py` | Gera painel/seleção para N entradas |
+| `system/scripts/setup-grub-theme.sh` | Instala tema + `update-grub` |
+| `instalar_tema_grub.sh` | Instalador standalone (fundo opcional) |
+| Fundo padrão | `background.jpg` versionado (hoje: `espaco_2`) |
+| Fundo custom | `MEUHYPR_GRUB_BG=espaco_1.jpg` ou caminho absoluto |
 
-> Aplicar manualmente: `sudo system/scripts/setup-grub-theme.sh`. Fundo do menu: troque
-> `system/grub/themes/clean/background.jpg`. Backup do `/etc/default/grub` é criado a cada execução.
+> Aplicar: `sudo system/scripts/setup-grub-theme.sh` ou `sudo ./instalar_tema_grub.sh [imagem]`.
+
+### Plymouth (splash após o GRUB)
+
+| Item | Detalhe |
+|------|---------|
+| Tema | `monoarch` (só a bolinha girando, sem logo) |
+| Pasta | `system/plymouth/themes/monoarch/` |
+| Setup | `system/scripts/setup-plymouth-theme.sh` (chamado pelo `install.sh`) |
 
 ---
 
@@ -333,7 +370,7 @@ Layout minimalista (**Igor Essential**): fundo transparente, fonte JetBrainsMono
 |--------|---------|
 | **Esquerda** | 🌎 alternador de janelas · 🚀 launcher · hora · data · glifo da hora |
 | **Centro** | ⮘ anterior · número da área atual · ⮚ próxima |
-| **Direita** | 🧭 navegador · 📜 terminal · 📑 arquivos · ⚙️ painel SwayNC |
+| **Direita** | 🧭 navegador · 💬 Xhat · 📜 terminal · 📑 arquivos · ⚙️ painel SwayNC |
 
 ### Cliques na barra
 
@@ -348,6 +385,7 @@ Layout minimalista (**Igor Essential**): fundo transparente, fonte JetBrainsMono
 | ⮚ | Próxima área de trabalho |
 | 🧭 | Navegador padrão (igual `Super+B`) |
 | 📜 | Terminal kitty (igual `Super+Return`) |
+| 💬 | Xhat — assistente TUI (à direita do 🧭; foca se já aberto) |
 | 📑 | Gerenciador de arquivos — Nautilus, com yazi de fallback (igual `Super+E`) |
 | ⚙️ | Abre/fecha painel SwayNC · clique direito: alternar DND |
 

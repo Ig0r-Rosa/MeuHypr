@@ -54,6 +54,8 @@ tooltip {
 #custom-files,
 #custom-swaync,
 #custom-calendar,
+#custom-browser,
+#custom-xhat,
 #workspaces button {
   font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
   font-size: 13px;
@@ -64,7 +66,9 @@ tooltip {
 #custom-terminal label,
 #custom-swaync label,
 #custom-files label,
-#custom-calendar label {
+#custom-calendar label,
+#custom-browser label,
+#custom-xhat label {
   font-size: 13px;
   transition: font-size 160ms ease-out;
 }
@@ -73,7 +77,9 @@ tooltip {
 #custom-terminal,
 #custom-files,
 #custom-swaync,
-#custom-calendar {
+#custom-calendar,
+#custom-browser,
+#custom-xhat {
   padding: 0 6px;
 }
 
@@ -154,6 +160,8 @@ tooltip {
 #custom-swaync:hover,
 #custom-files:hover,
 #custom-calendar:hover,
+#custom-browser:hover,
+#custom-xhat:hover,
 #custom-workspace-num:hover {
   font-size: 17px;
 }
@@ -167,6 +175,8 @@ tooltip {
 #custom-terminal:hover label,
 #custom-swaync:hover label,
 #custom-files:hover label,
-#custom-calendar:hover label {
+#custom-calendar:hover label,
+#custom-browser:hover label,
+#custom-xhat:hover label {
   font-size: 17px;
 }
